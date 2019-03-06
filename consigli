@@ -1,0 +1,33 @@
+- analisi di pro e contro di ciascun capitolato, costruita durante una riunione che va messa a verbale
+- Studio di fattibilità
+- Norme di progetto  - secondo documento più difficile da scrivere assieme al Piano di Qualifica
+- norme di progetto (ndp) deve fare riferimento a ISO 12207!!!
+- la struttura del documento deve rispecchiare la struttura di questo standard, divisa per tipologia di processo (primari, supporto e organizzativi)
+- leggere lo standard e usarlo per normare ciò che serve 
+- alcune sezioni è presto per scriverle, tipo quella di codifica sotto il processo primario di sviluppo scrivete solo 
+    "in questa sezione il gruppo ZeusCode inserirà le norme che verranno individuate per quanto concerne la codifica"
+    in modo che Tullio sappia che intendete incrementare le Norme mano a mano che andate avanti col progetto
+- le norme è meglio che le scrivete in modo collaborativo, perchè poi siete costretti a conoscerle e a seguirle tutti 
+    quindi finisce che chi non ha scritto nulla non sa cosa ci sia scritto dentro
+- una volta che la stesura delle Norme è ben avviata, passate al pdp (piano di progetto) in cui scrivete come intendete pianificare il tutto, 
+    occhio che dovete scegliere un modello di sviluppo e adeguarvi ad esso (Tullio apprezza quello incrementale, però è veramente un incubo giustificare
+    lo sviluppo secondo questo modello di merda)
+- infine vi dividete e
+- metà di voi scrivono l'adr (analisi dei requisiti) in cui raccogliete tutti i requisiti che riuscite a rilevare dal capitolato e incontri con il proponente,
+    ci costruite sopra degli use cases da cui rilevare altri requisiti) e 
+- l'altra metà il pdq (piano di qualifica) in cui dovete stabilire gli obiettivi delle metriche che vi imponete per garantire la qualità del prodotto
+- NB sul pdq: la parte difficile è che non ci sono pdq su mega scritti bene, ha sempre contestato qualcosa.
+    consiglio di attenervi a questa regola: le metriche le descrivete e le scegliete nelle ndp (ad esempio quando parlo del processo di verifica sui documenti dico 
+    che alla fine della verifica si calcola l'indice di Gulpease e lo descrivo assieme alle procedure per il suo calcolo), mentre il loro obiettivo
+    (ad esempio ottenere 60+ su Gulpease) viene scritto nel pdq.
+    -in appendice al pdq dovete mettere il registro dei calcoli delle vostre metriche (ad esempio ho un grafico che mi fa vedere l'andamento del calcolo dell'indice di  
+    Gulpease sui documenti, quindi non calcolate solo una volta prima della consegna, lo ricalcolate a ogni verifica svolta su un documento, così avete l'andamento del 
+    periodo per far vedere che i vostri documenti migliorano gradualmente)
+
+ORDINE DI DIFFICOLTÀ DEI DOCUMENTI:
+- PDQ
+- NDP
+- ADR
+- PDP
+- SDF
+

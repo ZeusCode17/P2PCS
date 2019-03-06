@@ -1,0 +1,53 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[english, italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section{C1-Butterfly} 
+\subsection{Informazioni Generali}
+\begin{itemize}
+	\item[\bf Nome:] Butterfly: monitor per processi 	CI/CD.
+	\item[\bf Proponente:]Imola Informatica.
+	\item[\bf Commitente:]Tullio Vardanega, Riccardo 	Cardin.
+\end{itemize}
+\subsection{Descrizione}
+Il progetto Butterfly propone lo sviluppo di una piattaforma di notifica che raccolga le segnalazioni provenienti dai vari applicativi utilizzati dall’azienda e le riporti nella forma desiderata dall’ utilizzatore finale. 
+\subsection{Finalità del progetto}
+Il prodotto finale utilizza un pattern Producer-Consumer che raccoglie le varie segnalzioni mandate dalle applicazioni e le indirizza attraverso i canali scelti dall’utilizzatore.L’azienda propone una soluzione a quattro componenti, così strutturate:
+\begin{itemize}
+\item \textbf {Producers:} raccolgono le segnalazioni provenienti dalle varie applicazioni e le pubblicano, sotto forma di messaggio, all’interno dello specifico topic;
+\item \textbf {Broker:} strumento che istanzia e gestisce i topic;
+\item \textbf {Consumers:} componenti che hanno il compito di abbonarsi ai topic adeguati, recuperarne i messaggi ed inviarli verso i destinatari finali. I componenti richiesti hanno come finalità l’invio di segnalazioni attraverso Telegram,Slack e Email.
+\item \textbf {Componente custom specifico: }funzione che permette, attraverso dei metadati relativi agli utenti, di inviare le informazioni solo a chi interessato.
+\end{itemize}
+\subsection{Tecnlogie Richieste}
+\begin{itemize}
+\item \textbf{Java,Python o Nodejs:} Consigliati a scelta per lo sviluppo dei componenti applicativi.
+\item \textbf{Apache Kafka:} Consgliato come Broker.
+\item \textbf{Docker:} Richiesto come tecnologia di containarizzazione per l’istanziazione di tutti i componenti.
+\item \textbf{Redmine, GitLab, SonarQube, Telegram, Slack :} Librerie API.
+\end{itemize}
+\textbf{Ulteriori richieste:}
+\begin{itemize}
+\item Rispettare i 12 fattori esposti dal documento “The Twelve-Factor App”;
+\item Fornire API REST per tutte le componenti utilizzate;
+\item Utilizzo di test unitari e d’integrazione, test di sistema sull’intero sistema.
+\end{itemize}
+\subsection{Aspetti positivi}
+\begin{itemize}
+\item Le tecnologie richieste e consigliate per lo svolgimento del progetto sono ampiamente diffuse in ambito lavorativo e quindi utili da apprendere o approfondire;
+\item La documentazione delle tecnologie che emmettono i segnali sono ampie e ben strutturate, quindi facilmente fruibili.
+\end{itemize}
+\subsection{Criticità e fattori di rischio}
+\begin{itemize}
+\item Le tecnologie coinvolte vengono utilizzate solo in minima parte (sole le API);
+\item Il passaggio del raccoglimento dei dati sembra ripetitivo e poco stimolante;
+\item La mole delle API da produrre è non indifferente.
+\end{itemize}
+\subsection{Conclusioni}
+Il progetto seppur interessante sotto certi aspetti, non è stato trovato abbastanza stimolante dalla maggior parte dei componenti del gruppo.
+L’utilizzo di alcune tecnologie solamente in via marginale (API) ha fatto desistere il gruppo dallo scegliere questo progetto.
+\end{document}
