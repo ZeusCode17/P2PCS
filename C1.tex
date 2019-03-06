@@ -16,17 +16,17 @@
 \subsection{Descrizione}
 Il progetto Butterfly propone lo sviluppo di una piattaforma di notifica che raccolga le segnalazioni provenienti dai vari applicativi utilizzati dall’azienda e le riporti nella forma desiderata dall’ utilizzatore finale. 
 \subsection{Finalità del progetto}
-Il prodotto finale utilizza un pattern Producer-Consumer che raccoglie le varie segnalzioni mandate dalle applicazioni e le indirizza attraverso i canali scelti dall’utilizzatore.L’azienda propone una soluzione a quattro componenti, così strutturate:
+Il prodotto finale utilizza un pattern Producer-Consumer che raccoglie le varie segnalazioni mandate dalle applicazioni e le indirizza attraverso i canali scelti dall’utilizzatore. L’azienda propone una soluzione a quattro componenti, così strutturate:
 \begin{itemize}
 \item \textbf {Producers:} raccolgono le segnalazioni provenienti dalle varie applicazioni e le pubblicano, sotto forma di messaggio, all’interno dello specifico topic;
 \item \textbf {Broker:} strumento che istanzia e gestisce i topic;
-\item \textbf {Consumers:} componenti che hanno il compito di abbonarsi ai topic adeguati, recuperarne i messaggi ed inviarli verso i destinatari finali. I componenti richiesti hanno come finalità l’invio di segnalazioni attraverso Telegram,Slack e Email.
-\item \textbf {Componente custom specifico: }funzione che permette, attraverso dei metadati relativi agli utenti, di inviare le informazioni solo a chi interessato.
+\item \textbf {Consumers:} componenti che hanno il compito di abbonarsi ai topic adeguati, recuperarne i messaggi ed inviarli verso i destinatari finali. I componenti richiesti hanno come finalità l’invio di segnalazioni attraverso Telegram, Slack e Email.
+\item \textbf {Componente custom specifico:} funzione che permette, attraverso dei metadati relativi agli utenti, di inviare le informazioni solo a chi interessato.
 \end{itemize}
 \subsection{Tecnlogie Richieste}
 \begin{itemize}
-\item \textbf{Java,Python o Nodejs:} Consigliati a scelta per lo sviluppo dei componenti applicativi.
-\item \textbf{Apache Kafka:} Consgliato come Broker.
+\item \textbf{Java, Python o Nodejs:} Consigliati a scelta per lo sviluppo dei componenti applicativi.
+\item \textbf{Apache Kafka:} Consigliato come Broker.
 \item \textbf{Docker:} Richiesto come tecnologia di containarizzazione per l’istanziazione di tutti i componenti.
 \item \textbf{Redmine, GitLab, SonarQube, Telegram, Slack :} Librerie API.
 \end{itemize}
