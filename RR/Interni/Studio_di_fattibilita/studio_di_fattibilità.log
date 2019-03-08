@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.20)  8 MAR 2019 10:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.20)  8 MAR 2019 11:00
 entering extended mode
 **./studio_di_fattibilità.tex
 (studio_di_fattibilità.tex
@@ -812,7 +812,7 @@ Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 11.
  [2] (studio_di_fattibilità.toc
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 48.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 47.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [3])
 \tf@toc=\write6
@@ -864,21 +864,17 @@ File: res/images/zeus_code_logo.png Graphic file (type png)
 Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 1.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [9]
-Overfull \hbox (1.65947pt too wide) in paragraph at lines 37--39
-[]\T1/cmr/bx/n/10 Hunpos$[]$/Freeling$[]$\T1/cmr/m/n/10 : so-no due soft-ware s
-pe-cia-liz-za-ti nel "Part of Speech (PoS) tagging"$[]$; 
- []
-
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 53.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 29.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
-[10])
+ [10]) (res/sections/06-C3.tex
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 24.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 1.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
- [11] (res/sections/06-C3.tex) (res/sections/07-C4.tex
+ [11])
+(res/sections/07-C4.tex
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
 Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 1.
@@ -893,8 +889,7 @@ File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
 Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 31.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
- [14])
-(res/sections/03-C6.tex
+ [14]) (res/sections/03-C6.tex
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
 Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 1.
@@ -904,7 +899,8 @@ File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
 Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 47.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
- [16]) 
+ [16])
+
 AED: lastpage setting LastPage
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
@@ -918,12 +914,12 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Info: File `studio_di_fattibilità.out' has not changed.
 
-(rerunfilecheck)             Checksum: 4DAEF08997501B87C2E756D6C99CEB5A;4203.
+(rerunfilecheck)             Checksum: B5B7DF630B34F19C2CE79E405E68C78E;4118.
  ) 
 Here is how much of TeX's memory you used:
  9640 strings out of 492946
- 139384 string characters out of 3126266
- 294043 words of memory out of 3000000
+ 139377 string characters out of 3126266
+ 294044 words of memory out of 3000000
  13249 multiletter control sequences out of 15000+200000
  19698 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -943,9 +939,9 @@ pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
 r/jknappen/ec/dpi600\ecbx1200.pk><C:/Users/Marco/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Marco/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on studio_di_fattibilità.pdf (18 pages, 254597 bytes).
+Output written on studio_di_fattibilità.pdf (18 pages, 255579 bytes).
 PDF statistics:
- 829 PDF objects out of 1000 (max. 8388607)
+ 834 PDF objects out of 1000 (max. 8388607)
  74 named destinations out of 1000 (max. 500000)
  446 words of extra memory for PDF output out of 10000 (max. 10000000)
 
