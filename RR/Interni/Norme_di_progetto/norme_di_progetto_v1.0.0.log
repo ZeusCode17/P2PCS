@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.20)  8 MAR 2019 10:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.20)  8 MAR 2019 10:33
 entering extended mode
 **./norme_di_progetto_v1.0.0.tex
 (norme_di_progetto_v1.0.0.tex
@@ -673,7 +673,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 10.
 (res/sections/frontispiece.tex
-<res/images/zeus_code_logo.png, id=435, 752.8125pt x 444.66125pt>
+<res/images/zeus_code_logo.png, id=479, 752.8125pt x 444.66125pt>
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
 Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 4.
@@ -842,7 +842,7 @@ Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 17.
  [2] (norme_di_progetto_v1.0.0.toc
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 48.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 47.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [3]
 File: res/images/zeus_code_logo.png Graphic file (type png)
@@ -876,22 +876,28 @@ Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 29.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [7]
 (res/sections/introduzione.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 15.
 
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 
-Overfull \hbox (1.40022pt too wide) in paragraph at lines 23--25
-[][]$\T1/cmtt/m/n/10 https : / / www . math . unipd . it / ~tullio / IS-[]1 / 2
-009 / Approfondimenti / ISO _ 12207-[]1995 .
+Overfull \hbox (95.98672pt too wide) in paragraph at lines 15--16
+[]\T1/cmr/bx/n/10 Standard ISO/IEC 12207:1995:[][]\T1/cmr/m/n/10 https://www.ma
+th.unipd.it/ tullio/IS-1/2009/Approfondimenti/ISO_12207-
+ []
+
+
+Overfull \hbox (90.94894pt too wide) in paragraph at lines 16--17
+[]\T1/cmr/bx/n/10 Capitolato d'ap-pal-to C5 - Piat-ta-for-ma peer-to-peer car s
+ha-ring: [][]\T1/cmr/m/n/10 https://www.math.unipd.it/ tullio/IS-
  []
 
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 43.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 30.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
 [8])
 File: res/images/zeus_code_logo.png Graphic file (type png)
@@ -909,7 +915,7 @@ File: res/images/zeus_code_logo.png Graphic file (type png)
 Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 51.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [11]
-<res/images/projectS.png, id=638, 1143.0705pt x 596.2275pt>
+<res/images/projectS.png, id=687, 1143.0705pt x 596.2275pt>
 File: res/images/projectS.png Graphic file (type png)
 <use res/images/projectS.png>
 Package pdftex.def Info: res/images/projectS.png  used on input line 65.
@@ -920,7 +926,7 @@ File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
 Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 77.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1106,7 +1112,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--246
 
  []
 
-<res/images/drawio.jpg, id=672, 1204.5pt x 614.295pt>
+<res/images/drawio.jpg, id=722, 1204.5pt x 614.295pt>
 File: res/images/drawio.jpg Graphic file (type jpg)
 <use res/images/drawio.jpg>
 Package pdftex.def Info: res/images/drawio.jpg  used on input line 257.
@@ -1121,7 +1127,7 @@ File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
 Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 35.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
- [19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1190,7 +1196,7 @@ Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 192.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [25]
-<res/images/latex.jpg, id=721, 953.5625pt x 662.475pt>
+<res/images/latex.jpg, id=771, 953.5625pt x 662.475pt>
 File: res/images/latex.jpg Graphic file (type jpg)
 <use res/images/latex.jpg>
 Package pdftex.def Info: res/images/latex.jpg  used on input line 214.
@@ -1206,7 +1212,7 @@ File: res/images/zeus_code_logo.png Graphic file (type png)
 Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 233.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
- [27pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [27pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1250,7 +1256,7 @@ File: res/images/zeus_code_logo.png Graphic file (type png)
 Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 422.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
- [32pdfTeX warning (ext4): destination with the same identifier (name{table.3.4
+ [32pdfTeX warning (ext4): destination with the same identifier (name{table.6.4
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1397,13 +1403,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
 Package rerunfilecheck Info: File `norme_di_progetto_v1.0.0.out' has not change
 d.
-(rerunfilecheck)             Checksum: 49D6618427847E65F5C639A17DDC7F9C;8014.
+(rerunfilecheck)             Checksum: 41AFCD9964EB9FA6ECC6B6BD452BA01B;8764.
  ) 
 Here is how much of TeX's memory you used:
- 9809 strings out of 492946
- 142056 string characters out of 3126266
- 302083 words of memory out of 3000000
- 13330 multiletter control sequences out of 15000+200000
+ 9831 strings out of 492946
+ 142536 string characters out of 3126266
+ 302092 words of memory out of 3000000
+ 13341 multiletter control sequences out of 15000+200000
  19778 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,17n,43p,853b,529s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1422,9 +1428,9 @@ pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
 r/jknappen/ec/dpi600\ecbx1200.pk><C:/Users/Marco/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Marco/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on norme_di_progetto_v1.0.0.pdf (40 pages, 645455 bytes).
+Output written on norme_di_progetto_v1.0.0.pdf (40 pages, 646830 bytes).
 PDF statistics:
- 1280 PDF objects out of 1440 (max. 8388607)
- 162 named destinations out of 1000 (max. 500000)
- 885 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1318 PDF objects out of 1440 (max. 8388607)
+ 173 named destinations out of 1000 (max. 500000)
+ 973 words of extra memory for PDF output out of 10000 (max. 10000000)
 
