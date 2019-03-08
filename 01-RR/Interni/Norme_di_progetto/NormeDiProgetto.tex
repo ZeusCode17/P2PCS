@@ -1,6 +1,5 @@
 \documentclass[a4paper]{article}
 % packages 
-\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english,italian]{babel}
 \usepackage{microtype}
@@ -16,31 +15,23 @@
     linkbordercolor={0 1 1}
 }
 
-
-% new commands
-\newcommand{\GroupName} {Gruppo ZeusCode }
-\newcommand{\GroupEmail}{\href{mailto:zeuscode17@gmail.com}{zeuscode17@gmail.com }}
-\newcommand{\ProjectName} {Progetto GaiaGo }
-\newcommand{\ProjectAim} {CarSharing Peer to Peer }
-\newcommand{\ProjectVersion} {v 1.0.0}
-
-%fine inclusioni
-%\graphicspath{ {} }
-\title{Norme di Progetto}
-\author{\GroupName}
-\date{2019}
+\input{../../../latex/package.tex}
+\input{config/config.tex}
+\makeindex
 
 \begin{document}
 
-%\begin{figure}
-	%\centering
-%	\includegraphics[width=90mm]{logo.jpg}
-%\end{figure}
+\input{res/sections/frontispiece.tex}
+\pagebreak	
 
-\maketitle
-\newpage
+\input{res/sections/changelog.tex}
+
+\counterwithin{table}{subsection}
+\counterwithin{figure}{subsection}
+
+\pagebreak
+
 \tableofcontents
-\newpage
 \section {Introduzione}
 \subsection {Scopo del documento}
 Questo documento  ha lo scopo di definire le regole di base che tutti i membri di \GroupName devono rispettare nello svolgimento del progetto, così da garantire uniformità in tutto il materiale. Verrà utilizzato un approccio incrementale, volto a normare passo passo ogni decisione descussa e concordata tra tutti i membri del gruppo. Ciascun componente è obbligato a prendere visione di tale documento e a rispettare le norme in esso descritte allo scopo di perseguire la coesione all'interno del team.
@@ -55,7 +46,7 @@ Glossario  v  1.0.0 verrà aggiunta una G a pedice a fianco del termine.
 \subsubsection {Riferimenti normativi}
 
 \begin{itemize}
-	\item  \textbf{Standard ISO/IEC 12207:1995:}\href{https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf}{https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf};
+	\item  \textbf{Standard ISO/IEC 12207:1995:}\href{https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf}{https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO\textunderscore12207-1995.pdf};
 	\item \textbf{Capitolato d'appalto C5 - Piattaforma peer-to-peer car sharing:} \href{https://www.math.unipd.it/~tullio/IS- 1/2018/Progetto/C6.pdf}{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C6.pdf}
 \end{itemize}
 

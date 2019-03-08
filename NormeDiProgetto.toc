@@ -1,0 +1,20 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Introduzione}{3}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{3}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{3}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Glosssario}{3}{subsection.1.3}% 
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{3}{subsection.1.4}% 
+\contentsline {subsubsection}{\numberline {1.4.1}Riferimenti normativi}{3}{subsubsection.1.4.1}% 
+\contentsline {subsubsection}{\numberline {1.4.2}Riferimenti informativi}{3}{subsubsection.1.4.2}% 
+\contentsline {section}{\numberline {2}Processi primari}{3}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Fornitura}{3}{subsection.2.1}% 
+\contentsline {subsubsection}{\numberline {2.1.1}Studio di fattibilit\IeC {\`a}}{4}{subsubsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.2}Sviluppo}{4}{subsection.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Analisi dei requisiti}{4}{subsubsection.2.2.1}% 
+\contentsline {subsubsection}{\numberline {2.2.2}Progettazione}{4}{subsubsection.2.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.3}Codifica}{4}{subsubsection.2.2.3}% 
+\contentsline {subsubsection}{\numberline {2.2.4}Procedure}{4}{subsubsection.2.2.4}% 
+\contentsline {subsubsection}{\numberline {2.2.5}Strumenti}{4}{subsubsection.2.2.5}% 
+\contentsline {section}{\numberline {3}Processi di Supporto}{4}{section.3}% 
+\contentsline {section}{\numberline {4}Processi Organizzativi}{4}{section.4}% 
