@@ -23,35 +23,35 @@
 \contentsline {subsubsection}{\numberline {3.1.5}Aspetti positivi}{8}{subsubsection.3.1.5}% 
 \contentsline {subsubsection}{\numberline {3.1.6}Criticit\IeC {\`a} e fattori di rischio}{8}{subsubsection.3.1.6}% 
 \contentsline {subsubsection}{\numberline {3.1.7}Conclusioni}{8}{subsubsection.3.1.7}% 
-\contentsline {section}{\numberline {4}C2-Colletta}{9}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Informazioni Generali}{9}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}Descrizione}{9}{subsection.4.2}% 
-\contentsline {subsection}{\numberline {4.3}Finalit\IeC {\`a} del progetto}{9}{subsection.4.3}% 
-\contentsline {subsection}{\numberline {4.4}Tecnologie Richieste}{9}{subsection.4.4}% 
-\contentsline {subsection}{\numberline {4.5}Aspetti positivi}{10}{subsection.4.5}% 
-\contentsline {subsection}{\numberline {4.6}Criticit\IeC {\`a} e fattori di rischio}{10}{subsection.4.6}% 
-\contentsline {subsection}{\numberline {4.7}Conclusioni}{10}{subsection.4.7}% 
-\contentsline {subsection}{\numberline {4.8}Capitolato C3 - G\&B}{11}{subsection.4.8}% 
-\contentsline {subsubsection}{\numberline {4.8.1}Informazioni generali}{11}{subsubsection.4.8.1}% 
-\contentsline {subsubsection}{\numberline {4.8.2}Descrizione}{11}{subsubsection.4.8.2}% 
-\contentsline {subsubsection}{\numberline {4.8.3}Finalit\IeC {\`a} del progetto}{11}{subsubsection.4.8.3}% 
-\contentsline {subsubsection}{\numberline {4.8.4}Tecnologie Interessate}{11}{subsubsection.4.8.4}% 
-\contentsline {subsubsection}{\numberline {4.8.5}Aspetti positivi}{11}{subsubsection.4.8.5}% 
-\contentsline {subsubsection}{\numberline {4.8.6}Criticit\IeC {\`a} e fattori di rischio}{11}{subsubsection.4.8.6}% 
-\contentsline {subsubsection}{\numberline {4.8.7}Conclusioni}{12}{subsubsection.4.8.7}% 
-\contentsline {subsection}{\numberline {4.9}Capitolato C4 - MegAlexa}{13}{subsection.4.9}% 
-\contentsline {subsubsection}{\numberline {4.9.1}Informazioni generali}{13}{subsubsection.4.9.1}% 
-\contentsline {subsubsection}{\numberline {4.9.2}Descrizione}{13}{subsubsection.4.9.2}% 
-\contentsline {subsubsection}{\numberline {4.9.3}Finalit\IeC {\`a} del progetto}{13}{subsubsection.4.9.3}% 
-\contentsline {subsubsection}{\numberline {4.9.4}Tecnologie Interessate}{13}{subsubsection.4.9.4}% 
-\contentsline {subsubsection}{\numberline {4.9.5}Aspetti positivi}{13}{subsubsection.4.9.5}% 
-\contentsline {subsubsection}{\numberline {4.9.6}Criticit\IeC {\`a} e fattori di rischio}{14}{subsubsection.4.9.6}% 
-\contentsline {subsubsection}{\numberline {4.9.7}Conclusioni}{14}{subsubsection.4.9.7}% 
-\contentsline {subsection}{\numberline {4.10}Capitolato C6 - Soldino}{15}{subsection.4.10}% 
-\contentsline {subsubsection}{\numberline {4.10.1}Informazioni generali}{15}{subsubsection.4.10.1}% 
-\contentsline {subsubsection}{\numberline {4.10.2}Descrizione}{15}{subsubsection.4.10.2}% 
-\contentsline {subsubsection}{\numberline {4.10.3}Finalit\IeC {\`a} del progetto}{15}{subsubsection.4.10.3}% 
-\contentsline {subsubsection}{\numberline {4.10.4}Tecnologie interessate}{15}{subsubsection.4.10.4}% 
-\contentsline {subsubsection}{\numberline {4.10.5}Aspetti positivi}{16}{subsubsection.4.10.5}% 
-\contentsline {subsubsection}{\numberline {4.10.6}Criticit\IeC {\`a} e fattori di rischio}{16}{subsubsection.4.10.6}% 
-\contentsline {subsubsection}{\numberline {4.10.7}Conclusioni}{16}{subsubsection.4.10.7}% 
+\contentsline {subsection}{\numberline {3.2}C2-Colletta}{9}{subsection.3.2}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Informazioni Generali}{9}{subsubsection.3.2.1}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Descrizione}{9}{subsubsection.3.2.2}% 
+\contentsline {subsubsection}{\numberline {3.2.3}Finalit\IeC {\`a} del progetto}{9}{subsubsection.3.2.3}% 
+\contentsline {subsubsection}{\numberline {3.2.4}Tecnologie Richieste}{9}{subsubsection.3.2.4}% 
+\contentsline {subsubsection}{\numberline {3.2.5}Aspetti positivi}{9}{subsubsection.3.2.5}% 
+\contentsline {subsubsection}{\numberline {3.2.6}Criticit\IeC {\`a} e fattori di rischio}{10}{subsubsection.3.2.6}% 
+\contentsline {subsubsection}{\numberline {3.2.7}Conclusioni}{10}{subsubsection.3.2.7}% 
+\contentsline {subsection}{\numberline {3.3}Capitolato C3 - G\&B}{11}{subsection.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Informazioni generali}{11}{subsubsection.3.3.1}% 
+\contentsline {subsubsection}{\numberline {3.3.2}Descrizione}{11}{subsubsection.3.3.2}% 
+\contentsline {subsubsection}{\numberline {3.3.3}Finalit\IeC {\`a} del progetto}{11}{subsubsection.3.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.4}Tecnologie Interessate}{11}{subsubsection.3.3.4}% 
+\contentsline {subsubsection}{\numberline {3.3.5}Aspetti positivi}{11}{subsubsection.3.3.5}% 
+\contentsline {subsubsection}{\numberline {3.3.6}Criticit\IeC {\`a} e fattori di rischio}{11}{subsubsection.3.3.6}% 
+\contentsline {subsubsection}{\numberline {3.3.7}Conclusioni}{12}{subsubsection.3.3.7}% 
+\contentsline {subsection}{\numberline {3.4}Capitolato C4 - MegAlexa}{13}{subsection.3.4}% 
+\contentsline {subsubsection}{\numberline {3.4.1}Informazioni generali}{13}{subsubsection.3.4.1}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Descrizione}{13}{subsubsection.3.4.2}% 
+\contentsline {subsubsection}{\numberline {3.4.3}Finalit\IeC {\`a} del progetto}{13}{subsubsection.3.4.3}% 
+\contentsline {subsubsection}{\numberline {3.4.4}Tecnologie Interessate}{13}{subsubsection.3.4.4}% 
+\contentsline {subsubsection}{\numberline {3.4.5}Aspetti positivi}{13}{subsubsection.3.4.5}% 
+\contentsline {subsubsection}{\numberline {3.4.6}Criticit\IeC {\`a} e fattori di rischio}{14}{subsubsection.3.4.6}% 
+\contentsline {subsubsection}{\numberline {3.4.7}Conclusioni}{14}{subsubsection.3.4.7}% 
+\contentsline {subsection}{\numberline {3.5}Capitolato C6 - Soldino}{15}{subsection.3.5}% 
+\contentsline {subsubsection}{\numberline {3.5.1}Informazioni generali}{15}{subsubsection.3.5.1}% 
+\contentsline {subsubsection}{\numberline {3.5.2}Descrizione}{15}{subsubsection.3.5.2}% 
+\contentsline {subsubsection}{\numberline {3.5.3}Finalit\IeC {\`a} del progetto}{15}{subsubsection.3.5.3}% 
+\contentsline {subsubsection}{\numberline {3.5.4}Tecnologie interessate}{15}{subsubsection.3.5.4}% 
+\contentsline {subsubsection}{\numberline {3.5.5}Aspetti positivi}{16}{subsubsection.3.5.5}% 
+\contentsline {subsubsection}{\numberline {3.5.6}Criticit\IeC {\`a} e fattori di rischio}{16}{subsubsection.3.5.6}% 
+\contentsline {subsubsection}{\numberline {3.5.7}Conclusioni}{16}{subsubsection.3.5.7}% 
