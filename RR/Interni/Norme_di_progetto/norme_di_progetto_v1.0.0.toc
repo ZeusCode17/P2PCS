@@ -39,30 +39,29 @@
 \contentsline {subsubsection}{\numberline {3.1.1}Scopo}{19}{subsubsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.2}Aspettative}{19}{subsubsection.3.1.2}
 \contentsline {subsubsection}{\numberline {3.1.3}Descrizione}{19}{subsubsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.4}Ciclo di vita del documento}{19}{subsubsection.3.1.4}
-\contentsline {subsubsection}{\numberline {3.1.5}Template}{19}{subsubsection.3.1.5}
-\contentsline {subsubsection}{\numberline {3.1.6}Struttura dei documenti}{20}{subsubsection.3.1.6}
-\contentsline {paragraph}{\numberline {3.1.6.1}Prima pagina}{20}{paragraph.3.1.6.1}
-\contentsline {paragraph}{\numberline {3.1.6.2}Registro modifiche}{20}{paragraph.3.1.6.2}
-\contentsline {paragraph}{\numberline {3.1.6.3}Indice}{21}{paragraph.3.1.6.3}
-\contentsline {paragraph}{\numberline {3.1.6.4}Contenuto principale}{21}{paragraph.3.1.6.4}
-\contentsline {paragraph}{\numberline {3.1.6.5}Verbali}{21}{paragraph.3.1.6.5}
-\contentsline {paragraph}{\numberline {3.1.6.6}Note a pi\IeC {\`e} di pagina}{22}{paragraph.3.1.6.6}
-\contentsline {subsubsection}{\numberline {3.1.7}Norme tipografiche}{22}{subsubsection.3.1.7}
-\contentsline {paragraph}{\numberline {3.1.7.1}Convenzioni sui nomi dei file}{22}{paragraph.3.1.7.1}
-\contentsline {paragraph}{\numberline {3.1.7.2}Glossario}{23}{paragraph.3.1.7.2}
-\contentsline {paragraph}{\numberline {3.1.7.3}Stile del testo}{23}{paragraph.3.1.7.3}
-\contentsline {paragraph}{\numberline {3.1.7.4}Elenchi puntati}{23}{paragraph.3.1.7.4}
-\contentsline {paragraph}{\numberline {3.1.7.5}Formati comuni}{23}{paragraph.3.1.7.5}
-\contentsline {paragraph}{\numberline {3.1.7.6}Sigle}{24}{paragraph.3.1.7.6}
-\contentsline {subsubsection}{\numberline {3.1.8}Elementi grafici}{25}{subsubsection.3.1.8}
-\contentsline {paragraph}{\numberline {3.1.8.1}Tabelle}{25}{paragraph.3.1.8.1}
-\contentsline {paragraph}{\numberline {3.1.8.2}Immagini}{25}{paragraph.3.1.8.2}
-\contentsline {paragraph}{\numberline {3.1.8.3}Diagrammi UML}{25}{paragraph.3.1.8.3}
-\contentsline {subsubsection}{\numberline {3.1.9}Strumenti}{25}{subsubsection.3.1.9}
-\contentsline {paragraph}{\numberline {3.1.9.1}\LaTeX }{25}{paragraph.3.1.9.1}
-\contentsline {paragraph}{\numberline {3.1.9.2}T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}{}studio}{25}{paragraph.3.1.9.2}
-\contentsline {paragraph}{\numberline {3.1.9.3}Draw.io}{26}{paragraph.3.1.9.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Template}{19}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}Struttura dei documenti}{19}{subsubsection.3.1.5}
+\contentsline {paragraph}{\numberline {3.1.5.1}Prima pagina}{19}{paragraph.3.1.5.1}
+\contentsline {paragraph}{\numberline {3.1.5.2}Registro modifiche}{20}{paragraph.3.1.5.2}
+\contentsline {paragraph}{\numberline {3.1.5.3}Indice}{20}{paragraph.3.1.5.3}
+\contentsline {paragraph}{\numberline {3.1.5.4}Contenuto principale}{21}{paragraph.3.1.5.4}
+\contentsline {paragraph}{\numberline {3.1.5.5}Verbali}{21}{paragraph.3.1.5.5}
+\contentsline {paragraph}{\numberline {3.1.5.6}Note a pi\IeC {\`e} di pagina}{22}{paragraph.3.1.5.6}
+\contentsline {subsubsection}{\numberline {3.1.6}Norme tipografiche}{22}{subsubsection.3.1.6}
+\contentsline {paragraph}{\numberline {3.1.6.1}Convenzioni sui nomi dei file}{22}{paragraph.3.1.6.1}
+\contentsline {paragraph}{\numberline {3.1.6.2}Glossario}{22}{paragraph.3.1.6.2}
+\contentsline {paragraph}{\numberline {3.1.6.3}Stile del testo}{23}{paragraph.3.1.6.3}
+\contentsline {paragraph}{\numberline {3.1.6.4}Elenchi puntati}{23}{paragraph.3.1.6.4}
+\contentsline {paragraph}{\numberline {3.1.6.5}Formati comuni}{23}{paragraph.3.1.6.5}
+\contentsline {paragraph}{\numberline {3.1.6.6}Sigle}{24}{paragraph.3.1.6.6}
+\contentsline {subsubsection}{\numberline {3.1.7}Elementi grafici}{25}{subsubsection.3.1.7}
+\contentsline {paragraph}{\numberline {3.1.7.1}Tabelle}{25}{paragraph.3.1.7.1}
+\contentsline {paragraph}{\numberline {3.1.7.2}Immagini}{25}{paragraph.3.1.7.2}
+\contentsline {paragraph}{\numberline {3.1.7.3}Diagrammi UML}{25}{paragraph.3.1.7.3}
+\contentsline {subsubsection}{\numberline {3.1.8}Strumenti}{25}{subsubsection.3.1.8}
+\contentsline {paragraph}{\numberline {3.1.8.1}\LaTeX }{25}{paragraph.3.1.8.1}
+\contentsline {paragraph}{\numberline {3.1.8.2}T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}{}studio}{25}{paragraph.3.1.8.2}
+\contentsline {paragraph}{\numberline {3.1.8.3}Draw.io}{26}{paragraph.3.1.8.3}
 \contentsline {subsection}{\numberline {3.2}Gestione della configurazione}{26}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Scopo}{26}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Ciclo di vita della documentazione}{26}{subsubsection.3.2.2}

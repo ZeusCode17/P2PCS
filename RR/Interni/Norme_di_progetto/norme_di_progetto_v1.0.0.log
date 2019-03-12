@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  12 MAR 2019 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  12 MAR 2019 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1409,80 +1409,80 @@ l.35
       <./res/images/drawio.jpg>] (./res/sections/processi_di_supporto.tex
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 31.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 32.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
 
 [19]
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 65.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 62.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [20]
-Underfull \hbox (badness 10000) in paragraph at lines 92--96
+Underfull \hbox (badness 10000) in paragraph at lines 82--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--96
+Underfull \hbox (badness 10000) in paragraph at lines 82--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
 
  []
 
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 96.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 93.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 99--103
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--103
-
- []
-
-
-Overfull \hbox (1.64992pt too wide) in paragraph at lines 103--104
+Overfull \hbox (1.64992pt too wide) in paragraph at lines 93--94
 []\T1/cmr/m/n/10 per "Ti-po-lo-gia" ba-ste-rà in-di-ca-re l'i-ni-zia-le del-la 
 ti-po-lo-gia del ver-ba-le(I=Interno/E=Esterno); 
  []
 
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 130.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 123.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 150--154
+Underfull \hbox (badness 10000) in paragraph at lines 140--144
 
  []
 
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 157.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 152.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
 [23]
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 192.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 189.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [24]
-<res/images/latex.jpg, id=741, 953.5625pt x 662.475pt>
+<res/images/latex.jpg, id=747, 953.5625pt x 662.475pt>
 File: res/images/latex.jpg Graphic file (type jpg)
 <use res/images/latex.jpg>
-Package pdftex.def Info: res/images/latex.jpg  used on input line 214.
+Package pdftex.def Info: res/images/latex.jpg  used on input line 204.
 (pdftex.def)             Requested size: 414.07343pt x 287.67899pt.
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 217.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 207.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [25]
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 230.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 220.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [26pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
@@ -1490,44 +1490,44 @@ Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 230.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.230 		\item \textbf
+l.220 		\item \textbf
                      {Approvazione}: il documento entra in questo stato dopo...
  <./res/images/latex.jpg (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 260--264
+Underfull \hbox (badness 10000) in paragraph at lines 250--254
 
  []
 
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 267.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 257.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
 [27]
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 300.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 290.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [28]
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 338.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 328.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [29]
-Underfull \hbox (badness 10000) in paragraph at lines 364--369
+Underfull \hbox (badness 10000) in paragraph at lines 354--359
 
  []
 
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 369.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 359.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
 [30]
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 428.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 418.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
  [31pdfTeX warning (ext4): destination with the same identifier (name{table.3.4
@@ -1535,45 +1535,45 @@ Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 428.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.428 		\end{itemize}
+l.418 		\end{itemize}
                      ]
-Underfull \hbox (badness 10000) in paragraph at lines 430--442
+Underfull \hbox (badness 10000) in paragraph at lines 420--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--442
+Underfull \hbox (badness 10000) in paragraph at lines 420--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--442
+Underfull \hbox (badness 10000) in paragraph at lines 420--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--442
+Underfull \hbox (badness 10000) in paragraph at lines 420--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--442
+Underfull \hbox (badness 10000) in paragraph at lines 420--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--450
+Underfull \hbox (badness 10000) in paragraph at lines 435--440
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--450
+Underfull \hbox (badness 10000) in paragraph at lines 435--440
 
  []
 
 File: res/images/zeus_code_logo.png Graphic file (type png)
 <use res/images/zeus_code_logo.png>
-Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 450.
+Package pdftex.def Info: res/images/zeus_code_logo.png  used on input line 440.
 
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
 [32] Excluding 'comment' comment.)
@@ -1675,33 +1675,61 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
 (./norme_di_progetto_v1.0.0.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
-Package rerunfilecheck Info: File `norme_di_progetto_v1.0.0.out' has not change
-d.
-(rerunfilecheck)             Checksum: 8764CBCAEF9D54BF3BE1BC81BCBBFBD9;8251.
+
+
+Package rerunfilecheck Warning: File `norme_di_progetto_v1.0.0.out' has changed
+.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `norme_di_progetto_v1.0.0.out':
+(rerunfilecheck)             Before: 8764CBCAEF9D54BF3BE1BC81BCBBFBD9;8251
+(rerunfilecheck)             After:  884EE2FD09915DF35B504DEB07A0259F;8163.
  ) 
 Here is how much of TeX's memory you used:
- 10045 strings out of 492982
- 139339 string characters out of 6134897
+ 10051 strings out of 492982
+ 139441 string characters out of 6134897
  295451 words of memory out of 5000000
  13233 multiletter control sequences out of 15000+600000
  19778 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,17n,43p,851b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfbx0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1
-000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm07
-00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt090
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on norme_di_progetto_v1.0.0.pdf (39 pages, 628995 bytes).
+pdfTeX warning (dest): name{paragraph.3.1.9.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.3.1.9.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.3.1.9.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.1.9} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.3.1.7.6} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.3.1.7.5} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.3.1.7.4} has been referenced but does not
+ exist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfbx0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx100
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on norme_di_progetto_v1.0.0.pdf (39 pages, 627332 bytes).
 PDF statistics:
- 902 PDF objects out of 1000 (max. 8388607)
- 834 compressed objects within 9 object streams
- 159 named destinations out of 1000 (max. 500000)
+ 909 PDF objects out of 1000 (max. 8388607)
+ 841 compressed objects within 9 object streams
+ 165 named destinations out of 1000 (max. 500000)
  917 words of extra memory for PDF output out of 10000 (max. 10000000)
 
