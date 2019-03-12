@@ -220,26 +220,35 @@
 		
 	\subsection{Gestione della configurazione}
 	\subsubsection{Scopo}
-	Lo scopo della configurazione è di creare ordine tra software e documenti. Tutto ciò che è configurato si trova in un posto preciso, ha uno stato identificativo, è modificato secondo procedure e posto sotto versionamento.
+	Lo scopo ultimo della configurazione è di creare coiesione tra software e documenti. Ogni file è caratterizzato da un identificativo univoco, si trova in uno stato di versionamento ed è modificato secondo determinate procedure.
+	\subsubsection{Ciclo di vita della documentazione}
+	\paragraph{Stadi del documento} \mbox{}\\ \mbox{}\\
+	Ogni documento deve necessariamente passare per i seguenti stadi:
+	\begin{itemize}
+		\item \textbf{Sviluppo}: il documento entra in questo stato da quando viene creato fino al momento della verifica. In questo stato il documento viene redatto e sviluppato in ogni sua parte da un Redattore.
+		\item \textbf{Verifica}: il documento entra in questo stato dopo la sua stesura fino al momento dell'approvazione. In questo stato il documento viene controllato in ogni sua parte e in caso di esito positivo passa alla fase di approvazione, in caso contrario verrà riassegnato ad un Redattore per apportare le eventuali migliorie o aggiunte.
+		\item \textbf{Approvazione}: il documento entra in questo stato dopo la sua approvazione da parte di un Verificatore. In questo stato il documento viene approvato dal Responsabile del progetto a seguito del superamento della parte di verifica.
+	\end{itemize}
 	\subsubsection{Versionamento}
 	\paragraph{Codice di versione del documento} \mbox{}\\ \mbox{}\\
-	Ogni documento, deve avere una storia, ricostruibile attraverso le sue versioni. Ogni versione deve corrispondere a una riga della tabella delle modifiche. Ogni numero di versione è composto da tre cifre:
+	Ogni documento è sottoposto a versionamento, ciò permette ai membri del gruppo, o ad utenti esterni, di risalire all'insieme delle modifiche effettuate su quest'ultimo. Ogni versione è riportata nel registro delle modifiche presente ad inizio documento.
+	Il numero di versione è composto da tre cifre:
 	\begin{center}
 		X.Y.Z
 	\end{center}
 	\begin{itemize}
-		\item \textbf{X}: rappresenta una versione stabile del documento, resa tale dopo l' approvazione del responsabile di progetto:
+		\item \textbf{X}: versione ufficiale del documento resa tale dopo l' approvazione da parte del Responsabile di progetto:
 		\begin{itemize}
 			\item inizia da 0;
 			\item viene incrementato dal responsabile di progetto all'approvazione del documento.
 		\end{itemize}
-		\item \textbf{Y}: rappresenta una versione parzialmente stabile del documento che è stata soggetta a verifica da parte di un verificatore:
+		\item \textbf{Y}: versione del documento soggetta a verifica da parte di un Verificatore:
 		\begin{itemize}
 			\item inizia da 0;
-			\item viene incrementato dal verificatore ad ogni verifica;
+			\item viene incrementato dal Verificatore ad ogni verifica;
 			\item quando viene incrementato X, viene riportato a 0.
 		\end{itemize}
-		\item \textbf{Z}: rappresenta una versione instabile del documento in fase di lavorazione da parte dei redattori:
+		\item \textbf{Z}: versione del documento in fase di lavorazione da parte dei Redattori:
 		\begin{itemize}
 			\item inizia da 0;
 			\item viene incrementato dal redattore del documento ad ogni modifica;
@@ -247,54 +256,51 @@
 		\end{itemize}			
 	\end{itemize}
 	\paragraph{Tecnologie} \mbox{}\\ \mbox{}\\
-	Per le parti del progetto da versionare si è scelto di usare il sistema di versionamento distribuito Git, usando il servizio di GitHub per ospitare la repository\glosp remota.
+	E' stato scelto il sistema Git per il versionamento dei file di progetto, la repository remota è invece ospitata dal servizio GitHub. 
 	\paragraph{Repository} \mbox{}\\ \mbox{}\\
-	I membri del team possono interagire con il VCS (Version Control System) sia da linea di comando, sia attraverso software che ne migliorano l'usabilità, come GitFlow e GitKraken. La versione comune e ufficiale del progetto è ospitata in una repository\glosp remota su Github all'indirizzo: \newline \newline
-	\centerline{\url{https://github.com/8LabSolutions/Soldino}}
+	L'accesso alla repository da parte dei membri del gruppo è possibile tramite linea di comando o con l'uso di software come GitHub Desktop e simili.
+	La versione ufficile e aggiornata della repository la si trova al seguente indirizzo di GitHub \newline \newline
+	\centerline{\url{https://github.com/ZeusCode17/P2PCS}}
 	\paragraph{Struttura del repository} \mbox{}\\ \mbox{}\\
-	Ci sono due tipi di repository\glo{}, la cui struttura è identica:
+	Sono presenti due tipi di repository con uguale struttura:
 	\begin{itemize}
-		\item \textbf{locale}: ogni membro del gruppo lavora sui file clonati dal repository\glo{} remoto nel proprio computer;
-		\item \textbf{remoto}: pubblicato su GitHub, contiene il lavoro svolto da ogni componente e che viene condiviso con il team.
-	\end{itemize}						
-	Entrambe i tipi di repository\glosp sono organizzati in cartelle:
+		\item \textbf{locale}: repository locale clonata sul pc di ogni mebro del gruppo nella quale vengono eseguite le modifiche.
+		\item \textbf{remoto}: repository remota ospitata su GitHub aggiornata con tutte le modifiche apportate da ogni membro del gruppo.
+	\end{itemize}		%start-----------------------------------------------------------0000000000000000000000				
+	Entrambi i tipi di repository\glosp sono organizzati in cartelle:
 	\begin{itemize}
 		\item \textbf{latex}: contiene tutti i file che definiscono il template \LaTeX{} per la creazione di un nuovo documento. Tra questi vi sono i file che definiscono i comandi personalizzati utilizzati dal gruppo e i package che devono essere inclusi per poter compilare i documenti;
-		\item \textbf{Guide}: cartella che contiene delle brevi guide di carattere pratico, come brevi spiegazioni per l'utilizzo dei comandi \LaTeX{} poco conosciuti;
 		\item \textbf{RR}: raccoglie i file sorgenti per la compilazione dei documenti, suddivisi tra esterni ed interni, realizzati per la Revisione dei Requisiti;
 		\item Saranno aggiunte in futuro cartelle distinte nominate \textbf{RP}, \textbf{RQ} e \textbf{RA} contenenti i file delle rispettive consegne.
 	\end{itemize}
-	La suddivisione dei file per revisione aiuta ad evidenziare il lavoro svolto per ogni consegna e migliora la tracciabilità dei file all'interno di ognuna di esse.
+	Abbiamo scelto la suddivisione dei file per revisione, ciò evidenzia in modo chiaro il lavoro svolto prima di ogni consegna e rende efficacie la tracciabilità dei file.
 	\paragraph{Tipi di file e .gitignore} \mbox{}\\ \mbox{}\\
 	I file utilizzati per la documentazione del progetto sono:
 	\begin{itemize}
-		\item file con estensione .tex di \LaTeX{};
+		\item file con estensione .tex di \LaTeX{}, contenenti il codice sorgente del file;
 		\item file con estensione .pdf che sono oggetto di consegna;
-		\item alcuni file testuali e immagini di supporto ai precedenti.
+		\item file testuali e immagini impiegati nei file \LaTeX{} e .pdf.
 	\end{itemize}			
 	Il file ".gitignore" è presente al livello più esterno della repository\glosp ed elenca tutti i file da escludere dal versionamento. 
 	\paragraph{Utilizzo di Git} \mbox{}\\ \mbox{}\\
-	Il repository\glosp di Git è composto da vari branch, per lavorare in modo modulare e collaborativo.  
-	Quindi viene consiglia questa procedura:
-	\begin{enumerate}
-		\item scegliere il branch su cui si vuole lavorare in base al compito assegnato;
-		\item eseguire il pull dal repository\glosp remoto che effettua l'aggiornamento del proprio repository\glosp locale;
-		\item svolgere il lavoro assegnato, che può consiste nell'aggiunta di nuovo materiale o nella modifica di file già presenti;
-		\item eseguire il comando di aggiunta dei file nuovi o modificati da condividere all'area di staging\glo;
-		\item eseguire il comando di commit dei file aggiunti, corredato da un messaggio che identifica il task eseguito;
-		\item eseguire il push del commit sul repository\glosp remoto.
-	\end{enumerate}
+	Il repository\glosp di Git è composto da diversi branch, ciò permette di lavorare in modo parallelo tra i membri del team.  
+	I passaggi che vengono eseguiti sono i seguenti:
+	\begin{itemize}
+		\item viene scelto il branch su cui si intende lavorare;
+		\item si esegue il pull dal repository\glosp remoto che effettua l'aggiornamento del proprio repository\glosp locale;
+		\item si svolge il lavoro assegnato,che varia dalla modifica all'aggiunta di nuovi file;
+		\item si aggiungono i nuovi file o file modificati all'area di staging\glo prima di eseguire il commit;
+		\item si esegue il comando di commit dei file aggiunti, con annesso un messaggio che identifica il lavoro effettuato;
+		\item si esegue il push del commit sul repository\glosp remoto.
+	\end{itemize}
 	\paragraph{Gestione delle modifiche} \mbox{}\\ \mbox{}\\
-	Tutti i membri del team possono modificare i file in ogni branch, ad eccezione di quelli presenti nel branch master, per il quale occorre fare una pull request\glosp e ottenere l'approvazione di un altro membro .\newline
-	Per effettuare modifiche maggiori sui contenuti o sulla struttura dei file è previsto di:
+	Per effettuare semplici modifiche quali errori grammaticali o migliorie di lessico non è necessaria alcuna approvazione dal responsabile del progetto, è necessario però allegare al commit un messaggio chiaro che indica le modifiche effettuate.
+	Per quanto riguarda modifiche maggiori la procedura da seguire è la seguente:
 	\begin{itemize}
 		\item contattare il responsabile del file da modificare;
 		\item suggerire la modifica da effettuare;
-		\item se il responsabile valuta positivamente la modifica, allora la applica.
+		\item se il responsabile valuta positivamente la modifica, allora la applica o da il permesso di modifica.
 	\end{itemize}
-	Per modifiche minori, come correzioni grammaticali o miglioramenti sintattici, si consiglia di modificare indipendentemente.\newline
-	In ambo i casi è opportuno commentare i propri commit con chiarezza per risalire facilmente alle modifiche.
-
 \subsection{Gestione della Qualità}
 	\subsubsection{Scopo}
 	Lo scopo è di garantire che il prodotto e i servizi offerti rispettino gli obiettivi di qualità e che i bisogni del proponente siano soddisfatti.
