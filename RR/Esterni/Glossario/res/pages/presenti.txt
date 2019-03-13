@@ -48,9 +48,9 @@ linter
 milestone
 modello a v
 modello di sviluppo
---movens
+movens
 node.js
---octalysis
+octalysis
 open-source
 partizione di equivalenza
 peer-to-peer
