@@ -1,6 +1,5 @@
 add-on
 agile
-aliquota
 apache kafka
 api
 area di staging
@@ -14,15 +13,11 @@ boilerplate
 camelcase
 capitolato
 changelog
-chiave
 coesione
 comportamento emergente
-conferma d'acquisto
-conferma d'ordine
 continuous delivery
 continuous integration
 copertura
-cubit
 dapp
 dashboard
 design pattern
@@ -32,30 +27,19 @@ docker
 documento esterno
 documento interno
 driver 
-ecr20
-eip-712
-escrow
 eslint
-ether
-ethereum
-ethereum virtual machine
-event-driven
 firebase storage
 framework
 freeling
 front end
 gamification
-ganache cli
 gantt
-gas
 gigacore
 gitlab
-governo
 hunpos
 json
 lint
 linter
-metamask
 milestone
 modello a v
 modello di sviluppo
@@ -65,8 +49,6 @@ partizione di equivalenza
 peer-to-peer
 plug-in
 pos tagging
-prezzo lordo
-prezzo netto
 product baseline
 proof of concept
 pull request
@@ -95,10 +77,7 @@ stub
 surge.sh
 technology baseline
 telegram
-testrpc
 time series
-token
-truffle
 twelve-factor app
 uml
 wallet
