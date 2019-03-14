@@ -31,7 +31,7 @@
 		Ogni membro del gruppo ricopre un ruolo che viene assegnato a rotazione, le attività svolte da ogni ruolo sono definite in modo chiaro nel documento \textit{Piano di Progetto}.
 		I ruoli che ogni componente è tenuto a rappresentare sono descritti in generale di seguito.
 			\paragraph{Responsabile di progetto} \mbox{}\\ \mbox{}\\
-			Il responsabile di progetto è incaricato di gestire le comunicazioni, fa da referente sia per il committente\glosp che per il fornitore.
+			Il responsabile di progetto è incaricato di gestire le comunicazioni, fa da referente sia per il committente\glosp che per il fornitore.\newline
 			Il responsabile si occupa di:
 			\begin{itemize}
 				\item pianificazione delle attività di progetto;
@@ -40,47 +40,49 @@
 				\item approvare la documentazione.
 			\end{itemize}
 			\paragraph{Amministratore di progetto} \mbox{}\\ \mbox{}\\
-			L'amministratore coordina l'ambiente di lavoro, assumendosi la responsbilità di gestire la capacità operativa.
+			L'amministratore coordina l'ambiente di lavoro, assumendosi la responsbilità di gestire la capacità operativa.\newline
 			Egli si fa carico dei seguenti aspetti:
 			\begin{itemize}
-				\item dirigere le infrastrutture di supporto;
+				\item amministra i servizi di supporto, come documentazione e strumenti;
 				\item risolvere problemi legati alla gestione dei processi;
-				\item gestire la documentazione;
-				\item controllare versioni e configurazioni.%povero can
+				\item effettua controlli volti alla correzzione,verifica,aggiornamento e approvazione della documentazione;
+				\item controlla versionamento e configuarazione dei prodotti.
 			\end{itemize}
 			\paragraph{Analista} \mbox{}\\ \mbox{}\\
-			L'analista si occupa di analisi dei problemi e del dominio applicativo. Questa figura non sarà sempre presente durante il progetto. \\
+			L'analista è la figura incaricata di studiare il problema indicato nel modo più approfondito possibile, così da poter fornire eventuali strumenti e metodologie per affrontarlo. 
+			Partecipa per un periodo limitato di tempo, è di grande importanza durante la stesura del documento \textit{Analisi dei requisiti}.\newline
 			Le sue responsabilità sono:
 			\begin{itemize}
-				\item studio del dominio del problema;
-				\item definizione della complessità  e dei requisiti dello stesso;
-				\item redazione del documenti: \textit{Analisi dei Requisiti} e \textit{Studio di Fattibilità}.
+				\item studio del dominio del problema e della sua complessità;
+				\item analisi delle richieste implicite ed esplicite;
+				\item stesura dei documenti: \textit{Analisi dei Requisiti} e \textit{Studio di Fattibilità}.
 			\end{itemize}
 			\paragraph{Progettista} \mbox{}\\ \mbox{}\\
-			Il progettista gestisce gli aspetti tecnologici e tecnici del progetto.\\
+			Il progettista ha il compito di trovare una soluzione ai problemi rilevati dall'analista, fornendo aspetti tecnici e tecnologici coerenti.\newline
 			Il progettista deve:
 			\begin{itemize}
-				\item effettuare scelte efficienti ed ottimizzate su aspetti tecnici del progetto;
-				\item sviluppare un'architettura che sfrutti tecnologie note ed ottimizzate, su cui basare un prodotto stabile e mantenibile.
+				\item applicare soluzioni note ed ottime.
+				\item operare scelte che portino ad una soluzione efficiente rispetto ai requisiti, considerando costi e risorse;
+				\item sviluppare l'architettura seguendo un insieme di best practice per ottenere un progetto solido e facilmente mantenibile.
 			\end{itemize}
 			\paragraph{Programmatore} \mbox{}\\ \mbox{}\\
-			Il programmatore è responsabile della codifica del progetto e delle componenti di supporto che serviranno per effettuare le prove di verifica e validazione sul prodotto.\\
+			Il programmatore è la figura responsabile delle attività di codifica e delle componenti necessarie per effettuare le prove di verifica.
 			Il programmatore si occupa di:
 			\begin{itemize}
-				\item implementare le decisioni del progettista;
-				\item creare o gestire componenti di supporto per la verifica e validazione del codice.
+				\item implementare le decisioni del Progettista;
+				\item scrivere codice che rispetti le metriche predefinite, sia versionato e documentato;
+				\item creare e gestire componenti di supporto per la verifica e validazione del codice.
 			\end{itemize}
 			\paragraph{Verificatore} \mbox{}\\ \mbox{}\\
-			Il verificatore si occupa di controllare il prodotto del lavoro svolto dagli altri membri del team, sia esso codice o documentazione. Per le correzioni si affida agli standard definiti nelle \textit{Norme di Progetto v1.0.0}, nonché alla propria esperienza e capacità di giudizio.\\
+			Il verificatore ha il compito di supervisionare il prodotto del lavoro degli altri mebri del team, sia esso codice o documentazione. Segue delle linee guida volte al controllo e correzione di errori presenti nel documento \textit{Norme di progetto}, nonché alla propria esperienza e capacità di giudizio.\\
 			Il verificatore deve:
 			\begin{itemize}
-				\item ispezionare i prodotti in fase di revisione, avvalendosi delle tecniche e degli strumenti definiti nelle \textit{Norme di Progetto};
-				\item evidenziare difetti ed errori del prodotto in esame;
-				\item segnalare eventuali errori trovati all'autore dell'oggetto preso in esame o alla persona che ha responsabilità su di esso.
+				\item controllare la conformità del prodotto in ogni suo stadio di vita;
+				\item sagnalare al Responsabile di progetto eventuali problemi causati dalla violazione del documento \textit{Norme di progetto}.
+				\item segnalare errori meno importanti all'autore dell'oggetto in questione per un eventuale correzzione.
 			\end{itemize}
 		\subsubsection{Procedure}
-
-		Seguono le procedure che il gruppo adotterà durante la realizzazione del progetto. Le comunicazioni saranno interne, ossia coinvolgeranno i partecipanti del gruppo, o esterne, ossia includeranno anche proponente e committente.
+		Insieme di linee guida che i membri del gruppo seguiranno durante lo sviluppo del progetto.
 			\paragraph{Gestione delle comunicazioni} \mbox{}\\ \mbox{}\\
 			\textbf{Comunicazioni interne} \newline \newline
 			Le comunicazioni interne al gruppo avvengono utilizzando Slack\glo. Slack\glosp è un software di collaborazione aziendale adatto al lavoro di gruppo. Permette di separare i vari argomenti di discussione in canali e ogni team ha la possibilità di creare il proprio workspace. Inoltre permette di integrare servizi di terze parti utili al gruppo, tra cui bot e videochiamate. Le sue funzionalità e la sua conformità agli scopi del progetto ne hanno indotto la scelta. \newline \newline
