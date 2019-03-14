@@ -18,6 +18,7 @@ comportamento emergente
 continuous delivery
 continuous integration
 copertura
+--core-drive
 dapp
 dashboard
 design pattern
@@ -36,14 +37,20 @@ gamification
 gantt
 gigacore
 gitlab
+--grafana
+--henshin
+--hosting
 hunpos
 json
+--kotlin
 lint
 linter
 milestone
 modello a v
 modello di sviluppo
+movens
 node.js
+octalysis
 open-source
 partizione di equivalenza
 peer-to-peer
