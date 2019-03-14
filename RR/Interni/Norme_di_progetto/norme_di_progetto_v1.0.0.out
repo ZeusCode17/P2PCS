@@ -72,40 +72,33 @@
 \BOOKMARK [4][-]{paragraph.3.2.3.5}{Tipi di file e .gitignore}{subsubsection.3.2.3}% 72
 \BOOKMARK [4][-]{paragraph.3.2.3.6}{Utilizzo di Git}{subsubsection.3.2.3}% 73
 \BOOKMARK [4][-]{paragraph.3.2.3.7}{Gestione delle modifiche}{subsubsection.3.2.3}% 74
-\BOOKMARK [2][-]{subsection.3.3}{Gestione della Qualit\340}{section.3}% 75
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Scopo}{subsection.3.3}% 76
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Aspettative}{subsection.3.3}% 77
-\BOOKMARK [3][-]{subsubsection.3.3.3}{Descrizione}{subsection.3.3}% 78
-\BOOKMARK [3][-]{subsubsection.3.3.4}{Attivit\340}{subsection.3.3}% 79
-\BOOKMARK [3][-]{subsubsection.3.3.5}{Strumenti}{subsection.3.3}% 80
-\BOOKMARK [2][-]{subsection.3.4}{Verifica}{section.3}% 81
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Scopo}{subsection.3.4}% 82
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Aspettative}{subsection.3.4}% 83
-\BOOKMARK [3][-]{subsubsection.3.4.3}{Descrizione}{subsection.3.4}% 84
-\BOOKMARK [3][-]{subsubsection.3.4.4}{Attivit\340}{subsection.3.4}% 85
-\BOOKMARK [4][-]{paragraph.3.4.4.1}{Analisi}{subsubsection.3.4.4}% 86
-\BOOKMARK [4][-]{paragraph.3.4.4.2}{Test}{subsubsection.3.4.4}% 87
-\BOOKMARK [3][-]{subsubsection.3.4.5}{Strumenti}{subsection.3.4}% 88
-\BOOKMARK [4][-]{paragraph.3.4.5.1}{Verifica ortografica}{subsubsection.3.4.5}% 89
-\BOOKMARK [4][-]{paragraph.3.4.5.2}{Validazione W3C}{subsubsection.3.4.5}% 90
-\BOOKMARK [2][-]{subsection.3.5}{Validazione}{section.3}% 91
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Scopo}{subsection.3.5}% 92
-\BOOKMARK [3][-]{subsubsection.3.5.2}{Attivit\340}{subsection.3.5}% 93
-\BOOKMARK [1][-]{section.4}{Processi Organizzativi}{}% 94
-\BOOKMARK [2][-]{subsection.4.1}{Gestione Organizzativa}{section.4}% 95
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Scopo}{subsection.4.1}% 96
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Aspettative}{subsection.4.1}% 97
-\BOOKMARK [3][-]{subsubsection.4.1.3}{Descrizione}{subsection.4.1}% 98
-\BOOKMARK [3][-]{subsubsection.4.1.4}{Ruoli di progetto}{subsection.4.1}% 99
-\BOOKMARK [4][-]{paragraph.4.1.4.1}{Responsabile di progetto}{subsubsection.4.1.4}% 100
-\BOOKMARK [4][-]{paragraph.4.1.4.2}{Amministratore di progetto}{subsubsection.4.1.4}% 101
-\BOOKMARK [4][-]{paragraph.4.1.4.3}{Analista}{subsubsection.4.1.4}% 102
-\BOOKMARK [4][-]{paragraph.4.1.4.4}{Progettista}{subsubsection.4.1.4}% 103
-\BOOKMARK [4][-]{paragraph.4.1.4.5}{Programmatore}{subsubsection.4.1.4}% 104
-\BOOKMARK [4][-]{paragraph.4.1.4.6}{Verificatore}{subsubsection.4.1.4}% 105
-\BOOKMARK [3][-]{subsubsection.4.1.5}{Procedure}{subsection.4.1}% 106
-\BOOKMARK [4][-]{paragraph.4.1.5.1}{Gestione delle comunicazioni}{subsubsection.4.1.5}% 107
-\BOOKMARK [4][-]{paragraph.4.1.5.2}{Gestione degli incontri}{subsubsection.4.1.5}% 108
-\BOOKMARK [4][-]{paragraph.4.1.5.3}{Gestione degli strumenti di coordinamento}{subsubsection.4.1.5}% 109
-\BOOKMARK [4][-]{paragraph.4.1.5.4}{Gestione dei rischi}{subsubsection.4.1.5}% 110
-\BOOKMARK [3][-]{subsubsection.4.1.6}{Strumenti}{subsection.4.1}% 111
+\BOOKMARK [2][-]{subsection.3.3}{Verifica}{section.3}% 75
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Aspettative}{subsection.3.3}% 76
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Descrizione}{subsection.3.3}% 77
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Attivit\340}{subsection.3.3}% 78
+\BOOKMARK [4][-]{paragraph.3.3.3.1}{Analisi}{subsubsection.3.3.3}% 79
+\BOOKMARK [4][-]{paragraph.3.3.3.2}{Test}{subsubsection.3.3.3}% 80
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Strumenti}{subsection.3.3}% 81
+\BOOKMARK [4][-]{paragraph.3.3.4.1}{Verifica ortografica}{subsubsection.3.3.4}% 82
+\BOOKMARK [4][-]{paragraph.3.3.4.2}{Validazione W3C}{subsubsection.3.3.4}% 83
+\BOOKMARK [2][-]{subsection.3.4}{Validazione}{section.3}% 84
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Scopo}{subsection.3.4}% 85
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Attivit\340}{subsection.3.4}% 86
+\BOOKMARK [1][-]{section.4}{Processi Organizzativi}{}% 87
+\BOOKMARK [2][-]{subsection.4.1}{Gestione Organizzativa}{section.4}% 88
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Scopo}{subsection.4.1}% 89
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Aspettative}{subsection.4.1}% 90
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Descrizione}{subsection.4.1}% 91
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Ruoli di progetto}{subsection.4.1}% 92
+\BOOKMARK [4][-]{paragraph.4.1.4.1}{Responsabile di progetto}{subsubsection.4.1.4}% 93
+\BOOKMARK [4][-]{paragraph.4.1.4.2}{Amministratore di progetto}{subsubsection.4.1.4}% 94
+\BOOKMARK [4][-]{paragraph.4.1.4.3}{Analista}{subsubsection.4.1.4}% 95
+\BOOKMARK [4][-]{paragraph.4.1.4.4}{Progettista}{subsubsection.4.1.4}% 96
+\BOOKMARK [4][-]{paragraph.4.1.4.5}{Programmatore}{subsubsection.4.1.4}% 97
+\BOOKMARK [4][-]{paragraph.4.1.4.6}{Verificatore}{subsubsection.4.1.4}% 98
+\BOOKMARK [3][-]{subsubsection.4.1.5}{Procedure}{subsection.4.1}% 99
+\BOOKMARK [4][-]{paragraph.4.1.5.1}{Gestione delle comunicazioni}{subsubsection.4.1.5}% 100
+\BOOKMARK [4][-]{paragraph.4.1.5.2}{Gestione degli incontri}{subsubsection.4.1.5}% 101
+\BOOKMARK [4][-]{paragraph.4.1.5.3}{Gestione degli strumenti di coordinamento}{subsubsection.4.1.5}% 102
+\BOOKMARK [4][-]{paragraph.4.1.5.4}{Gestione dei rischi}{subsubsection.4.1.5}% 103
+\BOOKMARK [3][-]{subsubsection.4.1.6}{Strumenti}{subsection.4.1}% 104
