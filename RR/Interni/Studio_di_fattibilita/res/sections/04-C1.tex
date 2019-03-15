@@ -9,19 +9,19 @@
 Il progetto Butterfly propone lo sviluppo di una piattaforma di notifica che raccolga le segnalazioni provenienti dai vari applicativi utilizzati dall’azienda e le riporti nella forma desiderata dall’utilizzatore finale.
 
 \subsubsection{Finalità del progetto}
-Il prodotto finale utilizza un pattern Producer-Consumer\glosp che raccoglie le varie segnalzioni mandate dalle applicazioni e le indirizza attraverso i canali scelti dall’utilizzatore.L’azienda propone una soluzione a quattro componenti, così strutturate:
+Il prodotto finale utilizza un pattern Producer-Consumer\glosp che raccoglie le varie segnalzioni mandate dalle applicazioni e le indirizza attraverso i canali scelti dall’utilizzatore. L’azienda propone una soluzione a quattro componenti, così strutturate:
 \begin{itemize}
-	\item \textbf{Producers}: raccolgono le segnalazioni provenienti dalle varie applicazioni e le pubblicano, sotto forma di messaggio, all’interno dello specifico topic\glosp;
-	\item \textbf{Broker}: strumento che istanzia e gestisce i topic\glosp;
-	\item \textbf{Consumers}: componenti che hanno il compito di abbonarsi ai topic\glosp adeguati, recuperarne i messaggi ed inviarli verso i destinatari finali. I componenti richiesti hanno come finalità l’invio di segnalazioni attraverso Telegram, Slack e Email;
+	\item \textbf{Producers}: raccolgono le segnalazioni provenienti dalle varie applicazioni e le pubblicano, sotto forma di messaggio, all’interno dello specifico topic\glo;
+	\item \textbf{Broker}: strumento che istanzia e gestisce i topic;
+	\item \textbf{Consumers}: componenti che hanno il compito di abbonarsi ai topic adeguati, recuperarne i messaggi ed inviarli verso i destinatari finali. I componenti richiesti hanno come finalità l’invio di segnalazioni attraverso Telegram\glo, Slack\glosp e Email;
     \item \textbf{Componente custom specifico}: funzione che permette, attraverso dei metadati relativi agli utenti, di inviare le informazioni solo a chi interessato.
 \end{itemize}
 \subsubsection{Tecnologie interessate}
 Per lo sviluppo dei componenti applicativi, l'azienda proponente consiglia:
 \begin{itemize}
-	\item \textbf{Java}, \textbf{Python}\glosp, \textbf{Node.js}\glosp: alternative di linguaggi per lo sviluppo dell'applicativo suggerite dal proponente; 
-	\item\textbf{Apache Kafka}\glosp: software open-source per la gestione delle operazioni tra i vari client, da utilizzare come Broker;
-	\item \textbf{Docker}\glosp: per creare i container relativi alle diverse componenti;
+	\item \textbf{Java}, \textbf{Python}\glo, \textbf{Node.js}\glo: alternative di linguaggi per lo sviluppo dell'applicativo suggerite dal proponente; 
+	\item\textbf{Apache Kafka}\glo: software open-source per la gestione delle operazioni tra i vari client, da utilizzare come Broker;
+	\item \textbf{Docker}\glo: per creare i container relativi alle diverse componenti;
 	\item \textbf{API\glosp Redmine}\glo,  \textbf{GitLab}\glo,  \textbf{SonarQube}\glo,  \textbf{Telegram}\glo, \textbf{Slack}\glo: utilizzate per potersi interfacciarsi con omonime applicazioni.
 \end{itemize}
 Ulteriori richieste del proponente:

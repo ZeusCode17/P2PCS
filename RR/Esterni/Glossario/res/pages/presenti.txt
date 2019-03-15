@@ -1,91 +1,100 @@
+Leggenda:
+* le abbiamo
+-- da inserire
+  non le abbiamo ancora
+
+
 add-on
 agile
-apache kafka
-api
+*apache kafka
+*api
 area di staging
 artefatti
 attore
-aws
-back end
-blockchain
+*aws
+*back end
+*blockchain
 body of knowledge
 boilerplate
+*bootstrap
 camelcase
-capitolato
+*capitolato
 changelog
-coesione
+*coesione
 comportamento emergente
 continuous delivery
 continuous integration
 copertura
 --core-drive
-dapp
-dashboard
+*dapp
+*dashboard
 design pattern
-devops
+*devops
 dilazione
-docker
+*docker
 documento esterno
 documento interno
-driver 
-eslint
-firebase storage
-framework
-freeling
-front end
-gamification
+driver
+--ethereum
+--evm 
+*firebase storage
+*framework
+*freeling
+*front end
+*gamification
 gantt
 gigacore
-gitlab
+*gitlab
 --grafana
 --henshin
 --hosting
-hunpos
-json
+*hunpos
+*json
 --kotlin
 lint
 linter
-milestone
+*milestone
 modello a v
 modello di sviluppo
-movens
-node.js
-octalysis
-open-source
+--metamask
+*movens
+*node.js
+*octalysis
+*open-source
 partizione di equivalenza
-peer-to-peer
-plug-in
+*peer-to-peer
+*plug-in
 pos tagging
 product baseline
 proof of concept
 pull request
-python
+*python
 raiden
-react
-redmine
-redux
-repository
+*react
+*redmine
+*redux
+*repository
 rest
-rete bayesiana
+*rete bayesiana
 ropsten
 sass
-scss
+*scss
 server-side
-shortcut
-skill
-slack
-smart contract
+*shortcut
+*skill
+*slack
+*smart contract
 snake case
 solidity
-sonarqube
+*sonarqube
 staging
 stand-up
 stub
 surge.sh
 technology baseline
-telegram
+*telegram
 time series
 twelve-factor app
-uml
+*uml
 wallet
-workflow
+*workflow
