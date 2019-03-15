@@ -8,26 +8,27 @@
 \end{figure}
 \begin{description}[style=nextline]
 	\item[Utente generico]
-	Si riferisce ad un utente generico che accede alla piattaforma dal sito web.
+	Si riferisce ad un utente generico che entra nell'applicazione.
 	\item[Utente non autenticato]
-	Si riferisce ad un utente generico che non ha ancora effettuato l'autenticazione alla piattaforma.
+	Si riferisce ad un utente generico che non ha ancora effettuato l'autenticazione nell'applicazione.
 	\item[Utente autenticato]
-	Si riferisce ad un utente generico che si è autenticato nel sistema con la procedura di login. Ciò implica che sia in possesso di una chiave\glosp valida sulla rete. Ethereum\glosp con la quale, precedentemente, ha portato a termine la procedura di autenticazione.
-	\item[Cittadino] Si riferisce ad un utente che si è autenticato nel sistema con il ruolo di cittadino.
-	\item[Azienda] Si riferisce ad un utente che si è autenticato nel sistema con il ruolo di azienda. Le azioni sono eseguite considerando l'azienda come persona giuridica, nonostante le azioni vengano eseguite da un suo rappresentante.
-	\item[Governo\glosp] Si riferisce ad un utente che si è autenticato al sistema con il ruolo di governo\glo. Nelle parti successive del documento tale parola verrà intesa con tale significato.
+	Si riferisce ad un utente generico che si è autenticato nell'applicazione con la procedura di login. 
+	\item[Usufruente del veicolo]
+	Si riferisce ad un utente autenticato che ha la possibilità di ricercare, in una zona scelta ed ad un un determinato orario, un veicolo disponibile con la possibilità di prenderlo in prestito\glo.
+	\item[Proprietario del veicolo]
+	Si riferisce ad un utente autenticato che mette in prestito il proprio veicolo ad un determinato orario ed in una determinata zona.	
 \end{description}
 \subsubsection{Attori secondari}
 \begin{description}[style=nextline]
-	\item[MetaMask]
-	Plug-in\glosp per browser che permette di interfacciarsi con la rete Ethereum\glosp e di validare le transazioni con la propria chiave privata.
+	\item[Movens]
+	Piattaforma\glosp sviluppata da Henshin\glosp per gestire gli utenti e i vari servizi dell'applicazione.
 	
 \end{description}
 
 \subsection{Elenco dei casi d'uso}
 In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'uso rappresenta uno scenario per uno o più attori, ovviamente applicabile anche ad eventuali attori derivati. Ogni caso d'uso, inoltre, viene descritto tramite diagrammi dei casi d'uso e possiede una precondizione seguita da una postcondizione.
 \subsubsection*{Operazioni utenti}
-Di seguito sono riportati tutti i casi d'uso che coinvolgono come attore primario l'utente generico, l'utente non autenticato, l'utente autenticato, il cittadino e parte dei casi d'uso che coinvolgono l'azienda.
+Di seguito sono riportati tutti i casi d'uso che coinvolgono come attore primario l'utente generico, l'utente non autenticato, l'utente autenticato, il proprietario del veicolo e l'usufruente.
 
 \begin{figure}[H]
 	\includegraphics[width=14cm]{res/images/UseCase1-8.png}
