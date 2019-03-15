@@ -298,7 +298,7 @@
 	Il processo di verifica rispetta i punti seguenti:	
 	\begin{itemize}
 		\item effettuato seguendo procedure definite;
-		\item criteri chiari e affidabili da seguire per verificare;
+		\item criteri chiari e affidabili da seguire per verificare il prodotto;
 		\item ogni fase succesiva attraversata dal prodotto è verificata;
 		\item la verifica porta il prodotto in uno stato stabile;
 		\item rende possibile la validazione.
@@ -307,61 +307,33 @@
 	Il processo di verifica prende in input ciò che è già stato prodotto e lo restituisce in uno stato conforme alle aspettative. Per ottenere tale risultato ci si affida a processi di analisi e test.
 	\subsubsection{Attività}
 		\paragraph{Analisi} \mbox{}\\ \mbox{}\\
-		Il processo di analisi si suddivide in statica e dinamica. \newline \newline
-			\textbf{Analisi statica} \mbox{}\\ \mbox{}\\
+		Il processo di analisi consiste nell'analisi del codice sorgente e nella sua suucessiva esecuzione. Si suddivide in statica e dinamica. \newline \newline
+			\subparagraph{Analisi statica} \mbox{}\\ \mbox{}\\
 			L'analisi statica effettua controlli su documenti e codice, di cui valuta e applica la correttezza (intesa come assenza di errori e difetti), la conformità a regole e la coesione\glosp dei componenti.\newline Per effettuare analisi statica esistono metodi manuali di lettura (attuati da persone) e metodi formali (attuati da macchine). Quelli manuali sono due:
 			\begin{itemize}
 				\item \textbf{Walkthrough}: i vari componenti del team analizzano gli oggetti nella loro totalità per cercare anomalie, senza sapere inizialmente se vi siano difetti, quali e dove siano;
 				\item \textbf{Inspection}: i verificatori usano liste di controllo per fare ispezione cercando errori specifici in parti specifiche.
 			\end{itemize}
-			A seguire sono descritte le liste di controllo utilizzabili per le ispezioni. Si prevede l'ampliamento delle viste al progredire delle stesse ispezioni e degli errori trovati.
-%\begin{comment}
-			\begin{table}[H]
-				\centering\renewcommand{\arraystretch}{1.5}
-				\arrayrulecolor{white}
-				\caption{Errori frequenti nei documenti}
-				\begin{tabular}{c|c}
-					
-					\rowcolorhead
-					{\colorhead \textbf{Oggetto}} &
-					{\colorhead \textbf{Controllo} }\\
-					
-					\rowcolorlight
-					{\colorbody Formato data} & {\colorbody Deve seguire il formato americano \textit{YYYY-MM-DD}} 
-					\\
-					
-					\rowcolordark
-					{\colorbody Sintassi} & {\colorbody  La frase è troppo complessa e può essere semplificata } 
-					\\	
-					
-					\rowcolorlight
-					{\colorbody Parte mancante} & {\colorbody Controllare titoli vuoti o sezioni di grandezza insolita} 
-					\\
-					
-					\rowcolordark
-					{\colorbody Forma dei verbi} & {\colorbody In generale è preferibile il presente indicativo} 
-					\\
-					
-					\rowcolorlight
-					{\colorbody Punteggiatura degli elenchi} & {\colorbody Ogni voce termina in \textbf{";"} eccetto l'ultima che termina in \textbf{"."}} 
-					\\
-				\end{tabular}
-			\end{table}
-%\end{comment}
-			% PLACEHOLDER: lista di ispezione del codice, da aggiungere quando si fa il codice.				
-			\mbox{}\\								
-			\textbf{Analisi dinamica} \mbox{}\\ \mbox{}\\
-			L'analisi dinamica è una tecnica di analisi del prodotto software che richiede la sua esecuzione. Viene effettuata  mediante dei test che verificano se il prodotto funziona e se ci sono anomalie. 
+			textbf{Tipici errori all'interno dei documenti}
+			\begin{itemize}
+				\item \textbf{Formato data}:Si utilizza il formato americano YYYY-MM-DD;
+				\item \textbf{Forme verbali}:Si deve utilizzare il più possibile l'indicativo, cercando di rispettare le concordanze verbali;
+				\item \textbf{Punteggiatura degli elenchi}:Ogni voce dell'elenco termina con ";" fatta eccezione per l'ultima, la quale termina con ".";
+				\item \textbf{Sintassi}:Le frasi devono essere semplici e poco articolate per facilitarne la comprensione;
+				\item \textbf{Parti mancanti}:Controllare che non ci siano errori di formattazione o sezioni e titoli vuoti.
+			\end{itemize}			
+														
+			\subparagraph{Analisi dinamica} \mbox{}\\ \mbox{}\\
+			Il processo di analisi dinamica verrà applicato solamente al codice del software prodotto e consisterà nella creazione ed esecuzione di una serie di test sullo stesso. 
 			
 		\paragraph{Test} \mbox{}\\ \mbox{}\\
-		I test sono l'attività fondamentale dell'analisi dinamica: il loro scopo è verificare che il codice scritto funzioni correttamente.
 		Per ogni test devono essere definiti i seguenti parametri:
 		\begin{itemize}
-			\item \textbf{ambiente}: sistema hardware e software sul quale verrà eseguito il test;
-			\item \textbf{stato iniziale}: lo stato iniziale dal quale il test viene eseguito;
+			\item \textbf{ambiente}: sistema hardware e software sul quale viene eseguito il test;
+			\item \textbf{stato iniziale}: lo stato iniziale dal quale  viene eseguito il test;
 			\item \textbf{input}: input inserito;
 			\item \textbf{output}: output atteso;
-			\item \textbf{istruzioni aggiuntive}: ulteriori istruzioni su come va eseguito il test e su come vanno interpretati i risultati ottenuti.
+			\item \textbf{istruzioni aggiuntive}:ulteriori istruzioni su come e dove eseguire il test e su come interpretare i risultati ottenuti.
 		\end{itemize}
 		Test ben scritti devono:
 		\begin{itemize}
@@ -373,20 +345,22 @@
 		\end{itemize}	
 			
 		\noindent{Ci sono vari tipi di test del software, ognuno dei quali ha un diverso oggetto di verifica e scopo.} \newline \newline
-			\textbf{Test di unità} \mbox{}\\ \mbox{}\\
-			I test di unità si eseguono su unità di software. Questi test si concentrano sul funzionamento delle unità individuali. Dati gli input possibili in un unità, si suddividono gli input in partizioni di equivalenza e si prova se gli input attesi danno gli output previsti. Le singole unità possono essere testate con l'ausilio di driver\glosp e stub\glosp. \newline \newline
-			\textbf{Test di integrazione} \mbox{}\\ \mbox{}\\
-			Dopo aver superato i test di unità, le stesse unità vengono assemblate in agglomerati progressivamente più grandi. Il test di integrazione si concentra sulle interfacce tra i componenti. Un agglomerato che supera il test di integrazione costituisce quindi una nuova unità per un agglomerato di grandezza maggiore. Questa procedura si ripete fino a raggiungere la dimensione totale del sistema. \newline \newline
-			\textbf{Test di sistema} \mbox{}\\ \mbox{}\\
+		\begin{itemize}
+			\item \textbf{Test di unità} \mbox{}\\ \mbox{}\\
+			I test di unità si eseguono su unità di software. Questi test si concentrano sul funzionamento delle unità individuali. Dati gli input possibili in un unità, si suddividono gli input in partizioni di equivalenza e si prova se gli input attesi danno gli output previsti. Le singole unità possono essere testate con l'ausilio di driver\glosp e stub\glosp ; \newline \newline
+			\item \textbf{Test di integrazione} \mbox{}\\ \mbox{}\\
+			Dopo aver superato i test di unità, le stesse unità vengono assemblate in agglomerati progressivamente più grandi. Il test di integrazione si concentra sulle interfacce tra i componenti. Un agglomerato che supera il test di integrazione costituisce quindi una nuova unità per un agglomerato di grandezza maggiore. Questa procedura si ripete fino a raggiungere la dimensione totale del sistema; \newline \newline
+			\item \textbf{Test di sistema} \mbox{}\\ \mbox{}\\
 			Il sistema viene testato nella sua interezza, una volta integrati tutti i suoi componenti. Ci si concentra sulle interazioni tra le parti, sul comportamento emergente\glosp delle caratteristiche del sistema e sulla copertura\glosp di tutte le funzionalità. Questo tipo di test porta alla luce le ipotesi errate che i diversi sviluppatori fanno su parti del software sviluppate da altri.
-			In questa fase ci si assicura che il sistema rispetti tutte le specifiche definite nell'\textit{Analisi dei Requisiti}. \newline \newline
-			\textbf{Test di regressione} \mbox{}\\ \mbox{}\\
-			Si effettua di seguito ad una modifica del sistema e consiste nella riesecuzione dei test esistenti: si combina bene con l'automazione dei test. \newline \newline
-			\textbf{Test di accettazione} \mbox{}\\ \mbox{}\\
+			In questa fase ci si assicura che il sistema rispetti tutte le specifiche definite nell'\textit{Analisi dei Requisiti}; \newline \newline
+			\item \textbf{Test di regressione} \mbox{}\\ \mbox{}\\
+			Si effettua di seguito ad una modifica del sistema e consiste nella riesecuzione dei test esistenti: si combina bene con l'automazione dei test; \newline \newline
+			\item \textbf{Test di accettazione} \mbox{}\\ \mbox{}\\
 			Anche detto "test di collaudo", è simile al test di sistema per l'oggetto testato, ma viene eseguito con la collaborazione dei committenti. Si occupa di verificare il prodotto e, in particolare, il soddisfacimento del cliente. Il superamento del test di collaudo garantisce che il software sia pronto per essere rilasciato.
+			\end{itemize}
 	\subsubsection{Strumenti}
 		\paragraph{Verifica ortografica} \mbox{}\\ \mbox{}\\
-		Viene utilizzata la verifica dell'ortografia in tempo reale, strumento integrato in \TeX{}studio che sottolinea in rosso le parole errate e in verde le ripetizioni a breve distanza secondo la lingua italiana.
+		Per la verifica ortografica vengono utilizzati i tool dell'editor i quali sottilenano in rosso gli errori secondo il vocabolario della lingua italiana, facendo attenzione ad eventuali termini in inglese.
 	
 \subsection{Validazione}
 	\subsubsection{Scopo}
