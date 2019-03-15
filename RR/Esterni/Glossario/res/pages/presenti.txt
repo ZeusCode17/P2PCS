@@ -4,6 +4,7 @@ Leggenda:
   non le abbiamo ancora
 
 
+--approccio incrementale
 add-on
 agile
 *apache kafka
@@ -17,7 +18,7 @@ attore
 body of knowledge
 boilerplate
 *bootstrap
-camelcase
+*camelcase
 *capitolato
 changelog
 *coesione
@@ -28,7 +29,7 @@ copertura
 --core-drive
 *dapp
 *dashboard
-design pattern
+*design pattern
 *devops
 dilazione
 *docker
@@ -37,12 +38,13 @@ documento interno
 driver
 --ethereum
 --evm 
+*esLint
 *firebase storage
 *framework
 *freeling
 *front end
 *gamification
-gantt
+*gantt
 gigacore
 *gitlab
 --grafana
@@ -68,6 +70,7 @@ pos tagging
 product baseline
 proof of concept
 pull request
+--processo
 *python
 raiden
 *react
@@ -91,6 +94,7 @@ staging
 stand-up
 stub
 surge.sh
+--sviluppo (modello)
 technology baseline
 *telegram
 time series
