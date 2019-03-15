@@ -1,7 +1,7 @@
 \section{Processi di Supporto}
 \subsection{Documentazione}
 	\subsubsection{Scopo}
-	Ogni processo e attività significativi volti allo sviluppo del progetto sono documentati. Lo scopo di questa sezione è definire gli standard che riguardano i documenti prodotti durante il ciclo di vita del software.
+	Ogni processo\glosp e attività significativi volti allo sviluppo del progetto sono documentati. Lo scopo di questa sezione è definire gli standard che riguardano i documenti prodotti durante il ciclo di vita del software.
 	I documenti sono consultabili nelle apposite sezioni della repository\glo:\\ \url{https://github.com/ZeusCode17/P2PCS}. 		
 	\subsubsection{Aspettative}
 	Le aspettative su questo processo riguardano:
@@ -40,8 +40,8 @@
 			\item \textbf{Descrizione}: descrizione sintetica relativa al documento, centrale, posta sotto la tabella descrittiva;
 			\item \textbf{Recapito}: indirizzo di posta elettronica del gruppo, posizionato centralmente in fondo alla pagina.
 		\end{itemize}
-		\paragraph{Registro modifiche} \mbox{}\\ \mbox{}\\
-		Ogni documento dispone di un changelog\glo: una tabella posta a seguito della prima pagina che contiene le modifiche apportate al documento. Nel changelog\glo sono indicati:
+		\paragraph{Registro delle modifiche} \mbox{}\\ \mbox{}\\
+		Ogni documento dispone di un changelog\glo: una tabella posta a seguito della prima pagina che contiene le modifiche apportate al documento. Nel changelog sono indicati:
 		\begin{itemize}
 			\item versione del documento dopo la modifica;
 			\item data della modifica;
@@ -76,7 +76,7 @@
 		\end{itemize}
 	Il contenuto è composto da:
 	\begin{itemize}
-		\item una descrizione più approfondita in merito agli argomenti trattati durante l'incontro;
+		\item una descrizione più approfondita in merito agli argomenti trattati durante l'incontro sotto forma di lista;
 		\item un riepilogo dei tracciamenti in forma tabellare che elenca le decisioni emerse: assegna ad ognuna di loro un codice e le descrive. Sarà ripresa successivamente.
 	\end{itemize}
 		Ogni \textit{Verbale} dovrà essere denominato secondo il seguente formato: \newline \newline
@@ -146,7 +146,7 @@
 			\item \textbf{DD}: rappresentazione del giorno con due (2) cifre.			
 		\end{itemize}
 		\paragraph{Sigle} \mbox{}\\ \mbox{}\\
-		Il progetto prevede la redazione di un insieme di documenti, suddivisi in documenti interni e documenti esterni. Essi sono elencati di seguito con le rispettive sigle.\newline
+		Il progetto prevede la redazione di un insieme di documenti, suddivisi in documenti interni\glosp e documenti esterni\glo. Essi sono elencati di seguito con le rispettive sigle.\newline
 		I documenti esterni sono:	
 		\begin{itemize}
 			\item \textbf{Analisi dei Requisiti - AdR}: stabilisce le caratteristiche che il software deve rispettare;
@@ -252,12 +252,12 @@
 	La versione ufficile e aggiornata della repository la si trova al seguente indirizzo di GitHub \newline \newline
 	\centerline{\url{https://github.com/ZeusCode17/P2PCS}}
 	\paragraph{Struttura del repository} \mbox{}\\ \mbox{}\\
-	Sono presenti due tipi di repository con uguale struttura:
+	Sono presenti due tipi di repository\glosp con uguale struttura:
 	\begin{itemize}
 		\item \textbf{locale}: repository locale clonata sul pc di ogni membro del gruppo nella quale vengono eseguite le modifiche.
 		\item \textbf{remoto}: repository remota ospitata su GitHub aggiornata con tutte le modifiche apportate da ogni membro del gruppo.
-	\end{itemize}		%start-----------------------------------------------------------0000000000000000000000				
-	Entrambi i tipi di repository\glosp sono organizzati in cartelle:
+	\end{itemize}			
+	Entrambi i tipi di repository sono organizzati in cartelle:
 	\begin{itemize}
 		\item \textbf{latex}: contiene tutti i file che definiscono il template \LaTeX{} per la creazione di un nuovo documento. Tra questi vi sono i file che definiscono i comandi personalizzati utilizzati dal gruppo e i package che devono essere inclusi per poter compilare i documenti;
 		\item \textbf{RR}: raccoglie i file sorgenti per la compilazione dei documenti, suddivisi tra esterni ed interni, realizzati per la Revisione dei Requisiti;
@@ -277,11 +277,11 @@
 	I passaggi che vengono eseguiti sono i seguenti:
 	\begin{itemize}
 		\item viene scelto il branch su cui si intende lavorare;
-		\item si esegue il pull dal repository\glosp remoto che effettua l'aggiornamento del proprio repository\glosp locale;
+		\item si esegue il pull dal repository remoto che effettua l'aggiornamento del proprio repository locale;
 		\item si svolge il lavoro assegnato,che varia dalla modifica all'aggiunta di nuovi file;
-		\item si aggiungono i nuovi file o file modificati all'area di staging\glo prima di eseguire il commit;
+		\item si aggiungono i nuovi file o file modificati all'area di staging\glosp prima di eseguire il commit;
 		\item si esegue il comando di commit dei file aggiunti, con annesso un messaggio che identifica il lavoro effettuato;
-		\item si esegue il push del commit sul repository\glosp remoto.
+		\item si esegue il push del commit sul repository remoto.
 	\end{itemize}
 	\paragraph{Gestione delle modifiche} \mbox{}\\ \mbox{}\\
 	Per effettuare semplici modifiche quali errori grammaticali o migliorie di lessico non è necessaria alcuna approvazione dal responsabile del progetto, è necessario però allegare al commit un messaggio chiaro che indica le modifiche effettuate.
@@ -307,7 +307,7 @@
 	Il processo di verifica prende in input ciò che è già stato prodotto e lo restituisce in uno stato conforme alle aspettative. Per ottenere tale risultato ci si affida a processi di analisi e test.
 	\subsubsection{Attività}
 		\paragraph{Analisi} \mbox{}\\ \mbox{}\\
-		Il processo di analisi consiste nell'analisi del codice sorgente e nella sua suucessiva esecuzione. Si suddivide in statica e dinamica. \newline \newline
+		Il processo di analisi consiste nell'analisi del codice sorgente e nella sua suucessiva esecuzione. Si suddivide in statica e dinamica.\\
 			\subparagraph{Analisi statica} \mbox{}\\ \mbox{}\\
 			L'analisi statica effettua controlli su documenti e codice, di cui valuta e applica la correttezza (intesa come assenza di errori e difetti), la conformità a regole e la coesione\glosp dei componenti.\newline Per effettuare analisi statica esistono metodi manuali di lettura (attuati da persone) e metodi formali (attuati da macchine). Quelli manuali sono due:
 			\begin{itemize}
@@ -316,11 +316,11 @@
 			\end{itemize}
 			textbf{Tipici errori all'interno dei documenti}
 			\begin{itemize}
-				\item \textbf{Formato data}:Si utilizza il formato americano YYYY-MM-DD;
-				\item \textbf{Forme verbali}:Si deve utilizzare il più possibile l'indicativo, cercando di rispettare le concordanze verbali;
-				\item \textbf{Punteggiatura degli elenchi}:Ogni voce dell'elenco termina con ";" fatta eccezione per l'ultima, la quale termina con ".";
-				\item \textbf{Sintassi}:Le frasi devono essere semplici e poco articolate per facilitarne la comprensione;
-				\item \textbf{Parti mancanti}:Controllare che non ci siano errori di formattazione o sezioni e titoli vuoti.
+				\item \textbf{Formato data}: si utilizza il formato americano YYYY-MM-DD;
+				\item \textbf{Forme verbali}: si deve utilizzare il più possibile l'indicativo, cercando di rispettare le concordanze verbali;
+				\item \textbf{Punteggiatura degli elenchi}: ogni voce dell'elenco termina con ";" fatta eccezione per l'ultima, la quale termina con ".";
+				\item \textbf{Sintassi}: le frasi devono essere semplici e poco articolate per facilitarne la comprensione;
+				\item \textbf{Parti mancanti}: controllare che non ci siano errori di formattazione o sezioni e titoli vuoti.
 			\end{itemize}			
 														
 			\subparagraph{Analisi dinamica} \mbox{}\\ \mbox{}\\
@@ -333,7 +333,7 @@
 			\item \textbf{stato iniziale}: lo stato iniziale dal quale  viene eseguito il test;
 			\item \textbf{input}: input inserito;
 			\item \textbf{output}: output atteso;
-			\item \textbf{istruzioni aggiuntive}:ulteriori istruzioni su come e dove eseguire il test e su come interpretare i risultati ottenuti.
+			\item \textbf{istruzioni aggiuntive}: ulteriori istruzioni su come e dove eseguire il test e su come interpretare i risultati ottenuti.
 		\end{itemize}
 		Test ben scritti devono:
 		\begin{itemize}

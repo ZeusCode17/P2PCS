@@ -20,12 +20,12 @@ boilerplate
 *bootstrap
 *camelcase
 *capitolato
-changelog
+*changelog
 *coesione
 comportamento emergente
 continuous delivery
-continuous integration
-copertura
+*continuous integration
+*copertura
 --core-drive
 *dapp
 *dashboard
@@ -33,12 +33,13 @@ copertura
 *devops
 dilazione
 *docker
-documento esterno
-documento interno
-driver
+*documento esterno
+*documento interno
+*driver
 --ethereum
 --evm 
 *esLint
+--emergente
 *firebase storage
 *framework
 *freeling
@@ -48,6 +49,7 @@ driver
 gigacore
 *gitlab
 --grafana
+--GUI
 --henshin
 --hosting
 *hunpos
@@ -62,6 +64,7 @@ modello di sviluppo
 *movens
 *node.js
 *octalysis
+--off-topic
 *open-source
 partizione di equivalenza
 *peer-to-peer
@@ -82,17 +85,18 @@ rest
 ropsten
 sass
 *scss
+--schedule
 server-side
 *shortcut
 *skill
 *slack
 *smart contract
-snake case
+*snake case
 solidity
 *sonarqube
-staging
+*staging
 stand-up
-stub
+*stub
 surge.sh
 --sviluppo (modello)
 technology baseline
