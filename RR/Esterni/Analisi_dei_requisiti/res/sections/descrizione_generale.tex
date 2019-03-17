@@ -1,7 +1,7 @@
 \section{Descrizione generale} 
 \subsection{Obiettivi del prodotto}
 
-Il progetto \textit{P2PCS} si pone come obiettivo lo sviluppo di una piattaforma di car sharing peer-to-peer\glosp che la distingua dalla concorrenza tramite l'utilizzo di 5 core-drive\glosp del framework Octalysis\glosp .
+Il progetto \textit{P2PCS} si pone come obiettivo lo sviluppo di una piattaforma di car sharing peer-to-peer\glosp che la distingua dalla concorrenza tramite l'utilizzo di 5 core-drive\glosp del framework\glosp Octalysis\glo .
 
 \subsection{Funzioni del prodotto}
 Per il servizio di car sharing l'applicativo deve offrire le seguenti funzionalità:
@@ -10,37 +10,39 @@ Per il servizio di car sharing l'applicativo deve offrire le seguenti funzionali
 	\item inserimento della propria auto per la condivisione;
 	\item prenotazione di un'auto;
 	\item visualizzazione del parco macchine che è possibile selezionare;
-	\item visualizzare quanto sono lontane rispetto a me (lista con distanza in km o possibilità di vederle su una mappa);
+	\item visualizzare quanto sono lontane (lista con distanza in km o possibilità di vederle su una mappa);
 	\item confermare l’avvenuto scambio delle chiavi;
 	\item chiusura del viaggio;
 	\item visualizzazione dei dati del viaggio appena trascorso.
 \end{itemize}
+\newline
 L'applicativo, oltre a offrire il servizio di car sharing, deve invogliare l'utente a condividere la propria auto a un prezzo basso. 
-I core drive\glosp e le game mechanics che il gruppo \textit{Zeus Code} intende utilizzare per motivare i singoli utenti sono incentrati sui seguenti core drive di Octalysis\glo : 
+I core drive\glosp e le game mechanics che il gruppo \textit{Zeus Code} intende utilizzare per motivare i singoli utenti sono incentrati sui seguenti core drive\glosp di Octalysis\glo : 
 \begin{itemize}
 	\item \textbf{accomplishment}: assicurarsi che gli utenti stiano superando le sfide di cui possono essere orgogliosi;
-	\item \textbf{ownership}: invogliare l'utente a migliore/preteggere qualcosa che già possiede o ottenere di più;
+	\item \textbf{ownership}: invogliare l'utente a migliore/proteggere qualcosa che già possiede o ad ottenere di più;
 	\item \textbf{unpredictability \& curiosity}: stimolare la curiosità dell'utente e indirizzarlo verso una ricompensa o evento inaspettato;
 	\item \textbf{social influence}: legato alle attività ispirate da ciò che gli altri pensano, fanno o dicono (questo Core Drive è il motore di temi come mentorship, competizione, invidia, ricerche di gruppo, tesori sociali e compagnia);
 	\item \textbf{empowerment}: permettere all'utente di sbloccare potenziamenti.
 \end{itemize}
 \subsection{Caratteristiche degli utenti}
-Si evidenziano sin da subito tre categorie di utenti:
+Si evidenziano sin da subito quattro categorie di utenti:
 \begin{itemize}
-	\item cittadino;
-	\item azienda;
-	\item governo\glo.
+	\item utente generico non autenticato;
+	\item utente generico con registrazione incompleta (nome, email)
+	\item usufruente - utente con registrazione completa che necessita un'auto;
+	\item proprietario - utente con registrazione completa che condivide la propria auto;
 \end{itemize}
-Ai cittadini e ai funzionari rappresentanti il governo\glosp è richiesta la conoscenza delle funzionalità di base, ovvero saper utilizzare un browser Internet ed autenticarsi attraverso il plug-in MetaMask\glo. Autenticandosi con successo sarà loro possibile usufruire della piattaforma. Per i proprietari di aziende è richiesta inoltre la conoscenza dei principi base per la gestione dell'IVA. A tutti gli utenti è messa a disposizione una breve guida per facilitare l'installazione e l'utilizzo di MetaMask\glo. 
 
 \subsection{Macro architetture del progetto}
 \subsubsection{Back end}
-Il back end\glosp sarà costituito da un insieme di smart contracts\glo, sviluppati per essere eseguiti sulla EVM\glo. Tali contratti verranno utilizzati per gestire le transazioni e salvare i dati ad esse correlati. I dati aggiuntivi (e.g. descrizione ed immagini dei prodotti) verranno invece gestiti attraverso l'utilizzo di un database distribuito, in quanto il loro salvataggio nella blockchain\glosp sarebbe dispendioso dal punto di vista economico e non rispetterebbe l'idea di base della tecnologia stessa, che non è stata progettata per ospitare dati di grandi dimensioni.
+Il back end\glosp utilizzerà la piattaforma Movens\glosp sviluppata da Hanshin Group Ltd, di cui verranno utilizzati i servizi per il sistema peer-to-peer\glosp e il servizio per la condivisione dell'auto. 
 
 \subsubsection{Front end}
-Il front end\glosp sarà costituito da un insieme di pagine web accessibili dai browser web Mozilla Firefox e Google Chrome, nella loro versione desktop. La piattaforma potrebbe risultare compatibile anche con i browser Opera e Brave, sebbene ciò esuli dagli scopi e requisiti del progetto.
+Il progetto \textit{P2PCS} non necessità sviluppo di codice front-end.
+Verrà utilizzato un pannello di amministrazione già esistente, fornito dal proponente \textit{GaiaGo}, da cui verranno estratti dati utili per lo sviluppo dell'applicazione Android.
 
 \subsection{Vincoli generali}
-L’utente, per usufruire del servizio, deve possedere un browser con installato il plug-in\glosp MetaMask\glo, una connessione internet ed una coppia di chiavi (pubblica-privata) compatibile con la rete Ethereum\glo. La coppia di chiavi viene fornita automaticamente all'accettazione della licenza di MetaMask\glo, ma, se l’utente lo desidera, può utilizzare chiavi già in suo possesso o generate attraverso altre procedure.
+Gli utenti generici non autenticati o con registrazione incompleta possono solo visualizzare il contenuto dell'applicazione, mentre gli usufruenti e proprietari hanno accesso a tutti i servizi offerti dall'appplicazione. Inoltre, tutti gli utenti hanno bisogno di una connessione internet per l'utilizzo dell'app.
 
  
