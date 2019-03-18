@@ -5,7 +5,7 @@
 	\item \textbf{Descrizione}: l'utente visualizza visualizza la pagina iniziale da cui è possibile raggiungere l'activity\glosp di login e l'activity di registrazione;
 	\item \textbf{Scenario principale}: l'utente accede all'activity introduttiva dell'applicazione e può decidere se registrarsi o effettuare l'accesso;
 	\item \textbf{Precondizione}: il sistema è raggiungibile e funzionante, l'utente accede all'activity iniziale dell'applicazione;
-	\item \textbf{Postcondizione}: il sistema fornisce all'utente, attraverso la lettura della guida, tutte le istruzioni necessarie alla registrazione ed all'autenticazione.
+	\item \textbf{Postcondizione}: il sistema fornisce all'utente, la possibilità di raggiungere l'activity di login o quella di registrazione.
 	
 	
 \end{itemize}
@@ -18,27 +18,10 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Attori Secondari}: Movens\glo;
-	\item \textbf{Descrizione}: per effettuare il procedimento di registrazione, l'utente deve disporre di una chiave\glosp non ancora utilizzata per la registrazione all'interno del sistema, e deve compilare tutti i campi necessari;
+	\item \textbf{Descrizione}: per effettuare il procedimento di registrazione, l'utente deve compilare tutti i campi necessari ovvero nome, cognome, email e password;
 	\item \textbf{Scenario principale}: 
 		il sistema controlla la presenza di MetaMask\glosp e verifica che la prima chiave\glosp in esso contenuta non sia già associata ad un utente registrato alla piattaforma. Successivamente rende disponibili i campi da compilare per la registrazione. Dunque, se:
-	\begin{enumerate}[label=\alph*.]
-	
-		\item l'utente vuole registrarsi come normale \textbf{cittadino}: 
-		\begin{enumerate}[label=\roman*.]
-			\item l'utente inserisce i dati anagrafici [UC2.3];
-			\item l'utente conferma ed invia i dati inseriti [UC2.8].
-		\end{enumerate}
-		
-		
-		\item l'utente vuole registrare la propria \textbf{azienda}:
-		\begin{enumerate}[label=\roman*.]
-			\item l'utente inserisce i dati aziendali [UC2.4];
-			\item l'utente conferma ed invia i dati inseriti [UC2.8].
-		\end{enumerate}
-		
-		
-		
-	\end{enumerate}
+
 	\item \textbf{Precondizione}: l'utente ha MetaMask\glosp installato e correttamente impostato sul proprio browser, viene considerato dal sistema come un utente non autenticato. La prima chiave\glosp nel plug-in non risulta già associata ad alcun account nel sistema. L'utente intende registrarsi come cittadino o registrare la propria azienda; 
 	\item \textbf{Postcondizione}: l'utente è registrato correttamente nel sistema come cittadino o azienda.
 	
