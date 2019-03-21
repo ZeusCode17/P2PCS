@@ -1,7 +1,7 @@
 \subsubsection{UC3 - Login}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Attori Secondari}: Movens\glo;
+	%\item \textbf{Attori Secondari}: Movens\glo;
 	\item \textbf{Descrizione}: per effettuare il procedimento di autenticazione, l'utente deve compilare i campi necessari ovvero e-mail e password;
 	\item \textbf{Scenario principale}: l'applicazione rende disponibili i campi da compilare per l'autenticazione. Dunque l'utente dovrà inserire tutti i dati necessari.
 	
@@ -10,13 +10,20 @@
 \end{itemize}
 
 \subsubsection{UC3.1 - Compilazione campi per il login}
+\begin{figure}[h]
+	\includegraphics[width=9cm]{res/images/UC3-1Login.png}
+	\centering
+	\caption{UC2 - Registrazione}
+\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Attori Secondari}: Movens\glo;
+	%\item \textbf{Attori Secondari}: Movens\glo;
 	\item \textbf{Descrizione}: l'utente compila i campi richiesti per l'autenticazione;
-	\item \textbf{Scenario principale}: l'utente compila i campi necessari all'autenticazione ovvero: a.l'utente inserisce l'email associata al proprio account [UC3.1.1];
+	\item \textbf{Scenario principale}: l'utente compila i campi necessari all'autenticazione ovvero: 
 	\newline
-	b.l'utente inserisce la password associata la proprio account [UC3.1.2].	
+	a. l'utente inserisce l'email associata al proprio account [UC3.1.1];
+	\newline
+	b. l'utente inserisce la password associata la proprio account [UC3.1.2].	
 	\item \textbf{Precondizione}: l'utente si trova nell'activity di autenticazione.
 	\item \textbf{Postcondizione}: l'utente ha compilato tutti i campi necessari all'autenticazione.	
 \end{itemize}
