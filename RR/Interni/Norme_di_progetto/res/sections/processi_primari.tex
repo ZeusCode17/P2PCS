@@ -152,22 +152,22 @@ Il processo\glosp di fornitura determina le procedure e le risorse necessarie al
 			Ogni requisito è composto dalla seguente struttura:
 			\begin{itemize}
 				\item \textbf{codice identificativo}: ogni codice identificativo è univoco e conforme alla seguente codifica: \\
-				\centerline{\textbf{R[Importanza][Tipologia][Codice]}} \\ \\
+				\centerline{\textbf{R[Tipologia][Importanza][Codice]}} \\ \\
 				Il significato delle cui voci è:
-				\begin{itemize}
-					\item \textbf{Importanza}: ogni requisito può assumere uno dei seguenti valori:
-					\begin{itemize}
-						\item \textit{1}: requisito obbligatorio, ovvero irrinunciabile per gli stakeholder;
-						\item \textit{2}: requisito desiderabile, ovvero non strettamente necessari ma a valore aggiunto riconoscibile;
-						\item \textit{3}: requisito opzionale, ovvero relativamente utile oppure contrattabile più avanti nel progetto;	
-					\end{itemize}
+				\begin{itemize}					
 					\item \textbf{Tipologia}: ogni requisito può assumere uno dei seguenti valori:
 					\begin{itemize}
 						\item \textit{F}: funzionale;
-						\item \textit{Q}: prestazionale;
-						\item \textit{P}: qualitativo;
 						\item \textit{V}: vincolo.
+						\item \textit{Q}: qualitativo;
+						\item \textit{P}: prestazionale;		
 					\end{itemize}
+				\item \textbf{Importanza}: ogni requisito può assumere uno dei seguenti valori:
+				\begin{itemize}
+					\item \textit{O}: requisito obbligatorio, ovvero irrinunciabile per gli stakeholder;
+					\item \textit{D}: requisito desiderabile, ovvero non strettamente necessari ma a valore aggiunto riconoscibile;
+					\item \textit{F}: requisito facoltativo, ovvero relativamente utile oppure contrattabile più avanti nel progetto;	
+				\end{itemize}
 					\item \textbf{Codice}: è un identificatore univoco del requisito in forma gerarchica padre/figlio.
 				\end{itemize}
 				\item \textbf{classificazione}: viene riportata l'importanza del requisito. Sebbene questa sia un'informazione ridondante ne facilita la lettura;
