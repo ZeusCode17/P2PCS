@@ -1,20 +1,29 @@
 \section{Modello di sviluppo}
-La scelta di un modello di sviluppo è fondamentale per la pianificazione di 
-progetto e a tal fine è stato adottato il \textbf{modello incrementale}.
+La scelta del modello di sviluppo è una delle realtà fondamentali per la realizzazione di un progetto software.
+Avendo una visione abbastanza chiara dell'intero progetto e, allo stesso tempo, una limitata conoscenza dei requisiti specifici, si è scelto di seguire il \textbf{modello incrementale}.
+
+\begin{figure}[H]
+	\includegraphics[width=0.99\linewidth]{res/images/incremental_model.jpg}
+	\caption{Modello di sviluppo incrementale}
+\end{figure}
 
 \subsection{Modello incrementale}
-Il modello di sviluppo incrementale permette di suddividere lo sviluppo del sistema per 
-incrementi, ognuno dei quali incorpora una funzionalità. \\
-L'aggiunta, modifica e cancellazione di requisiti sono consentite previa discussione con il proponente e sua 
-approvazione; tuttavia non sono permesse durante la fase di sviluppo dell'incremento corrente.\\
-Questo modello di sviluppo si combina bene con il versionamento del sistema, che traccia le modifiche rendendole più visibili.\\
-L'adozione di questo modello comporta i seguenti vantaggi:
+Il modello di sviluppo incrementale permette la suddivisione del progetto in più sottoinsiemi,
+ognuno di questi sottoinsiemi incorpora una funzionalità diversa che, se necessario, verrà migliorata ad ogni incremento dell'intero 
+sistema.  \\
+Ad ogni incremento del sistema è consentita la modifica, aggiunta ed eliminazione di requisiti in base alle esigenze progettuali, 
+è necessario un colloquio diretto con il proponente per approvare tali cambiamenti; \\
+Utilizzando questo modello di sviluppo il versionamento del sistema è reso semplice e intuitivo, in quanto ogni modifica è facilmente tracciabile da un incremento all'altro e se ne possono valutare direttamente i difetti o benefici.\\
+I vantaggi predisposti dal modello incrementale sono i seguenti:
 \begin{itemize}
-	\item le funzionalità primarie hanno priorità nello sviluppo, così che il proponente può subito valutarle;
-	\item si può ricevere il feedback del cliente frequentemente, anche ad ogni incremento;
-	\item sviluppare per incrementi successivi limita gli errori al singolo incremento;
-	\item le modifiche, l'individuazione e la correzione degli errori sono più economiche;
-	\item anche le fasi di verifica e test sono facilitate, perché più mirate.
+	\item gli incrementi sono disposti in base alle funzionalità con priorità decrescente, partendo da quelle con priorità e impatto maggiori
+	così da avere subito un riscontro diretto;
+	\item ogni incremento genera un risultato che può essere valutato dal proponente, approvandone i benefici o evidenziandone i difetti;
+	\item redne sempre disponibile una recente baseline\glosp per una eventuale rivalutazione, senza dover ripercorrere tutti i passi effettuati fino ad ora dall'inizio dello sviluppo;
+	\item tutti gli errori sono limitati al singolo incremento;
+	\item le modifiche e le correzioni sono molto economiche in quanto di facile reperibilità;
+	\item le fasi di test sono mirate al corrente incremento quindi più efficienti.
 \end{itemize}
-Lo sviluppo incrementale ha anche alcuni svantaggi, il cui principale è il degradamento progressivo del sistema. A ogni nuova aggiunta di una funzionalità software, il codice si complica, peggiorando la leggibilità e la manutenzione, rendendo più difficili gli incrementi successivi . Vi si pone rimedio mediante refactoring.
+Sono presenti anche degli aspetti negativi per quanto riguarda il modello incrementale, primo tra tutti la rapida degradazione del codice. Per ovviare a questo svantaggio verrà utilizzato il refactoring\glosp del codice. I vantaggi che il refactoring persegue riguardano in genere un miglioramento della leggibilità, della manutenibilità, della riusabilità e dell'estendibilità del codice e la riduzione della sua complessità generale.
+
 

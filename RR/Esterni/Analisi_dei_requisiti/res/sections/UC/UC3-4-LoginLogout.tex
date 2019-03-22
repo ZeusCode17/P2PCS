@@ -1,22 +1,29 @@
 \subsubsection{UC3 - Login}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Attori Secondari}: Movens\glo;
+	%\item \textbf{Attori Secondari}: Movens\glo;
 	\item \textbf{Descrizione}: per effettuare il procedimento di autenticazione, l'utente deve compilare i campi necessari ovvero e-mail e password;
 	\item \textbf{Scenario principale}: l'applicazione rende disponibili i campi da compilare per l'autenticazione. Dunque l'utente dovrà inserire tutti i dati necessari.
 	
 	\item \textbf{Precondizione}: l'utente ha inserito correttamente tutti i dati necessari nei campi.
-	\item \textbf{Postcondizione}: dopo aver controllato che i campi sono stati compilati correttamente attraverso la piattaforma Movens\glo, l'utente viene autenticato nell'applicazione.	
+	\item \textbf{Postcondizione}: dopo aver controllato che i campi sono stati compilati correttamente attraverso la piattaforma Movens, l'utente viene autenticato nell'applicazione.	
 \end{itemize}
 
 \subsubsection{UC3.1 - Compilazione campi per il login}
+\begin{figure}[h]
+	\includegraphics[width=9cm]{res/images/UC3-1Login.png}
+	\centering
+	\caption{UC2 - Registrazione}
+\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Attori Secondari}: Movens\glo;
+	%\item \textbf{Attori Secondari}: Movens\glo;
 	\item \textbf{Descrizione}: l'utente compila i campi richiesti per l'autenticazione;
-	\item \textbf{Scenario principale}: l'utente compila i campi necessari all'autenticazione ovvero: a.l'utente inserisce l'email associata al proprio account [UC3.1.1];
+	\item \textbf{Scenario principale}: l'utente compila i campi necessari all'autenticazione ovvero: 
 	\newline
-	b.l'utente inserisce la password associata la proprio account [UC3.1.2].	
+	a. l'utente inserisce l'email associata al proprio account [UC3.1.1];
+	\newline
+	b. l'utente inserisce la password associata la proprio account [UC3.1.2].	
 	\item \textbf{Precondizione}: l'utente si trova nell'activity di autenticazione.
 	\item \textbf{Postcondizione}: l'utente ha compilato tutti i campi necessari all'autenticazione.	
 \end{itemize}
@@ -52,7 +59,7 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}:
 	utente autenticato;
-	\item \textbf{Descrizione}: l'utente dal fragment\glo Area Personale richiede il logout dall'applicazione;
+	\item \textbf{Descrizione}: l'utente dal fragment\glosp Area Personale richiede il logout dall'applicazione;
 	\item \textbf{Scenario principale}: l'utente è autenticato nell'applicazione e richiede di effettuare il logout, premendo sull'apposito pulsante;
 	\item \textbf{Precondizione}: l'utente ha effettuato il login all'applicazione e richiede di essere disconnesso dall'applicazione;
 	\item \textbf{Postcondizione}: l'utente viene disautenticato e rimandato all'activity introduttiva. 

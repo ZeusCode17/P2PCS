@@ -1,0 +1,105 @@
+\subsubsection{UC7 - Gestione Profilo}
+%\begin{figure}[h]
+	%\includegraphics[width=10cm]{res/images/UC7-profilepage.png}
+	%\centering
+	%\caption{UC7 - Gestione Profilo}
+%\end{figure}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Attori Secondari}: Movens\glo;
+	\item \textbf{Descrizione}: all'utente è permesso modificare i dati del proprio account oppure eliminarlo;
+	\item \textbf{Scenario principale}: 
+	\begin{enumerate}[label=\alph*.]
+		\item l'utente sceglie di modificare i dati[UC7.1];
+		\item l'utente sceglie di eliminare l'account[UC7.3];
+	\end{enumerate}
+	
+	\item \textbf{Precondizione}: l'utente è in possesso di un account all'interno del sistema. Deve quindi essersi registrato e non aver eliminato l'account;
+	\item \textbf{Postcondizione}:l'utente ha effettuato l'operazione di modifica dati oppure l'eliminazione dell'account e il processo è stato confermato dal sistema.
+	\item \textbf{Estensioni}:
+	\begin{enumerate}
+	\item visualizzazione di errore sui dati in input[UC7.2]
+	\end{enumerate}
+\end{itemize} 
+\subsubsection{UC7.1 - Modifica dati account}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente ha la possibilità di modificare i propri dati;
+	\item \textbf{Scenario principale}:
+	\begin{enumerate}
+	\item modifica  password[UC7.1.1];
+	\item conferma modifica[UC7.1.3].
+	\end{enumerate}
+	\item \textbf{Inclusioni}:
+	\begin{enumerate}
+	\item inserimento vecchia password[7.1.2].
+	\end{enumerate}
+	\item \textbf{Scenari alternativi}:
+	\begin{enumerate}
+	\item l'utente interrompe la modifica dei dati senza confermare il salvataggio di essi. Il sistema non salverà le modifiche parziali apportate dall'utente me lo riporterà alla schermata di visualizzazione dell'account.
+	\end{enumerate}	 
+	\item \textbf{Precondizione}: l'utente è in possesso di un account all'interno del sistema. Deve quindi essersi registrato e non aver eliminato l'account;
+	\item \textbf{Postcondizione}: il sistema ha memorizzato le modifiche apportate ai dati da parte dell’utente.
+\end{itemize}
+
+\subsubsection{UC7.1.1 - Modifica password}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente ha la possibilità di modificare la password inserita in precedenza;
+	\item \textbf{Precondizione}: il sistema fornisce una schermata nella quale è possibile inserire la nuova password;
+	\item \textbf{Postcondizione}: l'utente ha inserito la nuova password.
+\end{itemize}
+
+\subsubsection{UC7.1.2 - Inserimento vecchia password}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente deve inserire la password attuale per poter la aggiornare;
+	\item \textbf{Precondizione}: il sistema fornisce una schermata nella quale è possibile inserire la vecchia password;
+	\item \textbf{Postcondizione}: l'utente ha inserito la vecchia password.
+\end{itemize}
+
+\subsubsection{UC7.1.3 - Modifica patente}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente ha la possibilità di aggiornare la patente inserita in precedenza;
+	\item \textbf{Precondizione}: il sistema fornisce una schermata nella quale è possibile inserire la nuova patente;
+	\item \textbf{Postcondizione}: l'utente ha inserito la nuova patente.
+\end{itemize}
+
+\subsubsection{UC7.1.4 - Conferma modifica dati}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente deve 
+	confermare la modifica apportata;
+	\item \textbf{Precondizione}: l'utente ha inserito tutti i dati richiesti e desiderati. Si trova dunque davanti ad una schermata con la possibilità di confermare la modifica effettutata;
+	\item \textbf{Postcondizione}: l'utente ha confermato di voler rendere effettivo il cambiamento all'interno del sistema.
+\end{itemize}
+
+\subsubsection{UC7.2 - Errore nei dati in input}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: durante la fase di modifica dei dati, l'utente può aver commesso uno dei seguenti errori:
+	\begin{itemize}[label=$-$]
+	\item la password inserita in UC7.1.2 non corrisponde con la vecchia password;
+	\item la password nuova inserita non è conforme ai vincoli di sicurezza imposti dal sistema;
+	\item la nuova patente inserita non è valida.	
+	\end{itemize}
+	\item \textbf{Precondizione}: l'utente ha effettuato la conferma dei dati inseriti;
+	\item \textbf{Postcondizione}: viene notificato all'utente un errore nell'inserimento dei dati. Bisogna specificare l'errore commesso e su quali dati.
+\end{itemize}
+
+\subsubsection{UC7.3 - Eliminazione account}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: all'utente viene fornita la possibilità di eliminare il proprio account e di conseguenza i propri dati all'interno del sistema.
+	\item \textbf{Precondizione}: l'utente è in possesso di un account all'internodel sistema. Deve quindi aver effettuato la registrazione e non avere mai efettuato la procedura di eliminazione account.
+	\item \textbf{Postcondizione}: l'utente ha cancellato il proprio account e viene riportato alla schermata iniziale dell'app[UC1].Il sistema non dovrà avere più taccia di tale utente.
+\end{itemize}
+
+
+
+
+
+
+
+
