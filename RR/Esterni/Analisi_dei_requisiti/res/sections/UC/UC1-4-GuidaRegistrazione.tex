@@ -1,32 +1,33 @@
 \begin{figure}[h]
-	%\includegraphics[width=9cm]{res/images/UC2Registrazione.png}
+	\includegraphics[width=15cm]{res/images/Schemagenerale1.png}
 	\centering
 	\caption{Schema generale: registrazione ed errori annessi}
 \end{figure}
 \subsubsection{UC1 - Registrazione}
-\begin{itemize}
-	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: per effettuare il procedimento di registrazione, l'utente deve compilare tutti i campi necessari ovvero nome, cognome, email e password;
-	\item \textbf{Scenario principale}: l'applicazione rende disponibili i campi da compilare per la registrazione. Dunque l'utente dovrà inserire tutti i dati necessari;
-	\item \textbf{Precondizione}: l'utente ha inserito correttamente tutti i dati necessari nei campi;
-	\item \textbf{Postcondizione}: l'utente viene registrato nell'applicazione;
-	\item \textbf{Estensioni}:
-		\begin{enumerate}
-			\item Visualizzazione errore e-mail non valida [UC2];
-			\item Visualizzazione errore password non conforme [UC3]. 
-		\end{enumerate} 
-\end{itemize}
-\begin{figure}[h]
-	\includegraphics[width=9cm]{res/images/UC2Registrazione.png}
+\begin{figure}
+	\includegraphics[width=10cm]{res/images/UC1Registrazione.png}
 	\centering
 	\caption{UC1 - Registrazione}
 \end{figure}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente non autenticato;
+	\item \textbf{Descrizione}: per effettuare il procedimento di registrazione, l'utente deve compilare tutti i campi necessari ovvero nome, cognome, email e password;
+	\item \textbf{Scenario principale}: l'applicazione rende disponibili i campi da compilare per la registrazione. Dunque l'utente dovrà inserire tutti i dati necessari, quali:
+		\begin{itemize}
+			\item Inserimento nome [UC1.1.1];
+			\item Inserimento cognome [UC1.1.2];
+			\item Inserimento indirizzo e-mail [UC1.1.3];
+			\item Inserimento password [UC1.1.4].
+		\end{itemize}
+	\item \textbf{Precondizione}: l'utente ha inserito correttamente tutti i dati necessari nei campi;
+	\item \textbf{Postcondizione}: l'utente viene registrato nell'applicazione;
+	\item \textbf{Estensioni}:
+		\begin{itemize}
+			\item Visualizzazione errore e-mail non valida [UC2];
+			\item Visualizzazione errore password non conforme [UC3]. 
+		\end{itemize} 
+\end{itemize}
 \subsubsection{UC1.1 - Inserimento dati profilo utente}
-\begin{figure}[h]
-	\includegraphics[width=9cm]{res/images/UC2-1Inserimento.png}
-	\centering
-	\caption{UC2.1 - Inserimento dati profilo utente}
-\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}:l'utente compila i campi contenenti i dati relativi al profilo utente;
@@ -40,6 +41,12 @@
 	\item \textbf{Precondizione}: l'utente è entrato nell'activity\glosp di registrazione;
 	\item \textbf{Postcondizione}: l'utente ha compilato tutti i campi richiesti dalla registrazione.
 \end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=9cm]{res/images/UC1-1Inserimento.png}
+	\centering
+	\caption{UC1.1 - Inserimento dati profilo utente}
+\end{figure}
+\newpage
 \subsubsection{UC1.1.1 - Inserimento nome}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
