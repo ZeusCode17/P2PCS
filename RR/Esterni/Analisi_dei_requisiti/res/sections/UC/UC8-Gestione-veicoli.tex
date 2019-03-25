@@ -2,7 +2,7 @@
   \begin{figure}[H]
  	\includegraphics[width=6cm]{res/images/UC5-Generale.png}
  	\centering
- 	\caption{UC8 - Gestione Veicoli}
+ 	\caption{UC10 - Gestione Veicoli}
  \end{figure}
  \begin{itemize}
  	\item \textbf{Attori Primari}: utente autenticato;
@@ -20,7 +20,58 @@
  \begin{itemize}
  	\item \textbf{Attori Primari}: utente autenticato;
  	\item \textbf{Descrizione}: l'utente può aggiungere un mezzo di trasporto al proprio parco macchine;
- 	\item \textbf{Scenario principale}: l'utente aggiunge un veicolo; l'utente attraverso appositi campi ne deve specificare marca e modello;
- 	\item \textbf{Precondizione}: l'utente sta visualizzando un prodotto ed intende modificarne la quantità selezionata;
- 	\item \textbf{Postcondizione}: la quantità del prodotto è stata aggiornata al nuovo valore selezionato.
+ 	\item \textbf{Scenario principale}: l'utente aggiunge un veicolo compilando gli appositi campi, ovvero:
+ 	\begin{enumerate}
+ 		\item l'utente inserisce la marca del veicolo [UC10.1.1];
+ 		\item l'utente inserisce il modello del veicolo [UC10.1.2];
+ 		\item l'utente inserisce l'anno d'immatricolazione del veicolo [UC10.1.3];
+ 	\end{enumerate}
+ 	e successivamente salverà il nuovo veicolo [UC10.1.4];
+ 	\item \textbf{Precondizione}: l'utente ha inserito correttamente tutti i campi necessari
+ 	\item \textbf{Postcondizione}: il nuovo veicolo viene aggiunto ai veicoli posseduti.
  \end{itemize}
+
+\subsubsection{UC10.1.1 - Inserimento marca veicolo}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: al fine di portare a termine il processo di inserimento di un nuovo veicolo l'utente deve inserirne la marca, campo ritenuto obbligatorio;
+	\item \textbf{Scenario principale}: l'utente compila il campo relativo alla marca del veicolo;	
+	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento della marca del veicolo;
+	\item \textbf{Postcondizione}: l'utente ha compilato il campo con la marca.	
+\end{itemize}
+
+\subsubsection{UC10.1.2 - Inserimento modello veicolo}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: al fine di portare a termine il processo di inserimento di un nuovo veicolo l'utente deve inserirne il modello, campo ritenuto obbligatorio;
+	\item \textbf{Scenario principale}: l'utente compila il campo relativo alla marca del veicolo;	
+	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento il modello del veicolo;
+	\item \textbf{Postcondizione}: l'utente ha compilato il campo con il modello.	
+\end{itemize}
+
+\subsubsection{UC10.1.3 - Inserimento anno d'immatricolazione veicolo}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: al fine di portare a termine il processo di inserimento di un nuovo veicolo l'utente deve inserirne l'anno di immatricolazione, campo ritenuto obbligatorio;
+	\item \textbf{Scenario principale}: l'utente compila il campo relativo all'anno d'immatricolazione del veicolo;	
+	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento dell'anno d'immatricolazione del veicolo;
+	\item \textbf{Postcondizione}: l'utente ha compilato il campo con l'anno d'immatricolazione.	
+\end{itemize}
+
+\subsubsection{UC10.1.4 - Invio dati veicolo}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati del veicolo;
+	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati;	
+	\item \textbf{Precondizione}: i campi dati necessari per l'inserimento di un veicolo sono compilabili. È presente il pulsante per la conferma dei dati;
+	\item \textbf{Postcondizione}: il nuovo veicolo viene inserito e l'utente potrà visualizzarlo nel proprio parco macchine.
+\end{itemize}
+
+\subsubsection{UC10.2 - Rimozione Veicolo}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente può rimuovere un mezzo di trasporto al proprio parco macchine;
+	\item \textbf{Scenario principale}: l'utente può selezionare un veicolo e attraverso l'apposito pulsante rimuoverlo dal proprio parco macchine.
+	\item \textbf{Precondizione}: l'applicazione mostra all'utente i propri veicoli e ne permette la selezione.
+	\item \textbf{Postcondizione}: il veicolo selezionato viene rimosso dal parco macchine
+\end{itemize}
