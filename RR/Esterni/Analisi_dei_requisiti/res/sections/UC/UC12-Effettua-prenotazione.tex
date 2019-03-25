@@ -1,22 +1,17 @@
 \subsubsection{UC12 - Effettua una prenotazione}
- \begin{figure}[h]
-	\includegraphics[width=6cm]{res/images/UC6GestioneCarrello.png}
-	\centering
-	\caption{UC11 - Effettua prenotazione}
-\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: agli utenti autenticati è resa disponibile una maschera che presenta la lista di tutte le sue prenotazioni, dalla quale l'utente può scegliere di effettuare operazioni di gestione su ognuna di esse;
-	Per ogni prenotazione presente nella lista saranno visualizzati dei dettagli riassuntivi, che sono:
+	\item \textbf{Descrizione}: L'utente in può ricercare un veicolo secondo diversi parametri e prenotare quello più adatto alle sue esigenze.
+	\item \textbf{Scenario principale}: l'utente per effettuare la prenotazione di un veicolo avrà a disposizione una maschera di ricerca che gli permetterà di filtrare i veicoli secondo questi parametri:
 	\begin{itemize}
-		\item \textit{da completare in seguito}.
+		\item Data [UC12.1];
+		\item Fascia oraria: l'utente avrà a disposizione due campi orario per specificare in che arco di tempo ricercare il veicolo [UC12.2]
+		\item Distanza: l'utente può inserire un raggio in chilometri per selezionare solo i veicoli presenti nell'area circoscritta [UC12.1]; 
+		\item Marca [UC12.2];
+		\item Modello [UC12.3];
+		\item Anno d'immatricolazione [UC12.4].
 	\end{itemize}
-	\item \textbf{Scenario principale}: l'utente effettua operazioni di gestione di una prenotazione. Esse comprendono:
-	\begin{enumerate}[label=\alph*.]
-		\item la visualizzazione dei dettagli di una prenotazione [UC11.1];
-		\item la modifica di una prenotazione [UC11.2];
-		\item la cancellazione di una prenotazione [UC11.3].
-	\end{enumerate}
-	\item \textbf{Precondizione}: il sistema riconosce l'utente proprietario o usufruente e rende disponibile il servizio di gestione delle prenotazioni;
-	\item \textbf{Post-condizione}: l'utente riconosciuto può procedere con le operazioni di gestione rese disponibili.
+	Successivamente l'utente selezionerà il veicolo più consono alle sue necessità e potrà inviare la richiesta di prenotazione.
+	\item \textbf{Precondizione}: l'applicazione rende disponibile il filtro per la ricerca.
+	\item \textbf{Post-condizione}: il veicolo risulta prenotato correttamente
 \end{itemize} 
