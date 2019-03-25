@@ -1,8 +1,9 @@
 \begin{figure}[h]
-	%\includegraphics[width=9cm]{res/images/UC2Registrazione.png}
+	\includegraphics[width=16cm]{res/images/Schemagenerale2.png}
 	\centering
 	\caption{Schema generale: login ed errori annessi}
 \end{figure}
+\newpage
 \subsubsection{UC5 - Login}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
@@ -11,22 +12,18 @@
 	\item \textbf{Precondizione}: l'utente ha inserito correttamente tutti i dati necessari nei campi;
 	\item \textbf{Postcondizione}: dopo aver controllato che i campi sono stati compilati correttamente attraverso la piattaforma Movens\glo, l'utente viene autenticato nell'applicazione.
 	\item \textbf{Estensioni}:
-		\begin{enumerate}
+		\begin{itemize}
 			\item Visualizzazione errore campi vuoti [UC6];
 			\item Visualizzazione errore combinazione e-mail e password errata [UC7].
-		\end{enumerate}	
+		\end{itemize}	
 \end{itemize}
 \begin{figure}[h]
-	%\includegraphics[width=9cm]{res/images/UC2Registrazione.png}
+	\includegraphics[width=11cm]{res/images/UC5Login.png}
 	\centering
 	\caption{UC5 - Login}
 \end{figure}
+\newpage
 \subsubsection{UC5.1 - Compilazione campi per il login}
-\begin{figure}[h]
-	%\includegraphics[width=9cm]{res/images/UC3-1Login.png}
-	\centering
-	\caption{UC5.1 - Compilazione campi per il login}
-\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: l'utente compila i campi richiesti per l'autenticazione;
@@ -38,7 +35,11 @@
 	\item \textbf{Precondizione}: l'utente si trova nell'activity\glosp di autenticazione;
 	\item \textbf{Postcondizione}: l'utente ha compilato tutti i campi necessari all'autenticazione.	
 \end{itemize}
-
+\begin{figure}[h]
+	\includegraphics[width=11cm]{res/images/UC5-1Compilazione.png}
+	\centering
+	\caption{UC5.1 - Compilazione campi per il login}
+\end{figure}
 \subsubsection{UC5.1.1 - Inserimento e-mail}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
@@ -96,9 +97,9 @@
 		\end{itemize}
 \end{itemize}
 \begin{figure}[h]
-	%\includegraphics[width=9cm]{res/images/UC3-1Login.png}
+	\includegraphics[width=15cm]{res/images/Schemagenerale3.png}
 	\centering
-	\caption{UC8 - Recupero password}
+	\caption{Schema generale: recupero password ed errori annessi}
 \end{figure}
 
 \subsubsection{UC9 - Logout}
