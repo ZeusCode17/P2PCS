@@ -86,11 +86,20 @@
 \subsubsection{UC8 - Recupero password}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente non autenticato tenta
-	\item \textbf{Scenario principale}: l'utente non ancora autenticato tenta di accedere non inserendo un indirizzo e-mail e password;	
-	\item \textbf{Precondizione}: l'utente non autenticato non inserisce nessun dato nei campi di inserimento;
-	\item \textbf{Postcondizione}: l'applicazione fa visualizzare un messaggio d'errore.
+	\item \textbf{Descrizione}: l'utente non autenticato non si ricorda la propria password per accedere all'account e ne richiede il recupero che avviene inserendo un'indirizzo e-mail dove verrà inviata una nuova password;
+	\item \textbf{Scenario principale}: l'utente non ancora autenticato inserisce un'indirizzo e-mail dove potrà ricevere la nuova password da utilizzare per accedere al proprio account; 
+	\item \textbf{Precondizione}: l'utente non autenticato non ricorda la password di accesso e indica un'indirizzo e-mail di recupero;
+	\item \textbf{Postcondizione}: l'utente riceve la nuova password tramite posta all'indirizzo e-mail inviato.
+	\item \textbf{Estensione}:
+		\begin{itemize}
+			\item Visualizzazione errore e-mail non valida [UC2].
+		\end{itemize}
 \end{itemize}
+\begin{figure}[h]
+	%\includegraphics[width=9cm]{res/images/UC3-1Login.png}
+	\centering
+	\caption{UC8 - Recupero password}
+\end{figure}
 
 \subsubsection{UC9 - Logout}
 \begin{itemize}
@@ -99,6 +108,6 @@
 	\item \textbf{Descrizione}: l'utente dal fragment\glosp Area Personale richiede il logout dall'applicazione;
 	\item \textbf{Scenario principale}: l'utente è autenticato nell'applicazione e richiede di effettuare il logout, premendo sull'apposito pulsante;
 	\item \textbf{Precondizione}: l'utente ha effettuato il login all'applicazione e richiede di essere disconnesso dall'applicazione;
-	\item \textbf{Postcondizione}: l'utente viene disautenticato e rimandato all'activity introduttiva. 
+	\item \textbf{Postcondizione}: l'utente viene disautenticato e rimandato all'activity\glosp di login. 
 \end{itemize}
 
