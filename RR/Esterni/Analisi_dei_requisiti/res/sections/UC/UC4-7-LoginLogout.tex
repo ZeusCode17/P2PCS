@@ -66,10 +66,31 @@
 	\item \textbf{Postcondizione}: l'utente viene autenticato e rimandato all'activity\glosp per la gestione dei veicoli.
 \end{itemize}
 
-%INSERIRE ERRORE LOGIN UC5
+\subsubsection{UC6 - Visualizzazione errore campi vuoti}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente non autenticato;
+	\item \textbf{Descrizione}: l'utente visualizza un messaggio d'errore in quanto non sono stati riempiti i campi di inserimento e-mail e password;
+	\item \textbf{Scenario principale}: l'utente non ancora autenticato tenta di accedere non inserendo un indirizzo e-mail e password;	
+	\item \textbf{Precondizione}: l'utente non autenticato non inserisce nessun dato nei campi di inserimento;
+	\item \textbf{Postcondizione}: l'applicazione fa visualizzare un messaggio d'errore.
+\end{itemize}
+\subsubsection{UC7 - Visualizzazione errore combinazione e-mail e password errata}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente non autenticato;
+	\item \textbf{Descrizione}: l'utente visualizza un messaggio d'errore in quanto i campi di inserimento e-mail e password sono stati riempiti in modo errato;
+	\item \textbf{Scenario principale}: l'utente non ancora autenticato tenta di accedere inserendo un indirizzo e-mail e password che insieme risultano non validi;	
+	\item \textbf{Precondizione}: l'utente non autenticato inserisce i dati che combinati risultano non validi;
+	\item \textbf{Postcondizione}: l'applicazione fa visualizzare un messaggio d'errore.
+\end{itemize}
 
-
-%INSERIRE RECUPERO PASSWORD UC8
+\subsubsection{UC8 - Recupero password}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente non autenticato;
+	\item \textbf{Descrizione}: l'utente non autenticato tenta
+	\item \textbf{Scenario principale}: l'utente non ancora autenticato tenta di accedere non inserendo un indirizzo e-mail e password;	
+	\item \textbf{Precondizione}: l'utente non autenticato non inserisce nessun dato nei campi di inserimento;
+	\item \textbf{Postcondizione}: l'applicazione fa visualizzare un messaggio d'errore.
+\end{itemize}
 
 \subsubsection{UC9 - Logout}
 \begin{itemize}
