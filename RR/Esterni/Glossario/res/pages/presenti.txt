@@ -107,5 +107,6 @@ time series
 *trello
 twelve-factor app
 *uml
+--verifica e validazione
 wallet
 *workflow
