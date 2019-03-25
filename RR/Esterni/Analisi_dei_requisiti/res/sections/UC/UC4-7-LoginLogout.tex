@@ -1,34 +1,45 @@
-\subsubsection{UC4 - Login}
+\begin{figure}[h]
+	%\includegraphics[width=9cm]{res/images/UC2Registrazione.png}
+	\centering
+	\caption{Schema generale: login ed errori annessi}
+\end{figure}
+\subsubsection{UC5 - Login}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	%\item \textbf{Attori Secondari}: Movens\glo;
 	\item \textbf{Descrizione}: per effettuare il procedimento di autenticazione, l'utente deve compilare i campi necessari ovvero e-mail e password;
-	\item \textbf{Scenario principale}: l'applicazione rende disponibili i campi da compilare per l'autenticazione. Dunque l'utente dovrà inserire tutti i dati necessari.
-	
-	\item \textbf{Precondizione}: l'utente ha inserito correttamente tutti i dati necessari nei campi.
-	\item \textbf{Postcondizione}: dopo aver controllato che i campi sono stati compilati correttamente attraverso la piattaforma Movens, l'utente viene autenticato nell'applicazione.	
+	\item \textbf{Scenario principale}: l'applicazione rende disponibili i campi da compilare per l'autenticazione. Dunque l'utente dovrà inserire tutti i dati necessari;
+	\item \textbf{Precondizione}: l'utente ha inserito correttamente tutti i dati necessari nei campi;
+	\item \textbf{Postcondizione}: dopo aver controllato che i campi sono stati compilati correttamente attraverso la piattaforma Movens\glo, l'utente viene autenticato nell'applicazione.
+	\item \textbf{Estensioni}:
+		\begin{enumerate}
+			\item Visualizzazione errore campi vuoti [UC6];
+			\item Visualizzazione errore combinazione e-mail e password errata [UC7].
+		\end{enumerate}	
 \end{itemize}
-
-\subsubsection{UC3.1 - Compilazione campi per il login}
+\begin{figure}[h]
+	%\includegraphics[width=9cm]{res/images/UC2Registrazione.png}
+	\centering
+	\caption{UC5 - Login}
+\end{figure}
+\subsubsection{UC5.1 - Compilazione campi per il login}
 \begin{figure}[h]
 	%\includegraphics[width=9cm]{res/images/UC3-1Login.png}
 	\centering
-	\caption{UC2 - Registrazione}
+	\caption{UC5.1 - Compilazione campi per il login}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	%\item \textbf{Attori Secondari}: Movens\glo;
 	\item \textbf{Descrizione}: l'utente compila i campi richiesti per l'autenticazione;
-	\item \textbf{Scenario principale}: l'utente compila i campi necessari all'autenticazione ovvero: 
-	\newline
-	a. l'utente inserisce l'email associata al proprio account [UC3.1.1];
-	\newline
-	b. l'utente inserisce la password associata la proprio account [UC3.1.2].	
-	\item \textbf{Precondizione}: l'utente si trova nell'activity di autenticazione.
+	\item \textbf{Scenario principale}: l'utente compila i campi necessari all'autenticazione ovvero:
+		\begin{itemize}
+			\item l'utente inserisce l'email associata al proprio account [UC5.1.1];
+			\item l'utente inserisce la password associata la proprio account [UC5.1.2].
+		\end{itemize}	
+	\item \textbf{Precondizione}: l'utente si trova nell'activity\glosp di autenticazione;
 	\item \textbf{Postcondizione}: l'utente ha compilato tutti i campi necessari all'autenticazione.	
 \end{itemize}
 
-\subsubsection{UC3.1.1 - Inserimento e-mail}
+\subsubsection{UC5.1.1 - Inserimento e-mail}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: al fine di portare a termine il processo di autenticazione l'utente deve inserire l'indirizzo e-mail associato all'account, campo ritenuto obbligatorio;
@@ -37,7 +48,7 @@
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con l'indirizzo e-mail associato al proprio account.
 \end{itemize}
 
-\subsubsection{UC3.1.2 - Inserimento password}
+\subsubsection{UC5.1.2 - Inserimento password}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: al fine di portare a termine il processo di autenticazione l'utente deve inserire la password associata al proprio account, campo ritenuto obbligatorio;
@@ -46,21 +57,21 @@
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con la password associata al proprio account.
 \end{itemize}
 
-\subsubsection{UC3.1.2 - Invio dati}
+\subsubsection{UC5.2 - Invio dati}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati; se e-mail e password risulteranno corrette l'utente verrà autenticato;
 	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati;	
 	\item \textbf{Precondizione}: i campi dati necessari per l'autenticazione sono compilabili. È presente il pulsante per la conferma dei dati;
-	\item \textbf{Postcondizione}: l'utente viene autenticato e rimandato all'activity per la gestione dei veicoli.
+	\item \textbf{Postcondizione}: l'utente viene autenticato e rimandato all'activity\glosp per la gestione dei veicoli.
 \end{itemize}
 
 %INSERIRE ERRORE LOGIN UC5
 
 
-%INSERIRE RECUPERO PASSWORD UC6
+%INSERIRE RECUPERO PASSWORD UC8
 
-\subsubsection{UC7 - Logout}
+\subsubsection{UC9 - Logout}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
 	utente autenticato;
