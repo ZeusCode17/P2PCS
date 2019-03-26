@@ -2,7 +2,7 @@
 %\begin{figure}[h]
 	%\includegraphics[width=10cm]{res/images/UC7-profilepage.png}
 	%\centering
-	%\caption{UC7 - Gestione Profilo}
+	%\caption{UC14 - Gestione Profilo}
 %\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
@@ -17,7 +17,8 @@
 	\item \textbf{Postcondizione}:l'utente ha effettuato l'operazione di modifica dati oppure l'eliminazione dell'account e il processo è stato confermato dal sistema.
 	\item \textbf{Estensioni}:
 	\begin{enumerate}
-	\item visualizzazione di errore sui dati in input[UC7.2]
+	\item visualizzazione di errore password non conforme[UC3];
+	\item visualizzazione di errore password non corrispondente[UC15].
 	\end{enumerate}
 \end{itemize} 
 \subsubsection{UC7.1 - Modifica dati account}
@@ -41,7 +42,55 @@
 	\item \textbf{Postcondizione}: il sistema ha memorizzato le modifiche apportate ai dati da parte dell’utente.
 \end{itemize}
 
-\subsubsection{UC7.1.1 - Modifica password}
+\subsubsection{UC7.1.1 - Modifica nome}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente ha la possibilità di modificare il nome inserito in precedenza;
+	\item \textbf{Precondizione}: il sistema fornisce una schermata nella quale è possibile inserire il nuovo nome;
+	\item \textbf{Postcondizione}: l'utente ha inserito il nuovo nome.
+\end{itemize}
+
+\subsubsection{UC7.1.2 - Modifica cognome}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente ha la possibilità di modificare il cognome inserito in precedenza;
+	\item \textbf{Precondizione}: il sistema fornisce una schermata nella quale è possibile inserire il nuovo cognome;
+	\item \textbf{Postcondizione}: l'utente ha inserito il nuovo cognome.
+\end{itemize}
+
+\subsubsection{UC7.1.3 - Modifica numero telefonico}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente ha la possibilità di modificare il numero telefonico inserito in precedenza;
+	\item \textbf{Precondizione}: il sistema fornisce una schermata nella quale è possibile inserire il nuovo numero telefonico;
+	\item \textbf{Postcondizione}: l'utente ha inserito il nuovo numero telefonico.
+\end{itemize}
+
+\subsubsection{UC7.1.4 - Modifica email}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente ha la possibilità di modificare l'email inserita in precedenza;
+	\item \textbf{Precondizione}: il sistema fornisce una schermata nella quale è possibile inserire la nuova email;
+	\item \textbf{Postcondizione}: l'utente ha inserito la nuova email.
+\end{itemize}
+
+\subsubsection{UC7.1.5 - Modifica data di nascita}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente ha la possibilità di modificare la data di nascita inserita in precedenza;
+	\item \textbf{Precondizione}: il sistema fornisce una schermata nella quale è possibile inserire la nuova data di nascita;
+	\item \textbf{Postcondizione}: l'utente ha inserito la nuova data di nascita.
+\end{itemize}
+
+\subsubsection{UC7.1.6 - Modifica residenza}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente ha la possibilità di modificare la residenza inserita in precedenza;
+	\item \textbf{Precondizione}: il sistema fornisce una schermata nella quale è possibile inserire la nuova residenza;
+	\item \textbf{Postcondizione}: l'utente ha inserito la nuova residenza.
+\end{itemize}
+
+\subsubsection{UC7.1.7 - Modifica password}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'utente ha la possibilità di modificare la password inserita in precedenza;
@@ -49,7 +98,7 @@
 	\item \textbf{Postcondizione}: l'utente ha inserito la nuova password.
 \end{itemize}
 
-\subsubsection{UC7.1.2 - Inserimento vecchia password}
+\subsubsection{UC7.1.8 - Inserimento vecchia password}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'utente deve inserire la password attuale per poter la aggiornare;
@@ -57,15 +106,7 @@
 	\item \textbf{Postcondizione}: l'utente ha inserito la vecchia password.
 \end{itemize}
 
-\subsubsection{UC7.1.3 - Modifica patente}
-\begin{itemize}
-	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'utente ha la possibilità di aggiornare la patente inserita in precedenza;
-	\item \textbf{Precondizione}: il sistema fornisce una schermata nella quale è possibile inserire la nuova patente;
-	\item \textbf{Postcondizione}: l'utente ha inserito la nuova patente.
-\end{itemize}
-
-\subsubsection{UC7.1.4 - Conferma modifica dati}
+\subsubsection{UC7.1.3 - Conferma modifica dati}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'utente deve 
@@ -74,30 +115,13 @@
 	\item \textbf{Postcondizione}: l'utente ha confermato di voler rendere effettivo il cambiamento all'interno del sistema.
 \end{itemize}
 
-\subsubsection{UC7.2 - Errore nei dati in input}
-\begin{itemize}
-	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: durante la fase di modifica dei dati, l'utente può aver commesso uno dei seguenti errori:
-	\begin{itemize}[label=$-$]
-	\item la password inserita in UC7.1.2 non corrisponde con la vecchia password;
-	\item la password nuova inserita non è conforme ai vincoli di sicurezza imposti dal sistema;
-	\item la nuova patente inserita non è valida.	
-	\end{itemize}
-	\item \textbf{Precondizione}: l'utente ha effettuato la conferma dei dati inseriti;
-	\item \textbf{Postcondizione}: viene notificato all'utente un errore nell'inserimento dei dati. Bisogna specificare l'errore commesso e su quali dati.
-\end{itemize}
-
-\subsubsection{UC7.3 - Eliminazione account}
+\subsubsection{UC7.2 - Eliminazione account}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: all'utente viene fornita la possibilità di eliminare il proprio account e di conseguenza i propri dati all'interno del sistema.
 	\item \textbf{Precondizione}: l'utente è in possesso di un account all'internodel sistema. Deve quindi aver effettuato la registrazione e non avere mai efettuato la procedura di eliminazione account.
 	\item \textbf{Postcondizione}: l'utente ha cancellato il proprio account e viene riportato alla schermata iniziale dell'app[UC1].Il sistema non dovrà avere più taccia di tale utente.
 \end{itemize}
-
-
-%Errori UC13
-
 
 
 
