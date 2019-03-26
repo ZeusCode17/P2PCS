@@ -15,6 +15,7 @@ artefatti
 attore
 *aws
 *back end
+--baseline
 *blockchain
 body of knowledge
 boilerplate
@@ -73,7 +74,7 @@ partizione di equivalenza
 *plug-in
 pos tagging
 product baseline
-proof of concept
+*proof of concept
 pull request
 --processo
 *python
@@ -81,6 +82,7 @@ raiden
 *react
 *redmine
 *redux
+--refactoring
 *repository
 rest
 *rete bayesiana
