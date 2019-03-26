@@ -4,8 +4,8 @@ Leggenda:
   non le abbiamo ancora
 
 
---activity
---approccio incrementale
+*activity
+*approccio incrementale
 add-on
 agile
 *apache kafka
@@ -27,7 +27,7 @@ comportamento emergente
 continuous delivery
 *continuous integration
 *copertura
---core-drive
+*core-drive
 *dapp
 *dashboard
 *design pattern
@@ -37,26 +37,26 @@ dilazione
 *documento esterno
 *documento interno
 *driver
---ethereum
---evm 
+*ethereum
+*evm 
 *esLint
---emergente
+*emergente
 *firebase storage
 *framework
 *freeling
 *front end
---fragment
+*fragment
 *gamification
 *gantt
 gigacore
 *gitlab
---grafana
---GUI
---henshin
---hosting
+*grafana
+*GUI
+*henshin
+*hosting
 *hunpos
 *json
---kotlin
+*kotlin
 lint
 linter
 *milestone
