@@ -4,8 +4,8 @@ Leggenda:
   non le abbiamo ancora
 
 
---activity
---approccio incrementale
+*activity
+*approccio incrementale
 add-on
 agile
 *apache kafka
@@ -15,6 +15,7 @@ artefatti
 attore
 *aws
 *back end
+--baseline
 *blockchain
 body of knowledge
 boilerplate
@@ -27,7 +28,7 @@ comportamento emergente
 continuous delivery
 *continuous integration
 *copertura
---core-drive
+*core-drive
 *dapp
 *dashboard
 *design pattern
@@ -37,26 +38,26 @@ dilazione
 *documento esterno
 *documento interno
 *driver
---ethereum
---evm 
+*ethereum
+*evm 
 *esLint
---emergente
+*emergente
 *firebase storage
 *framework
 *freeling
 *front end
---fragment
+*fragment
 *gamification
 *gantt
 gigacore
 *gitlab
---grafana
---GUI
---henshin
---hosting
+*grafana
+*GUI
+*henshin
+*hosting
 *hunpos
 *json
---kotlin
+*kotlin
 lint
 linter
 *milestone
@@ -73,7 +74,7 @@ partizione di equivalenza
 *plug-in
 pos tagging
 product baseline
-proof of concept
+*proof of concept
 pull request
 --processo
 *python
@@ -81,6 +82,7 @@ raiden
 *react
 *redmine
 *redux
+--refactoring
 *repository
 rest
 *rete bayesiana
