@@ -2,21 +2,25 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: agli utenti autenticati è resa disponibile una maschera che presenta la lista di tutte le sue prenotazioni ancora attive, dalla quale l'utente può scegliere di effettuare operazioni di gestione su ognuna di esse;
-	Per ogni prenotazione presente nella lista saranno visualizzati dei dettagli riassuntivi, che sono:
+	per ogni prenotazione presente nella lista saranno visualizzati dei dettagli riassuntivi, che sono:
 	\begin{itemize}
 		\item Data;
 		\item Fascia oraria;
-		\item Veicolo prenotato;
+		\item Veicolo prenotato.
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente effettua operazioni di gestione di una prenotazione. Esse comprendono:
 	\begin{itemize}
-		\item la visualizzazione dei dettagli di una prenotazione [UC11.1];
-		\item la cancellazione di una prenotazione [UC11.2].
+		\item Visualizzazione dettagli prenotazione [UC11.1];
+		\item Cancellazione prenotazione [UC11.2].
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema carica correttamente la lista di prenotazione effettuate attualmente attive;
 	\item \textbf{Post-condizione}: l'utente ha visualizzato le sue prenotazioni correnti ed è riuscito ad effettuare eventuali modifiche.
 \end{itemize} 
-
+\begin{figure}[h]
+	\includegraphics[width=10cm]{res/images/UC11Prenotazione.png}
+	\centering
+	\caption{UC11 - Gestione prenotazione}
+\end{figure}
  \subsubsection{UC11.1 - Visualizzazione dettagli prenotazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
@@ -48,11 +52,11 @@
 \end{itemize}
 
 \end{comment}
-\subsubsection{UC11.2 - Cancellazione di una prenotazione}
+\subsubsection{UC11.2 - Cancellazione prenotazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'utente cancella la prenotazione selezionata;
 	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Attraverso l'apposito pulsante l'utente chiederà la cancellazione della prenotazione;
-	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende cancellare
+	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende cancellare;
 	\item \textbf{Post-condizione}: l'utente ha annullato correttamente la prenotazione selezionata.
 \end{itemize}
