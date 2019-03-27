@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="gantt_analisi" company="" webLink="http://" view-date="2019-03-14" view-index="0" gantt-divider-location="533" resource-divider-location="300" version="2.8.10" locale="en">
+<?xml version="1.0" encoding="UTF-8"?><project name="gantt_analisi" company="" webLink="http://" view-date="2019-03-12" view-index="0" gantt-divider-location="533" resource-divider-location="300" version="2.8.10" locale="it">
     <description/>
-    <view zooming-state="default:0" id="gantt-chart">
-        <field id="tpd3" name="Name" width="235" order="0"/>
-        <field id="tpd4" name="Begin date" width="124" order="1"/>
-        <field id="tpd5" name="End date" width="123" order="2"/>
-        <field id="tpd6" name="Duration" width="47" order="3"/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="235" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="124" order="1"/>
+        <field id="tpd5" name="Data di fine" width="123" order="2"/>
+        <field id="tpd6" name="Durata" width="47" order="3"/>
         <option id="color.recent"><![CDATA[#3399ff #000000 #00ff00 #66ff00 #cc00cc]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="210" order="0"/>
-        <field id="1" name="Default role" width="86" order="1"/>
+        <field id="0" name="Nome" width="210" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
