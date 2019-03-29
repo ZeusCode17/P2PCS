@@ -43,6 +43,7 @@ dilazione
 *esLint
 *emergente
 *firebase storage
+--Firebase
 *framework
 *freeling
 *front end
