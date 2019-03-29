@@ -3,7 +3,7 @@ Leggenda:
 -- da inserire
   non le abbiamo ancora
 
-
+*android
 *activity
 *approccio incrementale
 add-on
@@ -11,11 +11,11 @@ agile
 *apache kafka
 *api
 area di staging
-artefatti
+*artefatti
 attore
 *aws
 *back end
---baseline
+*baseline
 *blockchain
 body of knowledge
 boilerplate
@@ -24,7 +24,7 @@ boilerplate
 *capitolato
 *changelog
 *coesione
-comportamento emergente
+*comportamento emergente
 continuous delivery
 *continuous integration
 *copertura
@@ -38,11 +38,10 @@ dilazione
 *documento esterno
 *documento interno
 *driver
-*ethereum
-*evm 
+*ethereum 
 *esLint
-*emergente
 *firebase storage
+*Firebase
 *framework
 *freeling
 *front end
@@ -50,6 +49,7 @@ dilazione
 *gamification
 *gantt
 gigacore
+*github
 *gitlab
 *grafana
 *GUI
@@ -57,17 +57,18 @@ gigacore
 *hosting
 *hunpos
 *json
+*jetbrains
 *kotlin
 lint
 linter
 *milestone
 modello a v
-modello di sviluppo
---metamask
+*modello di sviluppo
+*metamask
 *movens
 *node.js
 *octalysis
---off-topic
+*off-topic
 *open-source
 partizione di equivalenza
 *peer-to-peer
@@ -76,21 +77,22 @@ pos tagging
 product baseline
 *proof of concept
 pull request
---processo
+*processo
 *python
 raiden
 *react
 *redmine
 *redux
---refactoring
+*refactoring
+*release
 *repository
 rest
 *rete bayesiana
 ropsten
 sass
 *scss
---schedule
-server-side
+*schedule
+*server-side
 *shortcut
 *skill
 *slack
@@ -102,13 +104,12 @@ solidity
 stand-up
 *stub
 surge.sh
---sviluppo (modello)
 technology baseline
 *telegram
 time series
 *trello
 twelve-factor app
 *uml
---verifica e validazione
+*verifica e validazione
 wallet
 *workflow
