@@ -15,7 +15,7 @@ artefatti
 attore
 *aws
 *back end
---baseline
+*baseline
 *blockchain
 body of knowledge
 boilerplate
