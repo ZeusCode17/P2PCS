@@ -3,7 +3,7 @@ Leggenda:
 -- da inserire
   non le abbiamo ancora
 
-
+Android
 *activity
 *approccio incrementale
 add-on
@@ -51,6 +51,7 @@ dilazione
 *gamification
 *gantt
 gigacore
+github
 *gitlab
 *grafana
 *GUI
@@ -84,6 +85,7 @@ raiden
 *redmine
 *redux
 --refactoring
+release
 *repository
 rest
 *rete bayesiana
