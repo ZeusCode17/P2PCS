@@ -1,2 +1,25 @@
 \subsection{Requisiti prestazionali}
-Non sono stati individuati requisiti prestazionali in quanto il progetto sarà costituito da una ÐApp\glo, e come database di supporto verrà utilizzato un database distribuito. L'utilizzo di queste tecnologie prevede l'interazione con una rete Ethereum\glosp nel primo caso, e con una rete peer-to-peer\glosp nel secondo. Le operazioni che avvengono in una rete Ethereum\glosp reale hanno un tempo di soddisfacimento che dipende dal carico della rete nel momento della richiesta. Nel caso queste operazioni vadano a modificare un contratto, sarà inoltre il quantitativo di Ether per unità di Gas\glosp a determinarne la priorità di esecuzione all'interno della rete. Situazione simile per quanto riguarda il database distribuito, dove la velocità di reperimento delle informazioni dipende dal numero di peer attualmente disponibili.
+
+\rowcolors{2}{pari}{dispari}
+
+\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.25\textwidth}
+		>{\raggedright}p{0.35\textwidth} >{\centering}p{0.14\textwidth}}
+	\caption{Tabella dei requisiti prestazionali}\\
+	\rowcolorhead 
+	\textbf{\color{white}Requisito} 
+	& \textbf{\color{white}Classificazione} 
+	& \centering\textbf{\color{white}Descrizione}
+	& \textbf{\color{white}Fonti} 
+	\endfirsthead
+	\rowcolor{white}\caption[]{(continua)}\\
+	\rowcolorhead 
+	\textbf{\color{white}Requisito} 
+	& \textbf{\color{white}Classificazione} 
+	& \centering\textbf{\color{white}Descrizione}
+	& \textbf{\color{white}Fonti} 
+	\endhead	
+	
+	
+	RPO1	&	Obbligatorio	&	L'applicazione deve essere fluida, con tempi di caricamento inferiori ai 5-10 secondi	&	Interno	\tabularnewline
+
+\end{longtable}
