@@ -1,12 +1,13 @@
 \section{Qualità di prodotto}
-Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento allo standard ISO/IEC 9126\glosp{} che definisce le caratteristiche di cui tener conto per produrre un prodotto di buona qualità. Le caratteristiche sono descritte attraverso dei parametri, che ne quantificano il grado di raggiungimento. Di seguito vengono citate le voci che il gruppo ha ritenuto rilevanti nel contesto del progetto.
+Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento allo standard ISO/IEC 9126\glosp{} che definisce le caratteristiche di cui tener conto per produrre un prodotto di buona qualità.
+Di seguito vengono citate le voci che il gruppo ha ritenuto rilevanti nel contesto del progetto.
 	\subsection{Funzionalità}
 	Capacità del prodotto di fornire funzioni che soddisfino i requisiti espliciti ed impliciti dichiarati dell'Analisi dei Requisiti.
 		\subsubsection{Obiettivi}
 		\begin{itemize}
-			\item \textbf{Adeguatezza}: fornire un insieme appropriato di funzioni per le attività specificate;
-			\item \textbf{Accuratezza}: fornire i risultati o gli effetti desiderati con il grado di precisione richiesto;
-			\item \textbf{Conformità}: il prodotto deve aderire a determinati standard. %PLACEHOLDER è forse troppo ovvio?
+			\item adeguatezza: fornire un insieme appropriato di funzioni per le attività specificate;
+			\item accuratezza: fornire i risultati o gli effetti desiderati con il grado di precisione richiesto;
+			\item conformità: il prodotto deve aderire a determinati standard. %PLACEHOLDER è forse troppo ovvio?
 		\end{itemize}
 		\subsubsection{Metriche}
 			\paragraph{Completezza di implementazione funzionale}
@@ -27,7 +28,7 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item tolleranza agli errori: il prodotto mantiene un livello specificato di prestazioni anche in caso di malfunzionamenti o di un uso scorretto.
 		\end{itemize}
 		\subsubsection{Metriche}
-			\paragraph{Densità dei guasto nei casi di test}
+			\paragraph{Densità dei guasti nei casi di test}
 			Percentuale di errori rilevati durante il periodo di test.
 			\begin{itemize}
 			\item misurazione: si calcola con la seguente formula: \\
@@ -55,36 +56,45 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 		\end{itemize}
 		\subsubsection{Metriche}
 			\paragraph{Facilità di utilizzo}
-			La facilità con cui l'utente raggiunge ciò che vuole viene rappresentata tramite il numero di click necessari per arrivare al contenuto desiderato.
+			La facilità con cui l'utente raggiunge ciò che vuole viene rappresentata tramite il numero di operazioni necessarie per arrivare al contenuto desiderato.
 			\begin{itemize}
-			\item misurazione: click per raggiungere la schermata di checkout;
+			\item misurazione: operazioni per completare una prenotazione;
 			\item valore preferibile: $\leq$ 10;
 			\item valore accettabile: $\leq$ 15.
 			\end{itemize}
 			\paragraph{Facilità di apprendimento}
 			La facilità con cui l'utente riesce ad imparare ad usare le funzionalità del prodotto viene rappresentata tramite il tempo medio che serve per comprenderle.
 			\begin{itemize}
-			\item misurazione: minuti per raggiungere pagina di checkout;
+			\item misurazione: minuti per completare una prenotazione;
 			\item valore preferibile: $\leq$ 3;
 			\item valore accettabile: $\leq$ 5.
 			\end{itemize}
 			\paragraph{Profondità della gerarchia}
-			La profondità del sito. Un sito per essere facile da utilizzare non deve essere troppo profondo.
+			La profondità dell'applicazione. Un'app per essere facile da utilizzare non deve avere una struttura troppo profonda.
 			\begin{itemize}
-			\item misurazione: livello di profondità della pagine;
+			\item misurazione: livello di profondità delle interfacce;
 			\item valore preferibile: $\leq$ 4;
 			\item valore accettabile: $\leq$ 7.
 			\end{itemize}
+			\paragraph{Comprensione delle funzioni}
+			Percentuale delle funzioni del prodotto che l'utente sarà in grado di capire correttamente.
+			\begin{itemize}
+				\item misurazione: si calcola con la seguente formula: \\
+			\centerline{ R =  \(\frac{N\textsubscript{FI}}{N\textsubscript{FT}} \)$ \cdot 100$ }
+			dove N\textsubscript{FI} indica il numero di funzioni intuitive per l'utente e N\textsubscript{FT} indica il numero totale di funzioni presenti nel prodotto;
+				\item valore preferibile: 100\%;
+				\item valore accettabile: $\geq$ 95\%.
+			\end{itemize}
 	\subsection{Manutenibilità}
-	Capacità del prodotto di essere modificato, includendo correzioni, miglioramenti o adattamenti.
+	Capacità del prodotto di essere modificato. Le modifiche possono includere correzioni, miglioramenti o adattamento del software.
 		\subsubsection{Obiettivi}
 		\begin{itemize}
-			\item analizzabilità: facilità con la quale è possibile analizzare il codice per localizzare un errore;
-			\item modificabilità: capacità del prodotto di permettere l'implementazione di una modifica.
+			\item analizzabilità: facilità con la quale è possibile analizzare il codice per localizzare un errore o anomalia;
+			\item modificabilità: capacità del prodotto di permettere l'implementazione di una modifica;
 		\end{itemize}
 		\subsubsection{Metriche}
 			\paragraph{Facilità di comprensione}
-			La facilità con cui è possibile comprendere cosa fa il codice può rappresentata dal numero di linee di commento nel codice.
+			La facilità con cui è possibile comprendere cosa fa il codice può essere rappresentata dal numero di linee di commento nel codice.
 			\begin{itemize}
 			\item misurazione: Si può calcolare con la seguente formula: \\
 			\centerline{R = \(\frac{N\textsubscript{LCOM}}{N\textsubscript{LCOD}} \) }
@@ -105,5 +115,22 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item misurazione: numero di metodi per classe;
 			\item valore preferibile $\leq$ 8;
 			\item valore accettabile $\leq$ 15.
+			\end{itemize}			
+			
+			\subparagraph{SFIN: Structural Fan-in}
+			Indice di utilità, indica quante componenti utilizzano il modulo in esame. Un alto valore indica un alto riuso della componente.
+			\begin{itemize}
+				\item misurazione: conteggio delle componenti;
+				\item valore preferibile: $ \geq 1$;
+				\item valore accettabile: $ \geq 0$.
+			\end{itemize}
+			
+			\subparagraph{SFOUT: Structural Fan-out}
+			Indice di dipendenza, indica quante componenti vengono utilizzate dalla componente in esame. Un alto valore indica un alto
+accoppiamento della componente.
+			\begin{itemize}
+				\item misurazione: conteggio delle componenti;
+				\item valore preferibile: $ = 0$;
+				\item valore accettabile: $ \leq 6$.
 			\end{itemize}
 \pagebreak
