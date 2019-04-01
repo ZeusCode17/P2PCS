@@ -5,7 +5,7 @@ Leggenda:
 
 *android
 *activity
-add-on
+*add-on
 agile
 *apache kafka
 *api
