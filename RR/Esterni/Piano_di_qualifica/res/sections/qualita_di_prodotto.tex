@@ -1,15 +1,15 @@
 \section{Qualità di prodotto}
 Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento allo standard ISO/IEC 9126\glosp{} che definisce le caratteristiche di cui tener conto per produrre un prodotto di buona qualità. Le caratteristiche sono descritte attraverso dei parametri, che ne quantificano il grado di raggiungimento. Di seguito vengono citate le voci che il gruppo ha ritenuto rilevanti nel contesto del progetto.
 	\subsection{Funzionalità}
-	Capacità del prodotto di fornire funzioni che riescano a soddisfare tutti i requisiti, sia espliciti che impliciti, presenti nell'Analisi dei Requisiti.
+	Capacità del prodotto di fornire funzioni che soddisfino i requisiti espliciti ed impliciti dichiarati dell'Analisi dei Requisiti.
 		\subsubsection{Obiettivi}
 		\begin{itemize}
-			\item \textbf{Appropriatezza}: il prodotto deve mettere a disposizione un insieme di funzioni conformi agli obiettivi richiesti;
-			\item \textbf{Accuratezza}: il prodotto deve fornire risultati attesti con il grado di precisione richiesto;
+			\item \textbf{Adeguatezza}: fornire un insieme appropriato di funzioni per le attività specificate;
+			\item \textbf{Accuratezza}: fornire i risultati o gli effetti desiderati con il grado di precisione richiesto;
 			\item \textbf{Conformità}: il prodotto deve aderire a determinati standard. %PLACEHOLDER è forse troppo ovvio?
 		\end{itemize}
 		\subsubsection{Metriche}
-			\paragraph{Completezza dell'implementazione}
+			\paragraph{Completezza di implementazione funzionale}
 			La completezza del prodotto e il rispetto dei requisiti viene indicato da una percentuale.
 			\begin{itemize}
 			\item misurazione: si calcola con la seguente formula: \\
@@ -18,16 +18,17 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item valore preferibile: 100\%;
 			\item valore accettabile: 100\%.
 			\end{itemize}
+			NOTA: l'input per la metrica è la specifica dei requisiti aggiornate. Eventuali modifiche identificate durante il ciclo di vita devono essere applicate alle specifiche dei requisiti prima di essere utilizzate nel processo di misurazione.
 	\subsection{Affidabilità}
-	Capacità del prodotto di mantenere prestazioni elevate anche in caso di situazioni anomale o critiche.
+	Capacità del prodotto di mantenere un certo livello di prestazioni quando utilizzato nelle condizioni specificate.
 		\subsubsection{Obiettivi}
 		\begin{itemize}
-			\item maturità: il prodotto deve evitare che si verifichino errori e malfunzionamenti;
-			\item tolleranza agli errori: il prodotto mantiene alte prestazioni anche in caso di malfunzionamenti o di un uso scorretto.
+			\item maturità: capacità del prodotto di evitare che si verifichino errori e malfunzionamenti;
+			\item tolleranza agli errori: il prodotto mantiene un livello specificato di prestazioni anche in caso di malfunzionamenti o di un uso scorretto.
 		\end{itemize}
 		\subsubsection{Metriche}
-			\paragraph{Densità errori}
-			L'abilità del prodotto di resistere a malfunzionamenti viene indicata con una percentuale.
+			\paragraph{Densità dei guasto nei casi di test}
+			Percentuale di errori rilevati durante il periodo di test.
 			\begin{itemize}
 			\item misurazione: si calcola con la seguente formula: \\
 			\centerline{ M =  \(\frac{N\textsubscript{ER}}{N\textsubscript{TE}} \)$ \cdot 100$ }
@@ -35,13 +36,22 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item valore preferibile: 0\%;
 			\item valore accettabile: $\leq$ 10\%.
 			\end{itemize}
+			\paragraph{Risoluzione dei guasti}
+			Percentuali di guasti rilevati risolti.
+			\begin{itemize}
+			\item misurazione: si calcola con la seguente formula: \\
+			\centerline{ R =  \(\frac{N\textsubscript{ER}}{N\textsubscript{TER}} \)$ \cdot 100$ }
+			dove N\textsubscript{ER} indica il numero di errori risolti tra quelli rilevati e N\textsubscript{TER} indica il numero totale di errori rilevati;
+			\item valore preferibile: 100\%;
+			\item valore accettabile: 100\%.
+			\end{itemize}
 	\subsection{Usabilità}
-	Capacità del prodotto di essere di facile comprensione e utilizzo da parte degli utenti.
+	Capacità del prodotto di essere compreso, appreso e attraente per l'utente, quando usato nelle condizioni specificate.
 		\subsubsection{Obiettivi}
 		\begin{itemize}
 			\item comprensibilità: l'utente deve essere in grado di comprendere le funzionalità offerte dal prodotto e ad utilizzarle;
-			\item apprendibilità: l'utente deve poter imparare facilmente ad utilizzare il prodotto;
-			\item attrattività: il prodotto deve essere piacevole da usare.
+			\item apprendibilità: capacità del prodotto di consentire all'utente di apprendere la sua applicazione;
+			\item attrattiva: il prodotto deve essere piacevole da usare.
 		\end{itemize}
 		\subsubsection{Metriche}
 			\paragraph{Facilità di utilizzo}
