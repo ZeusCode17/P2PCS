@@ -16,14 +16,14 @@
 		\begin{itemize}
 			\item Inserimento nome [UC1.1.1];
 			\item Inserimento cognome [UC1.1.2];
-			\item Inserimento indirizzo e-mail [UC1.1.3];
+			\item Inserimento indirizzo email [UC1.1.3];
 			\item Inserimento password [UC1.1.4].
 		\end{itemize}
 	\item \textbf{Precondizione}: l'utente ha inserito correttamente tutti i dati necessari nei campi;
 	\item \textbf{Postcondizione}: l'utente viene registrato nell'applicazione;
 	\item \textbf{Estensioni}:
 		\begin{itemize}
-			\item Visualizzazione errore e-mail non valida [UC2];
+			\item Visualizzazione errore email non valida [UC2];
 			\item Visualizzazione errore password non conforme [UC3]. 
 		\end{itemize} 
 \end{itemize}
@@ -63,13 +63,13 @@
 	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento del cognome;
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con il proprio cognome.	
 \end{itemize}
-\subsubsection{UC1.1.3 - Inserimento indirizzo e-mail}
+\subsubsection{UC1.1.3 - Inserimento indirizzo email}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: al fine di portare a termine il processo di registrazione l'utente deve inserire il proprio indirizzo e-mail, campo ritenuto obbligatorio;
-	\item \textbf{Scenario principale}: l'utente compila il campo relativo all'indirizzo e-mail;	
-	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento dell'indirizzo e-mail;
-	\item \textbf{Postcondizione}: l'utente ha compilato il campo con il proprio indirizzo e-mail.
+	\item \textbf{Descrizione}: al fine di portare a termine il processo di registrazione l'utente deve inserire il proprio indirizzo email, campo ritenuto obbligatorio;
+	\item \textbf{Scenario principale}: l'utente compila il campo relativo all'indirizzo email;	
+	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento dell'indirizzo email;
+	\item \textbf{Postcondizione}: l'utente ha compilato il campo con il proprio indirizzo email.
 \end{itemize}
 \subsubsection{UC1.1.4 - Inserimento password}
 \begin{itemize}
@@ -88,12 +88,12 @@
 	\item \textbf{Postcondizione}: l'utente viene rimandato a una nuova activity che conferma il successo dell'operazione e avvisa l'utente di controllare la propria e-mail per confermare il processo di registrazione.
 \end{itemize}
 
-\subsubsection{UC2 - Visualizzazione errore e-mail non valida}
+\subsubsection{UC2 - Visualizzazione errore email non valida}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente visualizza un messaggio d'errore in quanto l'e-mail digitata è scorretta;
-	\item \textbf{Scenario principale}: l'utente non ancora autenticato tenta di registrarsi inserendo un indirizzo e-mail non valido;
-	\item \textbf{Precondizione}: l'utente non autenticato ha sbagliato l'inserimento dell'indirizzo e-mail; 
+	\item \textbf{Descrizione}: l'utente visualizza un messaggio d'errore in quanto l'email digitata è scorretta;
+	\item \textbf{Scenario principale}: l'utente non ancora autenticato tenta di registrarsi inserendo un indirizzo email non valido;
+	\item \textbf{Precondizione}: l'utente non autenticato ha sbagliato l'inserimento dell'indirizzo email; 
 	\item \textbf{Postcondizione}: l'applicazione fa visualizzare un messaggio d'errore.
 \end{itemize}
 

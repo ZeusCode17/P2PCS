@@ -5,8 +5,7 @@ Leggenda:
 
 *android
 *activity
-*approccio incrementale
-add-on
+*add-on
 agile
 *apache kafka
 *api
@@ -74,7 +73,7 @@ partizione di equivalenza
 *peer-to-peer
 *plug-in
 pos tagging
-product baseline
+*product baseline
 *proof of concept
 pull request
 *processo
@@ -104,7 +103,7 @@ solidity
 stand-up
 *stub
 surge.sh
-technology baseline
+*technology baseline
 *telegram
 time series
 *trello
