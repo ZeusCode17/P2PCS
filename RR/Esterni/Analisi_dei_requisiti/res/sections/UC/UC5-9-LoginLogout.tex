@@ -14,7 +14,7 @@
 	\item \textbf{Estensioni}:
 		\begin{itemize}
 			\item Visualizzazione errore campi vuoti [UC6];
-			\item Visualizzazione errore combinazione e-mail e password errata [UC7].
+			\item Visualizzazione errore combinazione email e password errata [UC7].
 		\end{itemize}	
 \end{itemize}
 \begin{figure}[h]
@@ -40,13 +40,13 @@
 	\centering
 	\caption{UC5.1 - Compilazione campi per il login}
 \end{figure}
-\subsubsection{UC5.1.1 - Inserimento e-mail}
+\subsubsection{UC5.1.1 - Inserimento email}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: al fine di portare a termine il processo di autenticazione l'utente deve inserire l'indirizzo e-mail associato all'account, campo ritenuto obbligatorio;
-	\item \textbf{Scenario principale}: l'utente compila il campo relativo all'indirizzo e-mail;	
-	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento dell'indirizzo e-mail;
-	\item \textbf{Postcondizione}: l'utente ha compilato il campo con l'indirizzo e-mail associato al proprio account.
+	\item \textbf{Descrizione}: al fine di portare a termine il processo di autenticazione l'utente deve inserire l'indirizzo email associato all'account, campo ritenuto obbligatorio;
+	\item \textbf{Scenario principale}: l'utente compila il campo relativo all'indirizzo email;	
+	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento dell'indirizzo email;
+	\item \textbf{Postcondizione}: l'utente ha compilato il campo con l'indirizzo email associato al proprio account.
 \end{itemize}
 
 \subsubsection{UC5.1.2 - Inserimento password}
@@ -61,7 +61,7 @@
 \subsubsection{UC5.2 - Invio dati}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati; se e-mail e password risulteranno corrette l'utente verrà autenticato;
+	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati; se email e password risulteranno corrette l'utente verrà autenticato;
 	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati;	
 	\item \textbf{Precondizione}: i campi dati necessari per l'autenticazione sono compilabili. È presente il pulsante per la conferma dei dati;
 	\item \textbf{Postcondizione}: l'utente viene autenticato e rimandato all'activity\glosp per la gestione dei veicoli.
@@ -70,16 +70,16 @@
 \subsubsection{UC6 - Visualizzazione errore campi vuoti}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente visualizza un messaggio d'errore in quanto non sono stati riempiti i campi di inserimento e-mail e password;
-	\item \textbf{Scenario principale}: l'utente non ancora autenticato tenta di accedere non inserendo un indirizzo e-mail e password;	
+	\item \textbf{Descrizione}: l'utente visualizza un messaggio d'errore in quanto non sono stati riempiti i campi di inserimento email e password;
+	\item \textbf{Scenario principale}: l'utente non ancora autenticato tenta di accedere non inserendo un indirizzo email e password;	
 	\item \textbf{Precondizione}: l'utente non autenticato non inserisce nessun dato nei campi di inserimento;
 	\item \textbf{Postcondizione}: l'applicazione fa visualizzare un messaggio d'errore.
 \end{itemize}
-\subsubsection{UC7 - Visualizzazione errore combinazione e-mail e password errata}
+\subsubsection{UC7 - Visualizzazione errore combinazione email e password errata}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente visualizza un messaggio d'errore in quanto i campi di inserimento e-mail e password sono stati riempiti in modo errato;
-	\item \textbf{Scenario principale}: l'utente non ancora autenticato tenta di accedere inserendo un indirizzo e-mail e password che insieme risultano non validi;	
+	\item \textbf{Descrizione}: l'utente visualizza un messaggio d'errore in quanto i campi di inserimento email e password sono stati riempiti in modo errato;
+	\item \textbf{Scenario principale}: l'utente non ancora autenticato tenta di accedere inserendo un indirizzo email e password che insieme risultano non validi;	
 	\item \textbf{Precondizione}: l'utente non autenticato inserisce i dati che combinati risultano non validi;
 	\item \textbf{Postcondizione}: l'applicazione fa visualizzare un messaggio d'errore.
 \end{itemize}
@@ -87,13 +87,13 @@
 \subsubsection{UC8 - Recupero password}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente non autenticato non si ricorda la propria password per accedere all'account e ne richiede il recupero che avviene inserendo un'indirizzo e-mail dove verrà inviata una nuova password;
-	\item \textbf{Scenario principale}: l'utente non ancora autenticato inserisce un'indirizzo e-mail dove potrà ricevere la nuova password da utilizzare per accedere al proprio account; 
-	\item \textbf{Precondizione}: l'utente non autenticato non ricorda la password di accesso e indica un'indirizzo e-mail di recupero;
-	\item \textbf{Postcondizione}: l'utente riceve la nuova password tramite posta all'indirizzo e-mail inviato.
+	\item \textbf{Descrizione}: l'utente non autenticato non si ricorda la propria password per accedere all'account e ne richiede il recupero che avviene inserendo un'indirizzo email dove verrà inviata una nuova password;
+	\item \textbf{Scenario principale}: l'utente non ancora autenticato inserisce un'indirizzo email dove potrà ricevere la nuova password da utilizzare per accedere al proprio account; 
+	\item \textbf{Precondizione}: l'utente non autenticato non ricorda la password di accesso e indica un'indirizzo email di recupero;
+	\item \textbf{Postcondizione}: l'utente riceve la nuova password tramite posta all'indirizzo email inviato.
 	\item \textbf{Estensione}:
 		\begin{itemize}
-			\item Visualizzazione errore e-mail non valida [UC2].
+			\item Visualizzazione errore email non valida [UC2].
 		\end{itemize}
 \end{itemize}
 \begin{figure}[h]
