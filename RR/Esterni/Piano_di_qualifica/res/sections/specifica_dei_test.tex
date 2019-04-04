@@ -8,8 +8,41 @@ Segue quindi l'esito dei test per mezzo di tabelle che ne
 semplificheranno la consultazione e che potranno fornire una precisa indicazione 
 degli output prodotti, specificando se il risultato ottenuto sia quello atteso, errato
 oppure non coerente a quanto fissato in precedenza. \\
-Le sigle utilizzate sono descritte nelle \textit{Norme di Progetto}.
-
+Per definire lo stato dei test, vengono utilizzate le seguenti sigle:
+\begin{itemize}
+	\item \textbf{I}: per indicare che il test è stato implementato;
+	\item \textbf{NI}: per indicare che il test non è stato implementato.
+\end{itemize}
+Inoltre per lo stato dei test si usano le seguenti abbreviazioni:
+\begin{itemize}
+	\item \textbf{S}: per indicare che il test ha soddisfatto la richiesta;
+	\item \textbf{NS}: per indicare che il test non ha soddisfatto la richiesta.
+\end{itemize}
+\subsection{Test di Accettazione}
+I test di accettazione hanno lo scopo di dimostrare che il software sviluppato 
+soddisfi i requisiti presentati nel capitolato e concordati con il proponente, essi vengono eseguiti durante il
+collaudo finale. Tali test verranno indicati nel seguente modo: \\ \\
+	\centerline{\textbf{TA[Tipo][Importanza][Codice]}}
+dove:
+\begin{itemize}
+	\item \textbf{Tipo}: indica di che tipo si tratta il requisito. Può
+		appartenere a una delle seguenti categorie indicate con:
+		\begin{itemize}
+			\item \textbf{O} per i requisiti obbligatori;
+			\item \textbf{D} per i requisiti desiderabili;
+			\item \textbf{F} per i requisiti facoltativi.			
+		\end{itemize}
+	\item \textbf{Importanza}: indica l'importanza del requisito. L'importanza
+		che può assumere un requisito viene indicata con:
+		\begin{itemize}
+			\item \textbf{F} per indicare un requisito funzionale;
+			\item \textbf{V} per indicare un requisito di vincolo;
+			\item \textbf{Q} per indicare un requisito di qualità;
+			\item \textbf{P} per indicare un requisito prestazionale. 
+		\end{itemize}
+	\item \textbf{Codice}: rappresenta il codice identificativo crescente
+		del componente da verificare.
+\end{itemize}
 
 	\renewcommand{\arraystretch}{1.5}
 	\rowcolors{2}{pari}{dispari}
@@ -54,7 +87,7 @@ Le sigle utilizzate sono descritte nelle \textit{Norme di Progetto}.
 		 	\item accedere alla pagina di login;
 		 	\item inserire l'email e password;
 		 	\item confermare i dati ed essere autenticato;
-		 	\item vereificare che dopo l'autenticazione l'utente è rimandato all'activity per la gestione dei veicoli.
+		 	\item verificare che dopo l'autenticazione l'utente è rimandato all'activity per la gestione dei veicoli.
 		 \end{itemize}	&	NI	\tabularnewline
 		 \texttt{TSOF3.1}	&	L'utente deve visualizzare un messaggio d'errore quando non compila il campo dati email. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -84,13 +117,13 @@ Le sigle utilizzate sono descritte nelle \textit{Norme di Progetto}.
 		 All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere al fragment\glosp per la gestione dei veicoli;
-		 	\item verificare la comparsa delle informazioni riguardandi i propri veicoli, ossia: marca, modello, anno di immatricolazione e rating;
+		 	\item verificare la comparsa delle informazioni riguardanti i propri veicoli, ossia: marca, modello, anno di immatricolazione e rating;
 		 	\item verificare che siano abilitate le opzione di modifica/aggiunta dei dati. 
 		 \end{itemize}	&	NI	\tabularnewline
 		 \texttt{TSOF5.1}	&	L'utente autenticato deve poter inserire un nuovo veicolo. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item premere sul pulsante di aggiunta veicolo dal fragment di gestione della gestione veicoli;
-		 	\item compilare i campi dati richiesti (marca, modello, anno d'immatricolazione) e salvare i contenuto inserito;
+		 	\item compilare i campi dati richiesti (marca, modello e anno d'immatricolazione) e salvare il contenuto inserito;
 		 	\item verificare che i dati inseriti siano comparsi nella schermata di visualizzazione veicoli.
 		 \end{itemize}	&	NI	\tabularnewline
 		 \texttt{TSOF5.2}	&	L'utente autenticato deve poter rimuovere un veicolo dal parco macchine di sua proprietà. All'utente viene chiesto di:
@@ -106,309 +139,106 @@ Le sigle utilizzate sono descritte nelle \textit{Norme di Progetto}.
 		 	\item procedere con la prenotazione del veicolo selezionato;
 		 	\item verificare che la prenotazione effettuata sia stata registrata.
 		 \end{itemize}	&	NI	\tabularnewline
-		 \texttt{TSOF6.1}	&	L'utente autenticato deve poter effettuare una ricerca specifica sui veicoli disponibili e poter proseguire con la prenotazione di uno di essi. All'utente viene chiesto di:
+		 \texttt{TSOF6.1}	&	L'utente autenticato per rendere più stringente la ricerca deve poter inserire un raggio in chilometri (distanza) secondo cui circoscrivere i veicoli disponibili. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item effettuare una ricerca dei veicoli disponibili, impostando i vari filtri in base alle proprie esigenze;
-		 	\item attendere i risultati e selezionare uno dei veicoli proposti;
-		 	\item procedere con la prenotazione del veicolo selezionato;
+		 	\item effettuare una ricerca dei veicoli disponibili, impostando il filtro di distanza;
+		 	\item attendere i risultati e verificare che rispettino il vincolo di distanza impostato;
+		 \end{itemize}	&	NI	\tabularnewline
+		 \texttt{TSDF6.2}	&	L'utente autenticato per rendere più stringente la ricerca deve poter inserire la marca del veicolo che intende prenotare. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item effettuare una ricerca dei veicoli disponibili, compilando l'apposito campo per la marca;
+		 	\item attendere i risultati e verificare che rispettino il vincolo impostato;
+		 \end{itemize}	&	NI	\tabularnewline
+		  \texttt{TSDF6.3}	&	L'utente autenticato per rendere più stringente la ricerca deve poter inserire il modello del veicolo che intende prenotare. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item effettuare una ricerca dei veicoli disponibili, compilando l'apposito campo per il modello;
+		 	\item attendere i risultati e verificare che rispettino il vincolo impostato;
+		 \end{itemize}	&	NI	\tabularnewline
+		  \texttt{TSDF6.4}	&	L'utente autenticato per rendere più stringente la ricerca deve poter inserire l'anno di immatricolazione del veicolo, per specificare che i veicoli cercati devono essere stati immatricolati in quell'anno o in una data più recente. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item effettuare una ricerca dei veicoli disponibili, compilando l'apposito campo per l'anno di immatricolazione;
+		 	\item attendere i risultati e verificare che rispettino il vincolo impostato;
+		 \end{itemize}	&	NI	\tabularnewline
+		 \texttt{TSOF6.5}	&	L'utente autenticato per rendere più stringente la ricerca deve poter inserire la data e la fascia oraria in cui desidera prenotare un veicolo. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item effettuare una ricerca dei veicoli disponibili, compilando l'apposito campo per la data e fascia oraria in cui intende prenotare il veicolo;
+		 	\item attendere i risultati e verificare che rispettino i vincoli impostati;
+		 \end{itemize}	&	NI	\tabularnewline
+		 \texttt{TSOF6.6}	&	In seguito ad una ricerca dei veicoli disponibili, l'utente autenticato deve poter selezionare un veicolo da prenotare tra quelli proposti. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item effettuare una ricerca dei veicoli disponibili;
+		 	\item selezionare un veicolo tra quelli presentati;
+		 	\item prenotare il veicolo selezionato;
 		 	\item verificare che la prenotazione effettuata sia stata registrata.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF11	&	L'utente autenticato come azienda o cittadino deve poter modificare la 
-		 quantità di un certo prodotto aggiunto nel proprio carrello. All'utente viene
-		 chiesto di:
+		 \texttt{TSDF7} 	&	L'utente registrato deve poter recuperare la propria password nel caso in cui ne abbia bisogno. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina dei prodotti in vendita nel sito;
-		 	\item aggiungere un prodotto al carrello;
-		 	\item accedere alla pagina dedicata al carrello;
-		 	\item modificare la quantità di prodotto aggiunta al carrello;
-		 	\item verificare che la quantità di prodotto aggiunta al carrello sia
-		 	effettivamente cambiata.
+		 	\item selezionare il procedimento di recupero password dalla schermata di login;
+		 	\item inserire l'email con cui è registrato nel sistema;
+		 	\item verificare che il sistema abbia inviato una nuova password all'indirizzo email specificato;
+		 	\item verificare di poter accedere all'account con la nuova password.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF12	&	L'utente autenticato come azienda o cittadino deve poter rimuovere un
-		 certo prodotto aggiunto nel proprio carrello. All'utente viene chiesto di:
+		 \texttt{TSOF8}	&	L'utente autenticato deve poter visualizzare la lista di tutte le sue prenotazioni attive.
+		 Per ogni prenotazione attiva presente nella lista l'utente deve poter visualizzare i dettagli riassuntivi (data, fascia oraria e veicolo prenotato) ed eseguire operazioni di gestione su di esse (visualizzazione dettaglio e cancellazione della prenotazione). All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina dei prodotti in vendita nel sito;
-		 	\item aggiungere un prodotto al carrello;
-		 	\item accedere alla pagina dedicata al carrello;
-		 	\item rimuovere il prodotto aggiunto al carrello;
-		 	\item verificare che il prodotto non sia più presente nel carrello.
+		 	\item accedere alla schermata di visualizzazione delle prenotazioni attive;
+		 	\item verificare che per ogni prenotazione presentata siano visibili i dati riassuntivi;
+		 	\item selezionare una prenotazione;
+		 	\item verificare che per la prenotazione selezionata sia disponibile il pulsante di Visualizzazione dettagli prenotazione e Cancellazione prenotazione.
+		 \end{itemize} & NI	\tabularnewline
+		 	\texttt{TSOF8.1}	&	Per ogni prenotazione attiva, l'utente autenticato deve poter visualizzare tutti i dati disponibili (data, fascia oraria, veicolo prenotato, luogo d'incontro con l'altro utente e orario d'incontro). All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla schermata di visualizzazione delle prenotazioni attive;
+		 	\item verificare che per ogni prenotazione presentata siano visibili i dati sopra elencati.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSDF13	&	L'utente autenticato come azienda o cittadino deve poter resettare il
-		 contenuto del carrello. All'utente viene chiesto di:
+		 \texttt{TSOF8.2}	&	L'utente autenticato deve poter selezionare una prenotazione attiva e cancellarla. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina dei prodotti in vendita nel sito;
-		 	\item aggiungere un prodotto al carrello;
-		 	\item accedere alla pagina dedicata al carrello;
-		 	\item premere il tasto per resettare il contenuto del carrello;
-		 	\item verificare che il carrello sia vuoto.
+		 	\item accedere alla schermata di visualizzazione delle prenotazioni attive;
+		 	\item selezionare una prenotazione dalla lista;
+		 	\item verificare che sia disponibile il servizio di cancellazione della prenotazione.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF14.1	&	L'utente autenticato come azienda o cittadino deve poter effettuare il
-		 checkout dei prodotti nel carrello. All'utente viene chiesto di:
+		 \texttt{TSDF9}&	L'utente autenticato deve poter visualizzare una lista contente tutte le sue prenotazioni concluse. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina dei prodotti in vendita nel sito;
-		 	\item aggiungere un prodotto al carrello;
-		 	\item accedere alla pagina dedicata al carrello;
-		 	\item cliccare sul pulsante dedicato alla fase di checkout;
-		 	\item accedere alla pagina dedicata al checkout;
-		 	\item verificare che sia possibile procedere al pagamento.
+		 	\item accedere alla schermata di visualizzazione delle prenotazioni concluse;
+		 	\item verificare che la lista contenga tutte le sue prenotazioni concluse.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF14.1.1	&	L'utente autenticato come azienda o cittadino deve poter visualizzare un
-		 messaggio di errore nel caso in cui si proceda al checkout e il carrello sia
-		 vuoto. All'utente viene chiesto di:
+		 \texttt{TSOF10}	&	L'utente autenticato deve poter visualizzare, modificare e cancellare il proprio account con i relativi dati. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina dedicata al carrello;
-		 	\item verificare che non siano presenti prodotti nel carrello;
-		 	\item procedere alla fase di checkout;
-		 	\item verificare che sia visualizzato il messaggio di errore.
+		 	\item selezionare l'opzione di visualizzazione dati profilo;
+		 	\item verificare che sia disponibile il servizio di modifica dati account;
+		 	\item verificare che sia disponibile il servizio di eliminazione account.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF14.2	&	L'utente autenticato come azienda o cittadino deve selezionare l'indirizzo di
-		 spedizione per un certo prodotto. All'utente viene chiesto di:
+		 
+		 \texttt{TSOF10.1} & L'utente autenticato deve poter aggiornare i dati del proprio account. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina dei prodotti in vendita nel sito;
-		 	\item aggiungere un prodotto al carrello;
-		 	\item procedere al checkout;
-		 	\item verificare che sia possibile selezionare come indirizzo di
-		 	spedizione il proprio indirizzo di residenza;
-		 	\item verificare che sia possibile inserire un nuovo indirizzo di
-		 	spedizione.
+		 	\item accedere alla schermata di visualizzazione profilo;
+		 	\item premere sul pulsante Modifica account;
+		 	\item verificare di poter modificare il nome;
+		 	\item verificare di poter modificare il cognome;
+		 	\item verificare di poter modificare il numero telefonico;
+		 	\item verificare di poter modificare il email;
+		 	\item verificare di poter modificare la data di nascita;
+		 	\item verificare di poter modificare l'indirizzo di residenza;
+		 	\item verificare di poter confermare/salvare i dati modificati.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF14.3	&	L'utente autenticato come azienda o cittadino deve poter visualizzare un
-		 messaggio di errore nel caso in cui si proceda al pagamento e tale operazione non vada a buon fine. All'utente viene chiesto di:
+		 
+		\texttt{TSOF10.1.1}	&	L'utente autenticato deve poter aggiornare la password del proprio account. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina dedicata al carrello;
-		 	\item procedere alla fase di checkout;
-		 	\item procedere al pagamento cliccando sull'apposito pulsante;
-		 	\item verificare che sia visualizzato il messaggio di errore.
+		 	\item verificare che sia richiesto l'inserimento della password attuale;
+		 	\item verificare che sia richiesto l'inserimento della nuova password;
+		 	\item verificare che non sia accettata una password uguale a quella attuale;
+		 	\item verificare che la password inserita rispetti i vincoli generali per la password;
+		 	\item verificare che dopo il completamento del procedimento di cambio password, essa sia aggiornata.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF14.4	&	L'utente autenticato come azienda o cittadino deve procedere all'acquisto di un prodotto e completare la procedura di pagamento. All'utente viene chiesto di:
+		\texttt{TSOF10.2}	&	L'utente autenticato deve poter cancellare il proprio profilo e i relativi dati. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina dei prodotti in vendita nel sito;
-		 	\item aggiungere un prodotto al carrello;
-		 	\item procedere al checkout;
-		 	\item confermare l'ordine quindi procedere al pagamento;
-		 	\item verificare che sia visibile la conferma d'acquisto nella pagina dedicata.
+		 	\item di accedere alla schermata di visualizzazione profilo;
+		 	\item premere sul pulsante Elimina account;
+		 	\item verificare che dopo la conferma dell'eliminazione dell'account, non sia più possibile accedere all'account.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF15	&	L'utente autenticato come azienda o cittadino deve poter visualizzare lo
-		 storico degli acquisiti effettuati. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata agli acquisti effettuati nel sito;
-		 	\item verificare che per ogni acquisto sia visualizzata la data di quando
-		 	è stato effettuato;
-		 	\item verificare che per ogni acquisto sia visualizzato il numero
-		 	dell'acquisto;
-		 	\item verificare che per ogni acquisto siano visualizzati i prodotti
-		 	acquistati;
-		 	\item verificare che per ogni acquisto sia visualizzato il totale dell'IVA
-		 	dell'acquisto;
-		 	\item verificare che per ogni acquisto sia visualizzato il prezzo
-		 	lordo\glo{} dell'acquisto;
-		 	\item verificare che per ogni acquisto sia visualizzato l'indirizzo di 
-		 	spedizione dell'acquisto;
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF15.7	&	L'utente autenticato come azienda o cittadino deve poter visualizzare la lista delle conferme d’acquisto\glosp che necessitano
-		 di conferma. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata alle conferme d'acquisto;
-		 	\item verificare che per ogni conferma d'acquisto siano visualizzati i dettagli del prodotto;
-		 	\item verificare che per ogni conferma d'acquisto sia visualizzato il prezzo netto del prodotto;
-		 	\item verificare che per ogni conferma d'acquisto sia visualizzata l'aliquota IVA applicata al prodotto;
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF15.7.1	&	L'utente autenticato come azienda o cittadino deve poter rifiutare una conferma d’acquisto\glosp che necessita
-		 di conferma. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata alle conferme d'acquisto;
-		 	\item cliccare sul pulsante per rifiutare una conferma d'ordine;
-		 	\item verificare che tale conferma d'ordine venga rifiutata;
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF15.7.2	&	L'utente autenticato come azienda o cittadino deve poter approvare una conferma d’acquisto\glosp che necessita
-		 di conferma. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata alle conferme d'acquisto;
-		 	\item cliccare sul pulsante per approvare una conferma d'ordine;
-		 	\item verificare che tale conferma d'ordine venga approvata.
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF16.1	&	L'utente autenticato come azienda deve poter mettere in vendita nuovi
-		 prodotti. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata all'aggiunta di un prodotto in
-		 	vendita;
-		 	\item inserire il nome del nuovo prodotto in vendita;
-		 	\item inserire la descrizione del nuovo prodotto in vendita;
-		 	\item inserire il prezzo lordo\glo{} del nuovo prodotto in vendita;
-		 	\item inserire l'aliquota IVA del nuovo prodotto in vendita;
-		 	\item verificare che il prodotto sia stato correttamente aggiunto al sistema.
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF16.2	&	L'utente autenticato come azienda deve poter modificare i dati relativi ad
-		 un prodotto in vendita. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata ai propri prodotti in vendita;
-		 	\item accedere alla pagina per la modifica di uno dei prodotti;
-		 	\item modificare i dati del prodotto in vendita;
-		 	\item verificare che alla conferma i dati del prodotto siano effettivamente
-		 	modificati.
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF16.2.1	&	L'utente autenticato come azienda deve poter verificare un errore nel caso
-		 in cui non sia effettuata alcuna modifica ad un prodotto in vendita dopo
-		 l'accesso alla pagina di modifica. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata ai propri prodotti in vendita;
-		 	\item accedere alla pagina per la modifica di uno dei prodotti;
-		 	\item non effettuare alcuna modifica quindi confermare la modifica;
-		 	\item verificare che alla conferma sia visualizzato l'errore.
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF16.3	&	L'utente autenticato come azienda deve poter eliminare
-		 un prodotto in vendita. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata ai propri prodotti in vendita;
-		 	\item accedere alla pagina per la modifica di uno dei prodotti;
-		 	\item rimuovere il prodotto;
-		 	\item verificare che alla conferma il prodotto non sia più presente nella
-		 	lista dei prodotti in vendita.
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF17	&	L'utente autenticato come azienda deve poter visualizzare lo storico delle
-		 vendite. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata alle vendite nel sito;
-		 	\item verificare che per ogni vendita sia visualizzata la data di quando
-		 	è stato effettuata;
-		 	\item verificare che per ogni vendita sia visualizzato il numero
-		 	della vendita;
-		 	\item verificare che per ogni vendita siano visualizzati i prodotti
-		 	venduti;
-		 	\item verificare che per ogni vendita sia visualizzato il totale dell'IVA
-		 	della vendita;
-		 	\item verificare che per ogni vendita sia visualizzato il prezzo
-		 	lordo\glo{} della vendita;
-		 	\item verificare che per ogni vendita sia visualizzato l'indirizzo di 
-		 	spedizione della vendita;
-		 	\item verificare che per ogni vendita sia visualizzato il nome
-		 	dell'acquirente qualora quest'ultimo sia un cittadino;
-		 	\item verificare che per ogni vendita sia visualizzato il cognome
-		 	dell'acquirente qualora quest'ultimo sia un cittadino;
-		 	\item verificare che per ogni vendita sia visualizzato il nome
-		 	dell'acquirente qualora quest'ultimo sia un'azienda;
-		 	\item verificare che per ogni vendita sia visualizzata la partita IVA
-		 	dell'acquirente qualora quest'ultimo sia un'azienda.
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF18	&	L'utente autenticato come azienda deve procedere alla vendita di un prodotto e attendere la conferma d'ordine da parte dell'acquirente. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item mettere in vendita un prodotto;
-		 	\item attendere la conferma d'ordine da parte dell'acquirente;
-		 	\item verificare che nel proprio wallet\glosp sia presente l'ammontare dell'ordine;
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF19.1	&	L'utente autenticato come azienda deve poter visualizzare il saldo dell'IVA
-		 relativo al trimestre corrente. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata al saldo dell'IVA;
-		 	\item verificare sia visualizzato il saldo dell'IVA relativo al trimestre
-		 	corrente.
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF19.2	&	L'utente autenticato come azienda deve poter visualizzare il saldo dell'IVA
-		 relativo ad un trimestre concluso. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata al saldo dell'IVA;
-		 	\item selezionare un trimestre concluso;
-		 	\item verificare sia visualizzato il saldo dell'IVA relativo al trimestre
-		 	selezionato.
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF19.3	&	L'utente autenticato come azienda deve poter visualizzare la lista delle
-		 fatture relative ad un trimestre selezionato. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata al saldo dell'IVA;
-		 	\item selezionare un trimestre;
-		 	\item verificare sia visualizzato per ogni fattura la data in cui è stata
-		 	effettuata;
-		 	\item verificare sia visualizzato per ogni fattura il numero identificativo;
-		 	\item verificare sia visualizzato per ogni fattura il nome dell'azienda che
-		 	l'ha emessa;
-		 	\item verificare sia visualizzato per ogni fattura le informazioni relative
-		 	all'acquirente;
-		 	\item verificare sia visualizzato per ogni fattura l'importo totale
-		 	dell'ordine;
-		 	\item verificare sia visualizzato per ogni fattura il totale in debito/credito
-		 	dell'IVA.
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF19.4	&	L'utente autenticato come azienda deve poter effettuare il versamento 
-		 dell'IVA di un trimestre nel quale il saldo di questa risulti in debito. All'utente 
-		 viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata al saldo dell'IVA;
-		 	\item selezionare un trimestre;
-		 	\item verificare sia visualizzato il saldo dell'IVA relativo al trimestre
-		 	selezionato;
-		 	\item confermare il versamento dell'IVA da effettuare;
-		 	\item verificare che sia possibile procedere al versamento.
-		 \end{itemize}
-		 	&	NI	\tabularnewline
-		 TSOF19.5	&	L'utente autenticato come azienda deve poter effettuare la dilazionare del versamento 
-		 dell'IVA di un trimestre nel quale il saldo di questa risulti in debito. All'utente 
-		 viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata al saldo dell'IVA;
-		 	\item selezionare un trimestre;
-		 	\item verificare sia visualizzato il saldo dell'IVA relativo al trimestre
-		 	selezionato;
-		 	\item selezionare la dilazione del versamento con cui si vuole procedere;
-		 	\item confermare la dilazione da effettuare;
-		 	\item verificare che il pagamento sia stato dilazionato.
-		 \end{itemize}
-		 	&	NI	\tabularnewline
-		 TSOF19.6	&	L'utente autenticato come azienda deve poter scaricare in formato PDF 
-		 la lista dei movimenti dell'IVA del trimestre desiderato. All'utente viene chiesto 
-		 di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata al saldo dell'IVA;
-		 	\item selezionare il trimestre che desidera;
-		 	\item verificare sia presente l'opzione di scaricare il PDF della lista
-		 	dei movimenti dell'IVA;
-		 	\item verificare che sia possibile possibile scaricare il PDF.
-		 \end{itemize}
-		 	&	NI	\tabularnewline
-		 TSOF19.7	&	L'utente autenticato come azienda deve poter visualizzare la lista delle
-		 fatture relative ad un trimestre selezionato. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata al saldo dell'IVA;
-		 	\item selezionare un trimestre;
-		 	\item verificare sia visualizzato per ogni fattura la data in cui è stata
-		 	effettuata;
-		 	\item verificare sia visualizzato per ogni fattura il numero identificativo;
-		 	\item verificare sia visualizzata la data dell'ordine relativo alla fattura;
-		 	\item verificare sia visualizzato in numero identificativo dell'ordine 
-		 	relativo alla fattura;
-		 	\item verificare siano visualizzati tutti i prodotti acquistati;
-		 	\item verificare sia visualizzato l'importo totale dell'IVA relativa alla fattura;
-		 	\item verificare sia visualizzato l'importo totale della fattura;
-		 	\item verificare sia visualizzato il nome dell'azienda emittente;
-		 	\item verificare sia visualizzata la partita IVA dell'azienda emittente;
-		 	\item verificare sia visualizzato il nome dell'acquirente se è un cittadino;
-		 	\item verificare sia visualizzato il cognome dell'acquirente se è un cittadino;
-		 	\item verificare sia visualizzata la partita IVA dell'acquirente se è un'azienda;
-		 	\item verificare sia visualizzato l'indirizzo di spedizione dell'ordine.
-		 \end{itemize}
-		 	&	NI	\tabularnewline
-		 TSOF19.8	&	L'utente autenticato come azienda deve poter scaricare in formato PDF 
-		 la lista dei movimenti dell'IVA del trimestre desiderato. All'utente viene chiesto 
-		 di:
-		 \begin{itemize}
-		 	\item accedere alla pagina dedicata al saldo dell'IVA;
-		 	\item selezionare il trimestre che desidera;
-		 	\item verificare sia presente l'opzione di scaricare il PDF della lista
-		 	dei movimenti dell'IVA;
-		 	\item verificare che sia possibile possibile scaricare il PDF.
-		 \end{itemize}
-		 	&	NI	\tabularnewline
-		 TSOF19.9	&	L'utente autenticato come azienda deve poter scaricare in formato PDF la
-		 fattura relativa ad un acquisto. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item di accedere alla pagina dedicata alle fatture;
-		 	\item verificare di poter selezionare la fattura da scaricare in formato PDF;
-		 	\item verificare di riuscire a scaricare la fattura in formato PDF.
-		 \end{itemize}	&	NI	
-	
-	
 	\end{longtable}
 
-\subsubsection{Test di Sistema}
+\subsection{Test di Sistema}
 I test di sistema sono impiegati per garantire il corretto funzionamento delle 
 componenti dell'intero sistema. Tali test verranno indicati nel seguente modo:\\
 	\centerline{\textbf{TS[id]}}
@@ -417,7 +247,7 @@ verificare.\\
 Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
 
 
-\subsubsection{Test di Integrazione}
+\subsection{Test di Integrazione}
 I test di integrazione sono usati per verificare il corretto funzionamento tra le
 varie unità dell'architettura. Tali test verranno indicati nel seguente modo:\\
 	\centerline{\textbf{TI[id]}}
@@ -425,7 +255,7 @@ dove \textit{id} rappresenta il codice identificativo crescente del componente d
 verificare.\\
 Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
 
-\subsubsection{Test di Unità}
+\subsection{Test di Unità}
 I test di unità hanno l'obiettivo di verificare il corretto funzionamento della 
 parte più piccola autonoma del lavoro realizzato. Tali test verranno indicati nel
 seguente modo:\\
