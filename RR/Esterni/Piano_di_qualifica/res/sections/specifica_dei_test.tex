@@ -36,105 +36,82 @@ Le sigle utilizzate sono descritte nelle \textit{Norme di Progetto}.
 		\tabularnewline %\hline 
 		\endhead	
 		
-		 \texttt{TSDF1}	&	L'utente deve poter accedere alla guida dell'applicazione. All'utente viene
-		 chiesto di:
+		 \texttt{TSDF1}	&	L'utente deve poter visualizzare l'activity\glosp introduttiva. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item verificare che sia possibile accedere alla guida;
-		 	\item verificare che la guida riporti informazioni riguardanti l'utilizzo di
-		 	MetaMask\glo{};
-		 	\item verificare che la guida riporti informazioni riguardanti il pagamento
-		 	delle operazioni. 
+		 	\item verificare che sia disponibile l'activity introduttiva;
+		 	\item verificare che sia disponibile l'opzione "salta la guida";
+		 	\item verificare che in seguito alla guida sia presentato il servizio di login. 
 		 \end{itemize}	&	NI	\tabularnewline
-		 \texttt{TSOF2}	&	L'utente non ancora autenticato deve poter effettuare la registrazione al
-		 sistema. All'utente viene chiesto di:
+		 \texttt{TSOF2}	&	L'utente non ancora autenticato deve poter effettuare la registrazione al sistema. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di registrazione;
-		 	\item selezionare il tipo di utente;
-		 	\item inserire i dati in base al tipo scelto.
+		 	\item completare i campi dati nome, cognome, email e password;
+		 	\item procedere con l'invio dei dati inseriti;
+		 	\item attendere la conferma di successo dell'operazione e relativo avviso di richiesta di conferma dell'account tramite email.
 		 \end{itemize}	&	NI	\tabularnewline
-		 \texttt{TSOF2.1}	&	L'utente deve potersi registrare come cittadino. All'utente viene chiesto di:
+		 \texttt{TSOF3}	&	L'utente registrato deve poter effettuare il login. All'utente registrato viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina di registrazione e scegliere la registrazione
-		 	come cittadino;
-		 	\item inserire l'email;
-		 	\item inserire l'indirizzo;
-		 	\item inserire il nome;
-		 	\item inserire il cognome.
+		 	\item accedere alla pagina di login;
+		 	\item inserire l'email e password;
+		 	\item confermare i dati ed essere autenticato;
+		 	\item vereificare che dopo l'autenticazione l'utente è rimandato all'activity per la gestione dei veicoli.
 		 \end{itemize}	&	NI	\tabularnewline
-		 \texttt{TSOF2.2}	&	L'utente deve potersi registrare come azienda. All'utente viene chiesto di:
+		 \texttt{TSOF3.1}	&	L'utente deve visualizzare un messaggio d'errore quando non compila il campo dati email. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina di registrazione e scegliere la registrazione
-		 	come azienda;
-		 	\item inserire l'email;
-		 	\item inserire la sede;
-		 	\item inserire la partita IVA;
-		 	\item inserire il nome.
+		 	\item accedere alla pagina di login;
+		 	\item non compilare il campo email e confermare/inviare i dati;
+		 	\item verificare che sia comparso il messaggio d'errore.
 		 \end{itemize}	&	NI	\tabularnewline
-		 \texttt{TSOF2.3}	&	L'utente deve poter visualizzare un messaggio di errore nel caso in cui la
-		 chiave reperita da MetaMask\glo{} durante la registrazione sia già presente
-		 nel sistema.	&	NI	\tabularnewline
-		 \texttt{TSOF3.1}	&	L'utente deve poter autenticarsi nel sistema in modo automatico attraverso
-		 MetaMask\glo{}. All'utente è chiesto di:
+		 \texttt{TSOF3.2}	&	L'utente deve visualizzare un messaggio d'errore quando non compila il campo dati email. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla sezione per il login;
-		 	\item verificare l'avvenuta autenticazione.
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF4	&	L'utente deve potersi disconnettere dal sistema. All'utente viene chiesto di:
+		 	\item accedere alla pagina di login;
+		 	\item non compilare il campo password e confermare/inviare i dati;
+		 	\item verificare che sia comparso il messaggio d'errore.
+		 \end{itemize}  &	NI	\tabularnewline
+		 \texttt{TSOF3.3}	&	L'utente deve visualizzare un messaggio d'errore quando la combinazione email-password è scorretta. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item autenticarsi correttamente nel sistema;
-		 	\item trovarsi in una qualsiasi delle pagine di navigazione destinate 
-		 	all'utente;
-		 	\item premere il tasto di logout;
-		 	\item confermare di voler effettuare la disconnessione premendo il tasto 
-		 	di conferma;
-		 	\item verificare che la disconnessione sia avvenuta correttamente.
-		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF5	&	L'utente autenticato come governo deve poter coniare Cubit\glo{}.
+		 	\item accedere alla pagina di login;
+		 	\item inserire una combinazione email-password scorretta e confermare/inviare i dati;
+		 	\item verificare che sia comparso il messaggio d'errore.
+		 \end{itemize}  &	NI	\tabularnewline
+		 \texttt{TSOF4}	&	L'utente autenticato deve poter effettuare il logout. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere al fragment\glosp Area Personale e richiedere il logout con l'apposito pulsante;
+		 	\item attendere la conferma di logout;
+		 	\item verificare di essere rimandato alla pagina di login.
+		 \end{itemize}  &	NI	\tabularnewline
+		 \texttt{TSOF5}	&	L'utente autenticato deve poter gestire e visualizzare i propri veicoli. 
 		 All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item autenticarsi correttamente nel sistema;
-		 	\item trovarsi nella pagina per la coniazione della moneta;
-		 	\item selezionare una quantità positiva di Cubit\glo{};
-		 	\item dare conferma dell'operazione. 
+		 	\item accedere al fragment\glosp per la gestione dei veicoli;
+		 	\item verificare la comparsa delle informazioni riguardandi i propri veicoli, ossia: marca, modello, anno di immatricolazione e rating;
+		 	\item verificare che siano abilitate le opzione di modifica/aggiunta dei dati. 
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF6	&	L'utente autenticato come governo deve poter distribuire Cubit\glo{}
-		 agli utenti registrati come aziende o cittadini. All'utente viene chiesto di:
+		 \texttt{TSOF5.1}	&	L'utente autenticato deve poter inserire un nuovo veicolo. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item autenticarsi correttamente nel sistema;
-		 	\item trovarsi nella pagina per la distribuzione della moneta;
-		 	\item selezionare una quantità positiva di Cubit da 
-		 	distribuire;
-		 	\item selezionare la lista di utenti a cui trasferire i Cubit; 
-		 	\item dare conferma dell'operazione. 
+		 	\item premere sul pulsante di aggiunta veicolo dal fragment di gestione della gestione veicoli;
+		 	\item compilare i campi dati richiesti (marca, modello, anno d'immatricolazione) e salvare i contenuto inserito;
+		 	\item verificare che i dati inseriti siano comparsi nella schermata di visualizzazione veicoli.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF8	&	L'utente autenticato come azienda o cittadino deve poter visualizzare i
-		 prodotti in vendita nel sito. All'utente viene chiesto di:
+		 \texttt{TSOF5.2}	&	L'utente autenticato deve poter rimuovere un veicolo dal parco macchine di sua proprietà. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina dei prodotti in vendita nel sito;
-		 	\item verificare che sia visualizzato il nome del prodotto;
-		 	\item verificare che sia visualizzato il prezzo lordo\glo{} del prodotto;
-		 	\item verificare che sia visualizzata la descrizione del prodotto;
-		 	\item verificare che sia visualizzata la quantità relativa ad un certo
-		 	prodotto in vendita nel sito;
-		 	\item verificare che sia possibile cambiare la quantità selezionata relativa ad un prodotto in
-		 	vendita nel sito.
+		 	\item selezionare un veicolo dal proprio parco macchine;
+		 	\item premere sul pulsante Rimuovi;
+		 	\item verificare che il veicolo precedentemente selezionato sia stato rimosso.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF9	&	L'utente autenticato come azienda o cittadino deve poter aggiungere
-		 al proprio carrello prodotti in vendita nel sito. All'utente viene chiesto di:
+		 \texttt{TSOF6}	&	L'utente autenticato deve poter effettuare una ricerca specifica sui veicoli disponibili e poter proseguire con la prenotazione di uno di essi. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina dei prodotti in vendita nel sito;
-		 	\item aggiungere un prodotto al carrello.
+		 	\item effettuare una ricerca dei veicoli disponibili, impostando i vari filtri in base alle proprie esigenze;
+		 	\item attendere i risultati e selezionare uno dei veicoli proposti;
+		 	\item procedere con la prenotazione del veicolo selezionato;
+		 	\item verificare che la prenotazione effettuata sia stata registrata.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF10	&	L'utente autenticato come azienda o cittadino deve poter visualizzare i
-		 prodotti aggiunti nel proprio carrello. All'utente viene chiesto di:
+		 \texttt{TSOF6.1}	&	L'utente autenticato deve poter effettuare una ricerca specifica sui veicoli disponibili e poter proseguire con la prenotazione di uno di essi. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla pagina dei prodotti in vendita nel sito;
-		 	\item aggiungere un prodotto al carrello;
-		 	\item accedere alla pagina dedicata al carrello;
-		 	\item verificare che il prodotto sia stato aggiunto al carrello;
-		 	\item verificare che sia visualizzato il nome del prodotto nel carrello;
-		 	\item verificare che sia visualizzato il prezzo unitario del prodotto nel carrello;
-		 	\item verificare che sia visualizzato il prezzo totale dei prodotti nel carrello.
+		 	\item effettuare una ricerca dei veicoli disponibili, impostando i vari filtri in base alle proprie esigenze;
+		 	\item attendere i risultati e selezionare uno dei veicoli proposti;
+		 	\item procedere con la prenotazione del veicolo selezionato;
+		 	\item verificare che la prenotazione effettuata sia stata registrata.
 		 \end{itemize}	&	NI	\tabularnewline
 		 TSOF11	&	L'utente autenticato come azienda o cittadino deve poter modificare la 
 		 quantità di un certo prodotto aggiunto nel proprio carrello. All'utente viene
