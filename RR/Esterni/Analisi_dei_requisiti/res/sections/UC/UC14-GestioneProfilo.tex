@@ -9,16 +9,16 @@
 	\item \textbf{Descrizione}: agli utenti autenticati è resa disponibile una maschera che presenta il proprio profilo, dalla quale l'utente può scegliere di modificarlo o eliminarlo;
 	\item \textbf{Scenario principale}: l'utente visualizza il profilo e ha la possibilità di: 
 	\begin{itemize}
-		\item Modifica dati account [UC14.1];
-		\item Eliminazione account [UC14.2].
+		\item modifica dati account [UC14.1];
+		\item eliminazione account [UC14.2].
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente è in possesso di un account all'interno del sistema. Deve quindi essersi registrato e non aver eliminato l'account;
 	\item \textbf{Postcondizione}: l'utente ha effettuato l'operazione di modifica dati oppure l'eliminazione dell'account e il processo è stato confermato dal sistema.
 	\item \textbf{Estensioni}:
 	\begin{itemize}
-		\item Visualizzazione errore email non valida [UC2];
-		\item Visualizzazione errore password non conforme [UC3];
-		\item Visualizzazione errore password non corrispondente [UC15].
+		\item visualizzazione errore email non valida [UC2];
+		\item visualizzazione errore password non conforme [UC3];
+		\item visualizzazione errore password non corrispondente [UC15].
 	\end{itemize}
 \end{itemize}
 \begin{figure}[h]
@@ -32,22 +32,22 @@
 	\item \textbf{Descrizione}: l'utente ha la possibilità di modificare i propri dati;
 	\item \textbf{Scenario principale}: l'utente può modificare:
 	\begin{itemize}
-		\item Nome [UC14.1.1];
-		\item Cognome [UC14.1.2];
-		\item Numero telefonico [UC14.1.3];
-		\item Email [UC14.1.4];
-		\item Data di nascita [UC14.1.5];
-		\item Residenza [UC14.1.6];
-		\item Password [UC14.1.7].
+		\item nome [UC14.1.1];
+		\item cognome [UC14.1.2];
+		\item numero telefonico [UC14.1.3];
+		\item email [UC14.1.4];
+		\item data di nascita [UC14.1.5];
+		\item residenza [UC14.1.6];
+		\item password [UC14.1.7].
 	\end{itemize}
 	e confermare la modifica dei dati [UC14.1.8];
-	\item \textbf{Scenari alternativi}: l'utente interrompe la modifica dei dati senza confermare il salvataggio di essi. Il sistema non salverà le modifiche parziali apportate dall'utente me lo riporterà alla schermata di visualizzazione dell'account;	 
+	\item \textbf{Scenari alternativi}: l'utente interrompe la modifica dei dati senza confermare il salvataggio di essi. Il sistema non salverà le modifiche parziali apportate dall'utente ma lo riporterà alla schermata di visualizzazione dell'account;	 
 	\item \textbf{Precondizione}: l'utente è in possesso di un account all'interno del sistema. Deve quindi essersi registrato e non aver eliminato l'account;
 	\item \textbf{Postcondizione}: il sistema ha memorizzato le modifiche apportate ai dati da parte dell’utente;
 	\item \textbf{Inclusioni}:
 	\begin{itemize}
-		\item Inserimento vecchia password [U14.1.7.1];
-		\item Inserimento nuova password [UC14.1.7.2].
+		\item inserimento vecchia password [U14.1.7.1];
+		\item inserimento nuova password [UC14.1.7.2].
 	\end{itemize}
 \end{itemize}
 \begin{figure}[h]
@@ -110,11 +110,11 @@
 	\item \textbf{Descrizione}: l'utente ha la possibilità di modificare la password inserita in precedenza inserendo prima la vecchia password e poi quella nuova;
 	\item \textbf{Scenario principale}: il sistema fornisce per prima cosa all'utente la possibilità di:
 		\begin{itemize}
-			\item Inserimento vecchia password [UC14.1.7.1].
+			\item inserimento vecchia password [UC14.1.7.1].
 		\end{itemize}
 	e poi di:
 		\begin{itemize}
-			\item Inserimento nuova password [UC14.1.7.2].
+			\item inserimento nuova password [UC14.1.7.2].
 		\end{itemize}
 	\item \textbf{Precondizione}: il sistema fornisce una schermata nella quale è possibile inserire la nuova password;
 	\item \textbf{Postcondizione}: l'utente ha inserito la nuova password.
