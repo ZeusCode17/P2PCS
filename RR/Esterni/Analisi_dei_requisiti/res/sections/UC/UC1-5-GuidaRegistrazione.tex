@@ -4,11 +4,6 @@
 	\caption{Schema generale: registrazione ed errori annessi}
 \end{figure}
 \subsubsection{UC1 - Registrazione}
-\begin{figure}
-	\includegraphics[width=10cm]{res/images/UC1Registrazione.png}
-	\centering
-	\caption{UC1 - Registrazione}
-\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: per effettuare il procedimento di registrazione, l'utente deve compilare tutti i campi necessari ovvero nome, cognome, email e password;
@@ -17,16 +12,32 @@
 			\item inserimento nome [UC1.1.1];
 			\item inserimento cognome [UC1.1.2];
 			\item inserimento indirizzo email [UC1.1.3];
-			\item inserimento password [UC1.1.4].
+			\item inserimento password [UC1.1.4];
+			\item inserimento codice amico [UC1.1.5].
 		\end{itemize}
 	\item \textbf{Precondizione}: l'applicazione rende disponibile i campi da compilare;
 	\item \textbf{Postcondizione}: l'utente viene registrato nell'applicazione;
+	\item \textbf{Inclusioni}:
+		\begin{itemize}
+			\item visualizzazione activity introduttiva [UC4].
+		\end{itemize}
 	\item \textbf{Estensioni}:
 		\begin{itemize}
 			\item visualizzazione errore email non valida [UC2];
-			\item visualizzazione errore password non conforme [UC3]. 
+			\item visualizzazione errore password non conforme [UC3];
+			\item visualizzazione errore campi vuoti [UC5]. 
 		\end{itemize} 
 \end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=10cm]{res/images/UC1Registrazione.png}
+	\centering
+	\caption{UC1 - Registrazione}
+\end{figure}
+\begin{figure}
+	\includegraphics[width=9cm]{res/images/UC1-1Inserimento.png}
+	\centering
+	\caption{UC1.1 - Inserimento dati profilo utente}
+\end{figure}
 \subsubsection{UC1.1 - Inserimento dati profilo utente}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
@@ -41,11 +52,6 @@
 	\item \textbf{Precondizione}: l'utente è entrato nell'activity\glosp di registrazione;
 	\item \textbf{Postcondizione}: l'utente ha compilato tutti i campi richiesti dalla registrazione.
 \end{itemize}
-\begin{figure}[h]
-	\includegraphics[width=9cm]{res/images/UC1-1Inserimento.png}
-	\centering
-	\caption{UC1.1 - Inserimento dati profilo utente}
-\end{figure}
 \newpage
 \subsubsection{UC1.1.1 - Inserimento nome}
 \begin{itemize}
@@ -79,6 +85,16 @@
 	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento della password;
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con una password.
 \end{itemize}
+
+\subsubsection{UC1.1.5 - Inserimento codice amico}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente non autenticato;
+	\item \textbf{Descrizione}: al fine di portare a termine il processo di registrazione l'utente può inserire un "codice amico", qualora ne fosse in possesso, campo ritenuto non obbligatorio;
+	\item \textbf{Scenario principale}: l'utente può compilare il campo relativo al codice amico se in possesso di un codice personale inviato da un altro utente che usufruisce dell'applicazione;	
+	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento del codice amico;
+	\item \textbf{Postcondizione}: l'utente ha compilato il campo con un codice amico.
+\end{itemize}
+
 \subsubsection{UC1.2 - Invio dati}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
@@ -120,3 +136,11 @@
 	\item \textbf{Postcondizione}: il sistema fornisce all'utente la possibilità di visualizzare interamente la guida o di saltarla e raggiungere l'activity di login.
 \end{itemize}
 
+\subsubsection{UC5 - Visualizzazione errore campi vuoti}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente non autenticato;
+	\item \textbf{Descrizione}: l'utente visualizza un messaggio d'errore in quanto non sono stati riempiti i campi di inserimento email e password;
+	\item \textbf{Scenario principale}: l'utente non ancora autenticato tenta di accedere non inserendo un indirizzo email e password;	
+	\item \textbf{Precondizione}: l'utente non autenticato non inserisce nessun dato nei campi di inserimento;
+	\item \textbf{Postcondizione}: l'applicazione fa visualizzare un messaggio d'errore.
+\end{itemize}

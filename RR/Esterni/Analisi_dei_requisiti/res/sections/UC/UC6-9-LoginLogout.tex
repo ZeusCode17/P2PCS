@@ -4,7 +4,7 @@
 	\caption{Schema generale: login ed errori annessi}
 \end{figure}
 \newpage
-\subsubsection{UC5 - Login}
+\subsubsection{UC6 - Login}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: per effettuare il procedimento di autenticazione, l'utente deve compilare i campi necessari ovvero e-mail e password;
@@ -13,17 +13,17 @@
 	\item \textbf{Postcondizione}: dopo aver controllato che i campi sono stati compilati correttamente attraverso la piattaforma Movens\glo, l'utente viene autenticato nell'applicazione.
 	\item \textbf{Estensioni}:
 		\begin{itemize}
-			\item visualizzazione errore campi vuoti [UC6];
+			\item visualizzazione errore campi vuoti [UC5];
 			\item visualizzazione errore combinazione email e password errata [UC7].
 		\end{itemize}	
 \end{itemize}
 \begin{figure}[h]
-	\includegraphics[width=11cm]{res/images/UC5Login.png}
+	\includegraphics[width=11cm]{res/images/UC6Login.png}
 	\centering
-	\caption{UC5 - Login}
+	\caption{UC6 - Login}
 \end{figure}
 \newpage
-\subsubsection{UC5.1 - Compilazione campi per il login}
+\subsubsection{UC6.1 - Compilazione campi per il login}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: l'utente compila i campi richiesti per l'autenticazione;
@@ -36,11 +36,11 @@
 	\item \textbf{Postcondizione}: l'utente ha compilato tutti i campi necessari all'autenticazione.	
 \end{itemize}
 \begin{figure}[h]
-	\includegraphics[width=11cm]{res/images/UC5-1Compilazione.png}
+	\includegraphics[width=11cm]{res/images/UC6-1Compilazione.png}
 	\centering
-	\caption{UC5.1 - Compilazione campi per il login}
+	\caption{UC6.1 - Compilazione campi per il login}
 \end{figure}
-\subsubsection{UC5.1.1 - Inserimento email}
+\subsubsection{UC6.1.1 - Inserimento email}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: al fine di portare a termine il processo di autenticazione l'utente deve inserire l'indirizzo email associato all'account, campo ritenuto obbligatorio;
@@ -49,7 +49,7 @@
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con l'indirizzo email associato al proprio account.
 \end{itemize}
 
-\subsubsection{UC5.1.2 - Inserimento password}
+\subsubsection{UC6.1.2 - Inserimento password}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: al fine di portare a termine il processo di autenticazione l'utente deve inserire la password associata al proprio account, campo ritenuto obbligatorio;
@@ -58,7 +58,7 @@
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con la password associata al proprio account.
 \end{itemize}
 
-\subsubsection{UC5.2 - Invio dati}
+\subsubsection{UC6.2 - Invio dati}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati; se email e password risulteranno corrette l'utente verrà autenticato;
@@ -67,14 +67,6 @@
 	\item \textbf{Postcondizione}: l'utente viene autenticato e rimandato all'activity\glosp per la gestione dei veicoli.
 \end{itemize}
 
-\subsubsection{UC6 - Visualizzazione errore campi vuoti}
-\begin{itemize}
-	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente visualizza un messaggio d'errore in quanto non sono stati riempiti i campi di inserimento email e password;
-	\item \textbf{Scenario principale}: l'utente non ancora autenticato tenta di accedere non inserendo un indirizzo email e password;	
-	\item \textbf{Precondizione}: l'utente non autenticato non inserisce nessun dato nei campi di inserimento;
-	\item \textbf{Postcondizione}: l'applicazione fa visualizzare un messaggio d'errore.
-\end{itemize}
 \subsubsection{UC7 - Visualizzazione errore combinazione email e password errata}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
