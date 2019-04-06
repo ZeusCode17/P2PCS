@@ -61,7 +61,7 @@ gigacore
 lint
 linter
 *milestone
---milestone unlock
+*milestone unlock
 modello a v
 *modello di sviluppo
 *metamask
