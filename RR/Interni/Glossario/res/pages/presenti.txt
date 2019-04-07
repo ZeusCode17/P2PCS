@@ -60,6 +60,7 @@ gigacore
 *kotlin
 lint
 linter
+*lucky spin
 *milestone
 *milestone unlock
 modello a v
