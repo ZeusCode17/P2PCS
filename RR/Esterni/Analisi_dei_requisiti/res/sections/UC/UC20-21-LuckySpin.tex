@@ -1,6 +1,9 @@
-
-
-\subsubsection{UC22 - Lucky Spin}
+\begin{figure}[h]
+	%\includegraphics[width=11cm]{res/images/UC20Luckyspin.png}
+	\centering
+	\caption{Schema generale: lucky spin}
+\end{figure}
+\subsubsection{UC20 - Lucky Spin}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}:	l'utente autenticato può visualizzare la lista dei premi ottenibili tramite la Lucky Spin\glo. Se l'utente ha concluso una prenotazione, può usare la Lucky Spin per ottenere un premio;
@@ -10,21 +13,18 @@
 		\item sconto dell'x\% sul prossimo acquisto nel negozio dell'applicazione;
 		\item beni virtuali.
 	\end{itemize}
+	\item \textbf{Estensioni}: 
+	\begin{itemize}
+		\item vincita premio Lucky Spin [UC21].
+	\end{itemize}
 	\item \textbf{Precondizione}: l'utente autenticato ha premuto il pulsante della Lucky Spin dalla sua area personale;
 	\item \textbf{Postcondizione}: l'utente autenticato sta visualizzando la lista dei premi ottenibili tramite la Lucky Spin;
-	\item \textbf{Estensioni}: vincita premio Lucky Spin [UC23].
 \end{itemize}
-\subsubsection{UC23 - Vincita premio Lucky Spin}
+\subsubsection{UC21 - Vincita premio Lucky Spin}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'utente autenticato ha concluso una prenotazione e può usare la Lucky Spin per ottenere un premio random;	
+	\item \textbf{Descrizione}: l'utente autenticato ha concluso una prenotazione e può usare la Lucky Spin\glosp per ottenere un premio random;	
 	\item \textbf{Scenario principale}: l'utente autenticato ha concluso una prenotazione e gli si presenta la schermata della Lucky Spin, dalla quale può premere il pulsante \textit{Gira} per usare il suo tentativo. Il premio gli verrà mostrato tramite una schermata che metterà in risalto il premio vinto;
 	\item \textbf{Precondizione}: l'utente autenticato ha concluso una prenotazione e ha usato la Lucky Spin;
 	\item \textbf{Postcondizione}: l'utente autenticato ha vinto e ritirato il premio dalla Lucky Spin.
 \end{itemize}
-
-\begin{figure}[h]
-%	\includegraphics[width=15cm]{res/images/uc22-23.png}
-	\centering
-	\caption{Schema generale:Lucky Spin}
-\end{figure}
