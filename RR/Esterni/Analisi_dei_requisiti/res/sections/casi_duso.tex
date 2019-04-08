@@ -2,30 +2,35 @@
 \subsection{Attori dei casi d'uso}
 \subsubsection{Attori primari}
 \begin{figure}[h]
-	\includegraphics[width=7cm]{res/images/attori_primari.png}
+	\includegraphics[width=9cm]{res/images/attori_primari.png}
 	\centering
 	\caption{Gerarchia degli attori primari}
 \end{figure}
 \begin{description}[style=nextline]
 	\item[Utente generico]
-	Si riferisce ad un utente generico che entra nell'applicazione.
+	Si riferisce ad un utente generico che entra nell'applicazione;
 	\item[Utente non autenticato]
-	Si riferisce ad un utente generico che non ha ancora effettuato l'autenticazione nell'applicazione.
+	Si riferisce ad un utente generico che non ha ancora effettuato l'autenticazione nell'applicazione;
 	\item[Utente autenticato]
-	Si riferisce ad un utente generico che si è autenticato nell'applicazione con la procedura di login.
+	Si riferisce ad un utente generico che si è autenticato nell'applicazione con la procedura di login;
+	\item[Usufruente del veicolo]
+	Si riferisce ad un utente autenticato che ha la possibilità di ricercare, in una zona scelta ed ad un un determinato orario, un veicolo disponibile con la possibilità di prenderlo in prestito;
+	\item[Proprietario del veicolo]
+	Si riferisce ad un utente autenticato che mette in prestito il proprio veicolo ad un determinato orario ed in una determinata zona.	
 \end{description}
 
 \subsection{Elenco dei casi d'uso}
 In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'uso rappresenta uno scenario per uno o più attori, ovviamente applicabile anche ad eventuali attori derivati. Ogni caso d'uso, inoltre, viene descritto tramite diagrammi dei casi d'uso e possiede una precondizione seguita da una postcondizione.
 \subsubsection*{Operazioni utenti}
 Di seguito sono riportati tutti i casi d'uso che coinvolgono come attore primario l'utente generico, l'utente non autenticato, l'utente autenticato.
-\newpage
 \input{res/sections/UC/UC1-5-GuidaRegistrazione.tex}
 \input{res/sections/UC/UC6-9-LoginLogout.tex}
 \input{res/sections/UC/UC10-Gestione-veicoli.tex}
 \input{res/sections/UC/UC11-Gestione-prenotazione.tex}
+\newpage
 \input{res/sections/UC/UC12-Effettua-prenotazione.tex}
 \input{res/sections/UC/UC13-StoricoPrenotazioni.tex}
+\newpage
 \input{res/sections/UC/UC14-GestioneProfilo.tex}
 \input{res/sections/UC/UC17-18-ProgressBar.tex}
 \input{res/sections/UC/UC20-21-Milestone-unlock.tex}
