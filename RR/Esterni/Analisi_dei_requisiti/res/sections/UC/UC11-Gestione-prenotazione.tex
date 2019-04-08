@@ -1,4 +1,9 @@
 \subsubsection{UC11 - Gestione prenotazioni}
+\begin{figure}[h]
+	\includegraphics[width=10cm]{res/images/UC11Prenotazione.png}
+	\centering
+	\caption{UC11 - Gestione prenotazione}
+\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: agli utenti autenticati è resa disponibile una maschera che presenta la lista di tutte le sue prenotazioni ancora attive, dalla quale l'utente può scegliere di effettuare operazioni di gestione su ognuna di esse;
@@ -20,11 +25,6 @@
 	\item \textbf{Precondizione}: il sistema carica correttamente la lista delle prenotazioni effettuate attualmente attive;
 	\item \textbf{Post-condizione}: l'utente ha visualizzato le sue prenotazioni correnti ed è riuscito ad effettuare eventuali modifiche.
 \end{itemize} 
-\begin{figure}[h]
-	\includegraphics[width=10cm]{res/images/UC11Prenotazione.png}
-	\centering
-	\caption{UC11 - Gestione prenotazione}
-\end{figure}
  \subsubsection{UC11.1 - Visualizzazione dettagli prenotazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
@@ -51,15 +51,6 @@
 \end{itemize}
 \begin{comment}
 
-\subsubsection{UC6.2 - Modifica di una prenotazione}
-\begin{itemize}
-	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'utente modifica uno o più dati della prenotazione selezionata;
-	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di modifica della prenotazione precedentemente selezionata;
-	\item \textbf{Precondizione}: l'utente si trova nella pagina di presentazione di tutte le sue prenotazioni e ne ha selezionato una per la modifica, oppure l'utente si trova nella pagina di visualizzazione dettagli prenotazione e sceglie di modificare quest'ultima;
-	\item \textbf{Post-condizione}: l'utente ha modificato uno o più dati della prenotazione selezionata.
-\end{itemize}
-
 \end{comment}
 \subsubsection{UC11.2 - Cancellazione prenotazione}
 \begin{itemize}
@@ -82,6 +73,11 @@
 	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende confermare o annullare;
 	\item \textbf{Post-condizione}: l'utente ha confermato o annullato correttamente la prenotazione selezionata.
 \end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=10cm]{res/images/UC11-3Conferma.png}
+	\centering
+	\caption{UC11.3 - Conferma prenotazioni, lato proprietario}
+\end{figure}
 
 \subsubsection{UC11.3.1 - Inserimento luogo d'incontro}
 \begin{itemize}
@@ -112,12 +108,13 @@
 
 \subsubsection{UC11.4 - Riconsegna del veicolo, lato usufruente}
 \begin{itemize}
-	\item \textbf{Attori Primari}: usufruente;
+	\item \textbf{Attori Primari}: usufruente del veicolo;
 	\item \textbf{Descrizione}: l'utente riconsegna il veicolo e chiude la prenotazione;
 	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Dopo aver riconsegnato il veicolo e le chiavi, attraverso l'apposito pulsante l'utente chiederà la chiusura della prenotazione(la prenotazione verrà definitivamente chiusa quando anche il proprietario del veicolo confermerà la riconsegna delle chiavi e del mezzo[UC11.5]). Comparirà un pop-up che permetterà di lasciare una recensione all'altro utente [UC11.6];
+	\newpage
 	\item \textbf{Inclusioni}: 
 	\begin{itemize}
-		\item \textbf{UC11.6} recensione utente.
+		\item recensione utente [UC11.6].
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende concludere;
 	\item \textbf{Post-condizione}: l'utente ha richiesto correttamente la chiusura della prenotazione selezionata.
@@ -131,7 +128,7 @@
 	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Alla riconsegna del veicolo e delle chiavi, attraverso l'apposito pulsante l'utente confermerà la chiusura della prenotazione in modo definitivo. Comparirà un pop-up che permetterà di lasciare una recensione all'altro utente [UC11.5];
 	\item \textbf{Inclusioni}: 
 	\begin{itemize}
-		\item \textbf{UC11.5} recensione utente.
+		\item recensione utente [UC11.6].
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende concludere;
 	\item \textbf{Post-condizione}: l'utente ha concluso correttamente la prenotazione selezionata.
