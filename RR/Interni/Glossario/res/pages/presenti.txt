@@ -58,6 +58,7 @@ gigacore
 *json
 *jetbrains
 *kotlin
+*leaderbord
 lint
 linter
 *lucky spin
