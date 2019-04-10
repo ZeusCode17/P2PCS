@@ -6,7 +6,7 @@
 \subsubsection{UC20 - Lucky Spin}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}:	l'utente autenticato può visualizzare la lista dei premi ottenibili tramite la Lucky Spin\glo. Se l'utente ha concluso una prenotazione, può usare la Lucky Spin per ottenere un premio;
+	\item \textbf{Descrizione}:	l'utente può visualizzare la lista dei premi ottenibili tramite la Lucky Spin\glo. Se l'utente ha concluso una prenotazione, può usare la Lucky Spin per ottenere un premio;
 	\item \textbf{Scenario principale}: l'utente preme il pulsante \textit{Lucky Spin} dalla sua area personale. Nel caso in cui l'utente ha concluso una prenotazione, può usare la Lucky Spin per ottenere un premio. I premi ottenibili sono del seguente tipo:
 	\begin{itemize}
 		\item aumento del valore del prossimo buono sconto che si andrà a ricevere (x\% in più);
@@ -17,14 +17,14 @@
 	\begin{itemize}
 		\item vincita premio Lucky Spin [UC21].
 	\end{itemize}
-	\item \textbf{Precondizione}: l'utente autenticato ha premuto il pulsante della Lucky Spin dalla sua area personale;
-	\item \textbf{Postcondizione}: l'utente autenticato sta visualizzando la lista dei premi ottenibili tramite la Lucky Spin;
+	\item \textbf{Precondizione}: l'utente ha premuto il pulsante della Lucky Spin dalla sua area personale;
+	\item \textbf{Postcondizione}: l'utente sta visualizzando la lista dei premi ottenibili tramite la Lucky Spin;
 \end{itemize}
 \subsubsection{UC21 - Vincita premio Lucky Spin}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'utente autenticato ha concluso una prenotazione e può usare la Lucky Spin\glosp per ottenere un premio random;	
-	\item \textbf{Scenario principale}: l'utente autenticato ha concluso una prenotazione e gli si presenta la schermata della Lucky Spin, dalla quale può premere il pulsante \textit{Gira} per usare il suo tentativo. Il premio gli verrà mostrato tramite una schermata che metterà in risalto il premio vinto;
-	\item \textbf{Precondizione}: l'utente autenticato ha concluso una prenotazione e ha usato la Lucky Spin;
+	\item \textbf{Descrizione}: l'utente ha concluso una prenotazione e può usare la Lucky Spin\glosp per ottenere un premio;	
+	\item \textbf{Scenario principale}: l'utente visualizza la schermata della Lucky Spin, nella quale può premere il pulsante \textit{Gira} per usare i suoi giri disponibili. Il premio gli verrà mostrato tramite un pop-up che metterà in risalto il premio vinto;
+	\item \textbf{Precondizione}: l'utente autenticato ha concluso almeno una prenotazione e ha usato la Lucky Spin;
 	\item \textbf{Postcondizione}: l'utente autenticato ha vinto e ritirato il premio dalla Lucky Spin.
 \end{itemize}
