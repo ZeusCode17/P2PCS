@@ -1,22 +1,28 @@
 \section{Verbale della riunione}
 \begin{itemize}
-	\item Core-drive\glosp di gamification\glosp riguardo alla parte social con opportunità di una chat di messaggistica supportata dalla piattaforma esterna Firebase\glo;
-	\item Elenco delle proposte di gamification al proponente per avere un feedback riguardante:
+	\item Fare di \textit{GaiaGo} un servizio facendo pagare meno gli utenti che lo sfruttano, ma dandogli sconti per esempio sulla spesa o su vari altri acquisti;
+	\item Elenco delle proposte di gamification\glo:
 		\begin{itemize}
-			\item classifica utenti in base ai punti esperienza ottenuti e alle valutazioni ricevute;
-			\item progress bar per incentivare il completamento dei dati personali dell'account;
-			\item punti esperienza/gettoni accumulati in base a quanto viene utilizzata l'applicazione (km percorsi, obiettivi raggiunti, completamento della progress bar, challenges superate);
-			\item avatar personalizzabile con abiti acquistabili con i gettoni accumulati;
-			\item rewards giornalieri: si ricevono dei gettoni e/o abiti per l'avatar anche per la frequenza di utilizzo dell'applicazione;
-			\item chat per la comunicazione tra utenti;
-			\item challenge: gli utenti sono stimolati dal prestare/prendere in prestito i veicoli in quanto sono presenti varie challenge (ad esempio: percorri  20km, presta la macchina a 5 utenti);
-			\item come già detto gli utenti possono dare un rating agli utenti con cui hanno avuto un contatto;
-			\item (opzionale) mini gioco: si tratta di un garage in cui è possibile acquistare veicoli diversi e personalizzarli;
-			\item easter egg: personalizzazioni di avatar e veicolo nel minigioco aggiuntive in base alle festività.
+			\item Ruota della fortuna (Lucky Spin) e/o regalo misterioso (Mistery Box) contenenti premi che l'utente potrà ricevere gratuitamente dopo aver concluso una prenotazione. Premi che vanno da non prendere nulla ad ottenere un viaggio gratis con \textit{GaiaGo};
+			\item tutoria guidato all'utilizzo dell'applicazione e/o dell'eventuale minigioco, presente all'interno di quest'ultima, da fare prima o dopo la registrazione;
+			\item invio di un "codice amico", come invito da parte di un utente, da utilizzare nella fase di registrazione all'applicazione con conseguente aumento di punti per entrambe le parti;
+			\item creare una sezione "utenti preferiti" dove visualizzare gli utenti che ci sono piaciuti e che potremmo ancora contattare in caso di bisogno; 
+			\item Mini gioco: 
+				\begin{itemize}
+					\item formato da un avatar modificabile per tutti gli utenti, mentre per chi aggiunge il suo veicolo, introduzione di un garage in cui la macchina, tramite gettoni e premi, possa venire modificata nell'aspetto e nel colore;
+					\item mappa statica con edifici sbloccabili solo a raggiungimento di livelli prestabiliti dove l'utente possa potenziarsi utilizzando sempre più l'applicazione;
+					\item utilizzo di materiali per creare oggetti con tempi e costi predefiniti. 
+				\end{itemize}
+			\item notifiche e gestione notifiche che avvisano qualsiasi cosa succeda nell'applicazione come per esempio l'inutilizzo di quest'ultima, etc;
+			\item classifica utenti in base ai punti esperienza ottenuti e alle valutazioni ricevute oppure alle prestazioni della macchina nel mini gioco, tutte queste da decidere se classificarle per regione, città, paese;
+			\item progress bar;
+			\item punti esperienza/gettoni accumulati in base a quanto viene utilizzata l'applicazione;
+			\item rewards giornalieri;
+			\item recensioni agli utenti;
+			\item easter egg;
+			\item mileston unlock\glosp che sono semplici obbiettivi da completare all'interno dell'applicazione che fruttano premi;
 		\end{itemize}
-	\item Compilazione foglio Excel con schema per valutare i core-drive di gamification;
-	\item Presenza o meno di requisiti prestazionali da rispettare per lo sviluppo dell'applicazione;
-	\item Versione di Android\glosp da supportare per il progetto.
+	\item Utilizzare AWS\glosp come servizio alternativo alla piattaforma Movens\glosp per il back end\glosp dell'applicazione.
 \end{itemize} 
 \pagebreak
 \section{Riepilogo delle decisioni}
@@ -25,25 +31,31 @@
 	\rowcolors{2}{pari}{dispari}
 	
 	\begin{longtable}{ >{\centering}p{0.20\textwidth} >{}p{0.70\textwidth}}
-		\caption{Decisioni della riunione interna del 2019-03-22}\\	
+		\caption{Decisioni della riunione interna del 2019-04-09}\\	
 		\rowcolorhead
 		\textbf{\color{white}Codice} 
 		& \centering\textbf{\color{white}Decisione} 
 		\tabularnewline 
 		\endfirsthead
-		VI\_1.1 & Scelto di non utilizzare una chat di messaggistica all'interno dell'applicazione.
+		VI\_1.1 & Scelto AWS\glosp come piattaforma di back end\glosp in sostituzione a Movens\glo.
 		
 		\tabularnewline 
 		VI\_1.2 & Ricevuto feedback delle proposte con varie soluzioni per alcune di esse.
 		
 		\tabularnewline 
-		VI\_1.3 & Scelto programma Office Excel per la compilazione dello schema per i core-drive\glosp di gamification\glo.
+		VI\_1.3 & Scelto di inserire la lucky spin come proposta di gamification\glo.
 	
 		\tabularnewline 
-		VI\_1.4 & Presenza di un requisito prestazionale riguardante l'impiego di tempo per il caricamento dell'applicazione.
+		VI\_1.4 & Scelto di inserire il tutoria dell'applicazione una volta registrati.
 		
 		\tabularnewline 
-		VI\_1.5 & Nessun vincolo rigurado alla versione Android\glosp da utilizzare per il progetto.
+		VI\_1.5 & Scelto di inserire il "codice amico" come metodo di invito amici all'utilizzo dell'applicazione.
+		
+		\tabularnewline 
+		VI\_1.6 & Scelto di inserire la sezione utenti preferiti;
+		
+		\tabularnewline 
+		VI\_1.7 & Scelto di inserire il mini gioco e notifiche riguardati l'applicazione e tutto quello che ne consegue;
 	\end{longtable}
 	
 
