@@ -180,6 +180,29 @@ dove:
 		 	\item selezionare una prenotazione dalla lista;
 		 	\item verificare che sia disponibile il servizio di cancellazione della prenotazione.
 		 \end{itemize}	&	NI	\tabularnewline
+	 	\texttt{TSOF8.3}	&	L'utente autenticato come proprietario del veicolo deve poter confermare una nuova richiesta di prenotazione. All'utente viene chiesto di:
+	 	\begin{itemize}
+	 		\item accedere all'activity\glosp di conferma o rifiuto della richiesta;
+	 		\item confermare o rifiutare la richiesta;
+	 		\item se conferma, verificare che sia disponibile l'introduzione dei campi dati: luogo e orario d'incontro;
+	 		\item se rifiuta, verificare che sia disponibile la visualizzazione della gestione delle prenotazioni.
+	 	\end{itemize}	&	NI	\tabularnewline
+ 		\texttt{TSOF8.4}	&	L'utente autenticato come usufruente del veicolo può richiedere la chiusura della prenotazione dopo aver riconsegnato chiavi e mezzo al proprietario. All'utente viene chiesto di:
+ 		\begin{itemize}
+ 			\item accedere alla schermata di visualizzazione delle prenotazioni attive;
+ 			\item selezionare una prenotazione dalla lista;
+ 			\item verificare che sia disponibile il servizio di chiusura della prenotazione;
+ 			\item inviare la richiesta di chiusura al proprietario del veicolo;
+ 			\item recensire il proprietario del veicolo;
+ 			\item visualizzare la schermata di gestione prenotazioni.
+ 		\end{itemize}	&	NI	\tabularnewline
+ 		\texttt{TSOF8.5}	&	L'utente autenticato come proprietario del veicolo riceve una notifica di chiusura della prenotazione da parte dell'usufruente e deve confermare o meno l'effettiva riconsegna di chiavi e mezzo. All'utente viene chiesto di:
+ 		\begin{itemize}
+ 			\item verificare la presenza della notifica di richiesta chiusura prenotazione;
+ 			\item chiudere la prenotazione;
+ 			\item recensire l'usufruente;
+ 			\item visualizzare la schermata di gestione prenotazioni.	
+ 		\end{itemize}	&	NI	\tabularnewline
 		 \texttt{TSDF9}&	L'utente autenticato deve poter visualizzare una lista contente tutte le sue prenotazioni concluse. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla schermata di visualizzazione delle prenotazioni concluse;
@@ -191,7 +214,6 @@ dove:
 		 	\item verificare che sia disponibile il servizio di modifica dati account;
 		 	\item verificare che sia disponibile il servizio di eliminazione account.
 		 \end{itemize}	&	NI	\tabularnewline
-		 
 		 \texttt{TSOF10.1} & L'utente autenticato deve poter aggiornare i dati del proprio account. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla schermata di visualizzazione profilo;
@@ -202,9 +224,9 @@ dove:
 		 	\item verificare di poter modificare il email;
 		 	\item verificare di poter modificare la data di nascita;
 		 	\item verificare di poter modificare l'indirizzo di residenza;
+		 	\item verificare di poter modificare la password;
 		 	\item verificare di poter confermare/salvare i dati modificati.
 		 \end{itemize}	&	NI	\tabularnewline
-		 
 		\texttt{TSOF10.1.1}	&	L'utente autenticato deve poter aggiornare la password del proprio account. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare che sia richiesto l'inserimento della password attuale;
@@ -259,6 +281,9 @@ dove:
 		 \end{itemize}	&	NI	\tabularnewline
 		 \texttt{TSOF16}	&	L'utente che si registra inserendo un codice amico deve ricevere un premio dopo la registrazione. Tale premio deve essere corrisposto anche al proprietario del codice. All'utente che si è registrato inserendo un codice amico viene chiesto di:
 		 \begin{itemize}
+		 	\item visualizzare la schermata relativa alla registrazione;
+		 	\item inserire, se a conoscenza, i dati nel campo del codice amico;
+		 	\item confermare/inviare i dati della registrazione;
 		 	\item verificare di aver ricevuto il premio per la registrazione tramite codice amico;
 		 	\item verificare, chiedendo all'amico che gli ha inviato il codice se ha ricevuto lo stesso premio in seguito alla sua registrazione.
 		 \end{itemize}	&	NI	\tabularnewline	
