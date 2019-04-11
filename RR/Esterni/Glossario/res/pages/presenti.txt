@@ -51,6 +51,7 @@
 *lucky spin
 *milestone
 *milestone unlock
+*modello a v
 *modello di sviluppo
 *metamask
 *movens
