@@ -1,13 +1,6 @@
 \section{Specifica dei test}
 Per assicurare la qualità del software prodotto, il gruppo \textit{Zeus Code} adotta come modello di sviluppo del software il
-\textbf{Modello a V\glo}, il quale prevede lo sviluppo dei test in parallelo alle
-attività di analisi e progettazione. In questo modo i test permetteranno di
-verificare sia la correttezza delle parti di programma sviluppati, sia che
-tutti gli aspetti del progetto siano implementati e corretti. 
-Segue quindi l'esito dei test per mezzo di tabelle che ne
-semplificheranno la consultazione e che potranno fornire una precisa indicazione 
-degli output prodotti, specificando se il risultato ottenuto sia quello atteso, errato
-oppure non coerente a quanto fissato in precedenza. \\
+\textbf{Modello a V\glo}, il quale prevede lo sviluppo dei test in parallelo alle attività di analisi e progettazione. In questo modo i test permetteranno di verificare sia la correttezza delle parti di programma sviluppate, sia che tutti gli aspetti del progetto siano implementati e corretti. Segue quindi l'esito dei test per mezzo di tabelle che ne semplificheranno la consultazione e che potranno fornire una precisa indicazione degli output prodotti, specificando se il risultato ottenuto sia quello atteso, errato oppure non coerente a quanto fissato in precedenza. \\
 Per definire lo stato dei test, vengono utilizzate le seguenti sigle:
 \begin{itemize}
 	\item \textbf{I}: per indicare che il test è stato implementato;
@@ -19,29 +12,24 @@ Inoltre per lo stato dei test si usano le seguenti abbreviazioni:
 	\item \textbf{NS}: per indicare che il test non ha soddisfatto la richiesta.
 \end{itemize}
 \subsection{Test di Accettazione}
-I test di accettazione hanno lo scopo di dimostrare che il software sviluppato 
-soddisfi i requisiti presentati nel capitolato\glosp e concordati con il proponente, essi vengono eseguiti durante il
-collaudo finale. Tali test verranno indicati nel seguente modo: \\ \\
+I test di accettazione hanno lo scopo di dimostrare che il software sviluppato, eseguito durante il collaudo finale, soddisfi i requisiti presentati nel capitolato\glosp e concordati con il proponente. Tali test verranno indicati nel seguente modo: \\ \\
 	\centerline{\textbf{TA[Tipo][Importanza][Codice]}}
 dove:
 \begin{itemize}
-	\item \textbf{Tipo}: indica di che tipo si tratta il requisito. Può
-		appartenere a una delle seguenti categorie indicate con:
+	\item \textbf{Tipo}: indica di che tipo si tratta il requisito. Può appartenere a una delle seguenti categorie indicate con:
 		\begin{itemize}
 			\item \textbf{O} per i requisiti obbligatori;
 			\item \textbf{D} per i requisiti desiderabili;
 			\item \textbf{F} per i requisiti facoltativi.			
 		\end{itemize}
-	\item \textbf{Importanza}: indica l'importanza del requisito. L'importanza
-		che può assumere un requisito viene indicata con:
+	\item \textbf{Importanza}: indica l'importanza del requisito. L'importanza che può assumere un requisito viene indicata con:
 		\begin{itemize}
 			\item \textbf{F} per indicare un requisito funzionale;
 			\item \textbf{V} per indicare un requisito di vincolo;
 			\item \textbf{Q} per indicare un requisito di qualità;
 			\item \textbf{P} per indicare un requisito prestazionale. 
 		\end{itemize}
-	\item \textbf{Codice}: rappresenta il codice identificativo crescente
-		del componente da verificare.
+	\item \textbf{Codice}: rappresenta il codice identificativo crescente del componente da verificare.
 \end{itemize}
 
 	\renewcommand{\arraystretch}{1.5}
@@ -69,39 +57,34 @@ dove:
 		\tabularnewline %\hline 
 		\endhead	
 		
-		 \texttt{TSDF1}	&	L'utente deve poter visualizzare l'activity\glosp introduttiva. All'utente viene chiesto di:
+		\texttt{TSOF1}	&	L'utente non ancora autenticato deve poter effettuare la registrazione al sistema. All'utente viene chiesto di:
+		\begin{itemize}
+			\item accedere alla pagina di registrazione;
+			\item completare i campi dati: nome, cognome, email, password ed eventualmente codice amico;
+			\item procedere con l'invio dei dati inseriti;
+			\item attendere la conferma di successo dell'operazione e relativo avviso di richiesta di conferma dell'account tramite email;
+			\item verificare che in seguito alla registrazione sia presentata l'activity introduttiva.
+		\end{itemize}	&	NI	\tabularnewline
+		 \texttt{TSDF2}	&	L'utente deve poter visualizzare l'activity introduttiva. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare che sia disponibile l'activity introduttiva;
 		 	\item verificare che sia disponibile l'opzione "salta la guida";
 		 	\item verificare che in seguito alla guida sia presentato il servizio di login. 
-		 \end{itemize}	&	NI	\tabularnewline
-		 \texttt{TSOF2}	&	L'utente non ancora autenticato deve poter effettuare la registrazione al sistema. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina di registrazione;
-		 	\item completare i campi dati nome, cognome, email e password;
-		 	\item procedere con l'invio dei dati inseriti;
-		 	\item attendere la conferma di successo dell'operazione e relativo avviso di richiesta di conferma dell'account tramite email.
 		 \end{itemize}	&	NI	\tabularnewline
 		 \texttt{TSOF3}	&	L'utente registrato deve poter effettuare il login. All'utente registrato viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di login;
 		 	\item inserire l'email e password;
 		 	\item confermare i dati ed essere autenticato;
-		 	\item verificare che dopo l'autenticazione l'utente è rimandato all'activity\glosp per la gestione dei veicoli.
+		 	\item verificare che dopo l'autenticazione l'utente venga rimandato all'activity\glosp per la gestione dei veicoli.
 		 \end{itemize}	&	NI	\tabularnewline
-		 \texttt{TSOF3.1}	&	L'utente deve visualizzare un messaggio d'errore quando non compila il campo dati email. All'utente viene chiesto di:
+		 \texttt{TSOF3.1}	&	L'utente deve visualizzare un messaggio d'errore quando non compila il campo dati email e password. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di login;
-		 	\item non compilare il campo email e confermare/inviare i dati;
-		 	\item verificare che sia comparso il messaggio d'errore.
-		 \end{itemize}	&	NI	\tabularnewline
-		 \texttt{TSOF3.2}	&	L'utente deve visualizzare un messaggio d'errore quando non compila il campo dati email. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item accedere alla pagina di login;
-		 	\item non compilare il campo password e confermare/inviare i dati;
+		 	\item non compilare il campo email e password e confermare/inviare i dati;
 		 	\item verificare che sia comparso il messaggio d'errore.
 		 \end{itemize}  &	NI	\tabularnewline
-		 \texttt{TSOF3.3}	&	L'utente deve visualizzare un messaggio d'errore quando la combinazione email-password è scorretta. All'utente viene chiesto di:
+		 \texttt{TSOF3.2}	&	L'utente deve visualizzare un messaggio d'errore quando la combinazione email-password è scorretta. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di login;
 		 	\item inserire una combinazione email-password scorretta e confermare/inviare i dati;
