@@ -58,15 +58,15 @@
             <task id="48" name="Requisiti" color="#3399ff" meeting="false" start="2019-04-01" duration="5" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true"/>
             <task id="52" name="Verifica" color="#00ff00" meeting="false" start="2019-03-25" duration="15" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="54" name="PIANO DI PROGETTO" meeting="false" start="2019-03-19" duration="5" complete="0" expand="true">
+        <task id="54" name="PIANO DI PROGETTO" meeting="false" start="2019-03-19" duration="9" complete="0" expand="true">
             <depend id="81" type="2" difference="0" hardness="Strong"/>
             <task id="55" name="Analisi attività e scadenze" color="#3399ff" meeting="false" start="2019-03-19" duration="1" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true"/>
             <task id="57" name="Pianificazione" color="#3399ff" meeting="false" start="2019-03-19" duration="2" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true"/>
-            <task id="56" name="Analisi dei rischi" color="#3399ff" meeting="false" start="2019-03-19" duration="3" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true"/>
-            <task id="58" name="Preventivo" color="#3399ff" meeting="false" start="2019-03-20" duration="3" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true"/>
-            <task id="59" name="Consuntivo" color="#3399ff" meeting="false" start="2019-03-21" duration="1" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true"/>
-            <task id="60" name="Organigramma" color="#3399ff" meeting="false" start="2019-03-21" duration="1" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true"/>
-            <task id="67" name="Verifica" color="#00ff00" meeting="false" start="2019-03-19" duration="5" complete="0" thirdDate="2019-03-19" thirdDate-constraint="0" expand="true"/>
+            <task id="56" name="Analisi dei rischi" color="#3399ff" meeting="false" start="2019-03-21" duration="2" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true"/>
+            <task id="58" name="Preventivo" color="#3399ff" meeting="false" start="2019-03-22" duration="3" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true"/>
+            <task id="59" name="Consuntivo" color="#3399ff" meeting="false" start="2019-03-25" duration="2" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true"/>
+            <task id="60" name="Organigramma" color="#3399ff" meeting="false" start="2019-03-26" duration="1" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true"/>
+            <task id="67" name="Verifica" color="#00ff00" meeting="false" start="2019-03-20" duration="8" complete="0" thirdDate="2019-03-19" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="69" name="PIANO DI QUALIFICA" color="#000000" meeting="false" start="2019-03-19" duration="21" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true">
             <task id="71" name="Definizione degli obiettivi di qualità" color="#3399ff" meeting="false" start="2019-03-19" duration="7" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true"/>
