@@ -87,4 +87,5 @@
 *trello
 *uml
 *verifica e validazione
+*Walkthrough
 *workflow
