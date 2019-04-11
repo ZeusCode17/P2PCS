@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="gantt_analisi" company="" webLink="http://" view-date="2019-03-10" view-index="0" gantt-divider-location="533" resource-divider-location="300" version="2.8.10" locale="en">
+<?xml version="1.0" encoding="UTF-8"?><project name="gantt_analisi" company="" webLink="http://" view-date="2019-03-24" view-index="0" gantt-divider-location="533" resource-divider-location="300" version="2.8.10" locale="en">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
         <field id="tpd3" name="Name" width="235" order="0"/>
@@ -68,10 +68,14 @@
             <task id="60" name="Organigramma" color="#3399ff" meeting="false" start="2019-03-26" duration="1" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true"/>
             <task id="67" name="Verifica" color="#00ff00" meeting="false" start="2019-03-20" duration="8" complete="0" thirdDate="2019-03-19" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="69" name="PIANO DI QUALIFICA" color="#000000" meeting="false" start="2019-03-19" duration="21" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true">
-            <task id="71" name="Definizione degli obiettivi di qualità" color="#3399ff" meeting="false" start="2019-03-19" duration="7" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true"/>
-            <task id="72" name="Strategia di gestione della qualità" color="#3399ff" meeting="false" start="2019-03-27" duration="12" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true"/>
-            <task id="73" name="Resoconto attività di verifica" color="#3399ff" meeting="false" start="2019-04-05" duration="4" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true"/>
+        <task id="69" name="PIANO DI QUALIFICA" color="#000000" meeting="false" start="2019-03-17" duration="23" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true">
+            <depend id="81" type="2" difference="0" hardness="Strong"/>
+            <task id="71" name="Qualità di processo" color="#3399ff" meeting="false" start="2019-03-17" duration="7" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true"/>
+            <task id="72" name="Qualità di prodotto" color="#3399ff" meeting="false" start="2019-03-23" duration="8" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true"/>
+            <task id="73" name="Specifica dei test" color="#3399ff" meeting="false" start="2019-03-30" duration="4" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true"/>
+            <task id="108" name="Standard di qualità" color="#3399ff" meeting="false" start="2019-03-30" duration="6" complete="0" thirdDate="2019-03-17" thirdDate-constraint="0" expand="true"/>
+            <task id="86" name="Resoconto verifica" color="#3399ff" meeting="false" start="2019-03-30" duration="6" complete="0" thirdDate="2019-03-17" thirdDate-constraint="0" expand="true"/>
+            <task id="88" name="Valutazioni miglioramento" color="#3399ff" meeting="false" start="2019-04-02" duration="4" complete="0" thirdDate="2019-03-17" thirdDate-constraint="0" expand="true"/>
             <task id="74" name="Verifica" color="#00ff00" meeting="false" start="2019-03-23" duration="17" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="75" name="GLOSSARIO" meeting="false" start="2019-03-19" duration="21" complete="0" expand="true">
