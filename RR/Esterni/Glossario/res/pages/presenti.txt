@@ -1,31 +1,20 @@
-Leggenda:
-* le abbiamo
--- da inserire
-  non le abbiamo ancora
-
 *android
 *accomplishment
 *activity
 *add-on
-agile
 *apache kafka
 *api
-area di staging
 *artefatti
-attore
 *aws
 *back end
 *baseline
 *blockchain
-body of knowledge
-boilerplate
 *bootstrap
 *camelcase
 *capitolato
 *changelog
 *coesione
 *comportamento emergente
-continuous delivery
 *continuous integration
 *copertura
 *core-drive
@@ -33,7 +22,6 @@ continuous delivery
 *dashboard
 *design pattern
 *devops
-dilazione
 *docker
 *documento esterno
 *documento interno
@@ -48,7 +36,6 @@ dilazione
 *fragment
 *gamification
 *gantt
-gigacore
 *github
 *gitlab
 *grafana
@@ -59,13 +46,11 @@ gigacore
 *json
 *jetbrains
 *kotlin
+*layout
 *leaderbord
-lint
-linter
 *lucky spin
 *milestone
 *milestone unlock
-modello a v
 *modello di sviluppo
 *metamask
 *movens
@@ -73,26 +58,19 @@ modello a v
 *octalysis
 *off-topic
 *open-source
-partizione di equivalenza
 *peer-to-peer
 *plug-in
-pos tagging
 *product baseline
 *proof of concept
-pull request
 *processo
 *python
-raiden
 *react
 *redmine
 *redux
 *refactoring
 *release
 *repository
-rest
 *rete bayesiana
-ropsten
-sass
 *scss
 *schedule
 *server-side
@@ -101,18 +79,13 @@ sass
 *slack
 *smart contract
 *snake case
-solidity
 *sonarqube
 *staging
-stand-up
 *stub
-surge.sh
 *technology baseline
 *telegram
-time series
 *trello
-twelve-factor app
 *uml
 *verifica e validazione
-wallet
+*Walkthrough
 *workflow
