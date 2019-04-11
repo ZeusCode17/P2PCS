@@ -114,5 +114,5 @@ time series
 twelve-factor app
 *uml
 *verifica e validazione
-wallet
+*Walkthrough
 *workflow
