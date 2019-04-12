@@ -37,42 +37,8 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 			\end{itemize}
 	
 			
-	\subsubsection{Progettazione dell'Architettura}
-	Progettare l'architettura significa tradurre i requisiti in un modello architetturale del sistema. Verrà garantito che tutti i requisiti possano essere rintracciabili attraverso il processo di verifica.
-	\paragraph{Obiettivi}
-	\begin{itemize}
-		\item agevolare la realizzazione fornendo un'architettura adeguata;
-		\item perseguire la correttezza per costruzione;
-		\item comprendere meglio il sistema scomponendolo in parti;
-		\item progettare adoperando stili architetturali e design pattern.
-	\end{itemize}
-	\paragraph{Strategia}
-	\begin{itemize}
-		\item valutare il tipo di software da produrre, le caratteristiche desiderate, i casi d'uso e i requisiti da soddisfare;
-		\item valutare i modelli architetturali secondo il punto precedente e scegliere il più adeguato;
-		\item individuare nel modello i macro-componenti del sistema;
-		\item comprendere e definire le relazioni tra i componenti.
-	\end{itemize}
-	\paragraph{Metriche}
-	\subparagraph{SFIN: Structural Fan-in}
-	Indica quante componenti utilizzano un dato modulo. Un alto valore indica un alto riuso della componente.
-	\begin{itemize}
-		\item misurazione: valore intero: conteggio delle componenti;
-		\item valore preferibile: $ \geq 1$;
-		\item valore accettabile: $ \geq 0$.
-	\end{itemize}
-	\subparagraph{SFOUT: Structural Fan-out}
-	Indica quante componenti vengono utilizzate dalla componente in esame. Un alto valore indica un alto
-	accoppiamento della componente.
-	\begin{itemize}
-		\item misurazione: valore intero: conteggio delle componenti;
-		\item valore preferibile: $ = 0$;
-		\item valore accettabile: $ \leq 6$.
-	\end{itemize}
-	
-			
 	\subsubsection{Progettazione di Dettaglio}
-	La progettazione di design segue la progettazione dell'architettura, tramite una suddivisione delle macro-component in componenti più piccole evidenziandone i seguenti benefici:
+	La progettazione di design, tramite una suddivisione delle macro-component, in componenti più piccole evidenzia i seguenti benefici:
 	\begin{itemize}
 		\item facilmente comprensibili;
 		\item strettamente collegati ai requisiti funzionali;
