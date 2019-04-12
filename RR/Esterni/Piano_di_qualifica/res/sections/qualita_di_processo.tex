@@ -1,7 +1,5 @@
 \section{Qualità di processo}
-Per ricercare la qualità nello svolgimento del progetto si adoperano dei processi. Inizialmente sono stati scelti processi proposti dallo standard ISO/IEC/IEEE 12207:1995 e successivamente sono stati semplificati o adattati secondo le esigenze.
-In alcuni casi le attività sono trattate alla pari di processi, vista la loro importanza nell'esito del progetto.
-I risultati sono i processi esposti di seguito.
+Sono stati inizialmente scelti, come riferimento, i processi proposti dallo standard ISO/IEC/IEEE 12207:1995 e successivamente semplificati o adattati secondo le esigenze.
 
 %\subsection{Processo di Costruzione del Software}. Opzione per il futuro.
 
@@ -39,8 +37,41 @@ I risultati sono i processi esposti di seguito.
 			\end{itemize}
 	
 			
+	\subsubsection{Progettazione dell'Architettura}
+	Progettare l'architettura significa tradurre i requisiti in un modello architetturale del sistema. Verrà garantito che tutti i requisiti possano essere rintracciabili attraverso il processo di verifica.
+	\paragraph{Obiettivi}
+	\begin{itemize}
+		\item agevolare la realizzazione fornendo un'architettura adeguata;
+		\item perseguire la correttezza per costruzione;
+		\item comprendere meglio il sistema scomponendolo in parti;
+		\item progettare adoperando stili architetturali e design pattern.
+	\end{itemize}
+	\paragraph{Strategia}
+	\begin{itemize}
+		\item valutare il tipo di software da produrre, le caratteristiche desiderate, i casi d'uso e i requisiti da soddisfare;
+		\item valutare i modelli architetturali secondo il punto precedente e scegliere il più adeguato;
+		\item individuare nel modello i macro-componenti del sistema;
+		\item comprendere e definire le relazioni tra i componenti.
+	\end{itemize}
+	\paragraph{Metriche}
+	\subparagraph{SFIN: Structural Fan-in}
+	Indica quante componenti utilizzano un dato modulo. Un alto valore indica un alto riuso della componente.
+	\begin{itemize}
+		\item misurazione: valore intero: conteggio delle componenti;
+		\item valore preferibile: $ \geq 1$;
+		\item valore accettabile: $ \geq 0$.
+	\end{itemize}
+	\subparagraph{SFOUT: Structural Fan-out}
+	Indica quante componenti vengono utilizzate dalla componente in esame. Un alto valore indica un alto
+	accoppiamento della componente.
+	\begin{itemize}
+		\item misurazione: valore intero: conteggio delle componenti;
+		\item valore preferibile: $ = 0$;
+		\item valore accettabile: $ \leq 6$.
+	\end{itemize}
+	
+			
 	\subsubsection{Progettazione di Dettaglio}
-	\textit{Nota: in questa sezione si parla di modulo, unità e componente riferendosi allo stesso oggetto, ma ponendo l'attenzione sulla proprietà (rispettivamente modularità, unità e composizione) più rilevante nel contesto d'uso.}\newline 
 	La progettazione di design segue la progettazione dell'architettura e prevede la scomposizione delle macro-componenti di cui il modello architetturale è fatto in componenti più piccole, che sono:
 	\begin{itemize}
 		\item facilmente comprensibili;
