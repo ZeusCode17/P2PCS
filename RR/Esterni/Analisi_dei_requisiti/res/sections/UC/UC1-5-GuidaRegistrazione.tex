@@ -1,7 +1,7 @@
 \begin{figure}[h]
 	\includegraphics[width=15cm]{res/images/Schemagenerale1.png}
 	\centering
-	\caption{Schema generale: registrazione ed errori annessi}
+	\caption{Diagramma del caso d'uso UC1 con relative estensioni (UC2, UC3, UC5) ed inclusioni (UC4)}
 \end{figure}
 \subsubsection{UC1 - Registrazione}
 \begin{itemize}
@@ -19,7 +19,7 @@
 	\item \textbf{Postcondizione}: l'utente viene registrato nell'applicazione;
 	\item \textbf{Inclusioni}:
 		\begin{itemize}
-			\item visualizzazione activity introduttiva [UC4].
+			\item visualizzazione guida introduttiva [UC4].
 		\end{itemize}
 	\item \textbf{Estensioni}:
 		\begin{itemize}
@@ -95,14 +95,14 @@
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con un codice amico.
 \end{itemize}
 
-\subsubsection{UC1.2 - Invio dati}
-\begin{itemize}
-	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati; l'utente verrà rimandato a una nuova activity\glosp che confermerà il successo dell'operazione;
-	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati;	
-	\item \textbf{Precondizione}: i campi dati necessari per la registrazione sono compilabili. È presente il pulsante per la conferma dei dati;
-	\item \textbf{Postcondizione}: l'utente viene rimandato a una nuova activity che conferma il successo dell'operazione e avvisa l'utente di controllare la propria e-mail per confermare il processo di registrazione.
-\end{itemize}
+%\subsubsection{UC1.2 - Invio dati}
+%\begin{itemize}
+%	\item \textbf{Attori Primari}: utente non autenticato;
+%	\item \textbf{Descrizione}: l'utente non ancora autenticato, dopo aver inserito i dati per la registrazione, preme il pulsante per la conferma e l'invio dei dati; l'utente verrà rimandato a una nuova activity\glosp che confermerà il successo dell'operazione;
+%	\item \textbf{Scenario principale}: l'utente non autenticato preme il pulsante di conferma ed invio dei dati;	
+%	\item \textbf{Precondizione}: i campi dati necessari per la registrazione sono compilabili. È presente il pulsante per la conferma dei dati;
+%	\item \textbf{Postcondizione}: l'utente, non ancora registrato, viene rimandato a una nuova activity che conferma il successo dell'operazione e avvisa l'utente di controllare la propria e-mail per confermare il processo di registrazione.
+%\end{itemize}
 
 \subsubsection{UC2 - Visualizzazione errore email non valida}
 \begin{itemize}
@@ -127,13 +127,13 @@
 	\item \textbf{Postcondizione}: l'applicazione fa visualizzare un messaggio d'errore.
 \end{itemize}
 
-\subsubsection{UC4 - Visualizzazione activity introduttiva}
+\subsubsection{UC4 - Visualizzazione guida introduttiva}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente visualizza una guida introduttiva che mostra le funzionalità dell'applicazione nella sue sezioni principali al termine della quale potrà accedere all'activity\glosp di login;
-	\item \textbf{Scenario principale}: l'utente accede all'activity introduttiva dell'applicazione e può decidere se visualizzarla o saltarla andando ad effettuare l'accesso;
-	\item \textbf{Precondizione}: l'utente si è registrato e può accedere all'activity introduttiva dell'applicazione;
-	\item \textbf{Postcondizione}: il sistema fornisce all'utente la possibilità di visualizzare interamente la guida o di saltarla e raggiungere l'activity di login.
+	\item \textbf{Descrizione}: l'utente visualizza una guida introduttiva che mostra le funzionalità dell'applicazione nella sue sezioni principali al termine della quale potrà accedere alla pagina di login;
+	\item \textbf{Scenario principale}: l'utente accede alla guida introduttiva dell'applicazione e può decidere se visualizzarla o saltarla andando ad effettuare l'accesso;
+	\item \textbf{Precondizione}: l'utente si è registrato e può accedere alla guida introduttiva dell'applicazione;
+	\item \textbf{Postcondizione}: il sistema fornisce all'utente la possibilità di visualizzare interamente la guida o di saltarla e raggiungere la pagina di login.
 \end{itemize}
 
 \subsubsection{UC5 - Visualizzazione errore campi vuoti}

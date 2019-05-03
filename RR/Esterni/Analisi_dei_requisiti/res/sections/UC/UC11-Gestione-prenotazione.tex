@@ -1,11 +1,13 @@
 \subsubsection{UC11 - Gestione prenotazioni}
 \begin{figure}[h]
-	\includegraphics[width=10cm]{res/images/UC11Prenotazione.png}
+	\includegraphics[width=12cm]{res/images/UC11Prenotazione.png}
 	\centering
 	\caption{UC11 - Gestione prenotazione}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Attori Secondari}:
+	usufruente del veicolo, proprietario del veicolo;
 	\item \textbf{Descrizione}: agli utenti autenticati è resa disponibile una maschera che presenta la lista di tutte le sue prenotazioni ancora attive, dalla quale l'utente può scegliere di effettuare operazioni di gestione su ognuna di esse;
 	per ogni prenotazione presente nella lista saranno visualizzati dei dettagli riassuntivi, che sono:
 	\begin{itemize}
@@ -16,13 +18,22 @@
 		\item modello del veicolo prenotato;
 		\item anno d'immatricolazione del veicolo prenotato.
 	\end{itemize}
-	\item \textbf{Scenario principale}: l'utente effettua operazioni di gestione di una prenotazione. Esse comprendono:
+	\item \textbf{Scenario principale}: l'utente autenticato effettua operazioni di gestione di una prenotazione. Esse comprendono:
 	\begin{itemize}
-		\item visualizzazione dettagli prenotazione [UC11.1];
-		\item cancellazione prenotazione [UC11.2].
-		\item cancellazione prenotazione [UC11.2];
+		\item visualizzazione dettagli prenotazione [UC11.1].
 	\end{itemize}
-	\item \textbf{Scenario secondario}: il proprietario di un veicolo, inoltre potrà confermare le prenotazioni ricevute [UC11.3];
+	\item \textbf{Scenario alternativo}: Se l'utente autenticato è il proprietario del veicolo, inoltre potrà confermare:
+	\begin{itemize}
+		\item le prenotazioni ricevute [UC11.3];
+		\item la riconsegna del veicolo [UC11.5];
+		\item recensire l'usufruente [UC11.6].
+	\end{itemize}
+	Se l'utente autenticato è l'usufruente del veicolo, inoltre potrà:
+	\begin{itemize}
+		\item cancellare la prenotazione [UC11.2];
+		\item richiesta di conferma per la riconsegna del veicolo [UC11.4];
+		\item recensire il proprietario [UC11.6].
+	\end{itemize}
 	\item \textbf{Precondizione}: il sistema carica correttamente la lista delle prenotazioni effettuate attualmente attive;
 	\item \textbf{Post-condizione}: l'utente ha visualizzato le sue prenotazioni correnti ed è riuscito ad effettuare eventuali modifiche.
 \end{itemize} 
@@ -50,9 +61,9 @@
 \end{comment}
 \subsubsection{UC11.2 - Cancellazione prenotazione}
 \begin{itemize}
-	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'utente cancella la prenotazione selezionata;
-	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Attraverso l'apposito pulsante l'utente chiederà la cancellazione della prenotazione;
+	\item \textbf{Attori Primari}: usufruente del veicolo;
+	\item \textbf{Descrizione}: l'utente usufruente cancella la prenotazione selezionata;
+	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Attraverso l'apposito pulsante l'utente cancellerà la prenotazione effettuata;
 	\item \textbf{Precondizione}: l'utente ha premuto il pulsante per la cancellazione delle prenotazione precedentemente selezionata;
 	\item \textbf{Post-condizione}: l'utente ha annullato correttamente la prenotazione selezionata.
 \end{itemize}

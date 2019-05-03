@@ -1,7 +1,7 @@
 \begin{figure}[h]
 	\includegraphics[width=16cm]{res/images/Schemagenerale2.png}
 	\centering
-	\caption{Schema generale: login ed errori annessi}
+	\caption{Diagramma del caso d'uso UC6 con relative estensioni (UC5, UC7, UC8)}
 \end{figure}
 \newpage
 \subsubsection{UC6 - Login}
@@ -59,14 +59,14 @@
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con la password associata al proprio account.
 \end{itemize}
 
-\subsubsection{UC6.2 - Invio dati}
-\begin{itemize}
-	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati; se email e password risulteranno corrette l'utente verrà autenticato;
-	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati;	
-	\item \textbf{Precondizione}: i campi dati necessari per l'autenticazione sono compilabili. È presente il pulsante per la conferma dei dati;
-	\item \textbf{Postcondizione}: l'utente viene autenticato e rimandato all'activity\glosp per la gestione dei veicoli.
-\end{itemize}
+%\subsubsection{UC6.2 - Invio dati}
+%\begin{itemize}
+%	\item \textbf{Attori Primari}: utente non autenticato;
+%	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati; se email e password risulteranno corrette l'utente verrà autenticato;
+%	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati;	
+%	\item \textbf{Precondizione}: i campi dati necessari per l'autenticazione sono compilabili. È presente il pulsante per la conferma dei dati;
+%	\item \textbf{Postcondizione}: l'utente viene autenticato e rimandato all'activity\glosp per la gestione dei veicoli.
+%\end{itemize}
 
 \subsubsection{UC7 - Visualizzazione errore combinazione email e password errata}
 \begin{itemize}
@@ -76,12 +76,11 @@
 	\item \textbf{Precondizione}: l'utente non autenticato inserisce i dati che combinati risultano non validi;
 	\item \textbf{Postcondizione}: l'applicazione fa visualizzare un messaggio d'errore.
 \end{itemize}
-\newpage
-\begin{figure}[h]
-	\includegraphics[width=15cm]{res/images/Schemagenerale3.png}
-	\centering
-	\caption{Schema generale: recupero password ed errori annessi}
-\end{figure}
+%\begin{figure}[h]
+%	\includegraphics[width=15cm]{res/images/Schemagenerale3.png}
+%	\centering
+%	\caption{Schema generale: recupero password ed errori annessi}
+%\end{figure}
 \subsubsection{UC8 - Recupero password}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
@@ -97,7 +96,7 @@
 \begin{figure}[h]
 	\includegraphics[width=9cm]{res/images/UC9Logout.png}
 	\centering
-	\caption{Schema generale: logout}
+	\caption{UC9 - Logout}
 \end{figure}
 \subsubsection{UC9 - Logout}
 \begin{itemize}

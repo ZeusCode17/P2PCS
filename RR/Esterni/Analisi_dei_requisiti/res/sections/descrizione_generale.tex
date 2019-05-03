@@ -7,6 +7,7 @@ Per il servizio di car sharing l'applicativo deve offrire le seguenti funzionali
 \begin{itemize}
 	\item registrazione e login degli utenti;
 	\item inserimento della propria auto per la condivisione;
+	\item gestione del proprio profilo;
 	\item prenotazione di un'auto;
 	\item visualizzazione dei veicoli disponibili;
 	\item visualizzazione distanza (lista con distanza in km o possibilità di vederle su una mappa);
@@ -18,11 +19,11 @@ Per il servizio di car sharing l'applicativo deve offrire le seguenti funzionali
 L'applicativo, oltre a offrire il servizio di car sharing, deve invogliare l'utente a condividere la propria auto a un prezzo basso. 
 I core-drive\glosp e le game mechanics che il gruppo \textit{Zeus Code} intende utilizzare per motivare i singoli utenti sono incentrati sui seguenti core-drive di Octalysis\glo: 
 \begin{itemize}
-	\item \textbf{accomplishment}: assicurarsi che gli utenti stiano superando le sfide di cui possono essere orgogliosi;
-	\item \textbf{ownership}: invogliare l'utente a migliore/proteggere qualcosa che già possiede o ad ottenere di più;
-	\item \textbf{unpredictability \& curiosity}: stimolare la curiosità dell'utente e indirizzarlo verso una ricompensa o evento inaspettato;
-	\item \textbf{social influence}: legato alle attività ispirate da ciò che gli altri pensano, fanno o dicono (questo Core-Drive è il motore di temi come mentorship, competizione, invidia, ricerche di gruppo, tesori sociali e compagnia);
-	\item \textbf{empowerment}: permettere all'utente di sbloccare potenziamenti.
+	\item \textbf{accomplishment}: con questo ci assicureremo che gli utenti stiano superando le sfide di cui possono essere orgogliosi, per esempio implementeremo la Leaderboard [UC22] e la Progress Bar [UC16];
+	\item \textbf{ownership}: con questo si tende ad invogliare l'utente a migliore/proteggere qualcosa che già possiede o ad ottenere di più, per esempio implementando l'Avatar;
+	\item \textbf{unpredictability \& curiosity}: con questo possiamo stimolare la curiosità dell'utente e indirizzarlo verso una ricompensa o evento inaspettato, implementando la Lucky Spin [UC20] e non solo, anche i Random, Daily Rewards e gli Easter Egg;
+	\item \textbf{social influence}: ovvero le attività ispirate da ciò che gli altri pensano, fanno o dicono (questo Core-Drive è il motore di temi come mentorship, competizione, invidia, ricerche di gruppo, tesori sociali e compagnia), per esempio faremo sì che un utente condivida con amici un codice per invitarli ad utilizzare l’applicazione [UC23];
+	\item \textbf{empowerment}: permettere all'utente di sbloccare potenziamenti, ovvero le Milestone Unlock [UC18].
 \end{itemize}
 \subsection{Caratteristiche degli utenti}
 Si evidenziano sin da subito due categorie di utenti:
@@ -34,8 +35,3 @@ Si evidenziano sin da subito due categorie di utenti:
 			\item proprietario: utente autenticato con registrazione completa che condivide la propria auto.
 		\end{itemize}
 \end{itemize}
-
-\subsection{Vincoli generali}
-Gli utenti non autenticati o con registrazione incompleta possono solo visualizzare il contenuto dell'applicazione, mentre gli utenti autenticati, come usufruenti e proprietari, hanno accesso a tutti i servizi offerti dall'applicazione. Inoltre, tutti gli utenti hanno bisogno di una connessione internet per l'utilizzo dell'applicazione.
-
- 
