@@ -27,14 +27,15 @@
 \subsubsection{UC6.1 - Compilazione campi per il login}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente compila i campi richiesti per l'autenticazione;
+	\item \textbf{Descrizione}: l'utente compila i campi richiesti per l'autenticazione e dopo aver confermato, se i dati sono validi, verrà portato alla pagina \textit{Gestione veicoli};
 	\item \textbf{Scenario principale}: l'utente compila i campi necessari all'autenticazione ovvero:
 		\begin{itemize}
 			\item l'utente inserisce l'email associata al proprio account [UC5.1.1];
 			\item l'utente inserisce la password associata la proprio account [UC5.1.2].
-		\end{itemize}	
+		\end{itemize}
+	successivamente conferma i dati;	
 	\item \textbf{Precondizione}: l'utente si trova nell'activity\glosp di autenticazione;
-	\item \textbf{Postcondizione}: l'utente ha compilato tutti i campi necessari all'autenticazione.	
+	\item \textbf{Postcondizione}: l'utente ha compilato tutti i campi necessari all'autenticazione, se corretti, viene mandato alla pagina \textit{Gestione veicoli}.	
 \end{itemize}
 \begin{figure}[h]
 	\includegraphics[width=11cm]{res/images/UC6-1Compilazione.png}
@@ -93,12 +94,12 @@
 			\item visualizzazione errore email non valida [UC2].
 		\end{itemize}
 \end{itemize}
+\subsubsection{UC9 - Logout}
 \begin{figure}[h]
 	\includegraphics[width=9cm]{res/images/UC9Logout.png}
 	\centering
 	\caption{UC9 - Logout}
 \end{figure}
-\subsubsection{UC9 - Logout}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
 	utente autenticato;

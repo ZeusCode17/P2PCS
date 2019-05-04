@@ -6,17 +6,15 @@
  \end{figure}
  \begin{itemize}
  	\item \textbf{Attori Primari}: utente autenticato;
- 	\item \textbf{Descrizione}: l'utente visualizza i propri veicoli. Per ogni veicolo vengono visualizzate le seguenti informazioni:
+ 	\item \textbf{Descrizione}: l'utente ha una panoramica dei veicolo che ha inserito visualizzando solo poche cose riguardanti il mezzo e ha la possibilità di:
  	\begin{itemize}
- 		\item marca;
- 		\item modello;
- 		\item anno di immatricolazione;
- 		\item rating.
+ 		\item aggiungere un veicolo [UC10.1];
+ 		\item visualizzare i dettagli del veicolo [UC10.2].
  	\end{itemize}
  	\item \textbf{Precondizione}: l'utente accede al fragment\glosp per la gestione dei veicoli;
  	\item \textbf{Postcondizione}: l'utente visualizza le informazioni relative ai propri veicoli, con le eventuali operazioni disponibili su ognuno di essi.
  \end{itemize}
- \subsubsection{UC10.1 - Aggiunta veicolo}
+ \subsubsection{UC10.1 - Aggiungi veicolo}
  \begin{itemize}
  	\item \textbf{Attori Primari}: utente autenticato;
  	\item \textbf{Descrizione}: l'utente può aggiungere un mezzo di trasporto al proprio parco macchine;
@@ -26,14 +24,14 @@
  		\item inserimento modello veicolo [UC10.1.2];
  		\item inserimento anno d'immatricolazione veicolo [UC10.1.3].
  	\end{itemize}
- 	e successivamente salverà il nuovo veicolo [UC10.1.4];
+ 	e successivamente salverà il nuovo veicolo confermando i campi appena inseriti;
  	\item \textbf{Precondizione}: l'utente ha inserito correttamente tutti i campi necessari;
  	\item \textbf{Postcondizione}: il nuovo veicolo viene aggiunto ai veicoli posseduti.
  \end{itemize}
 \begin{figure}[H]
 	\includegraphics[width=10cm]{res/images/UC10-1Aggiungiveicolo.png}
 	\centering
-	\caption{UC10.1 - Aggiunta veicolo}
+	\caption{UC10.1 - Aggiungi veicolo}
 \end{figure}
 \subsubsection{UC10.1.1 - Inserimento marca veicolo}
 \begin{itemize}
@@ -62,20 +60,36 @@
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con l'anno d'immatricolazione.	
 \end{itemize}
 
-\subsubsection{UC10.1.4 - Invio dati veicolo}
+%\subsubsection{UC10.1.4 - Invio dati veicolo}
+%\begin{itemize}
+%	\item \textbf{Attori Primari}: utente autenticato;
+%	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati del veicolo;
+%	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati;	
+%	\item \textbf{Precondizione}: i campi dati necessari per l'inserimento di un veicolo sono compilabili. È presente il pulsante per la conferma dei dati;
+%	\item \textbf{Postcondizione}: il nuovo veicolo viene inserito e l'utente potrà visualizzarlo nel proprio parco macchine.
+%\end{itemize}
+\subsubsection{UC10.2 - Visualizza dettagli veicolo}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati del veicolo;
-	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati;	
-	\item \textbf{Precondizione}: i campi dati necessari per l'inserimento di un veicolo sono compilabili. È presente il pulsante per la conferma dei dati;
-	\item \textbf{Postcondizione}: il nuovo veicolo viene inserito e l'utente potrà visualizzarlo nel proprio parco macchine.
+	\item \textbf{Descrizione}: l'utente autenticato, per ogni veicolo, può visualizzare in dettaglio le seguenti informazioni:
+	\begin{itemize}
+		\item marca;
+		\item modello;
+		\item anno di immatricolazione;
+		\item rating.
+	\end{itemize}
+	E ha la possibilità di rimuoverlo [UC10.2.1];
 \end{itemize}
-
-\subsubsection{UC10.2 - Rimozione veicolo}
+\begin{figure}[H]
+	\includegraphics[width=10cm]{res/images/UC10-2Dettagliveicolo.png}
+	\centering
+	\caption{UC10.2 - Visualizza dettagli veicolo}
+\end{figure}
+\subsubsection{UC10.2.1 - Rimuovi veicolo}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'utente può rimuovere un mezzo di trasporto dal proprio parco macchine;
-	\item \textbf{Scenario principale}: l'utente può selezionare un veicolo e attraverso l'apposito pulsante rimuoverlo dal proprio parco macchine.
+	\item \textbf{Scenario principale}: l'utente, dopo aver selezionato il veicolo da visualizzare, può rimuoverlo dal proprio parco macchine attraverso l'apposito pulsante;
 	\item \textbf{Precondizione}: l'applicazione mostra all'utente i propri veicoli e ne permette la selezione.
 	\item \textbf{Postcondizione}: il veicolo selezionato viene rimosso dal parco macchine
 \end{itemize}
