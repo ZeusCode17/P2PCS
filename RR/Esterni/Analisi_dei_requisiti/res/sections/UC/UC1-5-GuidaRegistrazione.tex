@@ -6,15 +6,16 @@
 \subsubsection{UC1 - Registrazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: per effettuare il procedimento di registrazione, l'utente deve compilare tutti i campi necessari ovvero nome, cognome, email e password;
+	\item \textbf{Descrizione}: per effettuare il procedimento di registrazione, l'utente deve compilare tutti i campi necessari ovvero nome, cognome, email, password e, se in possesso, anche del codice amico confermando i dati una volta inseriti per proseguire;
 	\item \textbf{Scenario principale}: l'applicazione rende disponibili i campi da compilare per la registrazione. Dunque l'utente dovrà inserire tutti i dati necessari, quali:
 		\begin{itemize}
 			\item inserimento nome [UC1.1.1];
 			\item inserimento cognome [UC1.1.2];
 			\item inserimento indirizzo email [UC1.1.3];
 			\item inserimento password [UC1.1.4];
-			\item inserimento codice amico [UC1.1.5].
+			\item inserimento codice amico (solo se in possesso) [UC1.1.5].
 		\end{itemize}
+	Infine confermare i dati per procedere;
 	\item \textbf{Precondizione}: l'applicazione rende disponibile i campi da compilare;
 	\item \textbf{Postcondizione}: l'utente viene registrato nell'applicazione;
 	\item \textbf{Inclusioni}:
@@ -41,13 +42,14 @@
 \subsubsection{UC1.1 - Inserimento dati profilo utente}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}:l'utente compila i campi contenenti i dati relativi al profilo utente;
+	\item \textbf{Descrizione}: l'utente compila i campi contenenti i dati relativi al profilo utente;
 	\item \textbf{Scenario principale}: l'utente compila tutti i campi del form riguardanti l'account, ovvero:
 		\begin{itemize}
 			\item l'utente inserisce il proprio nome [UC1.1.1];
 			\item l'utente inserisce il proprio cognome [UC1.1.2];
 			\item l'utente inserisce l'email da associare all'account [UC1.1.3];
-			\item l'utente inserisce la password da associare all'account [UC1.1.4].
+			\item l'utente inserisce la password da associare all'account [UC1.1.4];
+			\item l'utente inserisce, solo se in possesso, il codice amico [UC1.1.5].
 		\end{itemize}
 	\item \textbf{Precondizione}: l'utente è entrato nell'activity\glosp di registrazione;
 	\item \textbf{Postcondizione}: l'utente ha compilato tutti i campi richiesti dalla registrazione.
