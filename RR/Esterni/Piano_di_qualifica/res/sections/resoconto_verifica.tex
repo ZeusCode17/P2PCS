@@ -14,7 +14,7 @@ all'individuazione di alcuni errori frequenti a partire dai quali è stata
 stilata una lista di controllo interna.
 
 \subsubsection{Esiti verifiche automatizzate}
-Nella tabella seguente vengono riportati gli indici Gulpease\glo{} di tutti
+Nelle tabelle seguente vengono riportati gli indici Gulpease\glosp e gli indici di Gunning Fog\glosp di tutti
 i documenti prodotti finora.
 
 	\rowcolors{2}{pari}{dispari}
@@ -70,57 +70,122 @@ i documenti prodotti finora.
 	
 	\end{longtable}
 	
-\subsubsection{Esiti delle metriche}
-	\begin{itemize}
-		\item \textbf{S} - Superato
-		\item \textbf{NS} - Non Superato
-		\item \textbf{NC} - Non Calcolabile
-	\end{itemize}
-
 	\rowcolors{2}{pari}{dispari}
 	
 		
 	\begin{longtable}{ >{\centering}p{0.40\textwidth} >{\centering}p{0.25\textwidth}
 			 >{\centering}p{0.2075\textwidth}}
-		\caption{Esiti delle metriche - Revisione dei Requisiti} \\
+		\caption{Esiti verifiche automatizzate - Revisione dei Requisiti} \\
+		%\hline
+		\rowcolorhead
+		\centering\textbf{\color{white}Documento} 
+		& \centering\textbf{\color{white}Indice Gunning Fog} 
+		& \centering\textbf{\color{white}Esito}
+		\tabularnewline %\hline 
+		\endfirsthead
+			
+	
+		\textit{Analisi dei Requisiti v1.0.0} & 13.06 & Superato
+		
+		\tabularnewline 
+		\textit{Glossario v1.0.0} & 12.32 & Superato
+				
+		\tabularnewline 
+		\textit{Norme di Progetto v1.0.0} & 11.70  & Superato
+		
+		\tabularnewline 
+		\textit{Piano di Progetto v1.0.0} & 12.29 & Superato
+		
+		\tabularnewline 
+		\textit{Piano di Qualifica v1.0.0} & 12.71 & Superato	
+		
+		\tabularnewline 
+		\textit{Studio di Fattibilità v1.0.0} & 11.28 & Superato
+		
+		\tabularnewline 
+		\textit{Verbale Esterno 2019-03-14 v1.0.0} & 14.81 & Superato
+		
+		\tabularnewline 
+		\textit{Verbale Esterno 2019-03-25 v1.0.0} & 15.59 & Superato
+		
+		\tabularnewline 
+		\textit{Verbale Esterno 2019-04-10 v1.0.0} & 15.77  & Superato
+		
+		\tabularnewline 
+		\textit{Verbale Interno 2019-03-06 v1.0.0} & 13.96 & Superato
+		
+		\tabularnewline 
+		\textit{Verbale Interno 2019-03-13 v1.0.0} & 15.44 & Superato
+		
+		\tabularnewline 
+		\textit{Verbale Interno 2019-03-18 v1.0.0} & 15.62 & Superato
+		
+	
+	\end{longtable}
+	\vspace{2pt}
+\subsubsection{Esiti verifiche non automatizzate}
+
+	\paragraph{Verifica delle metriche di processo}
+	Di seguito viene riportata la tabella con gli esiti delle metriche di processo
+	\rowcolors{2}{pari}{dispari}	
+	\begin{longtable}{ >{\centering}p{0.15\textwidth} >{\centering}p{0.3\textwidth}
+			 >{\centering}p{0.195\textwidth} >{\centering}p{0.195\textwidth}}
+		\caption{Esiti delle metriche di processo - Revisione dei Requisiti} \\
 		%\hline
 		\rowcolorhead
 		\centering\textbf{\color{white}Codice metrica} 
-		& \centering\textbf{\color{white}Indice} 
+		& \centering\textbf{\color{white}Breve descrizione} 
+		& \centering\textbf{\color{white}Valore} 
 		& \centering\textbf{\color{white}Esito}
 		\tabularnewline %\hline 
 		\endfirsthead
 		
-		\textit{PROS} & ROS=NC \\ ROT= & NC
+		\texttt{MPR1}  & Percentuale di requisiti obbligatori soddisfatti & Non calcolabile & Non superato
 		\tabularnewline 
 		
-		\textit{CBO} &   & NC
+		\texttt{MPR2} & Coupling Between Object classes & Non calcolabile & Non superato
 		\tabularnewline
 		
-		\textit{PV} &   & NC
+		\texttt{MPR3} & Planned Value & 4.688,00 & Superato
 		\tabularnewline
 		
-		\textit{AC} &   & NC
+		\texttt{MPR4} & Actual Cost & 4.833,00 & Superato
 		\tabularnewline
 		
-		\textit{EV} &   & NC
+		\texttt{MPR5} & Earned Value & 4.833,00 & Superato
 		\tabularnewline
 		
-		\textit{BAC} &   & NC
+		\texttt{MPR6} & Budget at Completion & 4.833,00 & Superato
 		\tabularnewline
 		
-		\textit{CV} &   & NC
+		\texttt{MPR7} & Cost Variance & 0,00 & Superato
 		\tabularnewline
 		
-		\textit{SV} &   & NC
+		\texttt{MPR8} & Schedule Variance & 0,00 & Superato 
 		\tabularnewline
 		
-		\textit{CC} &   & NC
+		\texttt{MPR9} & Code Coverage & Non calcolabile & Non superato
 		\tabularnewline
 		
-		\textit{PMS} &   & NC
+		\texttt{MPR10} & Indice Gunning fog (media) & 13,71 & Superato
 		\tabularnewline
 		
-		\textit{CIF} &   & NC
+		\texttt{MPR11} & Indice di Gulpease (media) & 68,54 & Superato
 		\tabularnewline
+		
+		\texttt{MPR12} & Correttezza ortografica & 0 & Superato
+		\tabularnewline
+		
+		\texttt{MPR13} & Percentuale di metriche soddisfatte & 75,00 & Superato
+		\tabularnewline
+		
 	\end{longtable}
+	
+	\paragraph{Verifica delle metriche di prodotto} 
+
+	Le metriche di prodotto non possono essere valutate al momento.
+
+
+\subsubsection{Esiti dei test}
+	Al momento i test riguardanti il prodotto non sono implementati, perciò non verificabili. 
+	
