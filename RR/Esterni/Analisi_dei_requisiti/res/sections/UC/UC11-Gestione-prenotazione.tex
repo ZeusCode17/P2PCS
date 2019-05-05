@@ -32,11 +32,11 @@
 	Se l'utente autenticato è l'usufruente del veicolo, inoltre potrà:
 	\begin{itemize}
 		\item cancellare la prenotazione [UC11.2];
-		\item richiesta di conferma per la riconsegna del veicolo [UC11.4];
+		\item richiedere la conferma della riconsegna del veicolo [UC11.4];
 		\item recensire il proprietario [UC11.6].
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema carica correttamente la lista delle prenotazioni effettuate attualmente attive;
-	\item \textbf{Post-condizione}: l'utente ha visualizzato le sue prenotazioni correnti ed è riuscito ad effettuare eventuali modifiche.
+	\item \textbf{Postcondizione}: l'utente ha visualizzato le sue prenotazioni correnti ed è riuscito ad effettuare eventuali modifiche.
 \end{itemize} 
  \subsubsection{UC11.1 - Visualizzazione dettagli prenotazione}
 \begin{itemize}
@@ -46,16 +46,16 @@
 		\item nome del proprietario del veicolo o dell'usufruente;
 		\item la data;
 		\item la fascia oraria;
-		\item il veicolo prenotato;
+		\item il veicolo prenotato.
 	\end{itemize}
 	Inoltre se presenti, verranno visualizzati anche:
 	\begin{itemize}		
 		\item il luogo d'incontro;
-		\item l'orario d'incontro;
+		\item l'orario d'incontro.
 	\end{itemize}
-	\item \textbf{Scenario principale}: L'utente visualizza i dettagli della prenotazione.	
+	\item \textbf{Scenario principale}: l'utente visualizza i dettagli della prenotazione;	
 	\item \textbf{Precondizione}: l'utente ha scelto una prenotazione;
-	\item \textbf{Post-condizione}: l'utente ha visualizzato correttamente i dettagli della prenotazione.
+	\item \textbf{Postcondizione}: l'utente ha visualizzato correttamente i dettagli della prenotazione.
 \end{itemize}
 \begin{comment}
 
@@ -66,7 +66,7 @@
 	\item \textbf{Descrizione}: l'utente usufruente cancella la prenotazione selezionata;
 	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Attraverso l'apposito pulsante l'utente cancellerà la prenotazione effettuata;
 	\item \textbf{Precondizione}: l'utente ha premuto il pulsante per la cancellazione delle prenotazione precedentemente selezionata;
-	\item \textbf{Post-condizione}: l'utente ha annullato correttamente la prenotazione selezionata.
+	\item \textbf{Postcondizione}: l'utente ha annullato correttamente la prenotazione selezionata.
 \end{itemize}
 
 \subsubsection{UC11.3 - Conferma prenotazione, lato proprietario}
@@ -80,7 +80,7 @@
 	\end{itemize} 
 	successivamente conferma i dati e invia la risposta all'usufruente;
 	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende confermare o annullare;
-	\item \textbf{Post-condizione}: l'utente ha confermato o annullato correttamente la richiesta di prenotazione ricevuta.
+	\item \textbf{Postcondizione}: l'utente ha confermato o annullato correttamente la richiesta di prenotazione ricevuta.
 \end{itemize}
 \begin{figure}[h]
 	\includegraphics[width=10cm]{res/images/UC11-3Conferma.png}
@@ -125,7 +125,7 @@
 %		\item recensione utente [UC11.6].
 %	\end{itemize}
 	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende concludere;
-	\item \textbf{Post-condizione}: l'utente ha richiesto correttamente la chiusura della prenotazione selezionata.
+	\item \textbf{Postcondizione}: l'utente ha richiesto correttamente la chiusura della prenotazione selezionata.
 	
 \end{itemize}
 
@@ -139,7 +139,7 @@
 %		\item recensione utente [UC11.6].
 %	\end{itemize}
 	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende concludere;
-	\item \textbf{Post-condizione}: l'utente ha concluso correttamente la prenotazione selezionata.
+	\item \textbf{Postcondizione}: l'utente ha concluso correttamente la prenotazione selezionata.
 \end{itemize}
 
 \subsubsection{UC11.6 - Recensione}
@@ -148,6 +148,6 @@
 	\item \textbf{Descrizione}: l'utente recensisce l'altro utente coinvolto nella prenotazione;
 	\item \textbf{Scenario principale}: l'utente visualizza il pop-up per inserire la recensione che consiste in una valutazione da una a cinque stelle;
 	\item \textbf{Precondizione}: l'utente visualizza correttamente il pop-up;
-	\item \textbf{Post-condizione}: l'utente ha inserito correttamente la recensione.
+	\item \textbf{Postcondizione}: l'utente ha inserito correttamente la recensione.
 \end{itemize}
 
