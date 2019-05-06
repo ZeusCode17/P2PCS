@@ -6,8 +6,94 @@
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: proprietario del veicolo;
-	\item \textbf{Descrizione}: agli utenti autenticati è reso disponibile un codice personale alfanumerico che può essere inviato ad un amico, non ancora registrato, per invitarlo ad usufruire dell'applicazione semplicemente inserendo questo "codice amico" in fase di registrazione nell'apposito spazio facendo guadagnare così punti bonus al proprietario del codice;
-	\item \textbf{Scenario principale}: l'utente visualizza, nella voce \textit{Gestione Profilo} [UC14], il codice personale da inviare ad amici;
-	\item \textbf{Precondizione}: l'utente autenticato ha selezionato la voce \textit{Gestione Profilo} [UC14] dal menu dell'applicazione;
-	\item \textbf{Post-condizione}: l'utente autenticato ha visualizzato il suo codice personale. 
+	\item \textbf{Descrizione}: agli utenti autenticati è reso disponibile un Minigioco composto da un garage dove si possono fare modifiche ad un'auto base di partenza tramite rewards ottenuti da sblocchi di obbiettivi e al superamento di livelli d'esperienza personale grazie ad un'utilizzo dell'applicazione in modo continuo. \\ Ogni pezzo di ogni tipo di modifica, installato al veicolo, visualizza in punteggio le seguenti informazioni:
+	\begin{itemize}
+		\item velocità;
+		\item accelerazione;
+		\item peso;
+		\item maneggevolezza.
+	\end{itemize}
+	punteggi che poi verranno sommati e attribuiti come statistiche al veicolo e visualizzate nella schermata principale dell'auto; 
+	\item \textbf{Scenario principale}: l'utente accede al Minigioco e visualizza un'auto base con la possibilità di modificarla attraverso due categorie:
+	\begin{itemize}
+		\item Prestazione [UC26.1];
+		\item Estetica [UC26.2];
+	\end{itemize}
+	e successivamente se le modifiche apportate vanno bene all'utente, può installarle e confermarle;
+	\item \textbf{Estensioni}:
+	\begin{itemize}
+		\item annulla tutte le modifiche [UC27].
+	\end{itemize}
+	\item \textbf{Precondizione}: l'utente autenticato ha selezionato la voce \textit{Garage} dal menu dell'applicazione;
+	\item \textbf{Post-condizione}: l'utente autenticato ha visualizzato la sua auto e installato le modifiche se attuate. 
+\end{itemize}
+\subsubsection{UC26.1 - Prestazione}
+\begin{figure}[h]
+	%\includegraphics[width=9cm]{res/images/UC23Codiceamico.png}
+	\centering
+	\caption{UC26.1 - Prestazione}
+\end{figure}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente accede alla categorie di modifiche sulla prestazione per la propria auto. Avrà a disposizione un tot di pezzi per ogni singola sottocategoria;
+	\item \textbf{Scenario principale}: l'utente sta visualizzando la sua auto con una serie di modifiche da attuare per la categoria \textit{Prestazione} quali:
+	\begin{itemize}
+		\item motore [UC26.1.1];
+		\item centralina [UC26.1.2];
+		\item trasmissione [UC26.1.3];
+		\item sospensioni [UC26.1.4];
+		\item gomme [UC26.1.5].
+	\end{itemize}
+	\item \textbf{Precondizione}: L'utente ha intenzione di modificare la parte prestazionale della sua auto;
+	\item \textbf{Postcondizione}: l'utente ha modificato elementi prestazionali della sua auto e potrà confermare l'installazione di tali modifiche.
+\end{itemize}
+\subsubsection{UC26.1.1 - Motore}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare il motore della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	All'inizio viene messo a disposizione il modello base;
+	\item \textbf{Scenario principale}: l'utente vuole modificare il motore della propria auto e verifica la presenza di motori migliori da poter installare.
+	\item \textbf{Precondizione}: 
+	\item \textbf{Postcondizione}:
+\end{itemize}
+\subsubsection{UC26.1.2 - Ritiro del Daily Rewards}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'applicazione rende disponibile dei premi giornalieri, illustrati e ritirabili tramite la tabella Daily Rewards;
+	\item \textbf{Scenario principale}: l'utente sta visualizzando la tabella dei premi giornalieri e preme la casella del premio del giorno corrente per ritirarlo;
+	\item \textbf{Precondizione}: l'utente non ha ancora ritirato il premio del giorno corrente e apre la tabella dei premio da cui preme la casella del giorno corrente per ritirare il premio;
+	\item \textbf{Postcondizione}: l'utente ha ricevuto il premio del giorno corrente e l'applicazione disabilita il relativo pulsante, segnalando il premio come ritirato. 
+\end{itemize}
+\subsubsection{UC26.1.3 - Ritiro del Daily Rewards}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'applicazione rende disponibile dei premi giornalieri, illustrati e ritirabili tramite la tabella Daily Rewards;
+	\item \textbf{Scenario principale}: l'utente sta visualizzando la tabella dei premi giornalieri e preme la casella del premio del giorno corrente per ritirarlo;
+	\item \textbf{Precondizione}: l'utente non ha ancora ritirato il premio del giorno corrente e apre la tabella dei premio da cui preme la casella del giorno corrente per ritirare il premio;
+	\item \textbf{Postcondizione}: l'utente ha ricevuto il premio del giorno corrente e l'applicazione disabilita il relativo pulsante, segnalando il premio come ritirato. 
+\end{itemize}
+\subsubsection{UC26.1.4 - Ritiro del Daily Rewards}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'applicazione rende disponibile dei premi giornalieri, illustrati e ritirabili tramite la tabella Daily Rewards;
+	\item \textbf{Scenario principale}: l'utente sta visualizzando la tabella dei premi giornalieri e preme la casella del premio del giorno corrente per ritirarlo;
+	\item \textbf{Precondizione}: l'utente non ha ancora ritirato il premio del giorno corrente e apre la tabella dei premio da cui preme la casella del giorno corrente per ritirare il premio;
+	\item \textbf{Postcondizione}: l'utente ha ricevuto il premio del giorno corrente e l'applicazione disabilita il relativo pulsante, segnalando il premio come ritirato. 
+\end{itemize}
+\subsubsection{UC26.1.5 - Ritiro del Daily Rewards}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'applicazione rende disponibile dei premi giornalieri, illustrati e ritirabili tramite la tabella Daily Rewards;
+	\item \textbf{Scenario principale}: l'utente sta visualizzando la tabella dei premi giornalieri e preme la casella del premio del giorno corrente per ritirarlo;
+	\item \textbf{Precondizione}: l'utente non ha ancora ritirato il premio del giorno corrente e apre la tabella dei premio da cui preme la casella del giorno corrente per ritirare il premio;
+	\item \textbf{Postcondizione}: l'utente ha ricevuto il premio del giorno corrente e l'applicazione disabilita il relativo pulsante, segnalando il premio come ritirato. 
+\end{itemize}
+
+\subsubsection{UC26.2 - Estetica}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'applicazione rende disponibile dei premi giornalieri, illustrati e ritirabili tramite la tabella Daily Rewards;
+	\item \textbf{Scenario principale}: l'utente sta visualizzando la tabella dei premi giornalieri e preme la casella del premio del giorno corrente per ritirarlo;
+	\item \textbf{Precondizione}: l'utente non ha ancora ritirato il premio del giorno corrente e apre la tabella dei premio da cui preme la casella del giorno corrente per ritirare il premio;
+	\item \textbf{Postcondizione}: l'utente ha ricevuto il premio del giorno corrente e l'applicazione disabilita il relativo pulsante, segnalando il premio come ritirato. 
 \end{itemize} 
