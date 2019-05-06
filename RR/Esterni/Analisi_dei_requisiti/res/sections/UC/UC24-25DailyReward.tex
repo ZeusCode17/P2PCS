@@ -1,10 +1,9 @@
-
 \begin{figure}[h]
-	%\includegraphics[width=9cm]{res/images/UC23Codiceamico.png}
+	\includegraphics[width=13.2cm]{res/images/UC24Daily.png}
 	\centering
-	\caption{UC24 - Daily Reward}
+	\caption{UC24 - Daily Rewards}
 \end{figure}
-\subsubsection{UC24 - Daily Reward}
+\subsubsection{UC24 - Daily rewards}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'applicazione rende disponibile una tabella che illustra i premi giornalieri del mese corrente. La tabella è organizzata sotto forma di calendario, in cui associa ad ogni giorno del mese corrente un premio;
@@ -14,17 +13,26 @@
 		\item 2: il pulsante è attivo perché il premio non è mai stato ritirato e il giorno a cui è associato corrisponde con la data corrente;
 		\item 3: il pulsante è disattivato e segnalato come già ritirato. 
 	\end{itemize} 
+	Inoltre, i premi ottenibili possono includere:
+	\begin{itemize}
+		\item sconti su e-commerce o buoni spesa;
+		\item sconto sul prossimo viaggio con \textit{GaiaGo};
+		\item viaggio gratuito con \textit{GaiaGo};
+		\item accessori per l'auto del minigioco;
+		\item bonus di punti esperienza;
+		\item oggetti virtuali esclusivi per il minigioco.
+	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente preme l'icona relativa alla tabella dei Daily Rewards da cui può visualizzare i premi disponibili per il mese corrente e decidere di ritirare il premio del giorno corrente [UC25].
 	Ogni premio può essere ritirato solo una volta;
 	\item \textbf{Estensioni}: 
 		\begin{itemize}
 			\item ritiro del premio giornaliero [UC25].
 		\end{itemize}
-	\item \textbf{Precondizione}: l'utente ha premuto l'icona Daily Reward;
+	\item \textbf{Precondizione}: l'utente ha premuto l'icona Daily Rewards;
 	\item \textbf{Postcondizione}: l'utente ha visualizzato i premi disponibili per il mese corrente e può aver ritirato il premio del giorno corrente se non lo ha precedentemente fatto [UC25]. 
 \end{itemize} 
 
-\subsubsection{UC25 - Ritiro del Daily Reward}
+\subsubsection{UC25 - Ritiro del daily rewards}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'applicazione rende disponibile dei premi giornalieri, illustrati e ritirabili tramite la tabella Daily Rewards;
