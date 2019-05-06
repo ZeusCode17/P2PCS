@@ -117,7 +117,7 @@ Le ore di lavoro sostenute durante questo periodo sono successive alla fase di a
 		
 		\rowcolorlight
 		{\colorbody Analista} & {\colorbody 12 (0)} & 
-		{\colorbody \EUR{300,00} (-\EUR{0,00})} 
+		{\colorbody \EUR{300,00} (+\EUR{0,00})} 
 		\\
 		
 		\rowcolordark
@@ -163,3 +163,83 @@ Come emerge dai dati riportati nella tabella soprastante, che presenta le ore re
 
 \subsubsection{Preventivo a finire}
 Il risultato del consuntivo di periodo coincide col monte ore preventivato inoltre, facendo parte del periodo rendicontato, non è necessario eseguire nessuna modifica o accorgimenti ai futuri periodo o al preventivo.
+
+\subsection{Periodo di Progettazione e Codifica per la Technology Baseline}
+Le ore di lavoro sostenute durante questo periodo sono successive alla fase di analisi. Diverse ore sono state impiegate per lo studio personale delle tecnologie che andremo ad utilizzare e per questo non vengono riportate nella tabella sottostante e non sono rendicontate.
+
+
+\begin{table}[H]
+	\centering\renewcommand{\arraystretch}{1.5}
+	\caption{Consuntivo di periodo della fase di Progettazione e Codifica per la Technology Baseline}
+	\vspace{0.2cm}
+	\begin{tabular}{c c c}
+		
+		\rowcolorhead
+		{\colorhead \textbf{Ruolo}} &
+		{\colorhead \textbf{Ore}} & 
+		{\colorhead \textbf{Costo}} \\
+		
+		\rowcolorlight
+		{\colorbody Responsabile} & {\colorbody 10 (+0)} & 
+		{\colorbody \EUR{300,00} (+\EUR{0,00})}  
+		\\
+		
+		\rowcolordark
+		{\colorbody Amministratore} & {\colorbody 17 (+10)} & 
+		{\colorbody \EUR{540,00} (+\EUR{200,00})}
+		\\	
+		
+		\rowcolorlight
+		{\colorbody Analista} & {\colorbody 29 (-5)} & 
+		{\colorbody \EUR{625,00} (-\EUR{100,00})} 
+		\\
+		
+		\rowcolordark
+		{\colorbody Progettista} & {\colorbody 41 (-20)} & 
+		{\colorbody \EUR{462,00} (-\EUR{440,00})} 
+		\\
+		
+		\rowcolorlight
+		{\colorbody Programmatore} & {\colorbody 26 (+35)} & 
+		{\colorbody \EUR{915,00} (+\EUR{+525,00})} 
+		\\
+		
+		\rowcolordark
+		{\colorbody Verificatore} & {\colorbody 45 (-20)} & 
+		{\colorbody \EUR{375,00} (-\EUR{300,00})} 
+		\\
+		
+		\rowcolorlight
+		{\colorbody \textbf{Totale Preventivo}} & {\colorbody \textbf{168}} & 
+		{\colorbody \textbf{\EUR{3332,00}}} 
+		\\
+		
+		
+		\rowcolordark
+		{\colorbody \textbf{Totale Consuntivo}} & {\colorbody \textbf{168}} & 
+		{\colorbody \textbf{\EUR{3192,00}}} 
+		\\
+		
+		
+		\rowcolorlight
+		{\colorbody \textbf{Differenza}} & {\colorbody -} & 
+		{\colorbody -} 
+		\\
+		
+		
+		
+	\end{tabular}
+	
+\end{table}
+
+\subsubsection{Conclusioni}
+Come emerge dai dati riportati nella tabella soprastante, che presenta le ore relative al consuntivo della fase di Progettazione e Codifica per la Technology Baseline, la progettazione ha subito una sostanziale modifica. Tale scostamento è dovuto all'idea iniziale di presentare una completa progettazione architetturale del prodotto. Tuttavia ci siamo concentrati maggiormente sul creare delle solide fondamenta per lo sviluppo dell'applicazione attraverso la progettazione e codifica del Proof of Concept\glo. Di seguito sono riportate in dettaglio i vari scostamenti orari dei ruoli interessati:
+\begin{itemize}
+\item \textbf{Amministratori:} successivamente alla fase di testing dell'editor prestabilito sono insorte svariate problematiche riguardanti il sistema di Continuos Integration\glosp, che ha richiesto un notevole monte ore per essere operativo;
+\item \textbf{Progettista:} visto il cambiamento dell'obbiettivo finale di questo periodo il monte ore per la fase di progettazione è diminuito in quanto il progettista ha dovuto occuparsi solo di alcune parti del prodotto finale; 
+\item \textbf{Verificatore:} a seguito della diminuzione del monte ore della fase di progettazione anche la fase di verifica ha subito una diminuzione del monte ore totali preventivate;
+\item \textbf{Programmatore:} al contrario di quanto preventivato il totale delle ore di programmazione ha subito un notevole aumento, ciò è dovuto alla necessità di integrare le modifiche da noi apportate con il codice dell'applicazione già fornito dal proponente. La difficoltà di tale integrazione è scaturita dalla difficoltà di comprensione di alcune parti del codice fornito prive di documentazione e/o semplice spiegazione.
+\end{itemize}
+
+\subsubsection{Preventivo a finire}
+Il bilancio economico è positivo, sono stati risparmiati \EUR{140,00}. Tali fondi verranno reinvestiti nelle fasi future per la realizzazione di alcuni requisiti opzionali.
