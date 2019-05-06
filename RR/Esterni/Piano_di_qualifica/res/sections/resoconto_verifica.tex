@@ -4,14 +4,11 @@ di verifica svolte su tutti i documenti che vengono consegnati nelle varie
 revisioni di avanzamento del progetto.
 
 \subsection{Revisione dei Requisiti}
-\subsubsection{Tracciamento dei casi d'uso e dei requisiti}
-Per facilitare il tracciamento delle relazioni fra casi d'uso e requisiti che
-fra requisiti e fonti, il gruppo ha deciso di utilizzare il software PragmaDB.
 
-\subsubsection{Analisi statica dei documenti}
-L'analisi dei documenti mediante \textit{Walkthrough}\glo{} ha portato 
-all'individuazione di alcuni errori frequenti a partire dai quali è stata 
-stilata una lista di controllo interna.
+%\subsubsection{Analisi statica dei documenti}
+%L'analisi dei documenti mediante \textit{Walkthrough}\glo{} ha portato 
+%all'individuazione di alcuni errori frequenti a partire dai quali è stata 
+%stilata una lista di controllo interna.
 
 \subsubsection{Esiti verifiche automatizzate}
 Nelle tabelle seguente vengono riportati gli indici Gulpease\glosp e gli indici di Gunning Fog\glosp di tutti
@@ -22,7 +19,7 @@ i documenti prodotti finora.
 		
 	\begin{longtable}{ >{\centering}p{0.40\textwidth} >{\centering}p{0.25\textwidth}
 			 >{\centering}p{0.2075\textwidth}}
-		\caption{Esiti verifiche automatizzate - Revisione dei Requisiti} \\
+		\caption{Esiti verifiche automatizzate RR - Indice di Gulpease} \\
 		%\hline
 		\rowcolorhead
 		\centering\textbf{\color{white}Documento} 
@@ -66,16 +63,16 @@ i documenti prodotti finora.
 		
 		\tabularnewline 
 		\textit{Verbale Interno 2019-03-18 v1.0.0} & 71 & Superato
-		
-	
 	\end{longtable}
+	\subparagraph{Considerazioni}
+	Tutti i documenti hanno un esito positivo. La media dei valori è di 68.54, un valore intermedio tra il limite inferiore stabilito di [40] e il limite inferiore preferibile di [80]. \\
+	I valori più alti sono riscontrati nei verbali e glossario, mentre i valori più bassi sono presenti nell'\texttt{AdR} e nel \texttt{PdP} ma data la loro natura tecnica, riteniamo soddisfacente l'esito della verifica.
+	
 	
 	\rowcolors{2}{pari}{dispari}
-	
-		
 	\begin{longtable}{ >{\centering}p{0.40\textwidth} >{\centering}p{0.25\textwidth}
 			 >{\centering}p{0.2075\textwidth}}
-		\caption{Esiti verifiche automatizzate - Revisione dei Requisiti} \\
+		\caption{Esiti verifiche automatizzate RR - Indice di Gunning Fog} \\
 		%\hline
 		\rowcolorhead
 		\centering\textbf{\color{white}Documento} 
@@ -119,13 +116,14 @@ i documenti prodotti finora.
 		
 		\tabularnewline 
 		\textit{Verbale Interno 2019-03-18 v1.0.0} & 15.62 & Superato
-		
-	
 	\end{longtable}
-	\vspace{2pt}
+	\subparagraph{Considerazioni}
+	Tutti i documenti hanno superato la verifica con un esito inferiore al limite massimo imposto di 16. 
+	Con una media di 13,71, in cui i documenti più rilevanti hanno un esito vicino al valore preferibile di 12, riteniamo che la verifica abbia riportato dei risultati soddisfacenti. 
+	
 \subsubsection{Esiti verifiche non automatizzate}
 
-	\paragraph{Verifica delle metriche di processo}
+	\subparagraph{Verifica delle metriche di processo}
 	Di seguito viene riportata la tabella con gli esiti delle metriche di processo
 	\rowcolors{2}{pari}{dispari}	
 	\begin{longtable}{ >{\centering}p{0.15\textwidth} >{\centering}p{0.3\textwidth}
@@ -184,11 +182,13 @@ i documenti prodotti finora.
 	Ci sono delle metriche non calcolabili in questa fase. Tali metriche si riferiscono all'analisi del codice e alla sua progettazione che verrà svolta nelle fasi successive.
 	Risulta invece negativa la metrica di Cost Variance, in conseguenza dell'impiego di 8 ore di lavoro aggiuntive rispetto a quanto previsto. \\
 	La percentuale di metriche soddisfatte tiene conto solo delle metriche calcolabili, quindi di un totale di 9 metriche di cui 8 soddisfatte; se si ritiene che le metriche non calcolabili siano da considerare non superate, la percentuale di metriche soddisfatte risulta comunque superata, per un valore di 66.67.
-	\paragraph{Verifica delle metriche di prodotto} 
+	\subparagraph{Verifica delle metriche di prodotto} 
 
 	Le metriche di prodotto non possono essere valutate al momento.
 
 
 \subsubsection{Esiti dei test}
-	Al momento i test riguardanti il prodotto non sono implementati, perciò non verificabili. 
+	Al momento i test non sono implementati, perciò non verificabili. 
+	
+\subsubsection{Esito della Revisione dei Requisiti}
 	
