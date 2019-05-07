@@ -6,7 +6,14 @@
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: agli utenti autenticati è reso disponibile un Minigioco composto da un garage dove si possono fare modifiche ad un'auto base di partenza tramite rewards ottenuti da sblocchi di obbiettivi e al superamento di livelli d'esperienza personale grazie ad un'utilizzo dell'applicazione in modo continuo. \\ Ogni pezzo di ogni tipo di modifica, installato sul veicolo, visualizza in punteggio le seguenti informazioni:
+	\item \textbf{Descrizione}: agli utenti autenticati è reso disponibile un Minigioco composto da un garage dove si possono fare modifiche ad un'auto base di partenza tramite premi ottenuti da:
+	\begin{itemize}
+		\item Milestone Unlock [UC18];
+		\item Lucky Spin [UC20];
+		\item Leaderboard [UC22];
+		\item Daily Rewards [UC24]. 
+	\end{itemize} 
+	Ogni pezzo ottenuto visualizza in punteggio le seguenti informazioni:
 	\begin{itemize}
 		\item velocità;
 		\item accelerazione;
@@ -17,15 +24,15 @@
 	\item \textbf{Scenario principale}: l'utente accede al Minigioco e visualizza un'auto base con la possibilità di modificarla attraverso due categorie:
 	\begin{itemize}
 		\item Prestazione [UC26.1];
-		\item Estetica [UC26.2];
+		\item Estetica [UC26.2].
 	\end{itemize}
-	e successivamente se le modifiche apportate vanno bene all'utente, può installarle e confermarle;
+	e successivamente se le modifiche apportate vanno bene all'utente, può decidere di installarle definitivamente;
 	\item \textbf{Estensioni}:
 	\begin{itemize}
 		\item annulla tutte le modifiche [UC27].
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente autenticato ha selezionato la voce \textit{Garage} dal menu dell'applicazione;
-	\item \textbf{Post-condizione}: l'utente autenticato ha visualizzato la sua auto e installato le modifiche se attuate. 
+	\item \textbf{Post-condizione}: l'utente autenticato ha visualizzato la sua auto e installato le modifiche desiderate. 
 \end{itemize}
 \begin{figure}[h]
 	\includegraphics[width=10cm]{res/images/UC26-Garage.png}
@@ -49,22 +56,22 @@
 		\item sospensioni [UC26.1.4];
 		\item gomme [UC26.1.5].
 	\end{itemize}
-	\item \textbf{Precondizione}: L'utente ha intenzione di modificare la parte prestazionale della sua auto;
+	\item \textbf{Precondizione}: l'utente ha intenzione di modificare la parte prestazionale della sua auto;
 	\item \textbf{Postcondizione}: l'utente ha modificato gli elementi prestazionali della sua auto e potrà confermare l'installazione di tali modifiche.
 \end{itemize}
 \subsubsection{UC26.1.1 - Motore}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: in questa sezione l'utente può modificare il motore della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare il motore della propria auto se è in possesso di pezzi ricevuti da premi per il completamento degli obiettivi previsti dall'applicazione, dai premi giornalieri oppure sbloccabili al raggiungimento di un determinato livello esperienza grazie ad un continuo utilizzo dell'applicazione.
 	All'inizio viene messo a disposizione il modello base;
-	\item \textbf{Scenario principale}: l'utente vuole modificare il motore della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Scenario principale}: l'utente vuole modificare il motore della propria auto e verificare la presenza di motori migliori da poter installare. Per pezzi non ancora sbloccati sarà possibile solo visualizzare i loro punti statistica mentre la foto del pezzo sarà oscurata;
 	\item \textbf{Precondizione}: l'utente ha scelto di modificare il motore del proprio veicolo; 
 	\item \textbf{Postcondizione}: l'utente ha correttamente scelto un motore sbloccato da installare, in caso contrario terrà il modello base.
 \end{itemize}
 \subsubsection{UC26.1.2 - Centralina}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: in questa sezione l'utente può modificare la centralina della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare la centralina della propria auto se è in possesso di pezzi ricevuti da premi per il completamento degli obiettivi previsti dall'applicazione, dai premi giornalieri oppure sbloccabili al raggiungimento di un determinato livello esperienza grazie ad un continuo utilizzo dell'applicazione.
 	All'inizio viene messo a disposizione il modello base;
 	\item \textbf{Scenario principale}: l'utente vuole modificare la centralina della propria auto e verifica la presenza di centraline migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
 	\item \textbf{Precondizione}: l'utente ha scelto di modificare la centralina del proprio veicolo; 
@@ -73,31 +80,31 @@
 \subsubsection{UC26.1.3 - Trasmissione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: in questa sezione l'utente può modificare la trasmissione della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare la trasmissione della propria auto se è in possesso di pezzi ricevuti da premi per il completamento degli obiettivi previsti dall'applicazione, dai premi giornalieri oppure sbloccabili al raggiungimento di un determinato livello esperienza grazie ad un continuo utilizzo dell'applicazione.
 	All'inizio viene messo a disposizione il modello base;
-	\item \textbf{Scenario principale}: l'utente vuole modificare la trasmissione della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Scenario principale}: l'utente vuole modificare la trasmissione della propria auto e verifica la presenza di pezzi di trasmissione migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
 	\item \textbf{Precondizione}: l'utente ha scelto di modificare la trasmissione del proprio veicolo; 
 	\item \textbf{Postcondizione}: l'utente ha correttamente scelto una trasmissione sbloccata da installare, in caso contrario terrà il modello base.
 \end{itemize}
 \subsubsection{UC26.1.4 - Sospensioni}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: in questa sezione l'utente può modificare le sospensioni della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare le sospensioni della propria auto se è in possesso di pezzi ricevuti da premi per il completamento degli obiettivi previsti dall'applicazione, dai premi giornalieri oppure sbloccabili al raggiungimento di un determinato livello esperienza grazie ad un continuo utilizzo dell'applicazione.
 	All'inizio viene messo a disposizione il modello base;
-	\item \textbf{Scenario principale}: l'utente vuole modificare le sospensioni della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Scenario principale}: l'utente vuole modificare le sospensioni della propria auto e verifica la presenza di sospensioni migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
 	\item \textbf{Precondizione}: l'utente ha scelto di modificare le sospensioni del proprio veicolo; 
 	\item \textbf{Postcondizione}: l'utente ha correttamente scelto le sospensioni sbloccate da installare, in caso contrario terrà il modello base.
 \end{itemize}
 \subsubsection{UC26.1.5 - Gomme}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: in questa sezione l'utente può modificare le gomme della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare le gomme della propria auto se è in possesso di pezzi ricevuti da premi per il completamento degli obiettivi previsti dall'applicazione, dai premi giornalieri oppure sbloccabili al raggiungimento di un determinato livello esperienza grazie ad un continuo utilizzo dell'applicazione.
 	All'inizio viene messo a disposizione il modello base;
-	\item \textbf{Scenario principale}: l'utente vuole modificare le gomme della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Scenario principale}: l'utente vuole modificare le gomme della propria auto e verifica la presenza di gomme migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
 	\item \textbf{Precondizione}: l'utente ha scelto di modificare le gomme del proprio veicolo; 
 	\item \textbf{Postcondizione}: l'utente ha correttamente scelto le gomme sbloccate da installare, in caso contrario terrà il modello base.
 \end{itemize}
-\newpage
+%\newpage
 \subsubsection{UC26.2 - Estetica}
 \begin{figure}[h]
 	\includegraphics[width=9cm]{res/images/UC26-2Estetica.png}
@@ -117,14 +124,14 @@
 		\item cerchioni [UC26.2.6];
 		\item alettoni [UC26.2.7].
 	\end{itemize}
-	\item \textbf{Precondizione}: L'utente ha intenzione di modificare la parte estetica della sua auto;
+	\item \textbf{Precondizione}: l'utente ha intenzione di modificare la parte estetica della sua auto;
 	\item \textbf{Postcondizione}: l'utente ha modificato gli elementi estetici della sua auto e potrà confermare l'installazione di tali modifiche.
 \end{itemize}
 
 \subsubsection{UC26.2.1 - Colore}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: in questa sezione l'utente può modificare il colore della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare il colore della propria auto se è in possesso di colori ricevuti da premi per il completamento degli obiettivi previsti dall'applicazione, dai premi giornalieri oppure sbloccabili al raggiungimento di un determinato livello esperienza grazie ad un continuo utilizzo dell'applicazione.
 	All'inizio vengono messi a disposizione i colori complementari di base;
 	\item \textbf{Scenario principale}: l'utente vuole modificare il colore della propria auto e verifica la presenza di colori migliori da poter installare, ma per quelli non ancora sbloccati sarà possibile solo verificare i nomi oscurando l'immagine del colore stesso;
 	\item \textbf{Precondizione}: l'utente ha scelto di modificare il colore del proprio veicolo; 
@@ -133,7 +140,7 @@
 \subsubsection{UC26.2.2 - Adesivi}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: in questa sezione l'utente può aggiungere l'adesivo alla propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	\item \textbf{Descrizione}: in questa sezione l'utente può aggiungere l'adesivo alla propria auto se è in possesso di pezzi ricevuti da premi per il completamento degli obiettivi previsti dall'applicazione, dai premi giornalieri oppure sbloccabili al raggiungimento di un determinato livello esperienza grazie ad un continuo utilizzo dell'applicazione.
 	All'inizio il veicolo non disporrà di nessun adesivo base;
 	\item \textbf{Scenario principale}: l'utente vuole aggiungere un'adesivo alla propria auto e verifica la presenza di adesivi da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i nomi oscurando l'immagine dell'adesivo stesso;
 	\item \textbf{Precondizione}: l'utente ha scelto di aggiungere un adesivo al proprio veicolo; 
@@ -142,7 +149,7 @@
 \subsubsection{UC26.2.3 - Paraurti}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: in questa sezione l'utente può modificare il paraurti (anteriore e posteriore) della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare il paraurti (anteriore e posteriore) della propria auto se è in possesso di pezzi ricevuti da premi per il completamento degli obiettivi previsti dall'applicazione, dai premi giornalieri oppure sbloccabili al raggiungimento di un determinato livello esperienza grazie ad un continuo utilizzo dell'applicazione.
 	All'inizio viene messo a disposizione il modello base;
 	\item \textbf{Scenario principale}: l'utente vuole modificare il paraurti (anteriore o posteriore) della propria auto e verifica la presenza di paraurti migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
 	\item \textbf{Precondizione}: l'utente ha scelto di modificare il paraurti (anteriore o posteriore) del proprio veicolo; 
@@ -151,7 +158,7 @@
 \subsubsection{UC26.2.4 - Fari}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: in questa sezione l'utente può modificare i fari (anteriori e posteriori) della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare i fari (anteriori e posteriori) della propria auto se è in possesso di pezzi ricevuti da premi per il completamento degli obiettivi previsti dall'applicazione, dai premi giornalieri oppure sbloccabili al raggiungimento di un determinato livello esperienza grazie ad un continuo utilizzo dell'applicazione.
 	All'inizio viene messo a disposizione il modello base;
 	\item \textbf{Scenario principale}: l'utente vuole modificare i fari (anteriori e posteriori) della propria auto e verifica la presenza di fari migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i nomi oscurando l'immagine del pezzo stesso;
 	\item \textbf{Precondizione}: l'utente ha scelto di modificare i fari (anteriori e posteriori) del proprio veicolo; 
@@ -160,25 +167,25 @@
 \subsubsection{UC26.2.5 - Scarichi}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: in questa sezione l'utente può modificare gli scarichi della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare gli scarichi della propria auto se è in possesso di pezzi ricevuti da premi per il completamento degli obiettivi previsti dall'applicazione, dai premi giornalieri oppure sbloccabili al raggiungimento di un determinato livello esperienza grazie ad un continuo utilizzo dell'applicazione.
 	All'inizio viene messo a disposizione il modello base;
-	\item \textbf{Scenario principale}: l'utente vuole modificare gli scarichi della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i nomi oscurando l'immagine del pezzo stesso;
+	\item \textbf{Scenario principale}: l'utente vuole modificare gli scarichi della propria auto e verifica la presenza di pezzi di scarico migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i nomi oscurando l'immagine del pezzo stesso;
 	\item \textbf{Precondizione}: l'utente ha scelto di modificare gli scarichi del proprio veicolo; 
 	\item \textbf{Postcondizione}: l'utente ha correttamente scelto gli scarichi sbloccati da installare, in caso contrario terrà il modello base.
 \end{itemize}
 \subsubsection{UC26.2.6 - Cerchioni}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: in questa sezione l'utente può modificare i cerchioni della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare i cerchioni della propria auto se è in possesso di pezzi ricevuti da premi per il completamento degli obiettivi previsti dall'applicazione, dai premi giornalieri oppure sbloccabili al raggiungimento di un determinato livello esperienza grazie ad un continuo utilizzo dell'applicazione.
 	All'inizio viene messo a disposizione il modello base;
-	\item \textbf{Scenario principale}: l'utente vuole modificare i cerchioni della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i nomi oscurando l'immagine del pezzo stesso;
+	\item \textbf{Scenario principale}: l'utente vuole modificare i cerchioni della propria auto e verifica la presenza di cerchioni migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i nomi oscurando l'immagine del pezzo stesso;
 	\item \textbf{Precondizione}: l'utente ha scelto di modificare i cerchioni del proprio veicolo; 
 	\item \textbf{Postcondizione}: l'utente ha correttamente scelto i cerchioni sbloccati da installare, in caso contrario terrà il modello base.
 \end{itemize} 
 \subsubsection{UC26.2.7 - Alettoni}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: in questa sezione l'utente può aggiungere l'alettone alla propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	\item \textbf{Descrizione}: in questa sezione l'utente può aggiungere l'alettone alla propria auto se è in possesso di pezzi ricevuti da premi per il completamento degli obiettivi previsti dall'applicazione, dai premi giornalieri oppure sbloccabili al raggiungimento di un determinato livello esperienza grazie ad un continuo utilizzo dell'applicazione.
 	All'inizio il veicolo non disporrà di nessun alettone base;
 	\item \textbf{Scenario principale}: l'utente vuole aggiungere l'alettone alla propria auto e verifica la presenza di alettoni migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i nomi oscurando l'immagine del pezzo stesso;
 	\item \textbf{Precondizione}: l'utente ha scelto di aggiungere un alettone al proprio veicolo; 
@@ -189,7 +196,7 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'utente ha la possibilità di annullare tutte le modifiche fatte alla propria auto nel momento in cui non gli piace come l'ha modificata;
-	\item \textbf{Scenario principale}: all'utente non piacciono le modifiche installate ma non ancora confermate e decide quindi di annullarle tutte per tornare a com'era prima;
+	\item \textbf{Scenario principale}: all'utente non piacciono le modifiche installate ma non ancora confermate e decide quindi di annullarle tutte per tornare allo stato iniziale;
 	\item \textbf{Precondizione}: al veicolo vengono apportate delle modifiche non ancora confermate; 
 	\item \textbf{Postcondizione}: all'utente non piacciono le modifiche attuate e annulla tutto tornando al veicolo che aveva prima delle modifiche.
 \end{itemize} 
