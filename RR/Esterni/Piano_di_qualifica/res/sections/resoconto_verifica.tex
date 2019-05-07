@@ -10,16 +10,84 @@ revisioni di avanzamento del progetto.
 %all'individuazione di alcuni errori frequenti a partire dai quali è stata 
 %stilata una lista di controllo interna.
 
-\subsubsection{Esiti verifiche automatizzate}
-Nelle tabelle seguente vengono riportati gli indici Gulpease\glosp e gli indici di Gunning Fog\glosp di tutti
-i documenti prodotti finora.
+\subsubsection{Qualità di processo}
+
+Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione di qualità di processi, seguiti dalla tabella degli indici di Gulpease\glosp e degli indici di Gunning Fog\glosp che riporta gli esiti di tutti i documenti prodotti finora. \\
+\textbf{Leggenda}:
+\begin{itemize}
+	\item \textbf{N.C.} - Non Calcolabile;
+	\item \textbf{S} - Superato;
+	\item \textbf{N.S.} - Non Superato;
+	\item \textbf{\%} - Percentuale;
+	\item \textbf{V} - Valore numerico;
+	\item \textbf{\euro{}} - Euro.
+\end{itemize}
+	\rowcolors{2}{pari}{dispari}	
+	\begin{longtable}{ >{\centering}p{0.3\textwidth} >{\centering}p{0.10\textwidth}
+			 >{\centering}p{0.10\textwidth} >{\centering}p{0.07\textwidth} >{\centering}p{0.26\textwidth}}
+		\caption{ RR - Valutazione della qualità di processo} \\
+		%\hline
+		\rowcolorhead
+		
+		\centering\textbf{\color{white}Codice - nome metrica} 
+		& \centering\textbf{\color{white}Unità di misura} 
+		& \centering\textbf{\color{white}Valore} 
+		& \centering\textbf{\color{white}Esito}
+		& \centering\textbf{\color{white}Accettazione}
+		\tabularnewline %\hline 
+		\endfirsthead
+		
+		\texttt{MPR1} - Requisiti obbligatori soddisfatti & \% & N.C. & N.S. & 100
+		\tabularnewline 
+		
+		\texttt{MPR2} - Coupling Between Object classes & V & N.C. & N.S. & $0 \leq CBO \leq 6$
+		\tabularnewline
+		
+		\texttt{MPR3} - Planned Value & \euro{} & 4.688,00 & S & $ \geq 0$
+		\tabularnewline
+		
+		\texttt{MPR4} - Actual Cost & \euro{} & 4.833,00 & S & $0 \leq AC \leq 11.689,00 $
+		\tabularnewline
+		
+		\texttt{MPR5} - Earned Value & \euro{} & 4,688.00 & S & $ \geq 0$
+		\tabularnewline
+		
+		\texttt{MPR6} - Budget at Completion & \euro{} & 4.688,00 & S & $4.591,35 \leq BAC \leq 5074,65 $
+		\tabularnewline
+		
+		\texttt{MPR7} - Cost Variance & \euro{} & -145.00 & N.S. & $ \geq 0$
+		\tabularnewline
+		
+		\texttt{MPR8} - Schedule Variance & \euro{} & 0,00 & S & $ \geq 0$
+		\tabularnewline
+		
+		\texttt{MPR9} - Code Coverage & \% & N.C. & N.S. & $75\%$
+		\tabularnewline
+		
+		\texttt{MPR10} - Indice Gunning fog (media) & V & 13,71 & S & $ \leq 16$
+		\tabularnewline
+		
+		\texttt{MPR11} - Indice di Gulpease (media) & V & 68,54 & S & $40 < I_G < 100$
+		\tabularnewline
+		
+		\texttt{MPR12} - Correttezza ortografica & V & 0 & S & 0
+		\tabularnewline
+		
+		\texttt{MPR13} - Percentuale di metriche soddisfatte & \% & 88.89 & S & 100
+		\tabularnewline
+		
+	\end{longtable}
+	
+	\paragraph{Considerazioni}
+	Ci sono delle metriche non calcolabili in questa fase. Tali metriche si riferiscono all'analisi del codice e alla sua progettazione che verrà svolta nelle fasi successive.
+	Risulta invece negativa la metrica di Cost Variance, in conseguenza dell'impiego di 8 ore di lavoro aggiuntive rispetto a quanto previsto. \\
+	La percentuale di metriche soddisfatte tiene conto solo delle metriche calcolabili, quindi di un totale di 9 metriche di cui 8 soddisfatte; se si ritiene che le metriche non calcolabili siano da considerare non superate, la percentuale di metriche soddisfatte risulta comunque superata, per un valore di 66.67.
+
 
 	\rowcolors{2}{pari}{dispari}
-	
-		
 	\begin{longtable}{ >{\centering}p{0.40\textwidth} >{\centering}p{0.25\textwidth}
-			 >{\centering}p{0.2075\textwidth}}
-		\caption{Esiti verifiche automatizzate RR - Indice di Gulpease} \\
+			 >{\centering}p{0.2075\textwidth} }
+		\caption{ RR - Verifiche automatizzate indice di Gulpease} \\
 		%\hline
 		\rowcolorhead
 		\centering\textbf{\color{white}Documento} 
@@ -64,15 +132,16 @@ i documenti prodotti finora.
 		\tabularnewline 
 		\textit{Verbale Interno 2019-03-18 v1.0.0} & 71 & Superato
 	\end{longtable}
-	\subparagraph{Considerazioni}
-	Tutti i documenti hanno un esito positivo. La media dei valori è di 68.54, un valore intermedio tra il limite inferiore stabilito di [40] e il limite inferiore preferibile di [80]. \\
+	\subparagraph{Considerazioni} 
+	Tutti i documenti hanno un esito positivo. La media dei valori è di 68.54, un valore intermedio tra il limite inferiore stabilito di 40 e il limite inferiore preferibile di 80. \\
 	I valori più alti sono riscontrati nei verbali e glossario, mentre i valori più bassi sono presenti nell'\texttt{AdR} e nel \texttt{PdP} ma data la loro natura tecnica, riteniamo soddisfacente l'esito della verifica.
+	
 	
 	
 	\rowcolors{2}{pari}{dispari}
 	\begin{longtable}{ >{\centering}p{0.40\textwidth} >{\centering}p{0.25\textwidth}
 			 >{\centering}p{0.2075\textwidth}}
-		\caption{Esiti verifiche automatizzate RR - Indice di Gunning Fog} \\
+		\caption{ RR - Verifiche automatizzate indice di Gunning Fog} \\
 		%\hline
 		\rowcolorhead
 		\centering\textbf{\color{white}Documento} 
@@ -81,7 +150,6 @@ i documenti prodotti finora.
 		\tabularnewline %\hline 
 		\endfirsthead
 			
-	
 		\textit{Analisi dei Requisiti v1.0.0} & 13.06 & Superato
 		
 		\tabularnewline 
@@ -117,78 +185,16 @@ i documenti prodotti finora.
 		\tabularnewline 
 		\textit{Verbale Interno 2019-03-18 v1.0.0} & 15.62 & Superato
 	\end{longtable}
-	\subparagraph{Considerazioni}
+	\subparagraph{Considerazioni} 
 	Tutti i documenti hanno superato la verifica con un esito inferiore al limite massimo imposto di 16. 
-	Con una media di 13,71, in cui i documenti più rilevanti hanno un esito vicino al valore preferibile di 12, riteniamo che la verifica abbia riportato dei risultati soddisfacenti. 
+	Con una media di 13.71, in cui i documenti più rilevanti hanno un esito vicino al valore preferibile di 12, riteniamo che la verifica abbia riportato dei risultati soddisfacenti. 
 	
-\subsubsection{Esiti verifiche non automatizzate}
+\subsubsection{Qualità di prodotto}
 
-	\subparagraph{Verifica delle metriche di processo}
-	Di seguito viene riportata la tabella con gli esiti delle metriche di processo
-	\rowcolors{2}{pari}{dispari}	
-	\begin{longtable}{ >{\centering}p{0.15\textwidth} >{\centering}p{0.3\textwidth}
-			 >{\centering}p{0.195\textwidth} >{\centering}p{0.195\textwidth}}
-		\caption{Esiti delle metriche di processo - Revisione dei Requisiti} \\
-		%\hline
-		\rowcolorhead
-		\centering\textbf{\color{white}Codice metrica} 
-		& \centering\textbf{\color{white}Breve descrizione} 
-		& \centering\textbf{\color{white}Valore} 
-		& \centering\textbf{\color{white}Esito}
-		\tabularnewline %\hline 
-		\endfirsthead
-		
-		\texttt{MPR1}  & Percentuale di requisiti obbligatori soddisfatti & Non calcolabile & Non superato
-		\tabularnewline 
-		
-		\texttt{MPR2} & Coupling Between Object classes & Non calcolabile & Non superato
-		\tabularnewline
-		
-		\texttt{MPR3} & Planned Value & 4.688,00 & Superato
-		\tabularnewline
-		
-		\texttt{MPR4} & Actual Cost & 4.833,00 & Superato
-		\tabularnewline
-		
-		\texttt{MPR5} & Earned Value & 4,688.00 & Superato
-		\tabularnewline
-		
-		\texttt{MPR6} & Budget at Completion & 4.688,00 & Superato
-		\tabularnewline
-		
-		\texttt{MPR7} & Cost Variance & -145.00 & Non superato
-		\tabularnewline
-		
-		\texttt{MPR8} & Schedule Variance & 0,00 & Superato 
-		\tabularnewline
-		
-		\texttt{MPR9} & Code Coverage & Non calcolabile & Non superato
-		\tabularnewline
-		
-		\texttt{MPR10} & Indice Gunning fog (media) & 13,71 & Superato
-		\tabularnewline
-		
-		\texttt{MPR11} & Indice di Gulpease (media) & 68,54 & Superato
-		\tabularnewline
-		
-		\texttt{MPR12} & Correttezza ortografica & 0 & Superato
-		\tabularnewline
-		
-		\texttt{MPR13} & Percentuale di metriche soddisfatte & 88.89 & Superato
-		\tabularnewline
-		
-	\end{longtable}
-	\subparagraph{Considerazioni}
-	Ci sono delle metriche non calcolabili in questa fase. Tali metriche si riferiscono all'analisi del codice e alla sua progettazione che verrà svolta nelle fasi successive.
-	Risulta invece negativa la metrica di Cost Variance, in conseguenza dell'impiego di 8 ore di lavoro aggiuntive rispetto a quanto previsto. \\
-	La percentuale di metriche soddisfatte tiene conto solo delle metriche calcolabili, quindi di un totale di 9 metriche di cui 8 soddisfatte; se si ritiene che le metriche non calcolabili siano da considerare non superate, la percentuale di metriche soddisfatte risulta comunque superata, per un valore di 66.67.
-	\subparagraph{Verifica delle metriche di prodotto} 
-
-	Le metriche di prodotto non possono essere valutate al momento.
-
-
-\subsubsection{Esiti dei test}
-	Al momento i test non sono implementati, perciò non verificabili. 
-	
+	\paragraph{Considerazioni}
+	Data la non implementazione del prodotto software, nella fase attuale le metriche derivanti dalla gestione della qualità di prodotto non possono essere calcolate.
 \subsubsection{Esito della Revisione dei Requisiti}
 	
+	\paragraph{Considerazioni}
+	
+\subsection{Revisione di Progettazione}
