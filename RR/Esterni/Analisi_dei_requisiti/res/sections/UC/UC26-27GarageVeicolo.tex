@@ -1,12 +1,12 @@
 \subsubsection{UC26 - Garage veicolo}
 \begin{figure}[h]
-	%\includegraphics[width=9cm]{res/images/UC23Codiceamico.png}
+	\includegraphics[width=9cm]{res/images/UC26Garage.png}
 	\centering
 	\caption{UC26 - Garage veicolo}
 \end{figure}
 \begin{itemize}
-	\item \textbf{Attori Primari}: proprietario del veicolo;
-	\item \textbf{Descrizione}: agli utenti autenticati è reso disponibile un Minigioco composto da un garage dove si possono fare modifiche ad un'auto base di partenza tramite rewards ottenuti da sblocchi di obbiettivi e al superamento di livelli d'esperienza personale grazie ad un'utilizzo dell'applicazione in modo continuo. \\ Ogni pezzo di ogni tipo di modifica, installato al veicolo, visualizza in punteggio le seguenti informazioni:
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: agli utenti autenticati è reso disponibile un Minigioco composto da un garage dove si possono fare modifiche ad un'auto base di partenza tramite rewards ottenuti da sblocchi di obbiettivi e al superamento di livelli d'esperienza personale grazie ad un'utilizzo dell'applicazione in modo continuo. \\ Ogni pezzo di ogni tipo di modifica, installato sul veicolo, visualizza in punteggio le seguenti informazioni:
 	\begin{itemize}
 		\item velocità;
 		\item accelerazione;
@@ -45,55 +45,119 @@
 		\item gomme [UC26.1.5].
 	\end{itemize}
 	\item \textbf{Precondizione}: L'utente ha intenzione di modificare la parte prestazionale della sua auto;
-	\item \textbf{Postcondizione}: l'utente ha modificato elementi prestazionali della sua auto e potrà confermare l'installazione di tali modifiche.
+	\item \textbf{Postcondizione}: l'utente ha modificato gli elementi prestazionali della sua auto e potrà confermare l'installazione di tali modifiche.
 \end{itemize}
 \subsubsection{UC26.1.1 - Motore}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: in questa sezione l'utente può modificare il motore della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
 	All'inizio viene messo a disposizione il modello base;
-	\item \textbf{Scenario principale}: l'utente vuole modificare il motore della propria auto e verifica la presenza di motori migliori da poter installare.
-	\item \textbf{Precondizione}: 
-	\item \textbf{Postcondizione}:
+	\item \textbf{Scenario principale}: l'utente vuole modificare il motore della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Precondizione}: l'utente ha scelto di modificare il motore del proprio veicolo; 
+	\item \textbf{Postcondizione}: l'utente ha correttamente scelto un motore sbloccato da installare, in caso contrario terrà il modello base.
 \end{itemize}
-\subsubsection{UC26.1.2 - Ritiro del Daily Rewards}
+\subsubsection{UC26.1.2 - Centralina}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'applicazione rende disponibile dei premi giornalieri, illustrati e ritirabili tramite la tabella Daily Rewards;
-	\item \textbf{Scenario principale}: l'utente sta visualizzando la tabella dei premi giornalieri e preme la casella del premio del giorno corrente per ritirarlo;
-	\item \textbf{Precondizione}: l'utente non ha ancora ritirato il premio del giorno corrente e apre la tabella dei premio da cui preme la casella del giorno corrente per ritirare il premio;
-	\item \textbf{Postcondizione}: l'utente ha ricevuto il premio del giorno corrente e l'applicazione disabilita il relativo pulsante, segnalando il premio come ritirato. 
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare la centralina della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	All'inizio viene messo a disposizione il modello base;
+	\item \textbf{Scenario principale}: l'utente vuole modificare la centralina della propria auto e verifica la presenza di centraline migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Precondizione}: l'utente ha scelto di modificare la centralina del proprio veicolo; 
+	\item \textbf{Postcondizione}: l'utente ha correttamente scelto una centralina sbloccata da installare, in caso contrario terrà il modello base.
 \end{itemize}
-\subsubsection{UC26.1.3 - Ritiro del Daily Rewards}
+\subsubsection{UC26.1.3 - Trasmissione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'applicazione rende disponibile dei premi giornalieri, illustrati e ritirabili tramite la tabella Daily Rewards;
-	\item \textbf{Scenario principale}: l'utente sta visualizzando la tabella dei premi giornalieri e preme la casella del premio del giorno corrente per ritirarlo;
-	\item \textbf{Precondizione}: l'utente non ha ancora ritirato il premio del giorno corrente e apre la tabella dei premio da cui preme la casella del giorno corrente per ritirare il premio;
-	\item \textbf{Postcondizione}: l'utente ha ricevuto il premio del giorno corrente e l'applicazione disabilita il relativo pulsante, segnalando il premio come ritirato. 
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare la trasmissione della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	All'inizio viene messo a disposizione il modello base;
+	\item \textbf{Scenario principale}: l'utente vuole modificare la trasmissione della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Precondizione}: l'utente ha scelto di modificare la trasmissione del proprio veicolo; 
+	\item \textbf{Postcondizione}: l'utente ha correttamente scelto una trasmissione sbloccata da installare, in caso contrario terrà il modello base.
 \end{itemize}
-\subsubsection{UC26.1.4 - Ritiro del Daily Rewards}
+\subsubsection{UC26.1.4 - Sospensioni}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'applicazione rende disponibile dei premi giornalieri, illustrati e ritirabili tramite la tabella Daily Rewards;
-	\item \textbf{Scenario principale}: l'utente sta visualizzando la tabella dei premi giornalieri e preme la casella del premio del giorno corrente per ritirarlo;
-	\item \textbf{Precondizione}: l'utente non ha ancora ritirato il premio del giorno corrente e apre la tabella dei premio da cui preme la casella del giorno corrente per ritirare il premio;
-	\item \textbf{Postcondizione}: l'utente ha ricevuto il premio del giorno corrente e l'applicazione disabilita il relativo pulsante, segnalando il premio come ritirato. 
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare le sospensioni della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	All'inizio viene messo a disposizione il modello base;
+	\item \textbf{Scenario principale}: l'utente vuole modificare le sospensioni della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Precondizione}: l'utente ha scelto di modificare le sospensioni del proprio veicolo; 
+	\item \textbf{Postcondizione}: l'utente ha correttamente scelto le sospensioni sbloccate da installare, in caso contrario terrà il modello base.
 \end{itemize}
-\subsubsection{UC26.1.5 - Ritiro del Daily Rewards}
+\subsubsection{UC26.1.5 - Gomme}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'applicazione rende disponibile dei premi giornalieri, illustrati e ritirabili tramite la tabella Daily Rewards;
-	\item \textbf{Scenario principale}: l'utente sta visualizzando la tabella dei premi giornalieri e preme la casella del premio del giorno corrente per ritirarlo;
-	\item \textbf{Precondizione}: l'utente non ha ancora ritirato il premio del giorno corrente e apre la tabella dei premio da cui preme la casella del giorno corrente per ritirare il premio;
-	\item \textbf{Postcondizione}: l'utente ha ricevuto il premio del giorno corrente e l'applicazione disabilita il relativo pulsante, segnalando il premio come ritirato. 
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare le gomme della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	All'inizio viene messo a disposizione il modello base;
+	\item \textbf{Scenario principale}: l'utente vuole modificare le gomme della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Precondizione}: l'utente ha scelto di modificare le gomme del proprio veicolo; 
+	\item \textbf{Postcondizione}: l'utente ha correttamente scelto le gomme sbloccate da installare, in caso contrario terrà il modello base.
 \end{itemize}
 
 \subsubsection{UC26.2 - Estetica}
+\begin{figure}[h]
+	%\includegraphics[width=9cm]{res/images/UC23Codiceamico.png}
+	\centering
+	\caption{UC26.2 - Estetica}
+\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'applicazione rende disponibile dei premi giornalieri, illustrati e ritirabili tramite la tabella Daily Rewards;
-	\item \textbf{Scenario principale}: l'utente sta visualizzando la tabella dei premi giornalieri e preme la casella del premio del giorno corrente per ritirarlo;
-	\item \textbf{Precondizione}: l'utente non ha ancora ritirato il premio del giorno corrente e apre la tabella dei premio da cui preme la casella del giorno corrente per ritirare il premio;
-	\item \textbf{Postcondizione}: l'utente ha ricevuto il premio del giorno corrente e l'applicazione disabilita il relativo pulsante, segnalando il premio come ritirato. 
+	\item \textbf{Descrizione}: l'utente accede alla categorie di modifiche sull'estetica per la propria auto. Avrà a disposizione un tot di materiale per ogni singola sottocategoria;
+	\item \textbf{Scenario principale}: l'utente sta visualizzando la sua auto con una serie di modifiche da attuare per la categoria \textit{Estetica} quali:
+	\begin{itemize}
+		\item colore [UC26.2.1];
+		\item adesivi [UC26.2.2];
+		\item paraurti [UC26.2.3];
+		\item fari [UC26.2.4];
+		\item scarichi [UC26.2.5];
+		\item cerchioni [UC26.2.6];
+		\item alettoni [UC26.2.7].
+	\end{itemize}
+	\item \textbf{Precondizione}: L'utente ha intenzione di modificare la parte estetica della sua auto;
+	\item \textbf{Postcondizione}: l'utente ha modificato gli elementi estetici della sua auto e potrà confermare l'installazione di tali modifiche.
+\end{itemize}
+
+\subsubsection{UC26.2.1 - Colore}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare il motore della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	All'inizio viene messo a disposizione il modello base;
+	\item \textbf{Scenario principale}: l'utente vuole modificare il motore della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Precondizione}: l'utente ha scelto di modificare il motore del proprio veicolo; 
+	\item \textbf{Postcondizione}: l'utente ha correttamente scelto un motore sbloccato da installare, in caso contrario terrà il modello base.
+\end{itemize}
+\subsubsection{UC26.1.2 - Centralina}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare la centralina della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	All'inizio viene messo a disposizione il modello base;
+	\item \textbf{Scenario principale}: l'utente vuole modificare la centralina della propria auto e verifica la presenza di centraline migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Precondizione}: l'utente ha scelto di modificare la centralina del proprio veicolo; 
+	\item \textbf{Postcondizione}: l'utente ha correttamente scelto una centralina sbloccata da installare, in caso contrario terrà il modello base.
+\end{itemize}
+\subsubsection{UC26.1.1 - Trasmissione}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare la trasmissione della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	All'inizio viene messo a disposizione il modello base;
+	\item \textbf{Scenario principale}: l'utente vuole modificare la trasmissione della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Precondizione}: l'utente ha scelto di modificare la trasmissione del proprio veicolo; 
+	\item \textbf{Postcondizione}: l'utente ha correttamente scelto una trasmissione sbloccata da installare, in caso contrario terrà il modello base.
+\end{itemize}
+\subsubsection{UC26.1.1 - Sospensioni}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare le sospensioni della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	All'inizio viene messo a disposizione il modello base;
+	\item \textbf{Scenario principale}: l'utente vuole modificare le sospensioni della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Precondizione}: l'utente ha scelto di modificare le sospensioni del proprio veicolo; 
+	\item \textbf{Postcondizione}: l'utente ha correttamente scelto le sospensioni sbloccate da installare, in caso contrario terrà il modello base.
+\end{itemize}
+\subsubsection{UC26.1.1 - Gomme}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: in questa sezione l'utente può modificare le gomme della propria auto se in possesso di premi ricevuti da completamento di qualche obbiettivo o altro e di eventuali punti esperienza guadagnati col l'utilizzo continuo dell'applicazione.
+	All'inizio viene messo a disposizione il modello base;
+	\item \textbf{Scenario principale}: l'utente vuole modificare le gomme della propria auto e verifica la presenza di motori migliori da poter installare, ma per pezzi non ancora sbloccati sarà possibile solo verificare i punti sulle statistiche oscurando l'immagine del pezzo stesso;
+	\item \textbf{Precondizione}: l'utente ha scelto di modificare le gomme del proprio veicolo; 
+	\item \textbf{Postcondizione}: l'utente ha correttamente scelto le gomme sbloccate da installare, in caso contrario terrà il modello base.
 \end{itemize} 
