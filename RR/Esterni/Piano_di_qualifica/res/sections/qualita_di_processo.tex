@@ -2,7 +2,7 @@
 Sono stati inizialmente scelti, come riferimento, i processi proposti dallo standard ISO/IEC/IEEE 12207:1995 e successivamente semplificati o adattati secondo le esigenze.
 
 %\subsection{Processo di Costruzione del Software}. Opzione per il futuro.
-	\subsection{Processo di Fornitura}
+	\subsection{Processo di fornitura}
 	Lo scopo del processo di fornitura è fornire un prodotto e/o servizio all'acquirente che soddisfi i requisiti accordati.
 	Per garantire la qualità del processo di fornitura sono state adottate le attività proposte dallo standard ISO/IEC 12207:1995 [§5.2] che stabilisce una linea guida per:
 	\begin{itemize}
@@ -14,7 +14,7 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 	\subsubsection{Obiettivi}
 	\begin{itemize}
 		\item effettuare un'analisi delle richieste del capitolato e valutare la sua fattibilità;
-		\item definire una proposta in risposta alle richieste del proponente;
+		\item produrre una risposta alle richieste del proponente;
 		\item negoziare e stipulare un contratto con la proponente per la fornitura del prodotto;
 		\item avviare le attività di pianificazione che comprendono:
 			\begin{itemize}
@@ -31,14 +31,14 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 		\item condurre le analisi necessarie per adempiere agli obiettivi sopra descritti e tenerne traccia in appositi documenti;
 		\item interagire continuamente con la proponente per ottenere feedback sulle decisioni riguardanti il prodotto.
 	\end{itemize}
-	\subsection{Processo di Sviluppo}
+	\subsection{Processo di sviluppo}
 	Il processo di sviluppo contiene tutte le attività tipiche dello sviluppo software. Alcune di esse sono molto importanti per cui vengono approfondite in: 
 	\begin{itemize}
 		\item analisi dei requisiti;
 		\item progettazione architetturale;
 		\item progettazione di dettaglio.
 	\end{itemize}
-	\subsubsection{Analisi dei Requisiti}
+	\subsubsection{Analisi dei requisiti}
 	Durante l'analisi dei requisiti le informazioni raccolte dalle varie fonti sono trasformate in forma di casi d'uso e requisiti.
 	Questa forma fornisce una descrizione dettagliata del sistema e definisce il funzionamento e le caratteristiche di ogni sua parte.
 		\paragraph{Obiettivi}
@@ -57,7 +57,7 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 		\end{itemize}
 		
 		\paragraph{Metriche}
-			\subparagraph{\texttt{MPR1} PROS: Percentuale di requisiti obbligatori soddisfatti} Indica la percentuale di requisiti obbligatori soddisfatti.
+			\subparagraph{PROS: percentuale di requisiti obbligatori soddisfatti} Indica la percentuale di requisiti obbligatori soddisfatti.
 			\begin{itemize}
 				\item misurazione: (valore percentuale) $ PROS = \frac{requisiti\ obbligatori\ soddisfatti}{requisiti\ obbligatori\ totali}$;
 				\item valore preferibile: $100\%$;
@@ -65,7 +65,7 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 			\end{itemize}
 	
 			
-	\subsubsection{Progettazione di Dettaglio}
+	\subsubsection{Progettazione di dettaglio}
 	La progettazione di design, tramite una suddivisione delle macro-component, in componenti più piccole evidenzia i seguenti benefici:
 	\begin{itemize}
 		\item facilmente comprensibili;
@@ -85,7 +85,7 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 			\item implementare le micro-componenti individuate.
 		\end{itemize}
 		\paragraph{Metriche}
-			\subparagraph{\texttt{MPR2} CBO - Coupling Between Object classes} 
+			\subparagraph{CBO: coupling between object classes} 
 			Grado di accoppiamento tra le classi: una classe è accoppiata quando i propri metodi usano metodi o variabili di istanza definiti in un'altra classe. 
 			\begin{itemize}
 				\item misurazione: (valore intero) $CBO$;
@@ -93,7 +93,7 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 				\item valore accettabile: $0 \leq CBO \leq 6$.
 			\end{itemize}
 		
-\subsection{Processi di Supporto}
+\subsection{Processi di supporto}
 	\subsubsection{Pianificazione}
 	La pianificazione è un'attività fondamentale della gestione di progetto. Consiste nel disporre in modo efficiente le risorse a disposizione, monitorarle nel tempo ed essere pronti ai cambiamenti. La pianificazione si esprime specificatamente all'interno del Piano di Progetto.
 		\paragraph{Obiettivi}
@@ -110,7 +110,7 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 			\item usarla come riferimento e supporto.
 		\end{itemize}		
 		\paragraph{Metriche}
-		\subparagraph{\texttt{MPR3} PV: Planned Value}
+		\subparagraph{PV: planned value}
 		Valore del lavoro pianificato per realizzare le attività di progetto fino al momento del calcolo.
 		 \textit{(Metrica di utilità per il calcolo di $SV$ spiegata di seguito.)}
 			\begin{itemize}
@@ -118,14 +118,14 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 				\item  valore preferibile: $ \geq 0$;
 				\item  valore accettabile: $ \geq 0$.
 			\end{itemize}	
-		\subparagraph{\texttt{MPR4} AC: Actual Cost}
+		\subparagraph{AC: actual cost}
 			Costo effettivamente sostenuto fino al momento del calcolo.
 			\begin{itemize}
 				\item  misurazione: numero intero;
 				\item  valore preferibile: $0 \leq AC < PV$;
 				\item  valore accettabile: $0 \leq AC \leq budget\ totale\ $.
 			\end{itemize}
-		\subparagraph{\texttt{MPR5} EV: Earned Value}
+		\subparagraph{EV: earned value}
 		Valore del lavoro realizzato fino al momento del calcolo.
 		 \textit{(Metrica di utilità per il calcolo di $SV$ e $CV$ spiegate di seguito.)}
 			\begin{itemize}
@@ -133,7 +133,7 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 				\item  valore preferibile: $ \geq 0$;
 				\item  valore accettabile: $ \geq 0$.
 			\end{itemize}
-		\subparagraph{\texttt{MPR6} BAC: Budget at Completion}
+		\subparagraph{BAC: budget at completion}
 		Valore previsto per la realizzazione del progetto (valore iniziale previsto).
 		\begin{itemize}
 			\item misurazione: numero intero;
@@ -141,19 +141,19 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 			\item valore preferibile: $pari\ al\ preventivo$;
 			\item valore accettabile: $preventivo -5\% \leq BAC \leq preventivo + 5\%$. 
 		\end{itemize}
-		\subparagraph{\texttt{MPR7} CV: Cost Variance}
+		\subparagraph{CV: cost variance}
 			Indicatore di produttività. Una CV positiva indica che si sta rispettando il budget, viceversa se negativo.
 			\begin{itemize}
 				\item misurazione: $CV = EV - AC$;
 				\item valore preferibile: $ > 0$;
 				\item valore accettabile: $ \geq 0$.
 			\end{itemize}
-		\subparagraph{\texttt{MPR8} SV: Schedule Variance}
+		\subparagraph{SV: schedule variance}
 			Indica se si è in linea, in anticipo o in ritardo nello svolgimento del progetto rispetto alla pianificazione.
 			\begin{itemize}
 				\item misurazione: $SV = EV - PV$;
 				\item valore preferibile: $ > 0$;
-				\item valore accettabile: $ >= 0$.
+				\item valore accettabile: $ \geq 0$. 
 			\end{itemize}
 			
 	\subsubsection{Verifica}
@@ -169,7 +169,7 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 			\item affinarli con l'esperienza;
 		\end{itemize}	
 		\paragraph{Metriche}
-			\subparagraph{\texttt{MPR9} CC: Code Coverage}
+			\subparagraph{CC: code coverage}
 				Indica il numero di righe di codice percorse dai test durante la loro esecuzione. 
 				\begin{itemize}
 					\item misurazione: (valore percentuale) $CC = \frac{linee\ di\ codice\ percorse}{linee\ di\ codice\ totali}$;
@@ -200,7 +200,7 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 			\item ospitati in una repository\glosp pubblica su GitHub\glo.
 		\end{itemize}
 		\paragraph{Metriche}
-			\subparagraph{\texttt{MPR10} Indice Gunning fog}
+			\subparagraph{Indice Gunning Fog}
 			Indice della leggibilità del testo. Quanto più alto è il valore dell'indice tanto più difficile è capire il documento.					\newline
 			Ha dei limiti: uno di questi è la sua definizione di \textit{parola complessa}, intesa come una parola di tre o più sillabe eccetto alcuni suffissi comuni.
 			\begin{itemize}
@@ -213,7 +213,7 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 				\item valore preferibile: $ \leq 12$;
 				\item valore accettabile: $ \leq 16$.
 			\end{itemize}
-			\subparagraph{\texttt{MPR11} Indice di Gulpease}
+			\subparagraph{Indice di Gulpease}
 			Indice della leggibilità del testo. Valuta la lunghezza delle parole e delle frasi rispetto al numero totale di lettere. 
 			\begin{itemize}
 				\item misurazione: (valore intero da 0 a 100)\newline 	
@@ -221,7 +221,7 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 				\item valore preferibile: $80 < I_G < 100$;
 				\item valore accettabile: $40 < I_G < 100$.
 			\end{itemize}
-			\subparagraph{\texttt{MPR12} Correttezza ortografica}
+			\subparagraph{Correttezza ortografica}
 			Tutti i documenti non devono assolutamente contenere errori grammaticali o errori ortografici. 
 			\begin{itemize}
 				\item misurazione: (valore intero) numero di errori grammaticali o ortografici per documento;
@@ -229,8 +229,8 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 				\item valore accettabile: 0.
 			\end{itemize}
 			
-\subsection{Processi Organizzativi}
-	\subsubsection{Gestione della Qualità}
+\subsection{Processi organizzativi}
+	\subsubsection{Gestione della qualità}
 	Tale processo ha per scopo il raggiungimento di un grado soddisfacente di qualità nel progetto. Esso fornisce:
 	\begin{itemize}
 		\item obiettivi da perseguire;
@@ -247,7 +247,7 @@ Sono stati inizialmente scelti, come riferimento, i processi proposti dallo stan
 			\item reagire ai risultati aggiornando obiettivi, strategia e strumenti.
 		\end{itemize}
 		\paragraph{Metriche}
-			\subparagraph{\texttt{MPR13} PMS: Percentuale di metriche soddisfatte}
+			\subparagraph{PMS: percentuale di metriche soddisfatte}
 			La percentuale di metriche soddisfatte valuta quante metriche raggiungono soglie accettabili sul numero totale delle metriche calcolate. Una bassa percentuale di soddisfazione può indicare poca qualità, metriche inadeguate o mancata correttezza nel calcolo.
 			\begin{itemize}
 				\item misurazione: $\frac{numero\ di\ metriche\ soddisfatte}{numero\ di\ metriche\ totali} $;
