@@ -227,10 +227,10 @@ dove:
 		 \end{itemize}	&	NI	\tabularnewline
 		 \texttt{TA10.1.1}	& RFO9.1 & L'utente autenticato deve poter aggiornare la patente di guida del proprio account. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item verificare di poter inserire l'immagine fronte e retro della patente;
 		 	\item verificare di poter inserire il numero della patente;
 		 	\item verificare di poter inserire la data di rilascio della patente;
 		 	\item verificare di poter inserire la data di scadenza della patente;
+		 	\item verificare di poter inserire l'immagine fronte e retro della patente;
 		 	\item verificare che i dati inseriti siano stati aggiornati nella schermata di gestione del profilo.
 		 \end{itemize}	&	NI	\tabularnewline
 		\texttt{TA10.1.2}	& RFO9.2.8 &	L'utente autenticato deve poter aggiornare la password del proprio account. All'utente viene chiesto di:
@@ -304,20 +304,20 @@ dove:
 		 	\item verificare che dal menu dell'applicazione si possa accedere e visualizzare la tabella dei Daily Rewards.
 		 \end{itemize}	&	NI	\tabularnewline	
 	
-	 \texttt{TA17.1}	& RFF15.1 &	L'utente autenticato deve poter ritirare il premio del giorno corrente dalla tabella Daily rewards. All'utente viene chiesto di :
+	 \texttt{TA17.1}	& RFF15.1 &	L'utente autenticato deve poter ritirare il premio del giorno corrente dalla tabella Daily rewards. \\All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item ritirare il premio del giorno dalla tabella dei premi giornalieri;
+		 	\item ritirare il premio del giorno dalla tabella dei premi giornalieri tramite l'apposito pulsante "Ritira premio";
 		 	\item verificare di non poter ritirare di nuovo il premio del giorno attuale;
 		 	\item verificare di non poter ritirare il premio dei giorni successivi o di quelli precedenti.
 		 \end{itemize}	&	NI	\tabularnewline
 
-	 \texttt{TA18}	& RFF16 &	L'utente autenticato deve poter accedere al Minigioco del garage in cui potrà visualizzare e apportare nuove modifiche ad un'auto base di partenza. All'utente viene chiesto di:
+	 \texttt{TA18}	& RFF16 &	L'utente autenticato deve poter accedere al Minigioco che consiste in un garage che dà la possibilità di effettuare modifiche ad un'auto. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla sezione Minigioco dal menu dell'applicazione;
 		 	\item verificare di poter visualizzare l'auto base e le sue statistiche (velocità, accelerazione, peso, maneggevolezza);
 		 	\item verificare di poter entrare nella modalità di modifica auto;
 		 	\item apportare qualche modifica;
-		 	\item verificare di poter installare o annullare le modifiche fatte.
+		 	\item verificare che le modifiche siano state effettivamente installate.
 		 \end{itemize}	&	NI	\tabularnewline
 	\texttt{TA18.1}	& RFF16.1\\ RFF16.1.1 \\ RFF16.1.2 \\ RFF16.1.3 \\ RFF16.1.4 \\ RFF16.1.5  \\RFF16.3  &	L'utente autenticato deve poter accedere al Minigioco del garage in cui potrà modificare le prestazioni dell'auto base. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -330,7 +330,7 @@ dove:
 		 			\item sospensioni;
 		 			\item gomme.
 		 		\end{itemize}
-		 	\item confermare o annullare l'installazione delle modifiche.
+		 	\item confermare l'installazione della modifica.
 		 \end{itemize}	&	NI	\tabularnewline
 		 \texttt{TA18.2}	& RFF16.2\\ RFF16.2.1 \\ RFF16.2.2 \\ RFF16.2.3 \\ RFF16.2.4 \\ RFF16.2.5  \\ 	RFF16.2.6 \\ RFF16.2.7 \\RFF16.3 & L'utente autenticato deve poter accedere al Minigioco del garage in cui potrà modificare l'estetica dell'auto base. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -345,9 +345,10 @@ dove:
 		 			\item cerchioni;
 		 			\item alettoni.
 		 		\end{itemize}
-		 	\item confermare o annullare l'installazione delle modifiche.
+		 	\item confermare l'installazione della modifica.
 		 \end{itemize}	&	NI	\tabularnewline
 \end{longtable}
+\newpage
 \subsection{Test di sistema}
 I test di sistema sono impiegati per garantire il corretto funzionamento delle componenti dell'intero sistema. Tali test verranno indicati nel seguente modo:\\
 	\centerline{\textbf{TS[Codice]}}
@@ -470,7 +471,7 @@ dove:
 	
 	 \texttt{TS17.1}	& RFF15.1 &	Verificare che il sistema permetta all'utente autenticato all'utente autenticato di poter ritirare il premio del giorno corrente dalla tabella Daily rewards. 	&	NI	\tabularnewline
 
-	 \texttt{TS18}	& RFF16 &	Verificare che il sistema permetta all'utente autenticato all'utente autenticato di poter accedere al Minigioco del garage in cui potrà visualizzare le statistiche e apportare nuove modifiche ad un'auto base di partenza. &	NI	\tabularnewline
+	 \texttt{TS18}	& RFF16 &	Verificare che il sistema permetta agli utenti autenticati di poter accedere al Minigioco che consiste in un garage che dà la possibilità di effettuare modifiche ad un'auto. &	NI	\tabularnewline
 	 
 	\texttt{TS18.1}	& RFF16.1\\ RFF16.1.1 \\ RFF16.1.2 \\ RFF16.1.3 \\ RFF16.1.4 \\ RFF16.1.5  \\RFF16.3  &	Verificare che il sistema permetta all'utente autenticato all'utente autenticato di poter accedere al Minigioco del garage in cui potrà modificare le prestazioni dell'auto base. 	&	NI	\tabularnewline
 	

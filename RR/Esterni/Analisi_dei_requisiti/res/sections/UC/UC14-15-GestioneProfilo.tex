@@ -28,35 +28,26 @@
 	\caption{UC14 - Gestione Profilo}
 \end{figure}
 \subsubsection{UC14.1 - Inserimento patente}
-\begin{figure}[h]
-	\includegraphics[width=10cm]{res/images/UC14-Patente.png}
-	\centering
-	\caption{UC14.1 - Inserimento patente}
-\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'utente può aggiungere la propria patente al profilo;
 	\item \textbf{Scenario principale}: l'utente aggiunge la patente compilando gli appositi campi obbligatori, ovvero:
 	\begin{itemize}
-		\item inserimento immagine patente [UC14.1.1];
-		\item inserimento numero patente [UC14.1.2];
-		\item inserimento data rilascio [UC14.1.3];
-		\item inserimento data scadenza [UC14.1.4].
+		\item inserimento numero patente [UC14.1.1];
+		\item inserimento data di rilascio e di scadenza [UC14.1.2];
+		\item inserimento immagini fronte e retro della patente [UC14.1.3];
 	\end{itemize}
 	e successivamente salverà la patente confermando i campi appena inseriti;	 
 	\item \textbf{Precondizione}: l'utente ha inserito correttamente tutti i campi necessari;
 	\item \textbf{Postcondizione}: la patente viene aggiunta e visualizzata nella pagina \textit{Gestione Profilo}.
 \end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=10cm]{res/images/UC14-Patente.png}
+	\centering
+	\caption{UC14.1 - Inserimento patente}
+\end{figure}
 \newpage
-\subsubsection{UC14.1.1 - Inserimento immagine patente}
-\begin{itemize}
-	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: al fine di portare a termine il processo di inserimento della patente, l'utente deve inserire l'immagine fronte e retro della propria patente, campo ritenuto obbligatorio; 
-	\item \textbf{Scenario principale}: l'utente preme il pulsante relativo all'inserimento dell'immagine della patente;	
-	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il bottone per l'inserimento dell'immagine della patente;
-	\item \textbf{Postcondizione}: l'utente ha inserito correttamente l'immagine della patente.
-\end{itemize}
-\subsubsection{UC14.1.2 - Inserimento numero patente}
+\subsubsection{UC14.1.1 - Inserimento numero patente}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: al fine di portare a termine il processo di inserimento della patente, l'utente deve inserire il numero della patente, campo ritenuto obbligatorio; 
@@ -64,21 +55,21 @@
 	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento del numero della patente;
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con il numero della patente.
 \end{itemize}
-\subsubsection{UC14.1.3 - Inserimento data rilascio}
+\subsubsection{UC14.1.2 - Inserimento data di rilascio e di scadenza}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: al fine di portare a termine il processo di inserimento della patente, l'utente deve inserire la data di rilascio, campo ritenuto obbligatorio; 
-	\item \textbf{Scenario principale}: l'utente compila il campo relativo alla data di rilascio della patente;	
-	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento della data di rilascio della patente;
-	\item \textbf{Postcondizione}: l'utente ha compilato il campo con la data di rilascio della patente.
+	\item \textbf{Descrizione}: al fine di portare a termine il processo di inserimento della patente, l'utente deve inserire la data di rilascio e la data di scadenza, campi ritenuti obbligatori; 
+	\item \textbf{Scenario principale}: l'utente compila i campi relativi alla data di rilascio e alla data di scadenza della patente;	
+	\item \textbf{Precondizione}: l'applicazione ha reso disponibile i campi per l'inserimento della data di rilascio e di scadenza della patente;
+	\item \textbf{Postcondizione}: l'utente ha compilato i campi con la data di rilascio e di scadenza della patente.
 \end{itemize}
-\subsubsection{UC14.1.4 - Inserimento data scadenza}
+\subsubsection{UC14.1.3 - Inserimento immagine fronte e retro della patente}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: al fine di portare a termine il processo di inserimento della patente, l'utente deve inserire la data di scadenza, campo ritenuto obbligatorio; 
-	\item \textbf{Scenario principale}: l'utente compila il campo relativo alla data di scadenza della patente;	
-	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento della data di scadenza della patente;
-	\item \textbf{Postcondizione}: l'utente ha compilato il campo con la data di scadenza della patente.
+	\item \textbf{Descrizione}: al fine di portare a termine il processo di inserimento della patente, l'utente deve inserire l'immagine fronte e retro della propria patente, campo ritenuto obbligatorio; 
+	\item \textbf{Scenario principale}: l'utente preme il pulsante relativo all'inserimento dell'immagine della patente;	
+	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il bottone per l'inserimento dell'immagine della patente;
+	\item \textbf{Postcondizione}: l'utente ha inserito correttamente l'immagine della patente.
 \end{itemize}
 \subsubsection{UC14.2 - Modifica dati account}
 \begin{itemize}
