@@ -1,12 +1,7 @@
 \subsubsection{UC26 - Garage veicolo}
-\begin{figure}[h]
-	\includegraphics[width=13cm]{res/images/UC26Garage.png}
-	\centering
-	\caption{Diagramma del caso d'uso UC26 con relative estensioni (UC27)}
-\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: agli utenti autenticati è reso disponibile un Minigioco composto da un garage dove si possono fare modifiche ad un'auto base di partenza tramite premi ottenuti da:
+	\item \textbf{Descrizione}: agli utenti autenticati è reso disponibile un Minigioco che consiste in un garage che dà la possibilità di effettuare modifiche ad un'auto sfruttando i premi ottenuti da:
 	\begin{itemize}
 		\item Progress Bar [UC16];
 		\item Milestone Unlock [UC18];
@@ -14,24 +9,20 @@
 		\item Leaderboard [UC22];
 		\item Daily Rewards [UC24]. 
 	\end{itemize} 
-	Ogni pezzo ottenuto visualizza in punteggio le seguenti informazioni:
+	Ogni pezzo ottenuto mostra un punteggio per ognuna delle seguenti informazioni:
 	\begin{itemize}
 		\item velocità;
 		\item accelerazione;
 		\item peso;
 		\item maneggevolezza.
 	\end{itemize}
-	punteggi che poi verranno sommati e attribuiti come statistiche al veicolo e visualizzate nella schermata principale dell'auto; 
+	L'installazione di questi pezzi apporterà una modifica alle statistiche del veicolo che verranno visualizzate nella schermata principale del garage;
 	\item \textbf{Scenario principale}: l'utente accede al Minigioco e visualizza un'auto base con la possibilità di modificarla attraverso due categorie:
 	\begin{itemize}
 		\item Prestazione [UC26.1];
 		\item Estetica [UC26.2].
 	\end{itemize}
-	e successivamente se le modifiche apportate vanno bene all'utente, può decidere di installarle definitivamente;
-	\item \textbf{Estensioni}:
-	\begin{itemize}
-		\item annulla tutte le modifiche [UC27].
-	\end{itemize}
+	ogni modifica apportata viene automaticamente installata sull'auto.
 	\item \textbf{Precondizione}: l'utente autenticato ha selezionato la voce \textit{Garage} dal menu dell'applicazione;
 	\item \textbf{Post-condizione}: l'utente autenticato ha visualizzato la sua auto e installato le modifiche desiderate. 
 \end{itemize}
@@ -40,6 +31,7 @@
 	\centering
 	\caption{UC26 - Garage veicolo}
 \end{figure}
+\newpage
 \subsubsection{UC26.1 - Prestazione}
 \begin{figure}[h]
 	\includegraphics[width=9.5cm]{res/images/UC26-1Prestazioni.png}
@@ -48,7 +40,7 @@
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'utente accede alla categorie di modifiche sulla prestazione per la propria auto. Avrà a disposizione un tot di pezzi per ogni singola sottocategoria;
+	\item \textbf{Descrizione}: l'utente accede alla categorie di modifiche sulla prestazione per la propria auto. Avrà a disposizione un insieme di pezzi per ogni singola sottocategoria;
 	\item \textbf{Scenario principale}: l'utente sta visualizzando la sua auto con una serie di modifiche da attuare per la categoria \textit{Prestazione} quali:
 	\begin{itemize}
 		\item motore [UC26.1.1];
@@ -58,7 +50,7 @@
 		\item gomme [UC26.1.5].
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente ha intenzione di modificare la parte prestazionale della sua auto;
-	\item \textbf{Postcondizione}: l'utente ha modificato gli elementi prestazionali della sua auto e potrà confermare l'installazione di tali modifiche.
+	\item \textbf{Postcondizione}: l'utente ha modificato gli elementi prestazionali della sua auto.
 \end{itemize}
 \subsubsection{UC26.1.1 - Motore}
 \begin{itemize}
@@ -126,7 +118,7 @@
 		\item alettoni [UC26.2.7].
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente ha intenzione di modificare la parte estetica della sua auto;
-	\item \textbf{Postcondizione}: l'utente ha modificato gli elementi estetici della sua auto e potrà confermare l'installazione di tali modifiche.
+	\item \textbf{Postcondizione}: l'utente ha modificato gli elementi estetici della sua auto.
 \end{itemize}
 
 \subsubsection{UC26.2.1 - Colore}
