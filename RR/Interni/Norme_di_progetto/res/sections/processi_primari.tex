@@ -287,6 +287,39 @@ individuati all'interno di ciascun prodotto software.
 				\item \textbf{tracciamento delle classi}: ogni requisito deve essere tracciato in modo da garantire che per ognuno esista una classe che lo soddisfi. Questa operazione è fondamentale per permettere di risalire alle classi ad esso associate;
 				\item \textbf{test di unità}: devono essere definiti al fine di verificare che le parti funzionino individualmente nel modo stabilito.
 			\end{itemize}
+			\subparagraph{Definizione dei Package\glosp}
+			I package, individuati all'interno dell'architettura devono rispettare il seguente formalismo:\newline \newline			\centerline{\textbf{indirizzo\textunderscore package::sviluppatore::applicazione::package::sottopackage::[...]}}\newline
+			Dove:
+			\begin{itemize}
+			\item \textbf{indirizzo\textunderscore package}: sta per sta per l'indirizzo del package;
+			\item \textbf{sviluppatore}: chi ha sviluppato il package;
+			\item \textbf{applicazione}: indica il nome dell'applicazione stessa;
+			\item \textbf{package}: rappresenta il nome di un package padre il quale avrà all'interno classi oppure altri package;
+			\item \textbf{sottopackage}: rappresenta il package figlio, racchiuso all'interno di un package padre. Ogni sottopackage potrebbe inoltre essere padre di un altro sottopackage e così via.
+			\end{itemize}
+			Per ogni package vegono definiti:
+			\begin{itemize}
+			\item \textbf{Descrizione}: una breve descrizione del package in questione;
+			\item \textbf{Package contenuti}: un elenco delle altre componenti contenute all'interno del package;
+			\item \textbf{Framework\glosp esterni}: le interazioni del package in questione con altre componenti esterne.
+			\end{itemize}
+			\subparagraph{Definizione delle classi}
+			Le classi rappresentano il massimo dettaglio raggiungibile nell'architettura. Le classi devono avere un codice identificativo univoco che segue il seguente formalismo:\newline
+			\centerline{\textbf{indirizzo\textunderscore package::sviluppatore::applicazione::package::sottopackage::[...]::classe}}\newline
+			Dove:
+			\begin{itemize}
+			\item \textbf{indirizzo\textunderscore package,sviluppatore,applicazione,package,sottopackage}: sono descritti nella sezione precedente;
+			\item \textbf{classe}: rappresenta la componente più piccola contenuta nel package, dove sono presenti metodi e attributi.
+			\end{itemize}
+			Per ogni classe vengono definite:
+			\begin{itemize}
+			\item \textbf{Definizione}: breve descrizione della classe(o interfaccia);
+			\item \textbf{Utilizzo}: spiegazione di come viene utilizzata la classe all'interno dell'applicazione;
+			\item \textbf{Relazioni con altre classi}: relazioni che la classe ha con altre classi;
+			\item \textbf{Interfacce implementate}: lista delle eventuali interfacce implementate;
+			\item \textbf{Classi ereditate}: lista delle classi da cui deriva la classe;
+			\item \textbf{Sottoclassi}: lista delle classi che derivano dalla classe in esame.
+			\end{itemize}
 		\paragraph{Codifica} \mbox{}\\ \mbox{}\\
 			\textbf{Scopo} \newline \newline
 			Questa attività ha come scopo quello di normare l'effettiva realizzazione del prodotto software richiesto. In questa fase si concretizza la soluzione attraverso la programmazione. I programmatori dovranno attenersi a queste norme durante la fase di programmazione ed implementazione. \newline \newline
