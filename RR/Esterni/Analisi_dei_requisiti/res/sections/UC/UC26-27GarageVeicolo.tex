@@ -1,9 +1,4 @@
 \subsubsection{UC26 - Garage veicolo}
-\begin{figure}[h]
-	\includegraphics[width=13cm]{res/images/UC26Garage.png}
-	\centering
-	\caption{Diagramma del caso d'uso UC26 con relative estensioni (UC27)}
-\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: agli utenti autenticati è reso disponibile un Minigioco che consiste in un garage che dà la possibilità di effettuare modifiche ad un'auto sfruttando i premi ottenuti da:
@@ -27,11 +22,7 @@
 		\item Prestazione [UC26.1];
 		\item Estetica [UC26.2].
 	\end{itemize}
-	e successivamente se le modifiche apportate vanno bene all'utente, può decidere di installarle definitivamente;
-	\item \textbf{Estensioni}:
-	\begin{itemize}
-		\item annulla tutte le modifiche [UC27].
-	\end{itemize}
+	ogni modifica apportata viene automaticamente installata sull'auto.
 	\item \textbf{Precondizione}: l'utente autenticato ha selezionato la voce \textit{Garage} dal menu dell'applicazione;
 	\item \textbf{Post-condizione}: l'utente autenticato ha visualizzato la sua auto e installato le modifiche desiderate. 
 \end{itemize}
@@ -40,6 +31,7 @@
 	\centering
 	\caption{UC26 - Garage veicolo}
 \end{figure}
+\newpage
 \subsubsection{UC26.1 - Prestazione}
 \begin{figure}[h]
 	\includegraphics[width=9.5cm]{res/images/UC26-1Prestazioni.png}
@@ -58,7 +50,7 @@
 		\item gomme [UC26.1.5].
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente ha intenzione di modificare la parte prestazionale della sua auto;
-	\item \textbf{Postcondizione}: l'utente ha modificato gli elementi prestazionali della sua auto e potrà confermare l'installazione di tali modifiche.
+	\item \textbf{Postcondizione}: l'utente ha modificato gli elementi prestazionali della sua auto.
 \end{itemize}
 \subsubsection{UC26.1.1 - Motore}
 \begin{itemize}
@@ -126,7 +118,7 @@
 		\item alettoni [UC26.2.7].
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente ha intenzione di modificare la parte estetica della sua auto;
-	\item \textbf{Postcondizione}: l'utente ha modificato gli elementi estetici della sua auto e potrà confermare l'installazione di tali modifiche.
+	\item \textbf{Postcondizione}: l'utente ha modificato gli elementi estetici della sua auto.
 \end{itemize}
 
 \subsubsection{UC26.2.1 - Colore}
