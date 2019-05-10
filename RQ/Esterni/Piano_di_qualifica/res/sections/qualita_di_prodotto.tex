@@ -1,0 +1,134 @@
+\section{Qualità di prodotto}
+Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento allo standard ISO/IEC 9126 che definisce le caratteristiche di cui tener conto per produrre un prodotto di buona qualità.
+	\subsection{Funzionalità}
+	Capacità del prodotto di fornire funzioni che soddisfino i requisiti espliciti ed impliciti dichiarati nell'\textit{Analisi dei Requisiti}.
+		\subsubsection{Obiettivi}
+		\begin{itemize}
+			\item adeguatezza: fornire un insieme appropriato di funzioni per le attività specificate;
+			\item accuratezza: fornire i risultati o gli effetti desiderati con il grado di precisione richiesto;
+			\item conformità: il prodotto deve aderire a determinati standard. %PLACEHOLDER è forse troppo ovvio?
+		\end{itemize}
+		\paragraph{Metriche}
+			\subparagraph{Completezza di implementazione funzionale}
+			La completezza del prodotto e il rispetto dei requisiti viene indicato da una percentuale.
+			\begin{itemize}
+			\item misurazione: si calcola con la seguente formula: \\
+			\centerline { C = (1 - \(\frac{N\textsubscript{FNI}}{N\textsubscript{FI}} \))$ \cdot  100$ } \\
+			dove N\textsubscript{FNI} indica il numero di funzionalità non implementate e N\textsubscript{FI} indica il numero di funzionalità individuate dall'analisi;
+			\item valore preferibile: 100\%;
+			\item valore accettabile: 100\%.
+			\end{itemize}
+			NOTA: l'input per la metrica è la specifica dei requisiti aggiornata. Eventuali modifiche identificate durante il ciclo di vita devono essere applicate alle specifiche dei requisiti prima di essere utilizzate nel processo di misurazione.
+	\subsection{Affidabilità}
+	Capacità del prodotto di mantenere un certo livello di prestazioni quando utilizzato nelle condizioni specificate.
+		\subsubsection{Obiettivi}
+		\begin{itemize}
+			\item maturità: capacità del prodotto di evitare che si verifichino errori e malfunzionamenti;
+			\item tolleranza agli errori: il prodotto mantiene un livello specificato di prestazioni anche in caso di malfunzionamenti o di un uso scorretto.
+		\end{itemize}
+		\paragraph{Metriche}
+			\subparagraph{Densità dei guasti nei casi di test}
+			Percentuale di errori rilevati durante il periodo di test.
+			\begin{itemize}
+			\item misurazione: si calcola con la seguente formula: \\
+			\centerline{ M =  \(\frac{N\textsubscript{ER}}{N\textsubscript{TE}} \)$ \cdot 100$ }
+			dove N\textsubscript{ER} indica il numero di errori rilevati durante il testing e N\textsubscript{TE} indica il numero di test eseguiti;
+			\item valore preferibile: 0\%;
+			\item valore accettabile: $\leq$ 10\%.
+			\end{itemize}
+			\subparagraph{Risoluzione dei guasti}
+			Percentuali di guasti rilevati risolti.
+			\begin{itemize}
+			\item misurazione: si calcola con la seguente formula: \\
+			\centerline{ R =  \(\frac{N\textsubscript{ER}}{N\textsubscript{TER}} \)$ \cdot 100$ }
+			dove N\textsubscript{ER} indica il numero di errori risolti tra quelli rilevati e N\textsubscript{TER} indica il numero totale di errori rilevati;
+			\item valore preferibile: 100\%;
+			\item valore accettabile: 100\%.
+			\end{itemize}
+	\subsection{Usabilità}
+	Capacità del prodotto di essere compreso, appreso e attraente per l'utente, quando usato nelle condizioni specificate.
+		\subsubsection{Obiettivi}
+		\begin{itemize}
+			\item comprensibilità: l'utente deve essere in grado di comprendere le funzionalità offerte dal prodotto e ad utilizzarle;
+			\item apprendibilità: capacità del prodotto di consentire all'utente di apprendere la sua applicazione;
+			\item attrattiva: il prodotto deve essere piacevole da usare.
+		\end{itemize}
+		\paragraph{Metriche}
+			\subparagraph{Facilità di utilizzo}
+			La facilità con cui l'utente raggiunge ciò che vuole viene rappresentata tramite il numero di operazioni necessarie per arrivare al contenuto desiderato.
+			\begin{itemize}
+			\item misurazione: operazioni per completare una prenotazione;
+			\item valore preferibile: $\leq$ 10;
+			\item valore accettabile: $\leq$ 15.
+			\end{itemize}
+			\subparagraph{Facilità di apprendimento}
+			La facilità con cui l'utente riesce ad imparare ad usare le funzionalità del prodotto viene rappresentata tramite il tempo medio che serve per comprenderle.
+			\begin{itemize}
+			\item misurazione: minuti per completare una prenotazione;
+			\item valore preferibile: $\leq$ 3;
+			\item valore accettabile: $\leq$ 5.
+			\end{itemize}
+			\subparagraph{Profondità della gerarchia}
+			La profondità dell'applicazione. Un'applicazione per essere facile da utilizzare non deve avere una struttura troppo profonda.
+			\begin{itemize}
+			\item misurazione: livello di profondità delle interfacce;
+			\item valore preferibile: $\leq$ 4;
+			\item valore accettabile: $\leq$ 7.
+			\end{itemize}
+			\subparagraph{Comprensione delle funzioni}
+			Percentuale delle funzioni del prodotto che l'utente sarà in grado di capire correttamente.
+			\begin{itemize}
+				\item misurazione: si calcola con la seguente formula: \\
+			\centerline{ R =  \(\frac{N\textsubscript{FI}}{N\textsubscript{FT}} \)$ \cdot 100$ }
+			dove N\textsubscript{FI} indica il numero di funzioni intuitive per l'utente e N\textsubscript{FT} indica il numero totale di funzioni presenti nel prodotto;
+				\item valore preferibile: 100\%;
+				\item valore accettabile: $\geq$ 95\%.
+			\end{itemize}
+	\subsection{Manutenibilità}
+	Capacità del prodotto di essere modificato. Le modifiche possono includere correzioni, miglioramenti o adattamento del software.
+		\subsubsection{Obiettivi}
+		\begin{itemize}
+			\item analizzabilità: facilità con la quale è possibile analizzare il codice per localizzare un errore o anomalia;
+			\item modificabilità: capacità del prodotto di permettere l'implementazione di una modifica.
+		\end{itemize}
+		\paragraph{Metriche}
+			\subparagraph{Facilità di comprensione}
+			La facilità con cui è possibile comprendere cosa fa il codice può essere rappresentata dal numero di linee di commento nel codice.
+			\begin{itemize}
+			\item misurazione: Si può calcolare con la seguente formula: \\
+			\centerline{R = \(\frac{N\textsubscript{LCOM}}{N\textsubscript{LCOD}} \) }
+			dove N\textsubscript{LCOM} indica le linee di commento e N\textsubscript{LCOD} indica le linee di codice;
+			\item valore preferibile: $\geq$ 0.20;
+			\item valore accettabile: $\geq$ 0.10.
+			\end{itemize}
+			\subparagraph{Semplicità delle funzioni}
+			La facilità di un metodo può essere rappresentata dal numero di parametri per metodo: meno parametri ha una funzione più è semplice e intuitiva.
+			\begin{itemize}
+			\item misurazione: numero di parametri per metodo;
+			\item valore preferibile $\leq$ 3;
+			\item valore accettabile $\leq$ 6.
+			\end{itemize}
+			\subparagraph{Semplicità delle classi}
+			La facilità di una classe può essere rappresentata dal numero di metodi per classe: una classe con pochi metodi ha uno scopo ben preciso e facilmente comprensibile.
+			\begin{itemize}
+			\item misurazione: numero di metodi per classe;
+			\item valore preferibile $\leq$ 8;
+			\item valore accettabile $\leq$ 15.
+			\end{itemize}			
+			
+			\subparagraph{SFIN: Structural Fan-in}
+			Indice di utilità, indica quante componenti utilizzano il modulo in esame. Un alto valore indica un alto riuso della componente.
+			\begin{itemize}
+				\item misurazione: conteggio delle componenti;
+				\item valore preferibile: $ \geq 1$;
+				\item valore accettabile: $ \geq 0$.
+			\end{itemize}
+			
+			\subparagraph{SFOUT: Structural Fan-out}
+			Indice di dipendenza, indica quante componenti vengono utilizzate dalla componente in esame. Un alto valore indica un alto accoppiamento della componente.
+			\begin{itemize}
+				\item misurazione: conteggio delle componenti;
+				\item valore preferibile: $ = 0$;
+				\item valore accettabile: $ \leq 6$.
+			\end{itemize}
+\pagebreak

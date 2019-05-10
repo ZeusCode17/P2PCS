@@ -1,0 +1,189 @@
+\section{Analisi dei rischi}
+
+Durante lo sviluppo di un progetto avente grandi dimensioni è indispensabile prevenire 
+futuri problemi tramite l'analisi dei rischi. Un'approfondita valutazione dei rischi permette la prevenzione e l'arginamento di problemi che intaccherebbero la buona riuscita del prodotto finale.\\
+Sarà adottata la seguente procedura durante lo sviluppo del progetto:
+
+\begin{itemize}
+	\item \textbf{Individuazione dei rischi}: fase di identificazione dei fattori di rischio che possono interferire con l'avanzamento regolare del progetto;
+	\item \textbf{Analisi dei rischi}: fase di studio dei rischi individuati, procede con l'assegnazione di una probabilità e di una pericolosità individuali;
+	\item \textbf{Pianificazione di controllo}: fase in cui viene indicato come affrontare e prevenire
+	i problemi derivati dai fattori di rischio;
+	\item \textbf{Monitoraggio dei rischi}: processo ciclico al fine di evitare gli errori arginando i 
+	fattori di rischio.
+\end{itemize}
+Ogni problema deriva da rischi diversi, ogni rischio viene rappresentato da uno dei seguenti codici:
+
+\begin{itemize}
+	\item \textbf{RT}: Rischi Tecnologici;
+	\item \textbf{RO}: Rischi Organizzativi;
+	\item \textbf{RI}: Rischi Interpersonali;
+	\item \textbf{RR}: Rischi dei Requisiti.
+\end{itemize}
+
+\counterwithin{table}{section}
+\renewcommand{\arraystretch}{1.5}
+\rowcolors{2}{dispari}{pari}
+	\arrayrulecolor{white}
+	\begin{longtable}{ 
+			>{\centering}p{0.17\textwidth} 
+			>{\raggedright}p{0.28\textwidth}
+			>{\raggedright}p{0.29\textwidth} 
+			>{\centering}p{0.15\textwidth}
+		}
+
+	
+	\caption{Tabella dei rischi di progetto}\\
+	\rowcolorhead
+	\colorhead\textbf{Codice \\ Nome} & \centering\colorhead\textbf{Descrizione} & 
+	\centering\colorhead\textbf{Rilevamento} & 
+	\colorhead\textbf{Grado di rischio} 
+	\tabularnewline
+	\endfirsthead
+	\rowcolor{white}\caption[]{(continua)}\\
+	\rowcolorhead
+	\colorhead\textbf{Nome \\ Codice} & \centering\colorhead\textbf{Descrizione} & 
+	\centering\colorhead\textbf{Rilevamento} & 
+	\colorhead\textbf{Grado di rischio} 
+	\tabularnewline
+	\endhead
+	
+	%RT1---------------------------------------------------------
+	 \rowcolordark \textbf{RT1} \\ Inesperienza Tecnologica & 
+	 Alcune delle tecnologie adottate sono nuove ad alcuni membri
+	 del team, pertanto è possibile incorrere in problemi durante lo svolgimento delle attività che le coinvolgono. &
+	 Ciascun membro del gruppo è incaricato di far presente al \textit{Responsabile} 
+	 le proprie lacune e difficoltà. &
+	 Occorrenza: \textbf{Alta} \\
+	 Pericolosità: \textbf{Alta} 
+	 \tabularnewline
+	\rowcolordark \multicolumn{1}{p{0.17\textwidth}}{\centering{Piano di contingenza}}& 
+	 \multicolumn{3}{p{0.7775\textwidth}}{Verranno suddivisi i membri in piccoli gruppi, in modo da
+	 	affrontare insieme i compiti più onerosi. }
+	 \tabularnewline 
+	\pagebreak
+	
+		%RT2---------------------------------------------------------
+	\textbf{RT2} \\ Hardware personale & 
+	Esiste la possibilità che i supporti hardware utilizzati da uno o più membri del gruppo siano soggetti a guasti e di conseguenza ci sia una perdita locale dei dati. &
+	Ciascun membro del gruppo è responsabile del proprio materiale e dovrà far fronte ad eventuali guasti tramite l'utilizzo di software di versionamento. &
+	Occorrenza: \textbf{Basso} \\
+	Pericolosità: \textbf{Media} 
+	\tabularnewline
+	\rowcolorlight \multicolumn{1}{p{0.17\textwidth}}{\centering{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{In caso di perdita definitiva di dati i membri del gruppo si adoperano alla loro immediata riformazione. }
+	\tabularnewline  	
+	 	
+	 %RO1---------------------------------------------------------
+	\rowcolordark \textbf{RO1} \\ Tempistiche  &
+	Essendo un metodo di lavoro nuovo per il team, non sempre il calcolo preventivo in termini di tempo 
+	per svolgere un'attività sarà rispettato.&
+	Ogni task ha la propria data di inizio e di fine, ogni variazione sulla data di scadenza dovrà
+	essere comunicata e seguita da una descrizione.&	
+	Occorrenza: \textbf{Alta} \\
+	Pericolosità: \textbf{Alta}
+	\tabularnewline
+	\rowcolordark\multicolumn{1}{p{0.17\textwidth}}{\centering{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{All'insorgere di tali problematiche, 
+	il \textit{Responsabile} gestirà le risorse in modo da ridurre i ritardi nel modo
+	più efficiente possibile.}
+	\tabularnewline	
+	
+	%R02------------------------------------------------------------
+	\rowcolorlight	\textbf{RO2} \\ Calcolo dei \\costi &
+	A causa dell'inesperienza del team in ambito lavorativo, la possibilità di incorrere in errori
+	di valutazione è plausibile. &
+	Il \textit{Responsabile} dispone delle schedule\glosp di lavoro di ogni membro del gruppo così da verificare 
+	l'effettivo monte ore.&
+	Occorrenza: \textbf{Media} \\
+	Pericolosità: \textbf{Alta}
+	\tabularnewline
+	\rowcolorlight\multicolumn{1}{p{0.17\textwidth}}{\centering{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{Verrà rivalutata una differente distribuzione del lavoro in caso di costi eccessivi.}
+	\tabularnewline	
+	
+	%R03------------------------------------------------------------
+	\rowcolordark \textbf{RO3} \\ Impegni Accademici e Personali& 
+	Si possono creare dei momenti in cui uno o più membri del gruppo non siano disponibili
+	a causa di impegni scolastici o personali. &
+	Viene predisposto un calendario condiviso accessibile a tutti i membri del gruppo, in modo da indicare
+	le date e gli orari disponibili di ognuno.&
+	Occorrenza: \textbf{Alta} \\
+	Pericolosità: \textbf{Bassa}
+	\tabularnewline
+	\rowcolordark \multicolumn{1}{p{0.17\textwidth}}{\centering{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{ Il carico di lavoro sarà distribuito, nel modo più efficiente possibile, 
+		in base agli impegni dei membri durante tutto l'arco di sviluppo.}
+	\tabularnewline	
+	
+	%R04------------------------------------------------------------
+	\rowcolorlight
+	\textbf{RO4} \\ Ritardi  &
+	Le problematiche sopracitate possono causare ritardi.&
+	Ogni componente segnalerà tempestivamente l'eventuale ritardo.&
+	Occorrenza: \textbf{Media} \\
+	Pericolosità: \textbf{Bassa}
+	\tabularnewline
+	\rowcolorlight \multicolumn{1}{p{0.17\textwidth}}{\centering{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{ Il \textit{Responsabile}, se 
+	necessario, 
+	riassegnerà le risorse al fine di evitare rallentamenti.}
+	\tabularnewline	
+	
+	%RI1------------------------------------------------------------
+	\rowcolordark
+	\textbf{RI1} \\ Comunicazione Interna  & 
+	Uno o più membri del gruppo possono risultare irreperibili. &
+	Tutti i membri sono tenuti a segnalare eventuali periodi di irraggiungibilità. &
+	Occorrenza: \textbf{Bassa} \\
+	Pericolosità: \textbf{Alta}
+	\tabularnewline
+	\rowcolordark\multicolumn{1}{p{0.17\textwidth}}{\centering{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{Solitamente questo rischio può essere causato da un emergenza e i soliti canali di comunicazione
+		potrebbero essere insufficienti.
+		Per ovviare al precedente problema vengono organizzati incontri settimanali in concordanza tra tutti membri.}
+	\tabularnewline	
+	
+	%RI2------------------------------------------------------------
+	\rowcolorlight
+	\textbf{RI2} \\ Comunicazione Esterna &
+	Il proponente, essendo una realtà imprenditoriale, non sempre è disposto alla comunicazione immediata con il gruppo.
+	Potrebbero verificarsi casi di impossibilità di comunicazione per vari periodi di tempo. &
+	Verranno definite delle date per le riunioni con largo anticipo in comune accordo con il proponente.&
+	Occorrenza: \textbf{Bassa} \\
+	Pericolosità: \textbf{Media}
+	\tabularnewline
+	\rowcolorlight \multicolumn{1}{p{0.17\textwidth}}{\centering{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{In caso di ritardi il gruppo procederà seguendo i canoni imposti dal capitolato\glo,
+		in attesa di una futura relazione col proponente.}
+	\tabularnewline	
+	
+	%RI3------------------------------------------------------------
+	\rowcolordark
+	\textbf{RI3} \\ Contrasti interni &
+	Essendo un gruppo di persone alle prime armi è possibile incorrere in contrasti e tensioni tra i membri. &
+	Si fa affidamento sulla maturità dei vari membri, i quali cercheranno di mantenere un clima di reciproco rispetto ed 
+	eviteranno eventuali contrasti. &
+	Occorrenza: \textbf{Bassa} \\
+	Pericolosità: \textbf{Alta}
+	\tabularnewline
+	\rowcolordark \multicolumn{1}{p{0.17\textwidth}}{\centering{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{In caso di controversie riguardanti aspetti del progetto sarà compito del \textit{Responsabile} 
+		decidere tra le varie alternative proposte.}
+	\tabularnewline	
+	
+	%RR1------------------------------------------------------------
+	\rowcolorlight
+	\textbf{RR1} \\ Variazione dei requisiti &
+	È possibile che alcuni requisiti individuati dagli analisti siano errati o che non coincidano con quanto richiesto dal proponente. Ciò prevede una rimozione e/o correzione di eventuali mancanze. &
+	Si argina questo rischio tramite il continuo confronto col proponente sia in via telematica che tramite incontri in sede universitaria. &
+	Occorrenza: \textbf{Bassa} \\
+	Pericolosità: \textbf{Alta}
+	\tabularnewline
+	\rowcolorlight\multicolumn{1}{p{0.17\textwidth}}{\centering{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{Nel caso alcuni requisiti risultino errati sarà necessario provvedere alla loro immediata rimozione o modifica.}
+	\tabularnewline	
+		
+	\end{longtable}
+\counterwithin{table}{subsection}	
+\renewcommand{\arraystretch}{1}

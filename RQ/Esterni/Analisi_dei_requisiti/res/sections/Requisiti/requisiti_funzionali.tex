@@ -1,0 +1,131 @@
+\newpage
+\subsection{Requisiti funzionali}
+
+\rowcolors{2}{pari}{dispari}
+
+\begin{longtable}{ >{\centering}p{0.15\textwidth} >{\centering}p{0.20\textwidth}
+		>{\raggedright}p{0.35\textwidth} >{\centering}p{0.14\textwidth}}
+	\caption{Tabella dei requisiti funzionali}\\
+	\rowcolorhead 
+	\textbf{\color{white}Requisito} 
+	& \textbf{\color{white}Classificazione} 
+	& \centering\textbf{\color{white}Descrizione}
+	& \textbf{\color{white}Fonti} 
+	\endfirsthead
+	\rowcolor{white}\caption[]{(continua)}\\
+	\rowcolorhead 
+	\textbf{\color{white}Requisito} 
+	& \textbf{\color{white}Classificazione} 
+	& \centering\textbf{\color{white}Descrizione}
+	& \textbf{\color{white}Fonti} 
+	\endhead	
+	
+	RFD1	&	Desiderabile	&	L'utente visualizza una guida introduttiva.	&	Interno\\  UC4 \\ VE\_3.4 \tabularnewline
+	RFO2	&	Obbligatorio	&	Un utente non registrato può effettuare la registrazione.	&	Capitolato \\ UC1	\tabularnewline
+	RFO2.1	&	Obbligatorio	&	La registrazione richiede l'email. &	Interno \\ UC1.1.1	\tabularnewline
+	RFO2.2	&	Obbligatorio	&	La registrazione richiede il nome. &	Interno \\ UC1.1.2	\tabularnewline
+	RFO2.3	&	Obbligatorio	&	La registrazione richiede il cognome.	&	Interno \\ UC1.1.3	\tabularnewline
+	RFO2.4	&	Obbligatorio	&	La registrazione richiede una password.	&	Interno \\ UC1.1.4	\tabularnewline
+	RFO2.5	&	Obbligatorio	&	Nella registrazione la password inserita deve avere: almeno 8 caratteri, almeno un carattere maiuscolo, almeno un carattere speciale, in caso contrario visualizza un messaggio d'errore.	&	Interno \\ UC3	\tabularnewline
+	RFF2.6 & Facoltativo & La registrazione prevede l’inserimento di un codice amico. & UC1.1.5 \tabularnewline
+	RFO2.7 & Obbligatorio & l'utente non autenticato non inserisce nessun dato nei campi di inserimento. & Interno \\ UC5 \tabularnewline
+	RFO3	&	Obbligatorio	&	L'utente registrato può effettuare il login.	&	Capitolato \\ UC6	\tabularnewline
+	RFO3.1	&	Obbligatorio	&	Il login deve richiedere l'email.	&	Interno \\ UC6.1.1	\tabularnewline
+	RFO3.2	&	Obbligatorio	&	Il login deve richiedere la password.	&	Interno \\ UC6.1.2	\tabularnewline
+	RFO3.3	&	Obbligatorio	&	Durante il login se la combinazione mail/password è scorretta, l'utente visualizza un messaggio d'errore.	&	Interno \\ UC7	\tabularnewline
+	RFO3.4	&	Obbligatorio	&	Durante il login se l'utente non ricorda la password ha la possibilità di recuperarla.	&	Interno \\ UC8	\tabularnewline
+	RFO3.4.1	&	Obbligatorio	&	Per recuperare la password l'utente deve inserire l'email di recupero associata all'account.	&	Interno \\ UC8	\tabularnewline
+	RFO4	&	Obbligatorio	&	L'utente autenticato può effettuare il logout. 	&	Capitolato \\ UC9	\tabularnewline
+	RFO5	&	Obbligatorio	&	L'utente autenticato può gestire e visualizzare i propri veicoli.	&	Capitolato \\ UC10	\tabularnewline
+	RFO5.1	&	Obbligatorio	&	L'utente autenticato può inserire un nuovo veicolo.		&	Interno \\ UC10.1	\tabularnewline
+	RFO5.1.1	&	Obbligatorio	&	L'utente deve inserire un'immagine del suo veicolo.	&	Interno \\ UC10.1.1	\tabularnewline
+	RFO5.1.2	&	Obbligatorio	& L'utente deve inserire la marca del suo veicolo.	&	Interno \\ UC10.1.2	\tabularnewline
+	RFO5.1.3	&	Obbligatorio	& L'utente deve inserire il modello del suo veicolo.	&	Interno \\ UC10.1.3	\tabularnewline
+	RFO5.1.4	&	Obbligatorio	&	L'utente deve inserire l'anno di immatricolazione del suo veicolo.	&	Interno \\ UC10.1.4	\tabularnewline
+	RFO5.2	&	Obbligatorio	& L'utente può visualizzare i dettagli del veicolo.	&	Capitolato \\ UC10.2	\tabularnewline
+	RFO5.2.1	&	Obbligatorio	& L'utente può rimuove il veicolo.	&	Capitolato \\ UC10.2.1	\tabularnewline
+	RFO6	&	Obbligatorio	&	L'utente può gestire le prenotazioni.	&	Capitolato \\ UC11	\tabularnewline
+	RFO6.1	&	Obbligatorio	&	L'utente può visualizzare le prenotazioni che ha effettuato e quelle che gli altri utenti hanno fatto sui suoi veicoli.	&	Capitolato \\ UC11.1	\tabularnewline
+	RFO6.2	&	Obbligatorio	&	L'utente usufruente del veicolo può cancellare una prenotazione.	&	Capitolato \\ UC11.2	\tabularnewline
+	RFO6.3 & Obbligatorio & Il proprietario del veicolo può confermare la prenotazione del suo mezzo. & UC11.3 \tabularnewline
+	RFO6.3.1 & Obbligatorio & Il proprietario del veicolo, se confermata la prenotazione, deve indicare il luogo d'incontro. & UC11.3.1 \tabularnewline
+	RFO6.3.2 & Obbligatorio & Il proprietario del veicolo, se confermata la prenotazione, deve indicare l'orario dell'incontro. & UC11.3.2 \tabularnewline
+	RFO6.4 & Obbligatorio &	L'utente usufruente del veicolo riconsegna il mezzo, lo recensisce e aspetta la conferma da parte del proprietario. &	UC11.4 \\ UC11.6 \tabularnewline
+	RFO6.5 &	Obbligatorio &	L'utente proprietario del veicolo riceve il mezzo, conferma la riconsegna e recensisce l’usufruente.	& UC11.5 \\ UC11.6 \tabularnewline	
+	RFO7	&	Obbligatorio	&	L'utente può prenotare un veicolo.	&	Capitolato \\ UC12	\tabularnewline
+	RFD7.1	&	Desiderabile	&	L'utente può filtrare i veicoli secondo l'inserimento di una data.	&	Interno\\ UC12.1	\tabularnewline
+	RFD7.2	&	Desiderabile	&	L'utente può filtrare i veicoli secondo l'inserimento di una fascia oraria.	&	Interno\\ UC12.2	\tabularnewline
+	RFD7.3	&	Desiderabile	&	L'utente può filtrare i veicoli secondo un raggio in km.	&	Interno\\ UC12.3	\tabularnewline
+	RFD7.4	&	Desiderabile	&	L'utente può filtrare i veicoli secondo la marca.	&	Interno \\ UC12.4	\tabularnewline
+	RFD7.5	&	Desiderabile	&	L'utente può filtrare i veicoli secondo il modello.	&	Interno \\ UC12.5	\tabularnewline
+	RFD7.6	&	Desiderabile	&	L'utente può filtrare i veicoli secondo l'anno di immatricolazione.	&	Capitolato \\ UC12.6	\tabularnewline
+	RFO7.7	&	Obbligatorio	&	L'utente può selezionare un veicolo tra quelli filtrati e prenotarlo.	&	Capitolato\\ UC12.7	\tabularnewline
+	RFD8	&	Desiderabile	&	L'utente può visualizzare uno storico delle sue prenotazioni concluse.		&	Interno \\ UC13	\tabularnewline
+	RFO9	&	Obbligatorio	&	L'utente può visualizzare il proprio profilo utente.	&	Capitolato \\ UC14	\tabularnewline
+	RFO9.1	&	Obbligatorio	&	L'utente può inserire la propria patente di guida.	&	Capitolato \\ UC14.1	\tabularnewline
+	RFO9.1.1	&	Obbligatorio	&	L'utente deve inserire l'immagine della patente fronte e retro.	&	Capitolato \\ UC14.1.3	\tabularnewline
+	RFO9.1.2	&	Obbligatorio	&	L'utente deve inserire il numero della patente.	&	Capitolato \\ UC14.1.1	\tabularnewline
+	RFO9.1.3	&	Obbligatorio	&	L'utente deve inserire la data di rilascio e di scadenza della patente.	&	Capitolato \\ UC14.1.2	\tabularnewline
+	RFO9.2	&	Obbligatorio	&	L'utente può modificare i dati del profilo	&	Capitolato \\ UC14.2	\tabularnewline
+	RFO9.2.1	&	Obbligatorio	&	L'utente può modificare il nome.	&	Interno \\ UC14.2.1	\tabularnewline
+	RFO9.2.2	&	Obbligatorio	&	L'utente può modificare il cognome.	&	Interno \\ UC14.2.2	\tabularnewline
+	RFO9.2.3	&	Obbligatorio	&	L'utente può modificare il numero di telefono. 	&	Interno \\ UC14.2.3	\tabularnewline
+	RFO9.2.4	&	Obbligatorio	&	L'utente può modificare l'email.	&	Interno \\ UC14.2.4	\tabularnewline
+	RFO9.2.5	&	Obbligatorio	&	L'utente può modificare la data di nascita.	&	Interno \\ UC14.2.5	\tabularnewline
+	RFO9.2.6	&	Obbligatorio	&	L'utente può modificare la residenza.	&	Interno  \\ UC14.2.6	\tabularnewline
+	RFO9.2.7	&	Obbligatorio	&	L'utente visualizzerà un messaggio d'errore se l'email inserita è scorretta.	&	Interno \\ UC2	\tabularnewline
+	RFO9.2.8	&	Obbligatorio	&	L'utente può modificare la password.	&	Interno  \\ UC14.2.7	\tabularnewline
+	RFO9.2.8.1	&	Obbligatorio	&	L'utente deve inserire la vecchia password.	&	Interno  \\ UC14.2.7.1	\tabularnewline
+	RFO9.2.8.2	&	Obbligatorio	&	L'utente visualizza un messaggio d'errore se la password digitata non corrisponde a quella vecchia.	&	Interno  \\ UC15	\tabularnewline
+	RFO9.2.8.3	&	Obbligatorio	&	L'utente deve inserire la nuova password.	&	Interno  \\ UC14.2.7.2	\tabularnewline
+	RFO9.3	&	Obbligatorio	&	L'utente può eliminare il proprio account.	&	Interno  \\ UC14.3	\tabularnewline
+	RFF10 &	Facoltativo &	L'utente completando il profilo, completa la progress bar ricevendo punti esperienza ad ogni step. &	UC16 \tabularnewline
+	RFF10.1	& Facoltativo &	L'utente riceve un premio per il completamento della progress bar. &	UC17 \tabularnewline
+	RFF11 &	Facoltativo &	L'utente possiede livelli d'esperienza e visualizza una tabella con i premi per ogni livello d'esperienza. & UC18 \tabularnewline
+	RFF11.1	& Facoltativo & L'utente ritira i premi per il raggiungimento di un nuovo livello d'esperienza. & UC19 \tabularnewline
+	RFO12 & Obbligatorio & L'utente, se ha concluso una prenotazione, può usare la Lucky Spin per ottenere un premio. & UC20 \tabularnewline
+	RFO12.1	& Obbligatorio & L'utente vince un premio dalla Lucky Spin. & UC21 \tabularnewline
+	RFF13 & Facoltativo & L'utente visualizza una classifica dei migliori utenti. & UC22 \tabularnewline
+	RFF13.1 & Facoltativo & Se l'utente, dopo un periodo prestabilito, arriva tra le prime tre posizioni della classifica riceve un premio.  & UC22 \tabularnewline
+	RFF14 & Facoltativo & L'utente può inviare un “codice amico” ad un amico per invitarlo ad usare l'applicazione ricevendo punti esperienza & UC23 \\ VE\_3.5
+	\tabularnewline
+	RFF15 & Facoltativo & L'utente visualizza una tabella coi premi che può ricevere nell'arco di un mese. & UC24 \tabularnewline
+	RFF15.1 & Facoltativo & L'utente visualizza la tabella coi premi e può prendere solo quello del giorno corrente. & UC25
+	\tabularnewline
+	RFF16 & Facoltativo & Agli utenti autenticati è reso disponibile un Minigioco che consiste in un garage che dà la possibilità di effettuare modifiche ad un'auto. & UC26 
+	\tabularnewline
+	RFF16.1 & Facoltativo & L'utente può modificare l'auto sulla base delle prestazioni. & UC26.1
+	\tabularnewline
+	RFF16.1.1 & Facoltativo & L'utente può modificare il motore dell'auto di partenza. & UC26.1.1
+	\tabularnewline
+	RFF16.1.2 & Facoltativo & L'utente può modificare la centralina dell'auto di partenza. & UC26.1.2
+	\tabularnewline
+	RFF16.1.3 & Facoltativo & L'utente può modificare la trasmissione dell'auto di partenza. & UC26.1.3
+	\tabularnewline
+	RFF16.1.4 & Facoltativo & L'utente può modificare le sospensioni dell'auto di partenza. & UC26.1.4
+	\tabularnewline
+	RFF16.1.5 & Facoltativo & L'utente può modificare le gomme dell'auto di partenza. & UC26.1.5
+	\tabularnewline
+	RFF16.2 & Facoltativo & L'utente può modificare l'auto sulla base dell'estetica. & UC26.2
+	\tabularnewline
+	RFF16.2.1 & Facoltativo & L'utente può modificare il colore dell'auto di partenza. & UC26.2.1
+	\tabularnewline
+	RFF16.2.2 & Facoltativo & L'utente può aggiungere l'adesivo all'auto di partenza. & UC26.2.2
+	\tabularnewline
+	RFF16.2.3 & Facoltativo & L'utente può modificare i paraurti (anteriori e posteriori) dell'auto di partenza. & UC26.2.3
+	\tabularnewline
+	RFF16.2.4 & Facoltativo & L'utente può modificare i fari (anteriori e posteriori) dell'auto di partenza. & UC26.2.4
+	\tabularnewline
+	RFF16.2.5 & Facoltativo & L'utente può modificare gli scarichi dell'auto di partenza. & UC26.2.5
+	\tabularnewline
+	RFF16.2.6 & Facoltativo & L'utente può modificare i cerchioni dell'auto di partenza. & UC26.2.6
+	\tabularnewline
+	RFF16.2.7 & Facoltativo & L'utente può aggiungere l'alettone all'auto di partenza. & UC26.2.7
+	\tabularnewline
+	RFF17	&	Facoltativo	&	Fornire un insieme di social activity per creare una coesione degli utenti che usano l'applicazione &	Interno\\
+	UC23\\ 	\tabularnewline
+	RFF18	&	Facoltativo	& Assicurare una medio/grande vincita nella prima Lucky Spin\glosp per invogliare l'utente ad utilizzarla ancora in futuro &	VE\_3.3\\
+	UC20   	\tabularnewline
+	RFF19	&	Facoltativo	& Un utilizzo e/o prestito continuo dei mezzi fornisce rewards più rapidamente &	Interno\\UC18
+\end{longtable}
+

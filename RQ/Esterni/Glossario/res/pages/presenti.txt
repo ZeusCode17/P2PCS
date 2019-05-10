@@ -1,0 +1,92 @@
+*android
+*accomplishment
+*activity
+*add-on
+*apache kafka
+*api
+*artefatti
+*aws
+*back end
+*baseline
+*blockchain
+*bootstrap
+*camelcase
+*capitolato
+*changelog
+*coesione
+*comportamento emergente
+*continuous integration
+*copertura
+*core-drive
+*dapp
+*dashboard
+*design pattern
+*devops
+*docker
+*documento esterno
+*documento interno
+*driver
+*ethereum 
+*esLint
+*firebase storage
+*Firebase
+*framework
+*freeling
+*front end
+*fragment
+*gamification
+*gantt
+*github
+*gitlab
+*grafana
+*GUI
+*henshin
+*hosting
+*hunpos
+*json
+*jetbrains
+*kotlin
+*layout
+*leaderbord
+*lucky spin
+*milestone
+*milestone unlock
+*modello a v
+*modello di sviluppo
+*metamask
+*movens
+*node.js
+*octalysis
+*off-topic
+*open-source
+*peer-to-peer
+*plug-in
+*product baseline
+*proof of concept
+*processo
+*python
+*react
+*redmine
+*redux
+*refactoring
+*release
+*repository
+*rete bayesiana
+*scss
+*schedule
+*server-side
+*shortcut
+*skill
+*slack
+*smart contract
+*snake case
+*sonarqube
+*staging
+*stub
+*technology baseline
+*telegram
+*trello
+*uml
+*verifica e validazione
+*Walkthrough
+*workflow
