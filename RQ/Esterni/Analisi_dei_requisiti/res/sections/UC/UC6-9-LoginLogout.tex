@@ -7,42 +7,27 @@
 \subsubsection{UC6 - Login}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: per effettuare il procedimento di autenticazione, l'utente deve compilare i campi necessari ovvero e-mail e password;
-	\item \textbf{Scenario principale}: l'applicazione rende disponibili i campi da compilare per l'autenticazione. Dunque l'utente dovrà inserire tutti i dati necessari;
-	\item \textbf{Precondizione}: l'applicazione rende disponibile i campi da compilare;
-	\item \textbf{Postcondizione}: dopo aver controllato che i campi sono stati compilati correttamente, l'utente viene autenticato nell'applicazione.
+	\item \textbf{Descrizione}: per effettuare il procedimento di autenticazione, l'utente deve compilare i campi necessari e dopo averli confermati, se sono validi, verrà portato alla pagina di \textit{Gestione veicoli};
+	\item \textbf{Scenario principale}: l'applicazione rende disponibili i campi da compilare per l'autenticazione. Dunque l'utente dovrà inserire tutti i dati necessari, quali:
+	\begin{itemize}
+		\item inserimento email [UC6.1];
+		\item inserimento password [UC6.2].
+	\end{itemize}
+	successivamente conferma i dati inseriti;
 	\item \textbf{Estensioni}:
-		\begin{itemize}
-			\item visualizzazione errore campi vuoti [UC5];
-			\item visualizzazione errore combinazione email e password errata [UC7];
-			\item recupero password [UC8].
-		\end{itemize}	
+	\begin{itemize}
+		\item visualizzazione errore campi vuoti [UC5];
+		\item visualizzazione errore combinazione email e password errata [UC7].
+	\end{itemize}
+	\item \textbf{Precondizione}: l'applicazione rende disponibile i campi da compilare;
+	\item \textbf{Postcondizione}: dopo aver controllato che i campi sono stati compilati correttamente, l'utente viene autenticato nell'applicazione e rimandato alla pagina dei \textit{Gestione veicoli}.	
 \end{itemize}
 \begin{figure}[h]
 	\includegraphics[width=11cm]{res/images/UC6Login.png}
 	\centering
 	\caption{UC6 - Login}
 \end{figure}
-\newpage
-\subsubsection{UC6.1 - Compilazione campi per il login}
-\begin{itemize}
-	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente compila i campi richiesti per l'autenticazione e dopo aver confermato, se i dati sono validi, verrà portato alla pagina \textit{Gestione veicoli};
-	\item \textbf{Scenario principale}: l'utente compila i campi necessari all'autenticazione ovvero:
-		\begin{itemize}
-			\item l'utente inserisce l'email associata al proprio account [UC5.1.1];
-			\item l'utente inserisce la password associata la proprio account [UC5.1.2].
-		\end{itemize}
-	successivamente conferma i dati;	
-	\item \textbf{Precondizione}: l'utente si trova nell'activity\glosp di autenticazione;
-	\item \textbf{Postcondizione}: l'utente ha compilato tutti i campi necessari all'autenticazione, se corretti, viene mandato alla pagina \textit{Gestione veicoli}.	
-\end{itemize}
-\begin{figure}[h]
-	\includegraphics[width=11cm]{res/images/UC6-1Compilazione.png}
-	\centering
-	\caption{UC6.1 - Compilazione campi per il login}
-\end{figure}
-\subsubsection{UC6.1.1 - Inserimento email}
+\subsubsection{UC6.1 - Inserimento email}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: al fine di portare a termine il processo di autenticazione l'utente deve inserire l'indirizzo email associato all'account, campo ritenuto obbligatorio;
@@ -50,8 +35,7 @@
 	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento dell'indirizzo email;
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con l'indirizzo email associato al proprio account.
 \end{itemize}
-
-\subsubsection{UC6.1.2 - Inserimento password}
+\subsubsection{UC6.2 - Inserimento password}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: al fine di portare a termine il processo di autenticazione l'utente deve inserire la password associata al proprio account, campo ritenuto obbligatorio;
@@ -59,16 +43,6 @@
 	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento della password;
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con la password associata al proprio account.
 \end{itemize}
-
-%\subsubsection{UC6.2 - Invio dati}
-%\begin{itemize}
-%	\item \textbf{Attori Primari}: utente non autenticato;
-%	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati; se email e password risulteranno corrette l'utente verrà autenticato;
-%	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati;	
-%	\item \textbf{Precondizione}: i campi dati necessari per l'autenticazione sono compilabili. È presente il pulsante per la conferma dei dati;
-%	\item \textbf{Postcondizione}: l'utente viene autenticato e rimandato all'activity\glosp per la gestione dei veicoli.
-%\end{itemize}
-
 \subsubsection{UC7 - Visualizzazione errore combinazione email e password errata}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
@@ -77,22 +51,22 @@
 	\item \textbf{Precondizione}: l'utente non autenticato inserisce i dati che combinati risultano non validi;
 	\item \textbf{Postcondizione}: l'applicazione fa visualizzare un messaggio d'errore.
 \end{itemize}
-%\begin{figure}[h]
-%	\includegraphics[width=15cm]{res/images/Schemagenerale3.png}
-%	\centering
-%	\caption{Schema generale: recupero password ed errori annessi}
-%\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=15cm]{res/images/Schemagenerale3.png}
+	\centering
+	\caption{UC8 - Recupero password con relativa estensione (UC2)}
+\end{figure}
 \subsubsection{UC8 - Recupero password}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: l'utente non autenticato non si ricorda la propria password per accedere all'account e ne richiede il recupero che avviene inserendo un'indirizzo email dove verrà inviata una nuova password;
-	\item \textbf{Scenario principale}: l'utente non ancora autenticato inserisce un'indirizzo email dove potrà ricevere la nuova password da utilizzare per accedere al proprio account; 
+	\item \textbf{Scenario principale}: l'utente non ancora autenticato inserisce un'indirizzo email dove potrà ricevere la nuova password da utilizzare per accedere al proprio account;
+	\item \textbf{Estensione}:
+	\begin{itemize}
+		\item visualizzazione errore email non valida [UC2].
+	\end{itemize} 
 	\item \textbf{Precondizione}: l'utente non autenticato non ricorda la password di accesso e indica un indirizzo email di recupero;
 	\item \textbf{Postcondizione}: l'utente riceve la nuova password tramite posta all'indirizzo email inviato.
-	\item \textbf{Estensione}:
-		\begin{itemize}
-			\item visualizzazione errore email non valida [UC2].
-		\end{itemize}
 \end{itemize}
 \subsubsection{UC9 - Logout}
 \begin{figure}[h]

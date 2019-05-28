@@ -1,10 +1,9 @@
-\newpage
-\subsubsection{UC11 - Gestione prenotazioni}
 \begin{figure}[h]
 	\includegraphics[width=12cm]{res/images/UC11Prenotazione.png}
 	\centering
 	\caption{UC11 - Gestione prenotazione}
 \end{figure}
+\subsubsection{UC11 - Gestione prenotazioni}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Attori Secondari}:
@@ -57,9 +56,6 @@
 	\item \textbf{Precondizione}: l'utente ha scelto una prenotazione;
 	\item \textbf{Postcondizione}: l'utente ha visualizzato correttamente i dettagli della prenotazione.
 \end{itemize}
-\begin{comment}
-
-\end{comment}
 \subsubsection{UC11.2 - Cancellazione prenotazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: usufruente del veicolo;
@@ -68,7 +64,6 @@
 	\item \textbf{Precondizione}: l'utente ha premuto il pulsante per la cancellazione delle prenotazione precedentemente selezionata;
 	\item \textbf{Postcondizione}: l'utente ha annullato correttamente la prenotazione selezionata.
 \end{itemize}
-
 \subsubsection{UC11.3 - Conferma prenotazione, lato proprietario}
 \begin{itemize}
 	\item \textbf{Attori Primari}: proprietario del veicolo;
@@ -87,7 +82,6 @@
 	\centering
 	\caption{UC11.3 - Conferma prenotazione, lato proprietario}
 \end{figure}
-
 \subsubsection{UC11.3.1 - Inserimento luogo d'incontro}
 \begin{itemize}
 	\item \textbf{Attori Primari}: proprietario del veicolo;
@@ -96,7 +90,6 @@
 	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento del luogo d'incontro;
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con il luogo d'incontro.	
 \end{itemize}
-
 \subsubsection{UC11.3.2 - Inserimento orario d'incontro}
 \begin{itemize}
 	\item \textbf{Attori Primari}: proprietario del veicolo;
@@ -105,39 +98,19 @@
 	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento dell'orario d'incontro;
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con l'orario d'incontro.	
 \end{itemize}
-
-%\subsubsection{UC11.3.3 - Invio dati}
-%\begin{itemize}
-%	\item \textbf{Attori Primari}: proprietario del veicolo;
-%	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati;
-%	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati;	
-%	\item \textbf{Precondizione}: l'utente ha compilato i dati necessari per la conferma della prenotazione e preme il pulsante per l'invio dei dati;
-%	\item \textbf{Postcondizione}: la prenotazione viene confermata.
-%\end{itemize}
-
 \subsubsection{UC11.4 - Riconsegna del veicolo, lato usufruente}
 \begin{itemize}
 	\item \textbf{Attori Primari}: usufruente del veicolo;
 	\item \textbf{Descrizione}: l'utente riconsegna il veicolo e chiude la prenotazione;
 	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Dopo aver riconsegnato il veicolo e le chiavi, attraverso l'apposito pulsante l'utente chiederà la chiusura della prenotazione (la prenotazione verrà definitivamente chiusa quando anche il proprietario del veicolo confermerà la riconsegna delle chiavi e del mezzo [UC11.5]). Comparirà un pop-up che permetterà di lasciare una recensione all'altro utente [UC11.6];
-%	\item \textbf{Inclusioni}: 
-%	\begin{itemize}
-%		\item recensione utente [UC11.6].
-%	\end{itemize}
 	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende concludere;
 	\item \textbf{Postcondizione}: l'utente ha richiesto correttamente la chiusura della prenotazione selezionata.
-	
 \end{itemize}
-
 \subsubsection{UC11.5 - Riconsegna del veicolo, lato proprietario}
 \begin{itemize}
 	\item \textbf{Attori Primari}: proprietario del veicolo;
 	\item \textbf{Descrizione}: il proprietario del veicolo conferma la riconsegna del mezzo e delle chiavi;
 	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Alla riconsegna del veicolo e delle chiavi, attraverso l'apposito pulsante l'utente confermerà la chiusura della prenotazione in modo definitivo. Comparirà un pop-up che permetterà di lasciare una recensione all'altro utente [UC11.6];
-%	\item \textbf{Inclusioni}: 
-%	\begin{itemize}
-%		\item recensione utente [UC11.6].
-%	\end{itemize}
 	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende concludere;
 	\item \textbf{Postcondizione}: l'utente ha concluso correttamente la prenotazione selezionata.
 \end{itemize}

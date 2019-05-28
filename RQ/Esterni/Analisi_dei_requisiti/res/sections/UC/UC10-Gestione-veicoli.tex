@@ -9,7 +9,8 @@
  	\item \textbf{Descrizione}: l'utente ha una panoramica dei veicoli che ha inserito visualizzando solo poche cose riguardanti il mezzo e ha la possibilità di:
  	\begin{itemize}
  		\item aggiungere un veicolo [UC10.1];
- 		\item visualizzare i dettagli del veicolo [UC10.2].
+ 		\item visualizzare i dettagli del veicolo [UC10.2];
+ 		\item rimuovere un veicolo [UC10.3].
  	\end{itemize}
  	\item \textbf{Precondizione}: l'utente accede al fragment\glosp per la gestione dei veicoli;
  	\item \textbf{Postcondizione}: l'utente visualizza le informazioni relative ai propri veicoli, con le eventuali operazioni disponibili su ognuno di essi.
@@ -67,15 +68,6 @@
 	\item \textbf{Precondizione}: l'applicazione ha reso disponibile il campo per l'inserimento dell'anno d'immatricolazione del veicolo;
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con l'anno d'immatricolazione.	
 \end{itemize}
-
-%\subsubsection{UC10.1.4 - Invio dati veicolo}
-%\begin{itemize}
-%	\item \textbf{Attori Primari}: utente autenticato;
-%	\item \textbf{Descrizione}: l'utente preme il pulsante per la conferma e l'invio dei dati del veicolo;
-%	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati;	
-%	\item \textbf{Precondizione}: i campi dati necessari per l'inserimento di un veicolo sono compilabili. È presente il pulsante per la conferma dei dati;
-%	\item \textbf{Postcondizione}: il nuovo veicolo viene inserito e l'utente potrà visualizzarlo nel proprio parco macchine.
-%\end{itemize}
 \subsubsection{UC10.2 - Visualizza dettagli veicolo}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
@@ -86,18 +78,12 @@
 		\item anno di immatricolazione;
 		\item rating.
 	\end{itemize}
-	E ha la possibilità di rimuovere il veicolo [UC10.2.1];
+	e ha la possibilità di rimuovere il veicolo [UC10.3];
 	\item \textbf{Scenario principale}: l'utente visualizza i dati di dettaglio del veicolo;
 	\item \textbf{Precondizione}: l'utente autenticato visualizza i dettagli del veicolo;
 	\item \textbf{Postcondizione}: l'utente autenticato ha visualizzato i dettagli del veicolo.
 \end{itemize}
-\begin{figure}[H]
-	\includegraphics[width=10cm]{res/images/UC10-2Dettagliveicolo.png}
-	\centering
-	\caption{UC10.2 - Visualizza dettagli veicolo}
-\end{figure}
-
-\subsubsection{UC10.2.1 - Rimuovi veicolo}
+\subsubsection{UC10.3 - Rimuovi veicolo}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'utente può rimuovere un mezzo di trasporto dal proprio parco macchine;
