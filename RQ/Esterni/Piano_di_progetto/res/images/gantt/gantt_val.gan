@@ -72,7 +72,7 @@
         </task>
         <task id="113" name="MANUALE SVILUPPATORE" color="#3399ff" meeting="false" start="2019-06-29" duration="9" complete="0" thirdDate="2019-07-05" thirdDate-constraint="0" expand="true">
             <depend id="30" type="2" difference="0" hardness="Strong"/>
-            <task id="116" name="Stesura" color="#3399ff" meeting="false" start="2019-06-29" duration="7" complete="0" thirdDate="2019-07-05" thirdDate-constraint="0" expand="true"/>
+            <task id="116" name="Incremento" color="#3399ff" meeting="false" start="2019-06-29" duration="7" complete="0" thirdDate="2019-07-05" thirdDate-constraint="0" expand="true"/>
             <task id="117" name="Verifica" color="#00ff00" meeting="false" start="2019-07-01" duration="7" complete="0" thirdDate="2019-07-12" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="26" name="MANUALE UTENTE" color="#3399ff" meeting="false" start="2019-06-25" duration="9" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true">

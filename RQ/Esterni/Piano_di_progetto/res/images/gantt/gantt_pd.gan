@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="gantt_pd" company="" webLink="http://" view-date="2019-05-19" view-index="0" gantt-divider-location="458" resource-divider-location="300" version="2.8.10" locale="en">
+<?xml version="1.0" encoding="UTF-8"?><project name="gantt_pd" company="" webLink="http://" view-date="2019-05-16" view-index="0" gantt-divider-location="458" resource-divider-location="300" version="2.8.10" locale="en">
     <description/>
     <view zooming-state="default:1" id="gantt-chart">
         <field id="tpd3" name="Name" width="213" order="0"/>
@@ -6,7 +6,7 @@
         <field id="tpd5" name="End date" width="88" order="2"/>
         <field id="tpd6" name="Duration" width="64" order="3"/>
         <timeline><![CDATA[1]]></timeline>
-        <option id="color.recent"><![CDATA[#00ff00 #f4f4f4 #000000 #3399ff #66ff00 #cc00cc]]></option>
+        <option id="color.recent"><![CDATA[#3399ff #00ff00 #f4f4f4 #000000 #66ff00 #cc00cc]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -57,23 +57,17 @@
             <task id="11" name="Incremento" color="#3399ff" meeting="false" start="2019-05-18" duration="21" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
             <task id="12" name="Verifica" color="#00ff00" meeting="false" start="2019-05-25" duration="15" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="13" name="SPECIFICA TECNICA" color="#3399ff" meeting="false" start="2019-05-18" duration="4" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true">
-            <depend id="16" type="2" difference="0" hardness="Strong"/>
-            <task id="14" name="Incremento" color="#3399ff" meeting="false" start="2019-05-18" duration="3" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
-            <task id="15" name="Verifica" color="#00ff00" meeting="false" start="2019-05-19" duration="3" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
-        </task>
-        <task id="16" name="PRODUCT BASELINE" color="#3399ff" meeting="false" start="2019-05-22" duration="9" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true">
-            <depend id="21" type="2" difference="0" hardness="Strong"/>
-            <task id="17" name="Desing pattern" color="#3399ff" meeting="false" start="2019-05-22" duration="4" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
-            <task id="18" name="Diagrammi delle classi" color="#3399ff" meeting="false" start="2019-05-24" duration="5" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
-            <task id="109" name="Diagrammi delle attività" color="#3399ff" meeting="false" start="2019-05-24" duration="5" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
+        <task id="16" name="PRODUCT BASELINE" color="#3399ff" meeting="false" start="2019-05-18" duration="13" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true">
+            <task id="17" name="Desing pattern" color="#3399ff" meeting="false" start="2019-05-18" duration="7" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
+            <task id="18" name="Diagrammi delle classi" color="#3399ff" meeting="false" start="2019-05-22" duration="7" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
+            <task id="109" name="Diagrammi delle attività" color="#3399ff" meeting="false" start="2019-05-22" duration="7" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
             <task id="20" name="Verifica" color="#00ff00" meeting="false" start="2019-05-24" duration="7" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="21" name="CODIFICA" color="#3399ff" meeting="false" start="2019-05-31" duration="8" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true">
+        <task id="21" name="CODIFICA" color="#3399ff" meeting="false" start="2019-05-25" duration="14" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true">
             <depend id="30" type="2" difference="0" hardness="Strong"/>
-            <task id="22" name="Scrittura" color="#3399ff" meeting="false" start="2019-05-31" duration="7" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
-            <task id="23" name="VERIFICA" color="#3399ff" meeting="false" start="2019-05-31" duration="8" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true">
-                <task id="24" name="Statica" color="#00ff00" meeting="false" start="2019-05-31" duration="7" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
+            <task id="22" name="Scrittura" color="#3399ff" meeting="false" start="2019-05-25" duration="13" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
+            <task id="23" name="VERIFICA" color="#3399ff" meeting="false" start="2019-05-25" duration="14" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true">
+                <task id="24" name="Statica" color="#00ff00" meeting="false" start="2019-05-25" duration="13" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
                 <task id="25" name="Dinamica" color="#00ff00" meeting="false" start="2019-06-02" duration="6" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
             </task>
         </task>
@@ -81,6 +75,11 @@
             <depend id="30" type="2" difference="0" hardness="Strong"/>
             <task id="27" name="Stesura" color="#3399ff" meeting="false" start="2019-06-02" duration="6" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
             <task id="28" name="Verifica" color="#00ff00" meeting="false" start="2019-06-05" duration="4" complete="0" thirdDate="2019-04-18" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="113" name="MANUALE SVILUPPATORE" color="#3399ff" meeting="false" start="2019-06-02" duration="7" complete="0" thirdDate="2019-05-16" thirdDate-constraint="0" expand="true">
+            <depend id="30" type="2" difference="0" hardness="Strong"/>
+            <task id="114" name="attività_114" color="#3399ff" meeting="false" start="2019-06-02" duration="6" complete="0" thirdDate="2019-05-16" thirdDate-constraint="0" expand="true"/>
+            <task id="115" name="attività_115" color="#00ff00" meeting="false" start="2019-06-05" duration="4" complete="0" thirdDate="2019-05-16" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="30" name="Consegna" color="#3399ff" meeting="true" start="2019-06-10" duration="0" complete="0" thirdDate="2019-06-10" thirdDate-constraint="1" expand="true"/>
     </tasks>

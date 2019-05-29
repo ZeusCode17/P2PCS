@@ -76,7 +76,7 @@ Progettazione. In questo periodo le attività principali sono:
 %-------------------Sottosezione Progettazione di Dettaglio---------------------
 \subsection{Progettazione di dettaglio e codifica}
 \textit{Periodo: dal 2019-05-18 al 2019-06-10} \\
-Il periodo di Progettazione di dettaglio e codifica inizia il giorno dopo la Revisione di progettazione e termina con la data di consegna dei documenti 
+Il periodo di Progettazione di dettaglio e codifica inizia il giorno dopo la Revisione di Progettazione e termina con la data di consegna dei documenti 
 in vista della Revisione di Qualifica. Le attività di questa fase sono:
 \begin{itemize}
 	\item \textbf{Product Baseline\glo}: a seguito della \textit{Technology 
@@ -85,7 +85,8 @@ in vista della Revisione di Qualifica. Le attività di questa fase sono:
 	codice e della sua verifica con modalità e strumenti definiti nel 
 	\textit{Piano di Qualifica v2.0.0};
 	\item \textbf{Manuale Utente}: attività volta alla redazione del documento Manuale Utente, contenente le indicazioni per l'utilizzo del prodotto;
-	\item \textbf{Incremento e Verifica}: se necessario vengono migliorati i 
+	\item \textbf{Manuale Sviluppatore}: viene redatto il documento \textit{Manuale Sviluppatore} atto a fornire tutte le informazioni necessarie al mantenimento, manutenzione e ampliamento del prodotto;
+	\item \textbf{Incrementi individuati}: se necessario vengono migliorati i 
 	documenti prodotti nelle fasi precedenti.
 \end{itemize}
 
@@ -93,6 +94,76 @@ in vista della Revisione di Qualifica. Le attività di questa fase sono:
 	\includegraphics[width=0.99\linewidth]{res/images/gantt_pd.png}
 	\caption{Diagramma di Gantt della fase di progettazione di dettaglio e codifica}
 \end{figure}
+
+Nella figura soprastante sono elencati gli incrementi riguardanti la documentazione e la codifica della \textit{Product Baseline}\glo.
+È importante sottolineare la presenza di diversi incrementi per quanto riguarda la codifica della \textit{Product Baseline}, i quali sono stati pianificati, in base alle risorse che abbiamo a disposizione, per il periodo di Progettazione di dettaglio e codifica.
+La codifica di ogni incremento è successiva all'analisi del design pattern appropriato, seguita poi dalla costruzione dei diagrammi di attività e di classi.
+Viene riportata di seguito la tabella del tracciamento incremento-casi d’uso, in cui i casi d’uso riportati includono tutti i casi d’uso figli.
+
+\counterwithin{table}{section}
+\renewcommand{\arraystretch}{1.5}
+\rowcolors{2}{dispari}{pari}
+\arrayrulecolor{white}
+\begin{longtable}{ 
+		>{\centering}p{0.17\textwidth} 
+		>{\raggedright}p{0.28\textwidth}
+		>{\raggedright}p{0.29\textwidth} 
+		>{\centering}p{0.15\textwidth}
+	}
+	
+	
+	\caption{Tabella del tracciamento incremento-casi d’uso}\\
+	\rowcolorhead
+	\colorhead\textbf{Incremento} & \centering\colorhead\textbf{Casi d'uso}
+	\tabularnewline
+	\endfirsthead
+	\rowcolor{white}\caption[]{(continua)}\\
+	\rowcolorhead
+	\colorhead\textbf{Incremento} & \centering\colorhead\textbf{Casi d'uso}
+	\tabularnewline
+	\endhead
+	
+		%R---------------------------------------------------------
+	{Lucky Spin} & \centering UC20\\UC21\\
+	\tabularnewline
+	
+		%R---------------------------------------------------------
+	{Daily Rewards} & \centering UC24\\UC25\\
+	\tabularnewline
+
+		%R---------------------------------------------------------
+	{Milestone Unlock} & \centering UC20\\UC21\\
+	\tabularnewline
+		%R---------------------------------------------------------
+	{Leaderboard} & \centering UC22\\
+	\tabularnewline
+		%R---------------------------------------------------------
+	{Codice Invita Amici}\\ & \centering UC23\\
+	\tabularnewline
+		%R---------------------------------------------------------
+	{Visualizzazione Guida Introduttiva}\\ & \centering UC4\\
+	\tabularnewline
+		%R---------------------------------------------------------
+	{Minigioco} & \centering UC26\\
+	\tabularnewline
+		%R---------------------------------------------------------
+	{Gestione Prenotazioni}\\ & \centering UC11 \\ UC12\\
+	\tabularnewline
+	
+		%R---------------------------------------------------------
+	{Storico Prenotazioni}\\ & \centering UC13
+	\tabularnewline
+		%R---------------------------------------------------------
+	{Progress Bar}\\ & \centering UC16 \\ UC17\\
+	\tabularnewline
+
+	
+	\tabularnewline
+	
+\end{longtable}
+\counterwithin{table}{subsection}	
+\renewcommand{\arraystretch}{1}
+
 \pagebreak
 
 
@@ -102,7 +173,8 @@ Il periodo di Validazione e collaudo inizia il giorno successivo alla data di co
 Revisione di Qualifica e si conclude con la data di consegna in vista della Revisione di Accettazione. In questo periodo le attività principali sono:
 \begin{itemize}
 	\item \textbf{Validazione e Collaudo}: verranno eseguiti test mirati su possibili punti critici del prodotto finito e test generali per valutarne l'effettiva qualità;
-	\item \textbf{Manuale Sviluppatore}: viene redatto il documento \textit{Manuale Sviluppatore} atto a fornire tutte le informazioni necessarie al mantenimento, manutenzione e ampliamento del prodotto finale;
+	\item \textbf{Manuale Utente}:viene completato il documento atto a fornire istruzioni e indicazioni per l’utilizzo del prodotto;
+	\item \textbf{Manuale Sviluppatore}: viene completato il documento atto a fornire tutte le informazioni necessarie al mantenimento e l’ampliamento del prodotto finale;
 	\item \textbf{Incremento e Verifica}: se necessario vengono migliorati i 
 	documenti prodotti nelle fasi precedenti.
 \end{itemize}
