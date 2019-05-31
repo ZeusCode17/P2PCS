@@ -140,102 +140,62 @@ Il processo\glosp di fornitura determina le procedure e le risorse necessarie al
 		\item realizzare un prodotto finale che superi i test, che soddisfi i requisiti e le richieste della proponente.
 	\end{itemize}
 	\subsubsection{Descrizione}
-	Il processo di sviluppo si articola in:
+	Il processo di sviluppo si articola nei seguenti sottoprocessi:
 	\begin{itemize}
-		\item \textit{Analisi dei Requisiti};
+		\item Analisi dei requisiti;
+		\item Definizione del design architetturale;
 		\item Progettazione;
-		\item Codifica.
+		\item Codifica;
+		\item Integrazione;
+		\item Test di qualifica.
 	\end{itemize}
 	\subsubsection{Attività}
-		\paragraph{Analisi dei requisiti} \mbox{}\\ \mbox{}\\
+		\paragraph{Analisi dei Requisiti} \mbox{}\\ \mbox{}\\
 			\textbf{Scopo} \newline \newline
-			Gli analisti hanno il compito di redigere il documento di
-			\textit{Analisi dei Requisiti} che individua ed elenca dunque, i requisiti.
-			Lo scopo dei requisiti è quello di:
+			L'obbiettivo del processo è stabilire i requisiti degli elementi software del sistema.
+			\newline \newline
+			\textbf{Aspettative}\newline \newline
+			Come risultato di un buon processo di Analisi dei Requisiti si ha:
 			\begin{itemize}
-				\item definire lo scopo del lavoro;
-				\item fornire ai progettisti riferimenti precisi ed affidabili;
-				\item fissare le funzionalità e i requisiti concordati col cliente;
-				\item fornire  una  base  per  raffinamenti  successivi  al  fine  di  garantire  un miglioramento continuo del prodotto e del processo di sviluppo;
-				\item fornire ai verificatori riferimenti per l'attività di controllo dei test;
-				\item calcolare la mole di lavoro per tracciare dei riferimenti per una stima dei costi.
-			\end{itemize}
-			\textbf{Aspettative} \newline \newline
-			Obiettivo dell'attività è la creazione della documentazione formale contenente tutti i
-			requisiti richiesti dal proponente. \newline \newline
-			\textbf{Descrizione} \newline \newline
-			I requisiti si raccolgono secondo modalità predefinite:
+			\item i requisiti allocati agli elementi software del sistema e le loro interfacce sono definite;
+			\item i requisiti software vengono analizzati per verificare la loro correttezza e stabilità;
+			\item l'impatto dei requisiti software sull'ambiente operativo è stato compreso;
+			\item vengono stabilite consistenza e tracciabilità tra i requisiti software e quelli di sistema;
+			\item vengono definite le priorità nell'implementare i requisti software;
+			\item i requisiti software sono approvati e aggiornati se necessario
+			\item i cambiamenti al software sono valutati a livello di costo, tempo e impatto tecnico;
+			\item i requisiti software sono standardizzati e comunicati a tutte le parti affette.
+			\end{itemize} 
+			\textbf{Attività}  \mbox{}\\ \mbox{}\\
 			\begin{itemize}
-				\item lettura del capitolato\glo, analisi e approfondimento dello stesso;
-				\item confronto con il proponente;
-				\item confronto tra membri del team di progetto;
-				\item analisi di uno o più casi d'uso.  \\
-			\end{itemize}
-			\noindent
-			\subparagraph{Classificazione dei casi d'uso}
-			Rappresenta un diagramma che esprime un comportamento,
-			offerto o desiderato, sulla base di risultati osservabili.
-			Ogni caso d'uso dev'essere descritto con le seguenti informazioni:
+			\item Analisi dei requisiti software: per ogni parte del software questa attività consiste dei seguenti compiti:
 			\begin{itemize}
-				\item codice identificativo dei casi d'uso, nella forma \newline \newline
-						\centerline{\textbf{UC[codice\_padre].[codice\_figlio]}} \\
-						dove:
-					\begin{itemize}
-							\item \textbf{codice\_padre}: numero che identifica univocamente i casi d'uso;
-							\item \textbf{codice\_figlio}: numero progressivo che identifica i sottocasi. Può a sua volta includere altri livelli. \\
-					\end{itemize}
-				\item titolo, che deve descrivere sinteticamente il caso d'uso;
-				\item attori primari;
-				\item attori secondari (se sono presenti);
-				\item descrizione dettagliata del caso d'uso;
-				\item scenario principale;
-				\item scenario alternativo (se presente);
-				\item inclusioni (se presenti);
-				\item estensioni (se presenti);
-				\item specializzazioni (se presenti);
-				\item precondizione, ovvero le condizioni che necessariamente devono verificarsi prima del caso d'uso;
-				\item postcondizione, ovvero le condizioni che devono verificarsi successivamente al caso d'uso. \\
-			\end{itemize}
-			\noindent
-			
-			%\pagebreak
-			%esempio di caso d'uso?(immagine)
-			\noindent
-			\subparagraph{Classificazione dei requisiti}
-			Ogni requisito è composto dalla seguente struttura:
+			\item Lo sviluppatore deve stabilire e documentare i requisiti software ( attraverso la \textit{Analisi dei Requisiti}) descritti qui sotto:
 			\begin{itemize}
-				\item \textbf{codice identificativo}: ogni codice identificativo è univoco e conforme alla seguente codifica: \\
-				\centerline{\textbf{R[Tipologia][Importanza][Codice]}} \\ \\
-				Il significato delle cui voci è:
-				\begin{itemize}					
-					\item \textbf{Tipologia}: ogni requisito può assumere uno dei seguenti valori:
-					\begin{itemize}
-						\item \textit{F}: funzionale;
-						\item \textit{V}: vincolo.
-						\item \textit{Q}: qualitativo;
-						\item \textit{P}: prestazionale.		
-					\end{itemize}
-				\item \textbf{Importanza}: ogni requisito può assumere uno dei seguenti valori:
-				\begin{itemize}
-					\item \textit{O}: requisito obbligatorio, ovvero irrinunciabile per gli stakeholder\glo;
-					\item \textit{D}: requisito desiderabile, ovvero non strettamente necessari ma a valore aggiunto riconoscibile;
-					\item \textit{F}: requisito facoltativo, ovvero relativamente utile oppure contrattabile più avanti nel progetto.	
-				\end{itemize}
-					\item \textbf{Codice}: è un identificatore univoco del requisito in forma gerarchica padre/figlio.
-				\end{itemize}
-				\item \textbf{classificazione}: viene riportata l'importanza del requisito. Sebbene questa sia un'informazione ridondante ne facilita la lettura;
-				\item \textbf{descrizione}: descrizione breve ma completa del requisito, meno ambigua possibile;
-				\item \textbf{fonti}: ogni requisito può derivare da una o più tra le seguenti opzioni:
-				\begin{itemize}
-					\item \textit{capitolato\glo}: si tratta di un requisito individuato dalla lettura del capitolato;
-					\item \textit{interno}: si tratta di un requisito che gli analisti hanno ritenuto opportuno aggiungere;
-					\item \textit{caso d'uso}: il requisito è estrapolato da uno o più casi d'uso. In questo caso deve essere riportato il codice univoco del caso d'uso;
-					\item \textit{verbale}: si tratta di un requisito individuato in seguito ad una richiesta di chiarimento con il proponente. Tali informazioni sono riportate nei verbali in cui ogni requisito individuato è segnato da un codice presente nella tabella dei tracciamenti. \\
-				\end{itemize}
+			\item Specifiche funzionali e di capacità, includendo prestazioni, caratteristiche fisiche, e ambienti all'interno dei quali il software deve funzionare;
+			\item interfacce esterne;
+			\item requisiti di qualifica;
+			\item specifiche di salvaguardia, incluse quelle relative alla manutenzione,influenza sull'ambiente e rischi per la persona;
+			\item specifiche di sicurezza,incluse quelle relative alla compromissione di informazioni sensibili;
+			\item specifiche ingegneristiche dei fattori umani, inclusi quelli relativi alle operazioni manuali,equipaggiamento necessario,limitazioni sul personale, aree che necessitano un elevato concentrazione umana, sensibili agli errori;
+			\item definizione dei dati e dei database;
+			\item installazione e requisiti di accettazione del prodotto software consegnato; 
+			\item requisiti del manuale utente;
+			\item requisiti di esecuzione;
+			\item requisiti di manutenzione.
 			\end{itemize}
-
-			\noindent{\textbf{UML}} \newline \newline
-			I diagrammi UML\glosp devono essere realizzati usando la versione del linguaggio v2.0. Lo strumento per la creazione dei diagrammi UML che il gruppo utilizzerà per compiere l'analisi dei requisiti è l'applicazione web \textit{Draw.io}. 
+			\item Per una corretta valutazione dei requisiti lo sviluppatore deve attenersi a questi criteri, documentando i risultati delle valutazioni:
+			\begin{itemize}
+			\item tracciabilità dei requisiti di sistema e del design di sistema;
+			\item consistenza esterna con i requisiti di sistema;
+			\item consistenza interna;
+			\item testabilità;
+			\item fattibilità del software design;
+			\item fattibilità delle operazioni di manutenzione;
+			\end{itemize}
+			\end{itemize}
+			\end{itemize}
+			\paragraph{Design architetturale del software} 
 
 		\paragraph{Progettazione} \mbox{}\\ \mbox{}\\
 			\textbf{Scopo} \newline \newline
