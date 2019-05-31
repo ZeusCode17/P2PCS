@@ -2,9 +2,9 @@
 \subsubsection{UC24 - Daily rewards}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
-	\item \textbf{Descrizione}: l'applicazione rende disponibile una tabella che illustra i premi giornalieri del mese corrente. La tabella è organizzata sotto forma di calendario, in cui associa ad ogni giorno del mese corrente un premio.
-	Sotto alla tabella è presente un bottone "Ritira premio" che si disattiva dopo il primo utilizzo.\\
-	Inoltre, i premi ottenibili possono includere:
+	\item \textbf{Descrizione}: l'applicazione rende disponibile una tabella che illustra i premi giornalieri del mese corrente. La tabella è organizzata sotto forma di calendario, in cui associa ad ogni giorno del mese corrente un premio. Ogni giorno del mese ha un premio riscattabile solo se si ha riscattato il premio del giorno precedente altrimenti rimarrà impostato il premio non ritirato. L'avanzamento da un premio all'altro è previsto solo in caso di ritiro del premio precendente. 
+	Sotto alla tabella è presente un bottone "Ritira premio" che si disattiva dopo il primo utilizzo fino alla mezzanotte del giorno corrente.\\
+	I premi ottenibili possono includere:
 	\begin{itemize}
 		\item sconti su e-commerce o buoni spesa;
 		\item sconto sul prossimo viaggio con \textit{GaiaGo};
@@ -13,14 +13,14 @@
 		\item bonus di punti esperienza;
 		\item oggetti virtuali esclusivi per il minigioco.
 	\end{itemize}
-	\item \textbf{Scenario principale}: l'utente preme l'icona relativa alla tabella dei Daily Rewards da cui può visualizzare i premi disponibili per il mese corrente e decidere di ritirare il premio del giorno corrente [UC25].
+	\item \textbf{Scenario principale}: l'utente preme l'icona relativa alla tabella dei Daily Rewards da cui può visualizzare i premi disponibili per il mese corrente e decidere di ritirare il corrispettivo premio [UC25].
 	Ogni premio può essere ritirato solo una volta;
 	\item \textbf{Estensioni}: 
 		\begin{itemize}
 			\item ritiro del premio giornaliero [UC25].
 		\end{itemize}
 	\item \textbf{Precondizione}: l'utente ha premuto l'icona Daily Rewards;
-	\item \textbf{Postcondizione}: l'utente ha visualizzato i premi disponibili per il mese corrente e può aver ritirato il premio del giorno corrente se non lo ha precedentemente fatto [UC25]. 
+	\item \textbf{Postcondizione}: l'utente ha visualizzato i premi disponibili per il mese corrente e può aver ritirato il premio corrispettivo se non lo ha precedentemente fatto [UC25]. 
 \end{itemize} 
 \begin{figure}[h]
 	\includegraphics[width=13.2cm]{res/images/UC24Daily.png}
