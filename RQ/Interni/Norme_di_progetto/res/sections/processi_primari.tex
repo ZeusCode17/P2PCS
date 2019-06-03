@@ -195,6 +195,67 @@ Il processo\glosp di fornitura determina le procedure e le risorse necessarie al
 			\end{itemize}
 			\end{itemize}
 			\end{itemize}
+			\subparagraph{Classificazione dei casi d'uso}
+			Rappresenta un diagramma che esprime un comportamento,
+			offerto o desiderato, sulla base di risultati osservabili.
+			Ogni caso d'uso dev'essere descritto con le seguenti informazioni:
+			\begin{itemize}
+				\item codice identificativo dei casi d'uso, nella forma \newline \newline
+						\centerline{\textbf{UC[codice\_padre].[codice\_figlio]}} \\
+						dove:
+					\begin{itemize}
+							\item \textbf{codice\_padre}: numero che identifica univocamente i casi d'uso;
+							\item \textbf{codice\_figlio}: numero progressivo che identifica i sottocasi. Può a sua volta includere altri livelli. \\
+					\end{itemize}
+				\item titolo, che deve descrivere sinteticamente il caso d'uso;
+				\item attori primari;
+				\item attori secondari (se sono presenti);
+				\item descrizione dettagliata del caso d'uso;
+				\item scenario principale;
+				\item scenario alternativo (se presente);
+				\item inclusioni (se presenti);
+				\item estensioni (se presenti);
+				\item specializzazioni (se presenti);
+				\item precondizione, ovvero le condizioni che necessariamente devono verificarsi prima del caso d'uso;
+				\item postcondizione, ovvero le condizioni che devono verificarsi successivamente al caso d'uso. \\
+			\end{itemize}
+			\noindent
+			
+			%\pagebreak
+			%esempio di caso d'uso?(immagine)
+			\noindent
+			\subparagraph{Classificazione dei requisiti}
+			Ogni requisito è composto dalla seguente struttura:
+			\begin{itemize}
+				\item \textbf{codice identificativo}: ogni codice identificativo è univoco e conforme alla seguente codifica: \\
+				\centerline{\textbf{R[Tipologia][Importanza][Codice]}} \\ \\
+				Il significato delle cui voci è:
+				\begin{itemize}					
+					\item \textbf{Tipologia}: ogni requisito può assumere uno dei seguenti valori:
+					\begin{itemize}
+						\item \textit{F}: funzionale;
+						\item \textit{V}: vincolo.
+						\item \textit{Q}: qualitativo;
+						\item \textit{P}: prestazionale.		
+					\end{itemize}
+				\item \textbf{Importanza}: ogni requisito può assumere uno dei seguenti valori:
+				\begin{itemize}
+					\item \textit{O}: requisito obbligatorio, ovvero irrinunciabile per gli stakeholder\glo;
+					\item \textit{D}: requisito desiderabile, ovvero non strettamente necessari ma a valore aggiunto riconoscibile;
+					\item \textit{F}: requisito facoltativo, ovvero relativamente utile oppure contrattabile più avanti nel progetto.	
+				\end{itemize}
+					\item \textbf{Codice}: è un identificatore univoco del requisito in forma gerarchica padre/figlio.
+				\end{itemize}
+				\item \textbf{classificazione}: viene riportata l'importanza del requisito. Sebbene questa sia un'informazione ridondante ne facilita la lettura;
+				\item \textbf{descrizione}: descrizione breve ma completa del requisito, meno ambigua possibile;
+				\item \textbf{fonti}: ogni requisito può derivare da una o più tra le seguenti opzioni:
+				\begin{itemize}
+					\item \textit{capitolato\glo}: si tratta di un requisito individuato dalla lettura del capitolato;
+					\item \textit{interno}: si tratta di un requisito che gli analisti hanno ritenuto opportuno aggiungere;
+					\item \textit{caso d'uso}: il requisito è estrapolato da uno o più casi d'uso. In questo caso deve essere riportato il codice univoco del caso d'uso;
+					\item \textit{verbale}: si tratta di un requisito individuato in seguito ad una richiesta di chiarimento con il proponente. Tali informazioni sono riportate nei verbali in cui ogni requisito individuato è segnato da un codice presente nella tabella dei tracciamenti. \\
+				\end{itemize}
+			\end{itemize}
 			\paragraph{Design architetturale del software} \mbox{}\\ \mbox{}\\
 			\textbf{Scopo}\newline \newline
 			Lo scopo del processo di design architetturale è fornire un design per il software il quale implementa i requisiti e può essere verificato attraverso essi.
