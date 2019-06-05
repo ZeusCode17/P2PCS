@@ -144,7 +144,7 @@ Il processo\glosp di fornitura determina le procedure e le risorse necessarie al
 	\begin{itemize}
 		\item Analisi dei requisiti;
 		\item Definizione del design architetturale;
-		\item Progettazione;
+		\item Definizione del design architetturale dettagliato;
 		\item Codifica;
 		\item Integrazione;
 		\item Test di qualifica.
@@ -195,18 +195,122 @@ Il processo\glosp di fornitura determina le procedure e le risorse necessarie al
 			\end{itemize}
 			\end{itemize}
 			\end{itemize}
-			\paragraph{Design architetturale del software} 
-
-		\paragraph{Progettazione} \mbox{}\\ \mbox{}\\
-			\textbf{Scopo} \newline \newline
-			L'attività di progettazione definisce, in funzione dei requisiti specificati nel documento \textit{Analisi dei Requisiti}, le caratteristiche del prodotto software richiesto. Il compito di questa fase è di definire una soluzione del problema che sia soddisfacente per tutti gli stakeholder\glo. La progettazione segue il procedimento inverso rispetto all'\textit{Analisi dei Requisiti} che divide il problema in parti per capirne completamente il dominio applicativo. La progettazione, infatti, rimette insieme le parti specificando le funzionalità dei sottosistemi in modo da ricondurre ad un'unica possibile soluzione. \newline \newline
-			\textbf{Aspettative} \newline \newline
-			Il processo\glosp ha come risultato la realizzazione dell'architettura del sistema. \newline \newline
-			\textbf{Descrizione} \newline \newline
-			Le parti principali sono due:
+			\subparagraph{Classificazione dei casi d'uso}
+			Rappresenta un diagramma che esprime un comportamento,
+			offerto o desiderato, sulla base di risultati osservabili.
+			Ogni caso d'uso dev'essere descritto con le seguenti informazioni:
 			\begin{itemize}
-				\item \textbf{Technology baseline}\glo: contiene le specifiche della progettazione ad alto livello del prodotto e delle sue componenti, l'elenco dei diagrammi UML\glosp che saranno utilizzati per la realizzazione dell'architettura e i test di verifica;
-				\item \textbf{Product baseline}\glo: dettaglia ulteriormente l'attività di progettazione, integrando ciò che è riportato nella Technology baseline. Inoltre definisce i test necessari alla verifica.
+				\item codice identificativo dei casi d'uso, nella forma \newline \newline
+						\centerline{\textbf{UC[codice\_padre].[codice\_figlio]}} \\
+						dove:
+					\begin{itemize}
+							\item \textbf{codice\_padre}: numero che identifica univocamente i casi d'uso;
+							\item \textbf{codice\_figlio}: numero progressivo che identifica i sottocasi. Può a sua volta includere altri livelli. \\
+					\end{itemize}
+				\item titolo, che deve descrivere sinteticamente il caso d'uso;
+				\item attori primari;
+				\item attori secondari (se sono presenti);
+				\item descrizione dettagliata del caso d'uso;
+				\item scenario principale;
+				\item scenario alternativo (se presente);
+				\item inclusioni (se presenti);
+				\item estensioni (se presenti);
+				\item specializzazioni (se presenti);
+				\item precondizione, ovvero le condizioni che necessariamente devono verificarsi prima del caso d'uso;
+				\item postcondizione, ovvero le condizioni che devono verificarsi successivamente al caso d'uso. \\
+			\end{itemize}
+			\noindent
+			
+			%\pagebreak
+			%esempio di caso d'uso?(immagine)
+			\noindent
+			\subparagraph{Classificazione dei requisiti}
+			Ogni requisito è composto dalla seguente struttura:
+			\begin{itemize}
+				\item \textbf{codice identificativo}: ogni codice identificativo è univoco e conforme alla seguente codifica: \\
+				\centerline{\textbf{R[Tipologia][Importanza][Codice]}} \\ \\
+				Il significato delle cui voci è:
+				\begin{itemize}					
+					\item \textbf{Tipologia}: ogni requisito può assumere uno dei seguenti valori:
+					\begin{itemize}
+						\item \textit{F}: funzionale;
+						\item \textit{V}: vincolo.
+						\item \textit{Q}: qualitativo;
+						\item \textit{P}: prestazionale.		
+					\end{itemize}
+				\item \textbf{Importanza}: ogni requisito può assumere uno dei seguenti valori:
+				\begin{itemize}
+					\item \textit{O}: requisito obbligatorio, ovvero irrinunciabile per gli stakeholder\glo;
+					\item \textit{D}: requisito desiderabile, ovvero non strettamente necessari ma a valore aggiunto riconoscibile;
+					\item \textit{F}: requisito facoltativo, ovvero relativamente utile oppure contrattabile più avanti nel progetto.	
+				\end{itemize}
+					\item \textbf{Codice}: è un identificatore univoco del requisito in forma gerarchica padre/figlio.
+				\end{itemize}
+				\item \textbf{classificazione}: viene riportata l'importanza del requisito. Sebbene questa sia un'informazione ridondante ne facilita la lettura;
+				\item \textbf{descrizione}: descrizione breve ma completa del requisito, meno ambigua possibile;
+				\item \textbf{fonti}: ogni requisito può derivare da una o più tra le seguenti opzioni:
+				\begin{itemize}
+					\item \textit{capitolato\glo}: si tratta di un requisito individuato dalla lettura del capitolato;
+					\item \textit{interno}: si tratta di un requisito che gli analisti hanno ritenuto opportuno aggiungere;
+					\item \textit{caso d'uso}: il requisito è estrapolato da uno o più casi d'uso. In questo caso deve essere riportato il codice univoco del caso d'uso;
+					\item \textit{verbale}: si tratta di un requisito individuato in seguito ad una richiesta di chiarimento con il proponente. Tali informazioni sono riportate nei verbali in cui ogni requisito individuato è segnato da un codice presente nella tabella dei tracciamenti. \\
+				\end{itemize}
+			\end{itemize}
+			\paragraph{Design architetturale del software} \mbox{}\\ \mbox{}\\
+			\textbf{Scopo}\newline \newline
+			Lo scopo del processo di design architetturale è fornire un design per il software il quale implementa i requisiti e può essere verificato attraverso essi.
+			\newline \newline
+			\textbf{Aspettative}\newline \newline
+			Come risultato di un buon processo di design architetturale si ha:
+			\begin{itemize}
+			\item il design architetturale del software è sviluppato e standardizzato in modo da descrivere le i componenti software che implementano i requisiti;
+			\item le interfacce interne ed esterno sono definite;
+			\item consistenza e tracciabilità sono stabilite tra i requisiti software e design.
+			\end{itemize}
+			\textbf{Attività}\newline \newline
+			Il progetto deve implementare la seguente attività, seguendo le procedure di organizzazione applicabili:\newline \newline
+			\textbf{Design architetturale del software}\newline \newline
+			Per ogni componente software questa attività consiste dei seguenti compiti, svolti dal programmatore:
+			\newline \newline
+			\begin{itemize}
+			\item trasformare i requisiti del software in un' architettura che descrive il suo la sua struttura ad alto livello e ne identifica i suoi componenti. Si deve inoltre assicurare che tutti i requisiti per la parte software siano assegnati alla componente software corrispondente e ulteriormente raffinato per semplificare il desing dettagliato. Tale architettura va descritta nel \textit{Piano di Progetto};
+			\item sviluppare e documentare un design di alto livello sia per le interfacce esterne alla componente software che per l'interazione tra le varie componenti del software stesso;
+			\item sviluppare un design per il database;
+			\item sviluppare una versione preliminare del manuale utilizzatore;
+			\item definire e documentare i requisiti preliminari per i test e il programma per l'integrazione software;
+			\item valutare l'architettura della componente software, la sua interfaccia e il design del database considerando i seguenti criteri, documentandone i risultati:
+			\begin{itemize}
+			\item tracciabilità dei requisiti;
+			\item consistenza esterna dei requisiti;
+			\item consistenza interna tra le componenti software;
+			\item appropriatezza dei metodi e degli standard usati per il design;
+			\item fattibilità del design dettagliato;
+			\item fattibilità delle operazioni di manutenzione.
+			\end{itemize}
+			\subparagraph{Technology baseline}\glo: contiene le specifiche della progettazione ad alto livello del prodotto e delle sue componenti, l'elenco dei diagrammi UML\glosp che saranno utilizzati per la realizzazione dell'architettura e i test di verifica;\newline \newline
+			Redatta dal progettista, dovrà includere:
+			\begin{itemize}
+				\item \textbf{diagrammi UML\glo};
+				\item \textbf{tecnologie utilizzate}: devono essere descritte le tecnologie adottate specificandone l'utilizzo nel progetto, i vantaggi e gli svantaggi;
+				\item \textbf{design pattern}: devono essere descritti i design pattern\glosp utilizzati per realizzare l'architettura. Ogni design pattern deve essere accompagnato da una descrizione ed un diagramma, che ne esponga il significato e la struttura;
+				\item \textbf{tracciamento delle componenti}: ogni requisito deve riferirsi al componente che lo soddisfa;
+				\item \textbf{test di integrazione}: l'unione delle parti, intese come classi di verifica, permette di verificare che ogni componente del sistema funzioni nella maniera voluta.
+			\end{itemize}
+			\subparagraph{Definizione dei package\glosp}
+			I package, individuati all'interno dell'architettura devono rispettare il seguente formalismo:\newline \newline			\centerline{\textbf{indirizzo\textunderscore package::sviluppatore::applicazione::package::sottopackage::[...]}}\newline
+			Dove:
+			\begin{itemize}
+			\item \textbf{indirizzo\textunderscore package}: indica l'indirizzo del package;
+			\item \textbf{sviluppatore}: chi ha sviluppato il package;
+			\item \textbf{applicazione}: indica il nome dell'applicazione stessa;
+			\item \textbf{package}: rappresenta il nome di un package padre il quale avrà all'interno classi oppure altri package;
+			\item \textbf{sottopackage}: rappresenta il package figlio, racchiuso all'interno di un package padre. Ogni sottopackage potrebbe inoltre essere padre di un altro sottopackage e così via.
+			\end{itemize}
+			Per ogni package vegono definiti:
+			\begin{itemize}
+			\item \textbf{Descrizione}: una breve descrizione del package in questione;
+			\item \textbf{Package contenuti}: un elenco delle altre componenti contenute all'interno del package;
+			\item \textbf{Framework\glosp esterni}: le interazioni del package in questione con altre componenti esterne.
 			\end{itemize}
 			\subparagraph{Diagrammi UML}
 			Per documentare prodotti e componenti individuati, sarà necessario ricorrere a dei diagrammi UML\glo, necessari per formalizzare gli aspetti descritti in modo testuale. Durante la Technology baseline, sarà necessario ricorrere a diagrammi dei componenti che hanno i seguenti scopi:
@@ -230,39 +334,45 @@ individuati all'interno di ciascun prodotto software.
 						\item descrivere le relazioni che intercorrono, in termini di messaggi, tra attori, oggetti ed entità del sistema rappresentato.
 					\end{itemize}						
 			\end{itemize}
-			\subparagraph{Technology baseline}
-			Redatta dal progettista, dovrà includere:
-			\begin{itemize}
-				\item \textbf{diagrammi UML\glo};
-				\item \textbf{tecnologie utilizzate}: devono essere descritte le tecnologie adottate specificandone l'utilizzo nel progetto, i vantaggi e gli svantaggi;
-				\item \textbf{design pattern}: devono essere descritti i design pattern\glosp utilizzati per realizzare l'architettura. Ogni design pattern deve essere accompagnato da una descrizione ed un diagramma, che ne esponga il significato e la struttura;
-				\item \textbf{tracciamento delle componenti}: ogni requisito deve riferirsi al componente che lo soddisfa;
-				\item \textbf{test di integrazione}: l'unione delle parti, intese come classi di verifica, permette di verificare che ogni componente del sistema funzioni nella maniera voluta.
 			\end{itemize}
-			\subparagraph{Product baseline}
+			\paragraph{Design dettagliato del software} \mbox{}\\ \mbox{}\\
+			\textbf{Scopo}\newline \newline
+			Lo scopo del design dettagliato del software è fornire un design per il software il quale implementa i requisiti e può essere verificato tramite essi e l'architettura è abbastanza dettagliata da permettere la codifica e il testing.\newline \newline
+			\textbf{Aspettative}\newline \newline
+			Come risultato di un buon processo di design dettagliato del software si ha:
+			\begin{itemize}
+			\item il design dettagliato di ogni componente, il quale descrive le unità software da costruire, è sviluppato;
+			\item le interfacce esterne di ogni unità sono definite;
+			\item consistenza e tracciabilità sono stabilite tra il design dettagliato, requisiti e design architetturale.
+			\end{itemize}
+			\textbf{Attività}\newline \newline
+			Il progetto deve implementare la seguente attività:\newline \newline
+			\textbf{Design dettagliato del software}\newline \newline
+			Per ogni parte del software questa attività è così composta:
+			\begin{itemize}
+			\item lo sviluppatore deve sviluppare un design dettagliato di ogni componente software di ogni modulo software. Le componenti software devono essere scomposte in livelli inferiori contenti unità software che possano essere codificate, compilate e testate. Deve essere inoltre garantito che tutti i requisiti siano allocati dalle componenti alle unità software;
+			\item lo sviluppatore deve sviluppare e documentare un design dettagliato per le interfacce esterne al modulo software, tra diverse componenti software, e tra diverse unità software. Il design dettagliato delle interfacce deve permettere la codifica senza la necessità di ulteriori informazioni;
+			\item lo sviluppare deve sviluppare e documentare un design dettagliato per il database;
+			\item lo sviluppatore deve aggiornare la documentazione dell'utilizzatore se necessario;
+			\item lo sviluppatore deve definire e documentare dei test dei requisiti e programmare il testing delle unità software. I requisiti dei test devono includere lo stress test della unità software  ai limiti dei suoi requisiti;
+			\item lo sviluppatore deve aggiornare i requisiti dei test e la programmazione per l'integrazione;
+			\item lo sviluppatore deve valutare il design e i requisiti dei test di dettaglio seguendo i seguenti criteri:
+			\begin{itemize}
+			\item tracciabilità dei requisti del modulo software;
+			\item consistenza esterna con il design architetturale;
+			\item consistenza interna tra componenti e unità software;
+			\item appropriatezza dei metodi di design e standard utilizzati;
+			\item fattibilità del testing;
+			\item fattibilità delle operazioni di manutenzione.
+			\end{itemize}
+			\subparagraph{Product baseline}\glo: dettaglia ulteriormente l'attività di progettazione, integrando ciò che è riportato nella Technology baseline. Inoltre definisce i test necessari alla verifica.\newline \newline
 			A carico del progettista c'è anche la Product baseline che si sofferma su diversi aspetti tra i quali:
 			\begin{itemize}
 				\item \textbf{definizione delle classi}: ogni classe deve essere descritta in modo da spiegarne in maniera esaustiva lo scopo e le funzionalità, evitando ridondanze;
 				\item \textbf{tracciamento delle classi}: ogni requisito deve essere tracciato in modo da garantire che per ognuno esista una classe che lo soddisfi. Questa operazione è fondamentale per permettere di risalire alle classi ad esso associate;
 				\item \textbf{test di unità}: devono essere definiti al fine di verificare che le parti funzionino individualmente nel modo stabilito.
-			\end{itemize}
-			\subparagraph{Definizione dei package\glosp}
-			I package, individuati all'interno dell'architettura devono rispettare il seguente formalismo:\newline \newline			\centerline{\textbf{indirizzo\textunderscore package::sviluppatore::applicazione::package::sottopackage::[...]}}\newline
-			Dove:
-			\begin{itemize}
-			\item \textbf{indirizzo\textunderscore package}: indica l'indirizzo del package;
-			\item \textbf{sviluppatore}: chi ha sviluppato il package;
-			\item \textbf{applicazione}: indica il nome dell'applicazione stessa;
-			\item \textbf{package}: rappresenta il nome di un package padre il quale avrà all'interno classi oppure altri package;
-			\item \textbf{sottopackage}: rappresenta il package figlio, racchiuso all'interno di un package padre. Ogni sottopackage potrebbe inoltre essere padre di un altro sottopackage e così via.
-			\end{itemize}
-			Per ogni package vegono definiti:
-			\begin{itemize}
-			\item \textbf{Descrizione}: una breve descrizione del package in questione;
-			\item \textbf{Package contenuti}: un elenco delle altre componenti contenute all'interno del package;
-			\item \textbf{Framework\glosp esterni}: le interazioni del package in questione con altre componenti esterne.
-			\end{itemize}
-			\subparagraph{Definizione delle classi}
+				\end{itemize}
+				\subparagraph{Definizione delle classi}
 			Le classi rappresentano il massimo dettaglio raggiungibile nell'architettura. Le classi devono avere un codice identificativo univoco che segue il seguente formalismo:\newline
 			\centerline{\textbf{indirizzo\textunderscore package::sviluppatore::applicazione::package::sottopackage::[...]::classe}}\newline
 			Dove:
@@ -279,6 +389,8 @@ individuati all'interno di ciascun prodotto software.
 			\item \textbf{Classi ereditate}: lista delle classi da cui deriva la classe;
 			\item \textbf{Sottoclassi}: lista delle classi che derivano dalla classe in esame.
 			\end{itemize}
+			\end{itemize}
+								
 		\paragraph{Codifica} \mbox{}\\ \mbox{}\\
 			\textbf{Scopo} \newline \newline
 			Questa attività ha come scopo quello di normare l'effettiva realizzazione del prodotto software richiesto. In questa fase si concretizza la soluzione attraverso la programmazione. I programmatori dovranno attenersi a queste norme durante la fase di programmazione ed implementazione. \newline \newline
@@ -311,6 +423,8 @@ individuati all'interno di ciascun prodotto software.
 			L'uso della ricorsione va evitato quanto più possibile in  quanto  potrebbe
 			indurre  ad  una  maggiore  occupazione  di  memoria  rispetto  a  soluzioni
 			iterative.
+			\paragraph{Integrazione}
+			
 	\subsubsection{Strumenti}
 	Di seguito sono elencati gli strumenti utilizzati dal gruppo durante il progetto per il processo di sviluppo.	
 		\paragraph{PragmaDB} \mbox{}\\ \mbox{}\\
