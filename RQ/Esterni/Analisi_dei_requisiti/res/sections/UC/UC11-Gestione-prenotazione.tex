@@ -11,12 +11,13 @@
 	\item \textbf{Descrizione}: agli utenti autenticati è resa disponibile una maschera che presenta la lista di tutte le sue prenotazioni ancora attive, dalla quale l'utente può scegliere di effettuare operazioni di gestione su ognuna di esse;
 	per ogni prenotazione presente nella lista saranno visualizzati dei dettagli riassuntivi, che sono:
 	\begin{itemize}
-		\item nome del proprietario del veicolo o dell'usufruente;
-		\item data;
-		\item fascia oraria;
+		%\item nome del proprietario del veicolo o dell'usufruente;
 		\item marca del veicolo prenotato;
 		\item modello del veicolo prenotato;
-		\item anno d'immatricolazione del veicolo prenotato.
+		\item stato della prenotazione:
+		\item data;
+		\item fascia oraria;
+		%\item anno d'immatricolazione del veicolo prenotato.
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente autenticato effettua operazioni di gestione di una prenotazione. Esse comprendono:
 	\begin{itemize}
@@ -42,10 +43,12 @@
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'utente visualizza i dettagli della prenotazione scelta dalla maschera di presentazione delle prenotazioni, ciò gli permette di visualizzare:
 	\begin{itemize}
-		\item nome del proprietario del veicolo o dell'usufruente;
+		%\item nome del proprietario del veicolo o dell'usufruente;
+		\item la marca del veicolo prenotato;
+		\item il modello del veicolo prenotato;
+		\item lo stato della prenotazione
 		\item la data;
-		\item la fascia oraria;
-		\item il veicolo prenotato.
+		\item la fascia oraria.
 	\end{itemize}
 	Inoltre se presenti, verranno visualizzati anche:
 	\begin{itemize}		
@@ -59,7 +62,7 @@
 \subsubsection{UC11.2 - Cancellazione prenotazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: usufruente del veicolo;
-	\item \textbf{Descrizione}: l'utente usufruente cancella la prenotazione selezionata;
+	\item \textbf{Descrizione}: l'utente usufruente annulla la prenotazione selezionata;
 	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Attraverso l'apposito pulsante l'utente cancellerà la prenotazione effettuata;
 	\item \textbf{Precondizione}: l'utente ha premuto il pulsante per la cancellazione delle prenotazione precedentemente selezionata;
 	\item \textbf{Postcondizione}: l'utente ha annullato correttamente la prenotazione selezionata.
