@@ -1,18 +1,114 @@
 \section{Resoconto attività di verifica}
-In questa sezione vengono descritti e analizzati gli esiti delle attività
-di verifica svolte su tutti i documenti che vengono consegnati nelle varie 
-revisioni di avanzamento del progetto.
 
-\subsection{Revisione dei requisiti}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Riassunto delle attività di verifica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\subsubsection{Analisi statica dei documenti}
-%L'analisi dei documenti mediante \textit{Walkthrough}\glo{} ha portato 
-%all'individuazione di alcuni errori frequenti a partire dai quali è stata 
-%stilata una lista di controllo interna.
+	\subsubsection{Revisione dei requisiti}
+	
+	Nel periodo precedente alla consegna di tale revisione sono stati verificati i documenti ed i processi. \\
+	La verifica svolta sui documenti è avvenuta seguendo le indicazioni delle Norme di Progetto v3.0.0 e misurando la metrica descritta in §2.3.3.3.2. \\
+	L'attività di walkthrough\glosp sui documenti ha evidenziato una serie di anomalie, in questo modo è stato possibile stilare la lista di anomalie frequenti (§3.3.3.1.1, Norme di Progetto v3.0.0) che si potrà controllare tramite Inspection\glosp. \\
+	Il tracciamento dei requisiti è stato effettuato tramite l'utilizzo del software PragmaDB. \\
+	In questa revisione non è stato possibile valutare la qualità del prodotto, data la sua non implementazione che avverrà nelle fasi successive.
+	
+	\subsubsection{Revisione di progettazione}
+	
+	Nel periodo precedente alla consegna di tale revisione sono stati verificati i documenti ed i processi. \\
+	La verifica svolta sui documenti è avvenuta seguendo le indicazioni delle Norme di Progetto v3.0.0 e misurando le metriche adottate. È stata effettuata anche la misurazione delle metriche mancanti nella fase di RR. \\
+	In assenza di strumenti automatici, i \textit{Verificatori} si sono impegnati nella correzione degli errori di stile tipografico segnalati nell'esito della revisione dei requisiti.
+	
+	\subsubsection{Revisione di qualifica}
+	\paragraph{Product Baseline}
+	In vista dell'incontro di presentazione della Product Baseline, i \textit{Verificatori} hanno svolto le attività di verifica effettuando le misurazioni delle metriche di prodotto e verificando i documenti prodotti per la Product Baseline.
+			
+	\paragraph{Considerazioni generali RQ}
+	Nel periodo precedente alla consegna della revisione di qualifica sono stati verificati i documenti, processi e qualità del prodotto. \\
+	L'attività di verifica svolta dai \textit{Verificatori} è avvenuta come determinato dal Piano di Progetto v3.0.0, seguendo le indicazioni delle Norme di Progetto v3.0.0 e misurando le metriche indicate in §2 e §3.  Successivamente sono state effettuate le misurazioni delle metriche relative ai documenti. \\
+	Per velocizzare l'attività di misurazione, ai \textit{Programmatori} è stato chiesto di tenere conto delle metriche riguardanti lo sviluppo del codice, aggiornando ad ogni incremento lo stato di calcolo delle metriche relative alla porzione di codice implementata .
+		
+	\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Dettaglio dell'esito delle revisioni e relative modifiche}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\subsubsection{Revisione dei requisiti}
+		In generale, risulta che i documenti abbiano un buona struttura ma che siano scarsi per contenuti. \\
+		Il gruppo si è impegnato a integrare i contenuti ritenuti insoddisfacenti e ad aggiungere maggiore dettaglio nella loro descrizione.\\ 
+		 Di seguito vengono descritte brevemente le modifiche apportate in base alle segnalazioni ricevute:
+	\begin{itemize}
+		\item corrette le difformità nei titoli dei vari documenti;
+		\item \textbf{Norme di progetto}: 
+			\begin{itemize}	
+				\item inserito lo standard ISO/IEC 12207 come riferimento informativo;
+				\item modificato §2.1 del Processo di Fornitura, descrivendo le attività previste dallo standard ISO/IEC 12207 di interesse per il gruppo;
+				\item aggiunto maggiore dettaglio a §2.2 del Processo di Sviluppo;
+				\item aggiunto §4.2 che tratta il processo di Fornitura.
+			\end{itemize}
+		\item \textbf{Analisi dei Requisiti}: 
+			\begin{itemize}
+				\item corretti tutti i casi d'uso secondo le indicazioni ricevute;
+				\item aggiunto UC24, UC25, UC26 e UC27 per completare il tracciamento requisiti - casi d'uso.
+			\end{itemize} 
+		\item \textbf{Piano di Progetto}: 
+			\begin{itemize}
+				\item modificata la pianificazione delle fasi successive all'RR, cercando di seguire il modello incrementale;
+				\item modificato il titolo di §6 in "Consuntivo di periodo" e inserito paragrafo "Conclusioni" con relativa analisi e considerazioni del periodo a precedere.
+			\end{itemize}
+		\item \textbf{Piano di Qualifica}: 
+			\begin{itemize}
+				\item stabiliti obiettivi e strategie per garantire la qualità del processo di Fornitura, in seguito all'analisi dello standard ISO/IEC 12207:1995 §5.2;
+				\item inserita tabella riportante gli esiti delle metriche calcolabile in fase RR.
+			\end{itemize}
+	\end{itemize}
 
-\subsubsection{Qualità di processo}
+	\subsubsection{Revisione di progettazione}
+	
+		Si riscontrano vari problemi di pianificazione e controllo della qualità. \\
+		Il gruppo si è impegnato a integrare i contenuti ritenuti insoddisfacenti.\\ 
+		 Di seguito vengono descritte brevemente le modifiche apportate in base alle segnalazioni ricevute:
+	\begin{itemize}
+		\item rivisti comandi \LaTeX  che generano la struttura dei documenti;
+		\item richiesto ai membri del gruppo di aggiungere i riferimenti a testi e l'attribuzione delle fonti per le parti redatte;
+		\item inconsistenze  nei titoli?
+		\item \textbf{Norme di progetto}: 
+			\begin{itemize}	
+				\item 
+			\end{itemize}
+		\item \textbf{Analisi dei Requisiti}: 
+			\begin{itemize}
+				\item corretti tutti i casi d'uso secondo le indicazioni ricevute;
+				\item riguardati i diagrammi dei casi d'uso.
+			\end{itemize} 
+		\item \textbf{Piano di Progetto}: 
+			\begin{itemize}
+				\item 
+			\end{itemize}
+		\item \textbf{Piano di Qualifica}: 
+			\begin{itemize}
+				\item rivista la struttura dell'appendice secondo le indicazioni ricevute;
+				\item aumentata la frequenza delle misurazioni di qualità.
+			\end{itemize}
+	\end{itemize}
+	
+	
+	
+	\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Dettaglio delle verifiche tramite analisi}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione di qualità di processi, seguiti dalla tabella degli indici di Gulpease e degli indici di Gunning Fog che riporta gli esiti di tutti i documenti prodotti finora. \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\subsubsection{Revisione dei requisiti}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\paragraph{Qualità di processo}
+
+		Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione di qualità di processi, seguiti dalla tabella degli indici di Gulpease e degli indici di Gunning Fog che riporta gli esiti di tutti i documenti prodotti finora. \\
 \textbf{Leggenda}:
 \begin{itemize}
 	\item \textbf{N.C.} - Non Calcolabile;
@@ -29,7 +125,7 @@ Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione d
 		%\hline
 		\rowcolorhead
 		
-		\centering\textbf{\color{white}Codice - nome metrica} 
+		\centering\textbf{\color{white}Nome metrica} 
 		& \centering\textbf{\color{white}Unità di misura} 
 		& \centering\textbf{\color{white}Valore} 
 		& \centering\textbf{\color{white}Esito}
@@ -78,7 +174,7 @@ Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione d
 		
 	\end{longtable}
 	
-	\paragraph{Considerazioni}
+	\paragraph*{Considerazioni}
 	Ci sono delle metriche non calcolabili in questa fase. Queste ultime si riferiscono all'analisi del codice e alla sua progettazione di dettaglio che verrà svolta nelle fasi successive.
 	Risulta invece negativa la metrica di Cost Variance, in conseguenza dell'impiego di 8 ore di lavoro aggiuntive rispetto a quanto previsto. \\
 	La percentuale di metriche soddisfatte tiene conto solo delle metriche calcolabili, quindi di un totale di 9 tra cui 8 soddisfatte; se si ritiene che le metriche non calcolabili siano da considerare non superate, la percentuale di metriche soddisfatte risulta comunque superata, per un valore di 66.67.
@@ -131,7 +227,7 @@ Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione d
 		\tabularnewline 
 		\textit{Verbale Interno 2019-03-18 v1.0.0} & 71 & Superato
 	\end{longtable}
-	\subparagraph*{Considerazioni} 
+	\paragraph*{Considerazioni} 
 	Tutti i documenti hanno un esito positivo. La media dei valori è di 68.54, un valore intermedio tra il limite inferiore stabilito di 40 e il limite inferiore preferibile di 80. \\
 	I valori più alti sono riscontrati nei verbali e glossario, mentre i valori più bassi sono presenti nell'\texttt{AdR} e nel \texttt{PdP} ma data la loro natura tecnica, riteniamo soddisfacente l'esito della verifica.
 	
@@ -184,50 +280,17 @@ Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione d
 		\tabularnewline 
 		\textit{Verbale Interno 2019-03-18 v1.0.0} & 15,62 & Superato
 	\end{longtable}
-	\subparagraph*{Considerazioni} 
+	\paragraph*{Considerazioni} 
 	Tutti i documenti hanno superato la verifica con un esito inferiore al limite massimo imposto di 16. 
 	Con una media di 13.71, in cui i documenti più rilevanti hanno un esito vicino al valore preferibile di 12, riteniamo che la verifica abbia riportato dei risultati soddisfacenti. 
 	
-\subsubsection{Qualità di prodotto}
-	
-	\paragraph{Considerazioni}
+	\paragraph{Qualità di prodotto}
 	Data la non implementazione del prodotto software, nella fase attuale le metriche derivanti dalla gestione della qualità di prodotto non possono essere calcolate.
-\subsubsection{Esito RR}
-	In seguito alla valutazione della prima revisione, il gruppo ha apportato varie modifiche basandosi sulle segnalazioni ricevute. Di seguito vengono descritte brevemente tali modifiche:
-	\begin{itemize}
-		\item corrette le difformità nei titoli dei vari documenti;
-		\item \textbf{Norme di progetto}: 
-			\begin{itemize}	
-				\item inserito lo standard ISO/IEC 12207 come riferimento informativo;
-				\item modificato §2.1 del Processo di Fornitura, descrivendo le attività previste dallo standard ISO/IEC 12207 di interesse per il gruppo;
-				\item aggiunto maggiore dettaglio a §2.2 del Processo di Sviluppo;
-				\item aggiunto §4.2 che tratta il processo di Fornitura.
-			\end{itemize}
-		\item \textbf{Analisi dei Requisiti}: 
-			\begin{itemize}
-				\item corretti tutti i casi d'uso secondo le indicazioni ricevute;
-				\item aggiunto UC24, UC25, UC26 e UC27 per completare il tracciamento requisiti - casi d'uso.
-			\end{itemize} 
-		\item \textbf{Piano di Progetto}: 
-			\begin{itemize}
-				\item modificata la pianificazione delle fasi successive all'RR, cercando di seguire il modello incrementale;
-				\item modificato il titolo di §6 in "Consuntivo di periodo" e inserito paragrafo "Conclusioni" con relativa analisi e considerazioni del periodo a precedere.
-			\end{itemize}
-		\item \textbf{Piano di Qualifica}: 
-			\begin{itemize}
-				\item stabiliti obiettivi e strategie per garantire la qualità del processo di Fornitura, in seguito all'analisi dello standard ISO/IEC 12207:1995 §5.2;
-				\item inserita tabella riportante gli esiti delle metriche calcolabile in fase RR.
-			\end{itemize}
-	\end{itemize}
-
-	\paragraph{Considerazioni}
-		In generale, risulta che i documenti abbiano un buona struttura ma che siano scarsi per contenuti. \\
-		Il gruppo si è impegnato a integrare i contenuti ritenuti insoddisfacenti e ad aggiungere maggiore dettaglio nella loro descrizione.
-		\newpage
-		
-\subsection{Revisione di progettazione}
-
-\subsubsection{Qualità di processo}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\subsubsection{Revisione di progettazione}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\paragraph{Qualità di processo}
 
 Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione di qualità di processi, seguiti dalla tabella degli indici di Gulpease e degli indici di Gunning Fog che riporta gli esiti di tutti i documenti prodotti finora. \\
 \textbf{Leggenda}:
@@ -239,6 +302,7 @@ Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione d
 	\item \textbf{V} - Valore numerico;
 	\item \textbf{\euro{}} - Euro.
 \end{itemize}
+
 	\rowcolors{2}{pari}{dispari}	
 	\begin{longtable}{ >{\centering}p{0.25\textwidth} >{\centering}p{0.10\textwidth}
 			 >{\centering}p{0.10\textwidth} >{\centering}p{0.07\textwidth} >{\centering}p{0.31\textwidth}}
@@ -295,7 +359,7 @@ Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione d
 		
 	\end{longtable}
 	
-	\paragraph{Considerazioni}
+	\paragraph*{Considerazioni}
 	Ci sono delle metriche non calcolabili in questa fase. Queste ultime si riferiscono all'analisi del codice e alla sua progettazione di dettaglio che verrà svolta nelle fasi successive.
 	La variazione di costo CV è positiva, per un valore di 140 dovuta a vari cambiamenti rispetto a quanto preventivato: 
 	\begin{itemize}
@@ -317,13 +381,13 @@ Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione d
 		\tabularnewline %\hline 
 		\endfirsthead
 			
-		\textit{Analisi dei Requisiti v2.0.0} & 51,34 & Superato
+		\textit{Analisi dei Requisiti v2.0.0} & 52,72 & Superato
 		
 		\tabularnewline 
 		\textit{Glossario v2.0.0} & 100 & Superato
 				
 		\tabularnewline 
-		\textit{Norme di Progetto v2.0.0} & 56,28  & Superato
+		\textit{Norme di Progetto v2.0.0} & 56,93  & Superato
 		
 		\tabularnewline 
 		\textit{Piano di Progetto v2.0.0} & 54,36 & Superato
@@ -337,7 +401,7 @@ Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione d
 		\tabularnewline 
 		\textit{Verbale Esterno 2019-05-10 v1.0.0} & 80 & Superato
 	\end{longtable}
-	\subparagraph*{Considerazioni} 
+	\paragraph*{Considerazioni} 
 	Tutti i documenti hanno un esito positivo. La media dei valori è di 67.25, un valore intermedio tra il limite inferiore stabilito di 40 e il limite inferiore preferibile di 80. \\
 	I valori più alti sono riscontrati nei verbali e glossario, mentre i valori più bassi sono presenti nell'\texttt{AdR} e nel \texttt{PdP} ma data la loro natura tecnica, riteniamo soddisfacente l'esito della verifica.
 	
@@ -376,33 +440,260 @@ Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione d
 		\textit{Verbale Esterno 2019-05-10 v1.0.0} & 15,21 & Superato
 		
 	\end{longtable}
-	\subparagraph*{Considerazioni} 
+	\paragraph*{Considerazioni} 
 	Tutti i documenti hanno superato la verifica con un esito inferiore al limite massimo imposto di 16. 
 	Con una media di 13.20, in cui i documenti più rilevanti hanno un esito vicino al valore preferibile di 12, riteniamo che la verifica abbia riportato dei risultati soddisfacenti. 
 	
-\subsubsection{Qualità di prodotto}
-	
-	\paragraph{Considerazioni}
+	\paragraph{Qualità di prodotto}
 	Data la non implementazione del prodotto software, nella fase attuale le metriche derivanti dalla gestione della qualità di prodotto non possono essere calcolate.
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\subsubsection{Revisione di qualifica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 		\paragraph{Product baseline}
+ 		Di seguito sono riportati i valori delle metriche misurate durante la verifica del lavoro per la Product Baseline.
+ 		
+ 		\rowcolors{2}{pari}{dispari}	
+	\begin{longtable}{ >{\centering}p{0.25\textwidth} >{\centering}p{0.10\textwidth}
+			 >{\centering}p{0.10\textwidth} >{\centering}p{0.07\textwidth} >{\centering}p{0.31\textwidth}}
+		\caption{ Valutazione della qualità di processo - RQ} \\
+		%\hline
+		\rowcolorhead
+		
+		\centering\textbf{\color{white}Nome metrica} 
+		& \centering\textbf{\color{white}Unità di misura} 
+		& \centering\textbf{\color{white}Valore} 
+		& \centering\textbf{\color{white}Esito}
+		& \centering\textbf{\color{white}Accettazione}
+		\tabularnewline %\hline 
+		\endfirsthead
+		
+		Requisiti obbligatori soddisfatti & \% & 100 & S & 100
+		\tabularnewline 
+		
+		Densità dei guasti nei casi di test & \% & TODO & TODO & $ \leq 10$
+		\tabularnewline
+		
+		Risoluzione dei guasti & \% & TODO & TODO & 100
+		\tabularnewline
+		
+		Facilità di utilizzo & V & TODO & TODO & $0 \leq 15 $
+		\tabularnewline
+		
+		Facilità di apprendimento & V & TODO & TODO & $ \leq 5$
+		\tabularnewline
+		
+		Profondità della gerarchia & V & TODO & TODO & $ \leq 7 $
+		\tabularnewline
+		
+		Comprensione delle funzioni & \% & TODO & TODO & $ \geq 95$
+		\tabularnewline
+		
+		Facilità di comprensione & V & TODO & TODO & $ \geq 0.10$
+		\tabularnewline
+		
+		Semplicità delle funzioni & V & TODO & TODO & $\leq 6$
+		\tabularnewline
+		
+		Semplicità delle classi & V & TODO & TODO & $ \leq 15$
+		\tabularnewline
+		
+		SFIN: Structural Fan-in (media) & V & TODO & TODO & $ \geq 0 $
+		\tabularnewline
+		
+		SFOUT: Structural Fan-out (media) & V & TODO & TODO & $ \leq 6$
+		\tabularnewline
+			
+		\paragraph{Qualità di processo}
+		Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione di qualità di processi, seguiti dalla tabella degli indici di Gulpease e degli indici di Gunning Fog che riporta gli esiti di tutti i documenti prodotti finora. \\
+\textbf{Leggenda}:
+\begin{itemize}
+	\item \textbf{N.C.} - Non Calcolabile;
+	\item \textbf{S} - Superato;
+	\item \textbf{N.S.} - Non Superato;
+	\item \textbf{\%} - Percentuale;
+	\item \textbf{V} - Valore numerico;
+	\item \textbf{\euro{}} - Euro.
+\end{itemize}
+	\rowcolors{2}{pari}{dispari}	
+	\begin{longtable}{ >{\centering}p{0.25\textwidth} >{\centering}p{0.10\textwidth}
+			 >{\centering}p{0.10\textwidth} >{\centering}p{0.07\textwidth} >{\centering}p{0.31\textwidth}}
+		\caption{ Valutazione della qualità di processo - RQ} \\
+		%\hline
+		\rowcolorhead
+		
+		\centering\textbf{\color{white}Codice - nome metrica} 
+		& \centering\textbf{\color{white}Unità di misura} 
+		& \centering\textbf{\color{white}Valore} 
+		& \centering\textbf{\color{white}Esito}
+		& \centering\textbf{\color{white}Accettazione}
+		\tabularnewline %\hline 
+		\endfirsthead
+		
+		Requisiti obbligatori soddisfatti & \% & TODO & TODO & 100
+		\tabularnewline 
+		
+		Coupling Between Object classes & V & TODO & TODO & $0 \leq CBO \leq 6$
+		\tabularnewline
+		
+		Planned Value & \euro{} & 3.992,00 & S & $ \geq 0$
+		\tabularnewline
+		
+		Actual Cost & \euro{} & 3.852,00 & S & $0 \leq AC \leq 6.856,00 $
+		\tabularnewline
+		
+		Earned Value & \euro{} & 3.992,00 & S & $ \geq 0$
+		\tabularnewline
+		
+		Budget at Completion & \euro{} & 3.992,00 & S & $3.659,40 \leq BAC \leq 4.044,60 $
+		\tabularnewline
+		
+		Cost Variance & \euro{} & +140,00 & N.S. & $ \geq 0$
+		\tabularnewline
+		
+		Schedule Variance & \euro{} & 0,00 & S & $ \geq 0$
+		\tabularnewline
+		
+		Code Coverage & \% & N.C. & N.S. & $75\%$
+		\tabularnewline
+		
+		Indice Gunning fog (media) & V & 13,20 & S & $ \leq 16$
+		\tabularnewline
+		
+		Indice di Gulpease (media) & V & 67,25 & S & $40 < I_G < 100$
+		\tabularnewline
+		
+		Correttezza ortografica & V & 0 & S & 0
+		\tabularnewline
+		
+		Percentuale di metriche soddisfatte & \% & TODO & S & 100
+		\tabularnewline
+		
+	\end{longtable}
 	
-\subsection{Confronto revisioni}
-
-\begin{figure}[H]
-	\includegraphics[width=0.99\linewidth]{res/images/metriche_generali.png}
-	\caption{Diagramma di confronto - metriche generali}
-\end{figure}
-
-\begin{figure}[H]
-	\includegraphics[width=0.99\linewidth]{res/images/metriche_costo.png}
-	\caption{Diagramma di confronto - metriche di costo}
-\end{figure}
-
-\begin{figure}[H]
-	\includegraphics[width=0.99\linewidth]{res/images/indici_gulpease.png}
-	\caption{Diagramma di confronto - indici di Gulpease}
-\end{figure}
-
-\begin{figure}[H]
-	\includegraphics[width=0.99\linewidth]{res/images/indici_gunning_fog.png}
-	\caption{Diagramma di confronto - indici di Gunning Fog}
-\end{figure}
+	\paragraph*{Considerazioni}
+	
+	\rowcolors{2}{pari}{dispari}
+	\begin{longtable}{ >{\centering}p{0.40\textwidth} >{\centering}p{0.25\textwidth}
+			 >{\centering}p{0.2075\textwidth} }
+		\caption{ Verifiche automatizzate indice di Gulpease - RQ} \\
+		%\hline
+		\rowcolorhead
+		\centering\textbf{\color{white}Documento} 
+		& \centering\textbf{\color{white}Indice Gulpease} 
+		& \centering\textbf{\color{white}Esito}
+		\tabularnewline %\hline 
+		\endfirsthead
+			
+		\textit{Analisi dei Requisiti v2.0.0} & 51,34 & Superato
+		
+		\tabularnewline 
+		\textit{Glossario v2.0.0} & 100 & Superato
+				
+		\tabularnewline 
+		\textit{Norme di Progetto v2.0.0} & 56,28  & Superato
+		
+		\tabularnewline 
+		\textit{Piano di Progetto v2.0.0} & 55,02 & Superato
+		
+		\tabularnewline 
+		\textit{Piano di Qualifica v2.0.0} & 58,51 & Superato	
+		
+	\end{longtable}
+	\paragraph*{Considerazioni} 
+	
+	
+	
+	
+	\rowcolors{2}{pari}{dispari}
+	\begin{longtable}{ >{\centering}p{0.40\textwidth} >{\centering}p{0.25\textwidth}
+			 >{\centering}p{0.2075\textwidth}}
+		\caption{ Verifiche automatizzate indice di Gunning Fog - RQ} \\
+		%\hline
+		\rowcolorhead
+		\centering\textbf{\color{white}Documento} 
+		& \centering\textbf{\color{white}Indice Gunning Fog} 
+		& \centering\textbf{\color{white}Esito}
+		\tabularnewline %\hline 
+		\endfirsthead
+			
+		\textit{Analisi dei Requisiti v2.0.0} & 13,05 & Superato
+		
+		\tabularnewline 
+		\textit{Glossario v2.0.0} & 12,32 & Superato
+				
+		\tabularnewline 
+		\textit{Norme di Progetto v2.0.0} & 11,84  & Superato
+		
+		\tabularnewline 
+		\textit{Piano di Progetto v2.0.0} & 12,52 & Superato
+		
+		\tabularnewline 
+		\textit{Piano di Qualifica v2.0.0} & 12,85 & Superato	
+				
+		\tabularnewline 
+		\textit{Verbale Interno 2019-05-03 v1.0.0} & 14,64 & Superato
+		
+		\tabularnewline 
+		\textit{Verbale Esterno 2019-05-10 v1.0.0} & 15,21 & Superato
+		
+	\end{longtable}
+	\paragraph*{Considerazioni} 
+	
+	
+		\paragraph{Qualità di prodotto}
+		Di seguito viene riportata la misurazione delle metriche descritte in §3, derivanti dalla gestione di qualità di prodotto.
+		\rowcolors{2}{pari}{dispari}	
+	\begin{longtable}{ >{\centering}p{0.25\textwidth} >{\centering}p{0.10\textwidth}
+			 >{\centering}p{0.10\textwidth} >{\centering}p{0.07\textwidth} >{\centering}p{0.31\textwidth}}
+		\caption{ Valutazione della qualità di processo - RQ} \\
+		%\hline
+		\rowcolorhead
+		
+		\centering\textbf{\color{white}Nome metrica} 
+		& \centering\textbf{\color{white}Unità di misura} 
+		& \centering\textbf{\color{white}Valore} 
+		& \centering\textbf{\color{white}Esito}
+		& \centering\textbf{\color{white}Accettazione}
+		\tabularnewline %\hline 
+		\endfirsthead
+		
+		Requisiti obbligatori soddisfatti & \% & TODO & TODO & 100
+		\tabularnewline 
+		
+		Densità dei guasti nei casi di test & \% & TODO & TODO & $ \leq 10$
+		\tabularnewline
+		
+		Risoluzione dei guasti & \% & TODO & TODO & 100
+		\tabularnewline
+		
+		Facilità di utilizzo & V & TODO & TODO & $0 \leq 15 $
+		\tabularnewline
+		
+		Facilità di apprendimento & V & TODO & TODO & $ \leq 5$
+		\tabularnewline
+		
+		Profondità della gerarchia & V & TODO & TODO & $ \leq 7 $
+		\tabularnewline
+		
+		Comprensione delle funzioni & \% & TODO & TODO & $ \geq 95$
+		\tabularnewline
+		
+		Facilità di comprensione & V & TODO & TODO & $ \geq 0.10$
+		\tabularnewline
+		
+		Semplicità delle funzioni & V & TODO & TODO & $\leq 6$
+		\tabularnewline
+		
+		Semplicità delle classi & V & TODO & TODO & $ \leq 15$
+		\tabularnewline
+		
+		SFIN: Structural Fan-in (media) & V & TODO & TODO & $ \geq 0 $
+		\tabularnewline
+		
+		SFOUT: Structural Fan-out (media) & V & TODO & TODO & $ \leq 6$
+		\tabularnewline
+		
+		
+	\end{longtable}
+		\paragraph{Esiti dei test}
