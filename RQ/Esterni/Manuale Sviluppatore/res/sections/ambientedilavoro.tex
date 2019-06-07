@@ -1,4 +1,5 @@
-\section{Setup} 
+\section{Ambiente di lavoro}
+In questa sezione vengono descritte le procedure e i requisiti necessari per impostare il proprio ambiente di lavoro in modo da emulare quello del gruppo \textit{Zeus Code}.  
 \subsection{Requisiti per lo sviluppo}
 In questa sezione tutti i requisiti necessari sono descritti.
 \subsubsection{Smartphone Android}
@@ -13,11 +14,11 @@ Per utilizzare il prodotto è necessario disporre di uno smartphone dotato di si
 \subsubsection{Strumenti}
 Sono richiesti i seguenti strumenti:
 \begin{itemize}
-	\item \textbf{Android Studio} è un ambiente di sviluppo integrato per lo sviluppo per la piattaforma Android;
+	\item \textbf{Android Studio} Android Studio è un ambiente di sviluppo integrato per lo sviluppo per la piattaforma Android. Viene utilizzato per la stesura del codice Kotlin e per i layout in XML. Android Studio integra autonomamente Gradle, un sistema per l'automazione dello sviluppo;
 	\item \textbf{Git} è un software di controllo di versione. La repository di P2PCS è ospitata su GitLab;
 	\item \textbf{Browser Web} necessario per accedere a Firebase. Per sfruttarne a pieno le potenzialità si consiglia di utilizzare la versione più recente di Google Chrome.
 \end{itemize}
-\subsection{Installazione}
+\subsection{Installazione e configurazione}
 \subsubsection{Android Studio} 
 Android Studio è reperibile a questo sito: \url{https://developer.android.com/studio}
 \subsubsection{Git}
@@ -35,5 +36,11 @@ Per impostare Firebase è necessario recarsi a questo sito: \url{https://console
 	\item alla voce database, creare un nuovo database in modalità di prova;
 	\item alla voce storage, cliccare su inizia e confermare.
 \end{itemize}
-A questo punto il back-end sarà attivo. Ora è necessario collegarlo all'applicazione tramite Android Studio: alla voce "Tools" selezionare Firebase, aprire la voce Authentication e tramite l'apposito pulsante connettere l'app a Firebase.
+A questo punto il back-end sarà attivo. Ora è necessario collegarlo all'applicazione tramite Android Studio:
+\begin{itemize}
+	\item accedere alla voce "Tools";
+	\item accedere alla voce "Firebase"
+	\item tramite la voce "Authentication" connettere l'app a Firebase con l'apposito pulsante "Connetti".
+\end{itemize}
+ 
 
