@@ -1,5 +1,5 @@
 \section{Architettura}
-Lo scopo di questa sezione è di descrivere l'architettura e i design pattern utilizzati.
+Lo scopo di questa sezione è di descrivere l'architettura e i design pattern\glosp utilizzati.
 \subsection{Design pattern}
 \begin{figure}[H]
 	\centering
@@ -11,7 +11,8 @@ Lo scopo di questa sezione è di descrivere l'architettura e i design pattern ut
 P2PCS implementa il design pattern MVP\glosp seguendo le linee guida fornite da Google\glosp e reperibili al seguente link: \url{https://github.com/googlesamples/android-architecture}.
 \newline
 \subsubsection{Model}
-Contiene i dati che l’applicazione può elaborare e visualizzare. Mette inoltre a disposizione metodi per leggere e modificare tali dati.In questo progetto fornisce i metodi di lettura e scrittura su Firebase.
+Contiene i dati che l’applicazione può elaborare e visualizzare. Mette inoltre a disposizione metodi per leggere e modificare tali dati.
+In questo progetto fornisce i metodi di lettura e scrittura su Firebase.
 Il model è dotato di tre servizi principali, successivamente segmentati in macro-argomenti, che sono:
 \begin{itemize}
 	\item Authentication
