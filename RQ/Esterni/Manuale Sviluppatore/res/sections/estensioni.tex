@@ -1,0 +1,7 @@
+\section{Estensione delle funzionalità}
+Di seguito sono riportate le informazioni necessarie per estendere le funzionalità del progetto. Si raccomanda di leggere con attenzione la sezione riguardante l'architettura dell'applicazione in modo tale da comprendere pienamente le interazioni tra le componenti che costituiscono il sistema.
+\subsection{Marker caricati dinamicamente}
+Al momento la mappa dei veicoli carica i marker\glosp dei veicoli più vicini nel raggio di 30km dalla posizione desiderata. Esiste la possibilità di rendere il caricamento dei marker dinamico per fare ciò è sufficiente implementare \textit{VehicleMapContract} in un nuovo Fragment e gestire i movimenti della mappa implementando \textit{OnCameraMoveListener}.
+Le seguenti interfacce sono contenute in:
+\textit{gaiago/ui/searchVehicles/vehicleMap}.
+Successivamente è necessario sostituire l'istanza del vecchio Fragment presente nella MainActivity con la nuova.
