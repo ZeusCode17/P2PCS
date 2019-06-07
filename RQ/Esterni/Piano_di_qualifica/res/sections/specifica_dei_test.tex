@@ -477,6 +477,7 @@ dove:
 	
 		TS18.2	& RFF16.2\\ RFF16.2.1 \\ RFF16.2.2 \\ RFF16.2.3 \\ RFF16.2.4 \\ RFF16.2.5  \\ RFF16.2.6 \\ RFF16.2.7 \\RFF16.3 & Verificare che il sistema permetta all'utente autenticato all'utente autenticato di poter accedere al Minigioco del garage in cui potrà modificare l'estetica dell'auto base. 	&	NI	\tabularnewline
 \end{longtable}
+
 \subsection{Test di integrazione}
 I test di integrazione sono usati per verificare il corretto funzionamento tra le varie unità dell'architettura. Tali test verranno indicati nel seguente modo:\\
 	\centerline{\textbf{TI[Codice]}}
@@ -484,24 +485,19 @@ dove:
 \begin{itemize}
 	\item \textbf{Codice}: rappresenta il codice identificativo crescente del test.
 \end{itemize}
-Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
-
-
-
-
-
+Nella seguente tabella sono rappresentati i test di integrazione:
 \renewcommand{\arraystretch}{1.5}
 	\rowcolors{2}{pari}{dispari}
-	
-	\begin{longtable}{ >{\centering}p{0.10\textwidth}  >{\centering}p{0.650\textwidth} >{\centering}p{0.10\textwidth}
+
+\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.650\textwidth}
 			>{\centering}p{0.10\textwidth}}% >{\centering}p{0.14\textwidth}}
 			
 		%\hline
-		\caption{Riepilogo test di accettazione}\\	
+		\caption{Riepilogo test di integrazione}\\	
 		\rowcolorhead
-		\centering\textbf{\color{white}Test} 
-		& \centering\textbf{\color{white}Descrizione} 
-		& \centering\textbf{\color{white}Stato}
+		\textbf{\color{white}Test}  
+		& \textbf{\color{white}Descrizione} 
+		& \textbf{\color{white}Stato}
 		& \centering\textbf{\color{white}Esito}
 	%	& \textbf{\color{white}Fonti} 
 		\tabularnewline %\hline 
@@ -509,17 +505,35 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 		
 		\rowcolor{white}\caption[]{(continua)}\\	
 		\rowcolorhead
-		\centering\textbf{\color{white}Test} 
-		& \centering\textbf{\color{white}Descrizione} 
-		& \centering\textbf{\color{white}Stato}
+		\textbf{\color{white}Test} 
+		& \textbf{\color{white}Descrizione}
+		& \textbf{\color{white}Stato} 
 		& \centering\textbf{\color{white}Esito}
 		%	& \textbf{\color{white}Fonti} 
 		\tabularnewline %\hline 
 		\endhead	
-		
-		
-		
-		
+TI1&Verificare che l'utente possa registrarsi all'interno del sistema, ricevendo un messaggio di conferma se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I & S \tabularnewline
+
+TI2&Verificare che l'utente già registrato possa effettuare il login, mostrando un messaggio di successo se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I & S \tabluarnewline
+
+TI3&Verificare che l'utente possa inserire informazioni aggiuntive all'interno del profilo. & I & S \tabularnewline 
+
+TI4&Verificare che l'utente dopo aver effettuato la registrazione visualizzi correttamente l'activity introduttiva. & I & S \tabularnewline
+
+TI5&Verificare che l'utente possa inserire la patente, mostrando un messaggio di successo se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I & S \tabluarnewline
+
+TI6&Verificare che l'utente che ha effettuato l'accesso possa visualizzare i propri veicoli. & I & S \tabluarnewline
+
+TI7&Verificare che l'utente che ha effettuato l'accesso possa gestire la disponibilità dei proprio veicoli. & I & S \tabluarnewline
+
+
+TI8&Verificare che l'utente che ha effettuato l'accesso possa ricercare un veicolo adatto alle sue esigenze. & I & S \tabluarnewline
+
+TI9&Verificare che l'utente che ha effettuato l'accesso possa visualizzare le prenotazioni che lo riguardano. & I & S \tabluarnewline
+
+TI9&Verificare che l'utente che ha effettuato l'accesso possa gestire le prenotazioni che devono ancora avvenire. & I & S \tabluarnewline
+
+\end{longtable}		
 		
 \subsection{Test di unità}
 I test di unità hanno l'obiettivo di verificare il corretto funzionamento della parte più piccola autonoma del lavoro realizzato. Tali test verranno indicati nel seguente modo:\\
