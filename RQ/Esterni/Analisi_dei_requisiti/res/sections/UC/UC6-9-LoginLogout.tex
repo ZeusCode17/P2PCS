@@ -7,7 +7,7 @@
 \subsubsection{UC6 - Login}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: per effettuare il procedimento di autenticazione, l'utente deve compilare i campi necessari e dopo averli confermati, se sono validi, verrà portato alla pagina di \textit{Gestione veicoli};
+	\item \textbf{Descrizione}: per effettuare il procedimento di autenticazione, l'utente deve compilare i campi necessari e dopo averli confermati, se sono validi, verrà portato alla \textit{Home};
 	\item \textbf{Scenario principale}: l'applicazione rende disponibili i campi da compilare per l'autenticazione. Dunque l'utente dovrà inserire tutti i dati necessari, quali:
 	\begin{itemize}
 		\item inserimento email [UC6.1];
@@ -59,21 +59,16 @@
 \subsubsection{UC8 - Recupero password}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: l'utente non autenticato non si ricorda la propria password per accedere all'account e ne richiede il recupero che avviene inserendo un'indirizzo email dove verrà inviata una nuova password;
-	\item \textbf{Scenario principale}: l'utente non ancora autenticato inserisce un'indirizzo email dove potrà ricevere la nuova password da utilizzare per accedere al proprio account;
+	\item \textbf{Descrizione}: l'utente non autenticato non si ricorda la propria password per accedere all'account e ne richiede il recupero che avviene inserendo l'indirizzo email dell'account registrato dove verrà inviata una nuova password temporanea che è consigliata modificare al successivo accesso all'applicazione;
+	\item \textbf{Scenario principale}: l'utente non ancora autenticato inserisce l'indirizzo email dell'account registrato dove potrà ricevere la nuova password temporanea da utilizzare per accedere al proprio account;
 	\item \textbf{Estensione}:
 	\begin{itemize}
 		\item visualizzazione errore email non valida [UC2].
 	\end{itemize} 
-	\item \textbf{Precondizione}: l'utente non autenticato non ricorda la password di accesso e indica un indirizzo email di recupero;
-	\item \textbf{Postcondizione}: l'utente riceve la nuova password tramite posta all'indirizzo email inviato.
+	\item \textbf{Precondizione}: l'utente non autenticato non ricorda la password di accesso e indica l'indirizzo email di recupero;
+	\item \textbf{Postcondizione}: l'utente riceve la nuova password temporanea tramite posta all'indirizzo email inserito.
 \end{itemize}
 \subsubsection{UC9 - Logout}
-\begin{figure}[h]
-	\includegraphics[width=9cm]{res/images/UC9Logout.png}
-	\centering
-	\caption{UC9 - Logout}
-\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
 	utente autenticato;
@@ -82,4 +77,9 @@
 	\item \textbf{Precondizione}: l'utente ha effettuato il login all'applicazione e richiede di essere disconnesso dall'applicazione;
 	\item \textbf{Postcondizione}: l'utente viene disautenticato e rimandato all'activity\glosp di login. 
 \end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=9cm]{res/images/UC9Logout.png}
+	\centering
+	\caption{UC9 - Logout}
+\end{figure}
 
