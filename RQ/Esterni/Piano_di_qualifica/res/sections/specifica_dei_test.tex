@@ -22,7 +22,7 @@ dove:
 	\renewcommand{\arraystretch}{1.5}
 	\rowcolors{2}{pari}{dispari}
 	
-	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.650\textwidth}
+	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.12\textwidth} >{\centering}p{0.650\textwidth}
 			>{\centering}p{0.10\textwidth}}% >{\centering}p{0.14\textwidth}}
 			
 		%\hline
@@ -65,7 +65,7 @@ dove:
 		 	\item accedere alla pagina di login;
 		 	\item inserire l'email e password;
 		 	\item confermare i dati ed essere autenticato;
-		 	\item verificare che dopo l'autenticazione l'utente venga rimandato all'activity\glosp per la gestione dei veicoli.
+		 	\item verificare che dopo l'autenticazione l'utente venga rimandato all'activity\glosp \textit{Home} dell'applicazione.
 		 \end{itemize}	&	NI	\tabularnewline
 		 TA3.1 & RF02.7	& L'utente deve visualizzare un messaggio d'errore quando non compila il campo dati email e password. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -88,131 +88,145 @@ dove:
 		 \end{itemize}	&	NI	\tabularnewline
 		 TA5	& RFO4 &	L'utente autenticato deve poter effettuare il logout. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere al fragment\glosp Area Personale e richiedere il logout con l'apposito pulsante;
+		 	\item richiedere il logout con l'apposito pulsante;
+		 	\item confermare di voler uscire dall'applicazione;
 		 	\item attendere la conferma di logout;
 		 	\item verificare di essere rimandato alla pagina di login.
 		 \end{itemize}  &	NI	\tabularnewline
-		 TA6	& RFO5 & L'utente autenticato deve poter gestire e visualizzare i propri veicoli. 
+	 	 TA6	& RFO5 & L'utente autenticato deve poter capire cosa vuole fare all'interno dell'applicazione. Verrà mandato, dopo aver effettuato l'accesso, alla \textit{Home}. 
+	 	 All'utente viene chiesto di:
+	 	 \begin{itemize}
+	 	 	\item accedere all'applicazione effettuando il login;
+	 	 	\item verificare di essere sulla schermata \textit{Home} dell'applicazione;
+	 	 	\item verificare che siano disponibili le due sezioni: Viaggia e Prenotazioni;
+	 	 	\item verificare che nella sezione "Viaggia" siano presenti i bottoni per la ricerca di una veicolo da prenotare e per la gestione dei propri veicoli;
+	 	 	\item verificare che nella sezione "Prenotazioni" sia presente una lista di tutte le prenotazioni attive in quel momento dell'utente. 
+	 	 \end{itemize}	&	NI	\tabularnewline
+		 TA6.1	& RFO5.1 & L'utente autenticato deve poter gestire e visualizzare i propri veicoli. 
 		 All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere al fragment\glosp per la gestione dei veicoli;
 		 	\item verificare la comparsa della lista dei propri veicoli;
-		 	\item per ogni veicolo deve verificare che ci siano indicate marca, modello, foto del veicolo;
+		 	\item per ogni veicolo deve verificare che ci siano indicate marca, modello, anno d'immatricolazione e foto del veicolo;
 		 	\item verificare che siano abilitate le opzione di selezione veicolo e aggiunta di un nuovo veicolo. 
 		 \end{itemize}	&	NI	\tabularnewline
-		 TA6.1 & RFO5.1 &	L'utente autenticato deve poter inserire un nuovo veicolo. All'utente viene chiesto di:
+		 TA6.2 & RFO5.1.1 &	L'utente autenticato deve poter inserire un nuovo veicolo. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item premere sul pulsante di aggiunta veicolo dal fragment\glosp di gestione veicoli;
-		 	\item compilare i campi dati richiesti (caricamento foto, specificare la marca, modello e anno d'immatricolazione) e salvare il contenuto inserito;
-		 	\item verificare che i dati inseriti siano comparsi nella schermata di visualizzazione veicoli.
+		 	\item compilare i campi dati richiesti (caricamento foto, specificare la marca, modello, anno d'immatricolazione, posizione e costo orario) e confermare l'inserimento del veicolo;
+		 	\item verificare che venga rimandato nel fragment di gestione veicoli;
+		 	\item verificare che il mezzo venga inserito nella schermata di gestione veicoli.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TA6.2 & RFO5.2 \\ RFO5.2.1 &	L'utente autenticato deve poter visualizzare i dettagli del veicolo e rimuoverlo dal parco macchine di sua proprietà. All'utente viene chiesto di:
+		 TA6.2.1 & RFO5.1.2 \\ RFO5.1.2.1 \\ RFO5.1.2.2 \\ RFO5.1.2.3 &	L'utente autenticato deve poter visualizzare i dettagli del veicolo e che siano disponibili i bottoni per visualizzare le disponibilità, le statistiche e la rimozione del veicolo. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item selezionare un veicolo dal proprio parco macchine;
-		 	\item verificare la comparsa di tutti i dati del veicolo (foto, marca, modello, anno d'immatricolazione, rating);
-		 	\item premere sul pulsante Rimuovi;
-		 	\item verificare che il veicolo precedentemente selezionato sia stato rimosso dalla schermata di visualizzazione veicoli.
+		 	\item verificare la comparsa di tutti i dati del veicolo (foto, marca, modello, anno d'immatricolazione, costo orario e rating);
+		 	\item verificare che sia disponibile il pulsante di visualizzazione disponibilià:
+		 	\begin{itemize}
+		 		\item verificare di essere mandati nel fragment\glosp della visualizzazione delle disponibilità;
+		 		\item verificare di vedere una lista delle disponibilità se presenti con relative informazioni (data, fascia oraria e ripetizione se presente);
+		 		\item verificare che si possa aggiungere una disponibilità:
+		 		\begin{itemize}
+		 			\item verificare di essere mandati nel fragment dell'aggiunta di una disponibilità;
+		 			\item verificare che siano disponibili le due sezioni: Singola e Ripetuta;
+		 			\item verificare che nella sezione "Singola" siano presenti i campi da compilare (data prenotazione, ora di inizio e ora di fine);
+		 			\item verificare che nella sezione "Ripetuta" siano presenti i campi da compilare (ora di inizio, ora di fine, ripetizione giorni settimana e ripetizione per quanto tempo);
+		 			\item confermare i campi inseriti e verificare l'aggiunta della disponibilità nella lista di visualizzazione.
+		 		\end{itemize}
+		 	\end{itemize}
+	 		\item verificare che sia disponibile il pulsante di visualizzazione delle statistiche del veicolo;
+	 		\begin{itemize}
+	 			\item verificare di vedere dati o grafici per la frequenza dei giorni di utilizzo, il guadagno nei giorni e il guadagno totale.
+	 		\end{itemize}
+		 	\item verificare che sia disponibile il pulsante di rimozione veicolo;
+		 	\begin{itemize}
+		 		\item verificare che il veicolo precedentemente selezionato sia stato rimosso dalla schermata di visualizzazione veicoli.
+		 	\end{itemize}
 		 \end{itemize}	&	NI	\tabularnewline
-		 
-		 
-		 TA7 & RFO6  & L'utente autenticato deve poter visualizzare la lista di tutte le sue prenotazioni attive.
-		 Per ogni prenotazione attiva presente nella lista l'utente deve poter visualizzare i dettagli riassuntivi (data, fascia oraria e veicolo prenotato, nome del proprietario del veicolo o dell'usufruente) ed eseguire operazioni di gestione su di esse (visualizzazione dettaglio). All'utente viene chiesto di:
+		 TA6.3 & RFO5.2 \\ RFO5.2.1  & L'utente autenticato deve poter visualizzare la lista di tutte le sue prenotazioni attive.
+		 Per ogni prenotazione attiva presente nella lista l'utente deve poter visualizzare i dettagli riassuntivi (maraca, modello, stato della prenotazione, data, fascia oraria e foto del veicolo) ed eseguire operazioni di gestione su di esse (visualizzazione dettaglio). All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla schermata di visualizzazione delle prenotazioni attive;
+		 	\item accedere alla schermata di visualizzazione delle prenotazioni attive nella sezione "Prenotazioni";
 		 	\item verificare che per ogni prenotazione presentata siano visibili i dati riassuntivi;
 		 	\item selezionare una prenotazione;
-		 	\item verificare che per la prenotazione selezionata sia disponibile l'opzione di Visualizzazione dettagli prenotazione .
+		 	\item verificare che per la prenotazione selezionata siano disponibili i dettagli.
 		 \end{itemize} & NI	\tabularnewline
-		 	TA7.1 & RFO6.1 &	Per ogni prenotazione attiva, l'utente autenticato deve poter visualizzare tutti i dati disponibili (data, fascia oraria, veicolo prenotato, luogo d'incontro con l'altro utente e orario d'incontro). All'utente viene chiesto di:
+		 TA6.3.1 & RFO5.2.2 & L'utente proprietario del veicolo può confermare o annullare una richiesta di prenotazione. All'utente è richiesto di:
 		 \begin{itemize}
 		 	\item accedere alla schermata di visualizzazione delle prenotazioni attive;
-		 	\item verificare che per ogni prenotazione presentata siano visibili i dati sopra elencati.
+		 	\item verificare che la prenotazione attiva sia in attesa di conferma;
+		 	\item selezionare la prenotazione;
+		 	\item verificare che nei dettagli della prenotazione sia presente il pulsante di conferma o annulla;
+		 	\item confermare o annullare la prenotazione comporterà poi il cambio di stato;
+		 	\item verificare che l'utente si ritrovi nella schermata di visualizzazione delle prenotazioni attive.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TA7.2 & RFO6.2 &	L'utente usufruente deve poter annullare ogni prenotazione disponibile nella lista delle prenotazioni attive. All'utente viene chiesto di:
+	 	 TA6.3.2 & RFO5.2.3 & L'utente proprietario del veicolo può confermare l'avvenuta consegna delle chiavi del veicolo all'usufruente. All'utente è richiesto di:
+	 	 \begin{itemize}
+	 	 	\item accedere alla schermata di visualizzazione delle prenotazioni attive;
+	 	 	\item verificare che la prenotazione attiva sia confermata;
+	 	 	\item selezionare la prenotazione;
+	 	 	\item verificare che nei dettagli della prenotazione sia presente il pulsante di chiavi consegnate;
+	 	 	\item premere il pulsante qualora si abbia effettivamente consegnato le chiavi all'usufruente;
+	 	 	\item verificare che l'utente si ritrovi nella schermata di visualizzazione delle prenotazioni attive e che la prenotazione abbia come stato "in corso".
+	 	 \end{itemize}	&	NI	\tabularnewline
+ 	 	 TA6.3.3 & RFO5.2.4 & L'utente proprietario del veicolo può chiudere la prenotazione nel momento in cui ha ricevuto il veicolo e le chiavi sbloccando così la possibilità di recensire l'utente usufruente. All'utente è richiesto di:
+ 	 	 \begin{itemize}
+ 	 	 	\item accedere alla schermata di visualizzazione delle prenotazioni attive;
+ 	 	 	\item verificare che la prenotazione attiva sia in corso;
+ 	 	 	\item selezionare la prenotazione;
+ 	 	 	\item verificare che nei dettagli della prenotazione sia presente il pulsante di termina prenotazione;
+ 	 	 	\item premere il pulsante qualora si abbia effettivamente avuto indietro le chiavi e il veicolo dall'usufruente;
+ 	 	 	\item verificare che l'utente si ritrovi nella schermata di visualizzazione delle prenotazioni attive e che la prenotazione non sia presente nella lista di prenotazioni attive.
+ 	 	 \end{itemize}	&	NI	\tabularnewline
+		 TA6.3.4 & RFO5.2.5 &	L'utente usufruente deve poter annullare una prenotazione in attesa di conferma da parte del proprietario. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla schermata di visualizzazione delle prenotazioni attive;
-		 	\item selezionare la prenotazione che si intende cancellare;
-		 	\item premere l'opzione di cancellazione prenotazione
+		 	\item verificare che la prenotazione attiva sia ancora in attesa di conferma;
+		 	\item selezionare la prenotazione che si intende annullare;
+		 	\item premere l'opzione di cancellazione prenotazione;
 		 	\item verificare che la prenotazione precedentemente selezionata e cancellata sia stata rimossa dalla lista delle prenotazioni attive.
 		 \end{itemize}	&	NI	\tabularnewline
-		
-	 	TA7.3 & RFO6.3 & L'utente autenticato come proprietario del veicolo deve poter confermare/annullare le richieste di prenotazione ricevute. All'utente viene chiesto di:
-	 	\begin{itemize}
-	 		\item accedere all'activity\glosp di conferma o rifiuto della richiesta;
-	 		\item confermare o rifiutare la richiesta;
-	 		\item se conferma, verificare che sia disponibile l'introduzione dei campi dati: luogo e orario d'incontro;
-	 		\item se rifiuta, verificare che sia disponibile la visualizzazione della gestione delle prenotazioni.
-	 	\end{itemize}	&	NI	\tabularnewline
- 		TA7.4 &	RFO6.4 &	L'utente autenticato come usufruente del veicolo può richiedere la chiusura della prenotazione dopo aver riconsegnato chiavi e mezzo al proprietario. All'utente viene chiesto di:
- 		\begin{itemize}
- 			\item accedere alla schermata di visualizzazione delle prenotazioni attive;
- 			\item selezionare una prenotazione dalla lista;
- 			\item verificare che sia disponibile il servizio di chiusura della prenotazione;
- 			\item inviare la richiesta di chiusura al proprietario del veicolo;
- 			\item recensire il proprietario del veicolo;
- 			\item visualizzare la schermata di gestione prenotazioni.
- 		\end{itemize}	&	NI	\tabularnewline
- 		TA7.5 & RFO6.5 &	L'utente autenticato come proprietario del veicolo riceve una notifica di chiusura della prenotazione da parte dell'usufruente e deve confermare o meno l'effettiva riconsegna di chiavi e mezzo. All'utente viene chiesto di:
- 		\begin{itemize}
- 			\item verificare la presenza della notifica di richiesta chiusura prenotazione;
- 			\item chiudere la prenotazione;
- 			\item recensire l'usufruente;
- 			\item visualizzare la schermata di gestione prenotazioni.	
- 		\end{itemize}	&	NI	\tabularnewline
- 				
-		 TA8	& RFO7 &	L'utente autenticato deve poter effettuare una ricerca specifica sui veicoli disponibili e poter proseguire con la prenotazione di uno di essi. All'utente viene chiesto di:
+	 	 TA6.3.5 & RFO5.2.6 & L'utente usufruente deve poter chiudere la prenotazione nel momento in cui riconsegni il veicolo e le chiavi sbloccando così la possibilità di recensire l'utente proprietario del veicolo. All'utente viene chiesto di:
+	 	 \begin{itemize}
+	 		\item accedere alla schermata di visualizzazione delle prenotazioni attive;
+	 		\item verificare che la prenotazione attiva sia in corso;
+	 		\item selezionare la prenotazione;
+	 		\item verificare che nei dettagli della prenotazione sia presente il pulsante di termina prenotazione;
+	 		\item premere il pulsante, che viene sbloccato solo dopo il termine del periodo di prenotazione, qualora si abbia effettivamente ridato le chiavi e il veicolo al proprietario del veicolo;
+	 		\item verificare che l'utente si ritrovi nella schermata di visualizzazione delle prenotazioni attive e che la prenotazione non sia presente nella lista di prenotazioni attive.
+	 	 \end{itemize}	&	NI	\tabularnewline 				
+		 TA6.4	& RFO5.3 \\ RFD5.3.1 \\ RFD5.3.2 \\ RFD5.3.3 \\ RFD5.3.4 \\ RFO5.3.5 &	L'utente autenticato deve poter effettuare una ricerca specifica sui veicoli disponibili e poter proseguire con la prenotazione di uno di essi. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item effettuare una ricerca dei veicoli disponibili, impostando i vari filtri in base alle proprie esigenze;
-		 	\item attendere i risultati e selezionare uno dei veicoli proposti;
-		 	\item procedere con la prenotazione del veicolo selezionato;
-		 	\item verificare che la prenotazione effettuata sia stata registrata.
+		 	\item accedere al fragment\glosp della ricerca di un veicolo da prenotare;
+		 	\item effettuare una ricerca dei veicoli disponibili, impostando i filtri obbligatori (data, ora di inizio, ora di fine e posizione);
+		 	\item attendere i risultati e verificare che siano presenti due sezioni: Lista veicoli e Mappa;
+		 	\item verificare che per default venga portato nella sezione "lista veicoli";
+		 	\begin{itemize}
+			 	\item verificare che nella lista dei veicoli sia disponibile la selezione di uno di questi;
+			 	\item selezionare uno dei veicoli proposti;
+			 	\item procedere con la prenotazione del veicolo selezionato tramite apposito pulsante di "prenota";
+			 	\item verificare che la prenotazione effettuata sia stata registrata.
+			\end{itemize} 
+		 	\item verificare che possa spostarsi nella sezione "mappa";
+		 	\begin{itemize}
+		 		\item verificare che nella mappa dei veicoli sia disponibile la selezione di uno di questi entro un raggio di km di distanza dalla posizione segnata nei filtro;
+		 		\item selezionare uno dei veicoli proposti;
+		 		\item procedere con la prenotazione del veicolo selezionato tramite apposito pulsante di "prenota";
+		 		\item verificare che la prenotazione effettuata sia stata registrata.
+		 	\end{itemize}
 		 \end{itemize}	&	NI	\tabularnewline
-		 TA8.1 & RFD7.1 \\ RFD7.2 &	L'utente autenticato per rendere più stringente la ricerca deve poter inserire la data e la fascia oraria in cui desidera prenotare un veicolo. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item effettuare una ricerca dei veicoli disponibili, compilando l'apposito campo per la data e fascia oraria in cui intende prenotare il veicolo;
-		 	\item attendere i risultati e verificare che rispettino i vincoli impostati;
-		 \end{itemize}	&	NI	\tabularnewline
-		 TA8.2 & RFD7.3	&	L'utente autenticato per rendere più stringente la ricerca deve poter inserire un raggio in chilometri (distanza) secondo cui circoscrivere i veicoli disponibili. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item effettuare una ricerca dei veicoli disponibili, impostando il filtro di distanza;
-		 	\item attendere i risultati e verificare che rispettino il vincolo di distanza impostato;
-		 \end{itemize}	&	NI	\tabularnewline
-		 TA8.3 & RFD7.4 &	L'utente autenticato per rendere più stringente la ricerca deve poter inserire la marca del veicolo che intende prenotare. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item effettuare una ricerca dei veicoli disponibili, compilando l'apposito campo per la marca;
-		 	\item attendere i risultati e verificare che rispettino il vincolo impostato;
-		 \end{itemize}	&	NI	\tabularnewline
-		  TA8.4	& RFD7.5 &	L'utente autenticato per rendere più stringente la ricerca deve poter inserire il modello del veicolo che intende prenotare. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item effettuare una ricerca dei veicoli disponibili, compilando l'apposito campo per il modello;
-		 	\item attendere i risultati e verificare che rispettino il vincolo impostato;
-		 \end{itemize}	&	NI	\tabularnewline
-		  TA8.5	& RFD7.6 &	L'utente autenticato per rendere più stringente la ricerca deve poter inserire l'anno di immatricolazione del veicolo, per specificare che i veicoli cercati devono essere stati immatricolati in quell'anno o in una data più recente. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item effettuare una ricerca dei veicoli disponibili, compilando l'apposito campo per l'anno di immatricolazione;
-		 	\item attendere i risultati e verificare che rispettino il vincolo impostato;
-		 \end{itemize}	&	NI	\tabularnewline
-		 TA8.6 & RFD7.7 &	In seguito ad una ricerca dei veicoli disponibili, l'utente autenticato deve poter selezionare un veicolo da prenotare tra quelli proposti. All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item effettuare una ricerca dei veicoli disponibili;
-		 	\item selezionare un veicolo tra quelli presentati;
-		 	\item prenotare il veicolo selezionato;
-		 	\item verificare che la prenotazione effettuata sia stata registrata.
-		 \end{itemize}	&	NI	\tabularnewline
-		 
-		 TA9 &	RFD8 & L'utente autenticato deve poter visualizzare una lista contente tutte le sue prenotazioni concluse. All'utente viene chiesto di:
+		 TA7 &	RFD6 & L'utente autenticato deve poter visualizzare una lista contente tutte le sue prenotazioni concluse. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla schermata di visualizzazione delle prenotazioni concluse;
 		 	\item verificare che la lista contenga tutte le sue prenotazioni concluse.
 		 \end{itemize}	&	NI	\tabularnewline
-		 
-		 TA10	& RFO9 & L'utente autenticato deve poter visualizzare, modificare e cancellare il proprio account con i relativi dati. All'utente viene chiesto di:
+		 TA8	& RFO7 & L'utente autenticato deve poter visualizzare, modificare e cancellare il proprio account con i relativi dati. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item selezionare l'opzione di visualizzazione dati profilo;
 		 	\item verificare che sia disponibile il servizio di modifica dati account;
 		 	\item verificare che sia disponibile il servizio di eliminazione account.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TA10.1 & RFO9.2 & L'utente autenticato deve poter aggiornare i dati del proprio account. All'utente viene chiesto di:
+		 TA8.1 & RFO7.2 & L'utente autenticato deve poter aggiornare i dati del proprio account. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla schermata di visualizzazione profilo;
 		 	\item verificare di poter inserire/modificare patente;
@@ -225,7 +239,7 @@ dove:
 		 	\item verificare di poter modificare la password;
 		 	\item verificare di poter confermare/salvare i dati modificati.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TA10.1.1	& RFO9.1 & L'utente autenticato deve poter aggiornare la patente di guida del proprio account. All'utente viene chiesto di:
+		 TA8.1.1	& RFO7.1 & L'utente autenticato deve poter aggiornare la patente di guida del proprio account. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare di poter inserire il numero della patente;
 		 	\item verificare di poter inserire la data di rilascio della patente;
@@ -233,7 +247,7 @@ dove:
 		 	\item verificare di poter inserire l'immagine fronte e retro della patente;
 		 	\item verificare che i dati inseriti siano stati aggiornati nella schermata di gestione del profilo.
 		 \end{itemize}	&	NI	\tabularnewline
-		TA10.1.2	& RFO9.2.8 &	L'utente autenticato deve poter aggiornare la password del proprio account. All'utente viene chiesto di:
+		 TA8.1.2	& RFO7.2.8 &	L'utente autenticato deve poter aggiornare la password del proprio account. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare che sia richiesto l'inserimento della password attuale;
 		 	\item verificare che sia richiesto l'inserimento della nuova password;
@@ -241,57 +255,74 @@ dove:
 		 	\item verificare che la password inserita rispetti i vincoli generali per la password;
 		 	\item verificare che dopo il completamento del procedimento di cambio password, essa sia aggiornata.
 		 \end{itemize}	&	NI	\tabularnewline
-		TA10.2 & RFO9.3 	&	L'utente autenticato deve poter cancellare il proprio profilo e i relativi dati. All'utente viene chiesto di:
+		 TA8.2 & RFO7.3 	&	L'utente autenticato deve poter cancellare il proprio profilo e i relativi dati. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item di accedere alla schermata di visualizzazione profilo;
 		 	\item premere sul pulsante Elimina account;
 		 	\item verificare che dopo la conferma dell'eliminazione dell'account, non sia più possibile accedere all'account.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TA11 & RFF10	&	L'utente autenticato che non ha ancora compilato tutti i dati della sezione profilo deve visualizzare la Progress Bar. All'utente autenticato che non ha compilato tutti i dati viene chiesto di:
+		 TA9 & RFF8	&	L'utente autenticato che non ha ancora compilato tutti i dati della sezione profilo deve visualizzare la Progress Bar. All'utente autenticato che non ha compilato tutti i dati viene chiesto di:
 		 \begin{itemize}
 		 	\item aprire l'applicazione;
 		 	\item verificare che nella schermata di gestione profilo sia presente la Progress Bar;
 		 	\item inserire qualche dato nella sezione profilo e accertarsi che la Progress Bar sia aumentata del/dei livelli corrispondenti e abbia ricevuto i dovuti punti esperienza per il loro completamento.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TA11.1	& RFF10.1 &	L'utente autenticato che compila tutti i dati della sezione profilo, completando così la Progress Bar, deve ricevere una ricompensa. All'utente autenticato che ha completato la Progress Bar viene chiesto di:
+		 TA9.1	& RFF8.1 &	L'utente autenticato che compila tutti i dati della sezione profilo, completando così la Progress Bar, deve ricevere una ricompensa. All'utente autenticato che ha completato la Progress Bar viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare che l'applicazione abbia consegnato un premio per il completamento della Progress Bar.
 		 \end{itemize}	&	NI	\tabularnewline
-		 
-		 TA12	& RFF11 &	L'utente autenticato deve visualizzare la tabella Milestone Unlock\glo, che illustra i premi ottenibili dal raggiungimento di determinati livelli d'esperienza. All'utente autenticato viene chiesto di:
+		 TA10	& RFF9 &	L'utente autenticato deve poter accedere alla pagina \textit{Gioca} dell'applicazione. All'utente e richiesto di:
 		 \begin{itemize}
-		 	\item verificare che dal menu dell'applicazione si possa accedere e visualizzare la tabella Milestone Unlock.
+		 	\item verificare di accedere alla pagina;
+		 	\item verificare che all'interno della pagina sia presente il totale di punti esperienza fino ad ora ottenuti;
+		 	\item verificare la presenza dei bottoni per la mileston unlock, la lucky spin, i daily rewards e la leaderboard;
+		 \end{itemize}	&	NI	\tabularnewline
+		 TA10.1	& RFF9.1 &	L'utente autenticato deve visualizzare la tabella Milestone Unlock\glo, che illustra i premi ottenibili dal raggiungimento di determinati livelli d'esperienza. All'utente autenticato viene chiesto di:
+		 \begin{itemize}
+		 	\item verificare che il bottone presente nella pagina \textit{Gioca} sia disponibile ad essere premuto;
+		 	\item verificare che venga visualizzata la tabella Milestone Unlock.
 		 \end{itemize}	&	NI	\tabularnewline		 
-		 TA12.1	& RFF11.1 &	L'utente autenticato che ha raggiunto un nuovo livello esperienza, superiore al 5, deve ricevere il rispettivo premio illustrato nella tabella Milestone Unlock\glo. All'utente autenticato che raggiunto un nuovo livello superiore al quinto viene chiesto di:
+		 TA10.1.1	& RFF9.1.1 \\ RFF9.1.2 &	L'utente autenticato che ha raggiunto un nuovo livello esperienza, superiore al 5, deve ricevere il rispettivo premio illustrato nella tabella Milestone Unlock\glo. All'utente autenticato che raggiunto un nuovo livello superiore al quinto viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare che l'applicazione abbia consegnato il relativo premio illustrato nella tabella Milestone Unlock.
 		 \end{itemize}	&	NI	\tabularnewline
-		 
-		TA13 & RFO12 &	L'utente autenticato deve visualizzare la ruota della fortuna Lucky Spin\glo. All'utente autenticato viene chiesto di:
+		 TA10.2 & RFF9.2 &	L'utente autenticato deve visualizzare la ruota della fortuna Lucky Spin\glo. All'utente autenticato viene chiesto di:
 		 \begin{itemize}
-		 	\item verificare che dal menu dell'applicazione si possa visualizzare la Lucky Spin.
+		 	\item verificare che il bottone presente nella pagina \textit{Gioca} sia disponibile ad essere premuto;
+		 	\item verificare che si possa visualizzare la Lucky Spin.
 		 \end{itemize}	&	NI	\tabularnewline		 
-		 TA13.1	& RFO12.1 &	L'utente autenticato che ha appena concluso una prenotazione deve ricevere un tentativo per la Lucky Spin\glo. All'utente autenticato che ha concluso una prenotazione viene chiesto di:
+		 TA10.2.1	& RFF9.2.1 \\ RFF9.2.2 &	L'utente autenticato che ha appena concluso una prenotazione deve ricevere un tentativo per la Lucky Spin\glosp che può riprendere anche in un secondo momento. All'utente autenticato che ha concluso una prenotazione viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare di aver ricevuto un tentativo per la ruota della fortuna;
 		 	\item usare il tentativo girando la ruota;
 		 	\item verificare di aver ricevuto il premio promesso.
 		 \end{itemize}	&	NI	\tabularnewline	
-		 TA14	& RFF13 &	L'utente generico deve poter visualizzare la classifica degli utenti migliori. All'utente viene chiesto di:
+		 TA9.3	& RFF9.3 &	L'utente generico deve poter visualizzare la classifica degli utenti migliori. All'utente viene chiesto di:
 		 \begin{itemize}
-		 	\item accedere alla sezione Classifiche dal menu dell'applicazione;
+		 	\item verificare che il bottone presente nella pagina \textit{Gioca} sia disponibile ad essere premuto;
 		 	\item verificare che le classifiche siano visualizzate correttamente.
 		 \end{itemize}	&	NI	\tabularnewline	
-		 TA14.1	& RFF13.1 & Dopo un tempo prestabilito, i primi tre utente della classifica devono ricevere un premio. All'utente che si è classificato tra le prime tre posizioni, nella data prestabilita, viene chiesto di:
+		 TA9.3.1	& RFF9.3.1 & Dopo un tempo prestabilito, i primi tre utente della classifica devono ricevere un premio. All'utente che si è classificato tra le prime tre posizioni, nella data prestabilita, viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare di aver ricevuto il premio promesso.
 		 \end{itemize}	&	NI	\tabularnewline	
-		 TA15	& RFF14 &	L'utente autenticato deve avere un codice personale visualizzabile nella schermata di gestione del profilo, da inviare ad amici che non sono ancora registrati al servizio offerto da \textit{GaiaGo}.  All'utente autenticato viene chiesto di:
+	 	 TA9.4	& RFF9.4	& L'utente autenticato deve poter visualizzare la tabella Daily Rewards che illustra i premi giornalieri del mese corrente. All'utente viene chiesto di :
+	 	 \begin{itemize}
+	 	 	\item verificare che il bottone presente nella pagina \textit{Gioca} sia disponibile ad essere premuto;
+	 	 	\item verificare che si possa accedere e visualizzare la tabella dei Daily Rewards.
+	 	 \end{itemize}	&	NI	\tabularnewline	
+	 	 TA9.4.1	& RFF9.4.1 \\ RFF9.4.1.1 &	L'utente autenticato deve poter ritirare il premio del giorno corrente dalla tabella Daily rewards. \\All'utente viene chiesto di:
+	 	 \begin{itemize}
+	 	 	\item ritirare il premio del giorno dalla tabella dei premi giornalieri tramite l'apposito pulsante "Ritira premio";
+	 	 	\item verificare di non poter ritirare di nuovo il premio del giorno attuale;
+	 	 	\item verificare di non poter ritirare il premio dei giorni successivi o di quelli precedenti.
+	 	 \end{itemize}	&	NI	\tabularnewline
+		 TA10	& RFF10 &	L'utente autenticato deve avere un codice personale visualizzabile nella schermata di gestione del profilo, da inviare ad amici che non sono ancora registrati al servizio offerto da \textit{GaiaGo}.  All'utente autenticato viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla sezione \textit{Gestione Profilo};
 		 	\item verificare che sia presente il suo codice personale.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TA16	& RFF2.6 & 	L'utente che si registra inserendo un codice amico deve ricevere un premio dopo la registrazione. Tale premio deve essere corrisposto anche al proprietario del codice. All'utente che si è registrato inserendo un codice amico viene chiesto di:
+		 TA11	& RFF2.6 & 	L'utente che si registra inserendo un codice amico deve ricevere un premio dopo la registrazione. Tale premio deve essere corrisposto anche al proprietario del codice. All'utente che si è registrato inserendo un codice amico viene chiesto di:
 		 \begin{itemize}
 		 	\item visualizzare la schermata relativa alla registrazione;
 		 	\item inserire, se a conoscenza, i dati nel campo del codice amico;
@@ -299,19 +330,7 @@ dove:
 		 	\item verificare di aver ricevuto i punti esperienza per la registrazione tramite codice amico;
 		 	\item verificare, chiedendo all'amico se ha ricevuto lo stesso premio in seguito alla sua registrazione.
 		 \end{itemize}	&	NI	\tabularnewline	
-		TA17	& RFF15	& L'utente autenticato deve poter visualizzare la tabella Daily Rewards che illustra i premi giornalieri del mese corrente. All'utente viene chiesto di :
-		 \begin{itemize}
-		 	\item verificare che dal menu dell'applicazione si possa accedere e visualizzare la tabella dei Daily Rewards.
-		 \end{itemize}	&	NI	\tabularnewline	
-	
-	 TA17.1	& RFF15.1 &	L'utente autenticato deve poter ritirare il premio del giorno corrente dalla tabella Daily rewards. \\All'utente viene chiesto di:
-		 \begin{itemize}
-		 	\item ritirare il premio del giorno dalla tabella dei premi giornalieri tramite l'apposito pulsante "Ritira premio";
-		 	\item verificare di non poter ritirare di nuovo il premio del giorno attuale;
-		 	\item verificare di non poter ritirare il premio dei giorni successivi o di quelli precedenti.
-		 \end{itemize}	&	NI	\tabularnewline
-
-	 TA18	& RFF16 &	L'utente autenticato deve poter accedere al Minigioco che consiste in un garage che dà la possibilità di effettuare modifiche ad un'auto. All'utente viene chiesto di:
+	 	 TA12	& RFF11 &	L'utente autenticato deve poter accedere al Minigioco che consiste in un garage che dà la possibilità di effettuare modifiche ad un'auto. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla sezione Minigioco dal menu dell'applicazione;
 		 	\item verificare di poter visualizzare l'auto base e le sue statistiche (velocità, accelerazione, peso, maneggevolezza);
@@ -319,7 +338,7 @@ dove:
 		 	\item apportare qualche modifica;
 		 	\item verificare che le modifiche siano state effettivamente installate.
 		 \end{itemize}	&	NI	\tabularnewline
-	TA18.1	& RFF16.1\\ RFF16.1.1 \\ RFF16.1.2 \\ RFF16.1.3 \\ RFF16.1.4 \\ RFF16.1.5  \\RFF16.3  &	L'utente autenticato deve poter accedere al Minigioco del garage in cui potrà modificare le prestazioni dell'auto base. All'utente viene chiesto di:
+		 TA12.1	& RFF11.1\\ RFF11.1.1 \\ RFF11.1.2 \\ RFF11.1.3 \\ RFF11.1.4 \\ RFF11.1.5  \\RFF11.3  &	L'utente autenticato deve poter accedere al Minigioco del garage in cui potrà modificare le prestazioni dell'auto base. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla sezione Minigioco dal menu dell'applicazione ed entrare in modalità modifica prestazioni auto;
 		 	\item verificare di poter sostituire i seguenti pezzi:
@@ -332,7 +351,7 @@ dove:
 		 		\end{itemize}
 		 	\item confermare l'installazione della modifica.
 		 \end{itemize}	&	NI	\tabularnewline
-		 TA18.2	& RFF16.2\\ RFF16.2.1 \\ RFF16.2.2 \\ RFF16.2.3 \\ RFF16.2.4 \\ RFF16.2.5  \\ 	RFF16.2.6 \\ RFF16.2.7 \\RFF16.3 & L'utente autenticato deve poter accedere al Minigioco del garage in cui potrà modificare l'estetica dell'auto base. All'utente viene chiesto di:
+		 TA12.2	& RFF11.2\\ RFF11.2.1 \\ RFF11.2.2 \\ RFF11.2.3 \\ RFF11.2.4 \\ RFF11.2.5  \\ 	RFF11.2.6 \\ RFF11.2.7 \\RFF11.3 & L'utente autenticato deve poter accedere al Minigioco del garage in cui potrà modificare l'estetica dell'auto base. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla sezione Minigioco dal menu dell'applicazione ed entrare in modalità modifica estetica auto;
 		 	\item verificare di poter sostituire i seguenti pezzi:
