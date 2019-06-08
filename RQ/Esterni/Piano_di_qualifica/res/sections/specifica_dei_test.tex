@@ -553,7 +553,6 @@ dove:
 Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
 
 
-
 \renewcommand{\arraystretch}{1.5}
 	\rowcolors{2}{pari}{dispari}
 	
@@ -580,4 +579,189 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 		%	& \textbf{\color{white}Fonti} 
 		\tabularnewline %\hline 
 		\endhead	
-	\end{longtable}
+		
+		TU1 & Viene verificato che \texttt{setMinutePicker()} imposti i valori corretti nell'oggetto \texttt{NumberPicker}. & I & S  \tabularnewline		
+		TU2 & Viene verificato che \texttt{getMinute()} estragga e ritorni il valore corrispondente ai minuti dal \texttt{TimePicker}. & I & S \tabularnewline	
+		TU3 & Viene verificato che \texttt{authenticateUser()} restituisca l'esito corretto dell'autenticazione. & I & S
+		\tabularnewline	
+		TU4 & Viene verificato che \texttt{show(fragment)} disponga correttamente il fragment ricevuto come parametro. & I & S
+		\tabularnewline	
+		TU5 & Viene verificato che \texttt{extractCredentials()} ritorni correttamente i risultati estratti dalle \texttt{EditText}. & I & S\tabularnewline	
+		TU6 & Viene verificato che \texttt{onRegistrationFail(error)} imposti correttamente il \texttt{AlertDialog}. & I & S
+		\tabularnewline	
+		TU7 & Viene verificato che \texttt{onRegistrationSubmitted(credentials)}, in seguito alla validazioni delle credenziali e inserimento dei dati in data base, . & I & S
+		\tabularnewline	
+		TU8 & Viene verificato che \texttt{onRegistrationSuccess()} carichi correttamente la \texttt{AdditionalInformationActivity}. & I & S
+		\tabularnewline	
+		TU9 & Viene verificato che \texttt{extractUserInformation()} istanzi e ritorni correttamente l'oggetto \texttt{User}, con i dati estratti dalle \texttt{EditText}. & I & S
+		\tabularnewline	
+		TU10 & Viene verificato che \texttt{onUserInformationSaved()} carichi correttamente la \texttt{MainActivity}. & I & S
+				\tabularnewline	
+		TU11 & Viene verificato che \texttt{addUserInformation(user)} imposti correttamente il messaggio d'errore quando la validazione dell'\texttt{user} fallisce. & I & S
+		\tabularnewline	
+		TU12 & Viene verificato che \texttt{addUserInformation(user)} in seguito alla validazione dell'\texttt{user} inserisca l'utente in data base. & I & S
+		\tabularnewline	
+		TU13 & Viene verificato che \texttt{onAuthenticationSuccess()} carichi correttamente la \texttt{MainActivity}. & I & S
+		\tabularnewline	
+		TU14 & Viene verificato che \texttt{onAuthenticationError()} imposti correttamente l'\texttt{AlertDialog}. & I & S
+		\tabularnewline	
+		TU15 & Viene verificato che \texttt{login()} in seguito all'autenticazione dell'utente imposti correttamente il messaggio di successo o errore. & I & S
+		\tabularnewline	
+		TU16 & Viene verificato che \texttt{validate(credentials)} estragga correttamente la password e lanci il messaggio d'errore quando la password è vuota. & I & S
+		\tabularnewline	
+		TU17 & Viene verificato che \texttt{EmailValidator.isValid()} effettui correttamente il match con il pattern di convalida definito. & I & S
+		\tabularnewline	
+		TU18 & Viene verificato che \texttt{EmailValidator.validate(user)} ritorni la corretta stringa d'errore quando l'email inserita non è corretta. & I & S
+		\tabularnewline	
+		TU19 & Viene verificato che \texttt{NameValidator.validate(user)} segnali errore quando il nome utente è vuoto. & I & S
+		\tabularnewline	
+		TU20 & Viene verificato che \texttt{PasswordValidator.isValid()} effettui correttamente il match con il pattern di convalida definito. & I & S
+		\tabularnewline	
+		TU21 & Viene verificato che \texttt{PasswordValidator.validate(user)} ritorni la corretta stringa d'errore quando la password inserita non è corretta. & I & S
+		\tabularnewline	
+		TU22 & Viene verificato che \texttt{SurnameValidator.validate()} segnali errore quando il cognome dell'utente è vuoto. & I & S
+		\tabularnewline	
+		TU23 & Viene verificato che \texttt{UsernameValidator.validate()} segnali errore quando il username è vuoto. & I & S
+		\tabularnewline	
+		TU24 & Viene verificato che \texttt{calendarFromDatePicker()} istanzi e ritorni correttamente l'oggetto \texttt{Calendar} con i dati estratti dal \texttt{DatePicker} . & I & S
+		\tabularnewline	
+		TU25 & Viene verificato che \texttt{showEmptyLicenseDateExpirationDialog()} imposti correttamente il \texttt{Dialog} per la segnalazione della data di scadenza della patente non inserita. & I & S
+		\tabularnewline	
+		TU26 & Viene verificato che \texttt{showEmptyLicenseReleaseDateDialog()} imposti correttamente il \texttt{Dialog} per la segnalazione della data di rilascio della patente vuota. & I & S
+		\tabularnewline	
+		TU27 & Viene verificato che \texttt{displayedDateFrom(date)} converta correttamente la data ricevuta come parametro in stringa nel formato DD/MM/AAAA. & I & S
+		\tabularnewline	
+		TU28 & Viene verificato che \texttt{showDialogWith(info)} imposti correttamente il \texttt{Dialog} con le informazioni di esempio della patente. & I & S
+		\tabularnewline	
+		TU30 & Viene verificato che \texttt{onDatesSubmitted(releaseDate,expirationDate)} segnali i dovuti messaggi d'errore quando le date ricevute come parametro sono vuote. & I & S
+		\tabularnewline	
+		TU31 & Viene verificato che \texttt{onDatesSubmitted(releaseDate,expirationDate)} converta correttamente le date da tipo \texttt{String} a \texttt{Long}. & I & S
+		\tabularnewline	
+		TU32 & Viene verificato che \texttt{showEmptyLicenseNumberDialog()} imposti correttamente il \texttt{Dialog} di segnalazione numero patente vuoto. & I & S
+		\tabularnewline	
+		TU33 & Viene verificato che \texttt{showUncheckedLicenseCategoryHeldDialog()} imposti correttamente il \texttt{Dialog} che segnala la mancata conferma di possesso della patente di guida B. & I & S
+		\tabularnewline	
+		TU34 & Viene verificato che \texttt{onLicenseNumberSubmitted()} segnali correttamente i messaggi d'errore per il mancato inserimento del numero della patente e conferma della categoria B. & I & S
+		\tabularnewline	
+		TU35 & Viene verificato che \texttt{onUploadError()} imposti correttamente il \texttt{AlertDialog} per il mancato caricamento delle foto della patente. & I & S
+		\tabularnewline	
+		TU36 & Viene verificato che \texttt{showNoneLicenseBackSidePictureDialog()} imposti correttamente il \texttt{Dialog} che segnala l'assenza della foto posteriore della patente. & I & S
+		\tabularnewline	
+		TU37 & Viene verificato che \texttt{showNoneLicenseFrontSidePictureDialog()} imposti correttamente il \texttt{Dialog} che segnala l'assenza della foto frontale della patente. & I & S
+		\tabularnewline	
+		TU38 & Viene verificato che \texttt{createImageFile()} istanzi correttamente i file relativi alle immagini della patente. & I & S \tabularnewline	
+		
+		TU39 & Viene verificato che \texttt{dispatchTakePictureIntent()} estragga correttamente le immagini della patente e che segnali l'errore in caso di fallimento. & I & S
+		\tabularnewline	
+		TU40 & Viene verificato che \texttt{onPicturesSubmitted(frontPicturePath,backPicturePath,listener)} segnali i rispettivi errori nel caso in cui \texttt{frontPicturePath} e \texttt{backPicturePath} siano vuoti. & I & S
+		\tabularnewline	
+		TU41 & Viene verificato che \texttt{onPicturesSubmitted(frontPicturePath,backPicturePath,listener)} trasmetta correttamente i percorsi al listner nel caso in cui essi siano validi. & I & S
+		\tabularnewline	
+		TU42 & Viene verificato che \texttt{saveFront()} carichi correttamente la foto frontale della patente nel data base. & I & S
+		\tabularnewline	
+		TU43 & Viene verificato che \texttt{saveBack()} carichi correttamente la foto posteriore della patente nel data base. & I & S
+		\tabularnewline	
+		TU44 & Viene verificato che \texttt{showLicenseDatesRegistration()} carichi correttamente il fragment per l'inserimento delle date della patente. & I & S
+		\tabularnewline	
+		TU45 & Viene verificato che \texttt{showLicensePicturesRegistration()} carichi correttamente il fragment per l'inserimento delle foto della patente. & I & S
+		\tabularnewline	
+		TU46 & Viene verificato che \texttt{showInitialFragment()} carichi correttamente il fragment iniziale per l'inserimento dei dati della patente. & I & S
+		\tabularnewline	
+		TU47 & Viene verificato che \texttt{onVehiclesSearch(reservation,distance)} carichi correttamente \texttt{AvailableVehiclesFragment}. & I & S
+		\tabularnewline	
+		TU48 & Viene verificato che \texttt{askLogOutConfirmation()} carichi correttamente il \texttt{AlertDialog}. & I & S
+		\tabularnewline	
+		TU49 & Viene verificato che \texttt{showLoginView()} carichi correttamente la \texttt{LoginActivity} . & I & S
+		\tabularnewline	
+		TU50 & Viene verificato che \texttt{showDialog(dialogFragment)} imposti correttamente il fragment ricevuto come parametro. & I & S
+		\tabularnewline	
+		TU51 & Viene verificato che \texttt{showProfile(user)} imposti correttamente le \texttt{TextView} con i dati dell'utente. & I & S
+		\tabularnewline	
+		TU52 & Viene verificato che \texttt{onProfileLoaded(profile)} istanzi correttamente gli oggetti \texttt{user} e \texttt{license}. & I & S
+		\tabularnewline	
+		TU53 & Viene verificato che \texttt{loadProfile()} scarichi correttamente i dati dell'utente dal data base. & I & S
+		\tabularnewline	
+		TU54 & Viene verificato che \texttt{updateNameSurname()} aggiorni correttamente il nome dell'utente in data base. & I & S
+		\tabularnewline	
+		TU55 & Viene verificato che \texttt{updatePhoneNumber()} aggiorni correttamente il numero di telefono dell'utente in data base. & I & S
+		\tabularnewline	
+		TU56 & Viene verificato che \texttt{updateEmail()} aggiorni correttamente l'email dell'utente in data base. & I & S
+		\tabularnewline	
+		TU57 & Viene verificato che \texttt{updateBirthDate()} aggiorni correttamente la data di nascita in data base. & I & S
+		\tabularnewline	
+		TU58 & Viene verificato che \texttt{updateAddress()} aggiorni correttamente l'indirizzo in data base. & I & S
+		\tabularnewline	
+		TU59 & Viene verificato che \texttt{intToHour(interval)} converta correttamente e ritorni la stringa indicante l'ora ricevuta come parametro. & I & S
+		\tabularnewline	
+		TU60 & Viene verificato che \texttt{onStart()} carichi correttamente le prenotazioni attive dell'utente. & I & S
+		\tabularnewline	
+		TU61 & Viene verificato che \texttt{initRecycler()} carichi correttamente nella \texttt{RrecyclerView} le prenotazioni dell'utente. & I & S
+		\tabularnewline	
+		TU62 & Viene verificato che \texttt{showBookingConfirmation()} carichi correttamente la \texttt{ConfirmReservationActivity}. & I & S
+		\tabularnewline	
+		TU63 & Viene verificato che \texttt{showBooking()} carichi correttamente la \texttt{ShowReservationActivity}. & I & S
+		\tabularnewline	
+		TU64 & Viene verificato che \texttt{loadPersonalReservations()} scarichi correttamente le prenotazioni richieste dall'utente dal data base. & I & S
+		\tabularnewline	
+		TU65 & Viene verificato che \texttt{loadOwnerReservations()} scrichi correttamente le prenotazioni ricevute dal data base. & I & S
+		\tabularnewline	
+		TU66 & Viene verificato che \texttt{SelectedVehicleActivity.initView()} inserisca nella \texttt{View} i dati del veicolo selezionato correttamente . & I & S
+		\tabularnewline	
+		TU67 & Viene verificato che \texttt{bookVehicle(dayAvailability,startHour,endHour)} aggiorni correttamente la disponibilità del veicolo selezionato secondo i parametri ricevuti. & I & S
+		\tabularnewline	
+		TU68 & Viene verificato che \texttt{onReservationInserted()} comunichi il messaggio di prenotazione effettuata all'utente e successivamente e che imposti poi la \texttt{MainActivity} correttamente. & I & S
+		\tabularnewline	
+		TU69 & Viene verificato che \texttt{onBookingConfirmed(reservation, vehicleID, newAvailability)} carichi correttamente i dati della prenotazione del data base. & I & S
+		\tabularnewline	
+		TU70 & Viene verificato che \texttt{loadRecycler()} carichi correttamente i veicoli disponibili nella \texttt{RecyclerView}. & I & S \tabularnewline	
+		
+		TU71 & Viene verificato che \texttt{loadVehicles()} carichi correttamente dal data base i veicoli diponibili, in base alla posizione dell'utente. & I & S
+		\tabularnewline	
+		TU72.1 & Viene verificato che \texttt{loadUserLocation()} carichi correttamente i veicoli dell'utente in base alla sua posizione, quando possiede già il permesso per ottenere la posizione dell'utente. & I & S
+		\tabularnewline	
+		TU72.2 & Viene verificato che \texttt{loadUserLocation()}, quando non possiede il permesso per controllare la posizione dell'utente, chiede il permesso per la posizione all'utente. & I & S
+		\tabularnewline	
+		TU73 & Viene verificato che \texttt{getLocationPermission()} istanzi correttamente l'\texttt{Activity} di richiesta del premesso per la posizione del dispositivo all'utente. & I & S
+		\tabularnewline	
+		TU74 & Viene verificato che \texttt{onRequestPermissionsResult()} carichi correttamente i veicoli in base alla posizione dell'utente. & I & S
+		\tabularnewline	
+		TU75 & Viene verificato che \texttt{AvailableVehiclesPresenter}. & I & S
+		\tabularnewline	
+		TU76 & Viene verificato che \texttt{searchVehicles()} estragga correttamente dalle \texttt{EditText} i parametri di ricerca del veicolo e richiami poi la funzione di caricamento dei veicoli disponibili dal database per tali parametri. & I & S
+		\tabularnewline	
+		TU77.1 & Viene verificato che \texttt{checkUserAuthentication()} richiami correttamente showMainView() se l'utente è già autenticato. & I & S
+		\tabularnewline	
+		TU77.2 & Viene verificato che \texttt{checkUserAuthentication()} richiami correttamente showLoginView() se l'utente non è già autenticato. & I & S
+		\tabularnewline	
+		TU78 & Viene verificato che \texttt{saveCar()} estragga correttamente i dati del veicolo dalla \texttt{View} e richiamo la funziona \texttt{uploadVehicle()} per il caricamento in data base. & I & S
+		\tabularnewline	
+		TU79 & Viene verificato che \texttt{uploadVehicle()} carichi correttamente i dati del veicolo in data base. & I & S
+		\tabularnewline	
+		TU80 & Viene verificato che \texttt{onVehicleUploaded()} imposti correttamente la \texttt{MainActivity}. & I & S
+		\tabularnewline	
+		TU81.1 & Viene verificato che \texttt{initRegisterButton()} imposti correttamente il messaggio d'errore quando le foto del nuovo veicolo non sono state inserite oppure quando non sono ancora state caricate in database. & I & S
+		\tabularnewline	
+		TU81.2 & Viene verificato che \texttt{initRegisterButton()} invochi correttamente \texttt{saveCar()} quando le immagini del nuovo veicolo sono sono state inserite e caricate nel database. & I & S
+		\tabularnewline	
+		TU82 & Viene verificato che \texttt{initFabImagePicker()} istanzi correttamente l'\texttt{Activity} di scelta dell'immagine da caricare al click del bottone. & I & S
+		\tabularnewline	
+		TU83 & Viene verificato che \texttt{initBrandEditText()} istanzi correttamente il fragment per la scelta della marca del veicolo da inserire. & I & S
+		\tabularnewline	
+		TU84 & Viene verificato che \texttt{initModelEditText()} istanzi correttamente il fragment per la scelta del modello del veicolo da inserire. & I & S
+		\tabularnewline	
+		TU85 & Viene verificato che \texttt{initPlaceAutocomplete()} istanzi correttamente l'auto-completamento della via da inserire. & I & S
+		\tabularnewline	
+		TU86 & Viene verificato che \texttt{fetchPlace()} fornisca i suggerimenti di auto-completamento correttamente. & I & S
+		\tabularnewline	
+		TU87.1 & Viene verificato che \texttt{onAvailabilityUpdated()} instanzi correttamente la \texttt{AlerdDialog} che richieda all'utente se vuole inserire un'altra disponibilità. & I & S
+		\tabularnewline	
+		TU87.2 & Viene verificato che \texttt{onAvailabilityUpdated()} instanzi correttamente la \texttt{MainActivity} quando l'utente sceglie di non inserire altre disponibilità. & I & S
+		\tabularnewline	
+		TU87.3 & Viene verificato che \texttt{onAvailabilityUpdated()} rimanga nell'activity corrrente quando l'utente comunica di voler inserire un'altra disponibilità. & I & S
+		\tabularnewline	
+		TU88 & Viene verificato che \texttt{•}. & I & S
+		\tabularnewline	
+		TU89 & Viene verificato che \texttt{•}. & I & S
+		
+		
+		\end{longtable}
