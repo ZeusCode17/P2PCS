@@ -43,14 +43,14 @@ Durante i periodi di Progettazione e Codifica per la Technology Baseline\glosp e
 	}
 	
 	
-	\caption{Tabella del tracciamento incremento-casi d’uso}\\
+	\caption{Tabella del tracciamento incremento-requisiti}\\
 	\rowcolorhead
-	\colorhead\textbf{Incremento} & \centering\colorhead\textbf{Casi d'uso}
+	\colorhead\textbf{Incremento} & \centering\colorhead\textbf{Requisiti}
 	\tabularnewline
 	\endfirsthead
 	\rowcolor{white}\caption[]{(continua)}\\
 	\rowcolorhead
-	\colorhead\textbf{Incremento} & \centering\colorhead\textbf{Casi d'uso}
+	\colorhead\textbf{Incremento} & \centering\colorhead\textbf{Requisiti}
 	\tabularnewline
 	\endhead
 	
@@ -76,5 +76,54 @@ Durante i periodi di Progettazione e Codifica per la Technology Baseline\glosp e
 \end{longtable}
 \counterwithin{table}{subsection}	
 \renewcommand{\arraystretch}{1}
+\pagebreak
 
 I requisiti sopracitati sono stati successivamente assegnati al relativo incremento. Quest’operazione è stata ritenuta utile al fine di organizzare meglio il lavoro. Viene riportata di seguito la tabella del tracciamento incremento-casi d’uso, in cui i casi d’uso riportati includono tutti i casi d’uso figli.
+
+\counterwithin{table}{section}
+\renewcommand{\arraystretch}{1.5}
+\rowcolors{2}{dispari}{pari}
+\arrayrulecolor{white}
+\begin{longtable}{ 
+		>{\centering}p{0.17\textwidth} 
+		>{\raggedright}p{0.28\textwidth}
+		>{\raggedright}p{0.29\textwidth} 
+		>{\centering}p{0.15\textwidth}
+	}
+	
+	
+	\caption{Tabella del tracciamento incremento-casi d'uso}\\
+	\rowcolorhead
+	\colorhead\textbf{Incremento} & \centering\colorhead\textbf{Casi d'uso}
+	\tabularnewline
+	\endfirsthead
+	\rowcolor{white}\caption[]{(Casi d'uso)}\\
+	\rowcolorhead
+	\colorhead\textbf{Incremento} & \centering\colorhead\textbf{Casi d'uso}
+	\tabularnewline
+	\endhead
+	
+	%R---------------------------------------------------------
+	{Registrazione} & \centering UC1\\
+	\tabularnewline
+	%R---------------------------------------------------------
+	{Login} & \centering UC6\\
+	\tabularnewline
+	%R---------------------------------------------------------
+	{Logout} & \centering UC9\\
+	\tabularnewline
+	%R---------------------------------------------------------
+	{Home} & \centering UC10\\
+	\tabularnewline
+	%R---------------------------------------------------------
+	{Profilo utente} & \centering UC15\\
+	\tabularnewline
+	%R---------------------------------------------------------
+	{Progress Bar} & \centering UC17\\
+	\tabularnewline
+	
+\end{longtable}
+\counterwithin{table}{subsection}	
+\renewcommand{\arraystretch}{1}
+
+Altri incrementi riguardanti la Gamification\glosp sono riportati nella relativa sezione del periodo in cui sono effettuati.
