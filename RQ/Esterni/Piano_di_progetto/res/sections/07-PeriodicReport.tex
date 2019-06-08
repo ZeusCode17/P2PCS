@@ -243,3 +243,87 @@ Come emerge dai dati riportati nella tabella soprastante, che presenta le ore re
 
 \subsubsection{Preventivo a finire}
 Il bilancio economico è positivo, sono stati risparmiati \EUR{140,00}. Tali fondi verranno reinvestiti nelle fasi future per la realizzazione di alcuni requisiti opzionali.
+
+
+\subsection{Periodo di progettazione di dettaglio e codifica}
+Le ore sostenute durante questo periodo sono relative alla redazione alla codifica necessaria per la realizzazione della Product Baseline\glo. Tale periodo è da considerarsi rendicontato in quanto il lavoro è svolto con lo scopo di sviluppare il prodotto finale.
+
+
+\begin{table}[H]
+	\centering\renewcommand{\arraystretch}{1.5}
+	\caption{Consuntivo di periodo della fase di progettazione di dettaglio e codifica}
+	\vspace{0.2cm}
+	\begin{tabular}{c c c}
+		
+		\rowcolorhead
+		{\colorhead \textbf{Ruolo}} &
+		{\colorhead \textbf{Ore}} & 
+		{\colorhead \textbf{Costo}} \\
+		
+		\rowcolorlight
+		{\colorbody Responsabile} & {\colorbody 16 (+0)} & 
+		{\colorbody \EUR{480,00} (+\EUR{0,00})}  
+		\\
+		
+		\rowcolordark
+		{\colorbody Amministratore} & {\colorbody 21 (-5)} & 
+		{\colorbody \EUR{420,00} (-\EUR{100,00})}
+		\\	
+		
+		\rowcolorlight
+		{\colorbody Analista} & {\colorbody 0 (+7)} & 
+		{\colorbody \EUR{0,00} (+\EUR{125,00})} 
+		\\
+		
+		\rowcolordark
+		{\colorbody Progettista} & {\colorbody 64 (+20)} & 
+		{\colorbody \EUR{1408,00} (+\EUR{440,00})} 
+		\\
+		
+		\rowcolorlight
+		{\colorbody Programmatore} & {\colorbody 117 (+10)} & 
+		{\colorbody \EUR{1755,00} (+\EUR{150,00})} 
+		\\
+		
+		\rowcolordark
+		{\colorbody Verificatore} & {\colorbody 82 (+0)} & 
+		{\colorbody \EUR{1230,00} (+\EUR{0,00})} 
+		\\
+		
+		\rowcolorlight
+		{\colorbody \textbf{Totale Preventivo}} & {\colorbody \textbf{300}} & 
+		{\colorbody \textbf{\EUR{5293,00}}} 
+		\\
+		
+		
+		\rowcolordark
+		{\colorbody \textbf{Totale Consuntivo}} & {\colorbody \textbf{332}} & 
+		{\colorbody \textbf{\EUR{6258,00}}} 
+		\\
+		
+		
+		\rowcolorlight
+		{\colorbody \textbf{Differenza}} & {\colorbody \textbf{32}} & 
+		{\colorbody \textbf{+\EUR{615,00}}} 
+		\\
+		\rowcolordark
+		{\colorbody \textbf{Totale con risparmio(-\EUR{140,00})}} & & 
+		{\colorbody \textbf{\EUR{475,00}}} 
+		\\
+		
+		
+	\end{tabular}
+	
+\end{table}
+
+\subsubsection{Conclusioni}
+Come emerge dai dati riportati nella tabella soprastante, che presenta le ore relative al consuntivo della fase di Progettazione di Dettaglio e Codifica, la progettazione ha subito una sostanziale modifica. Di seguito sono riportati in dettaglio i vari scostamenti orari dei ruoli interessati:
+\begin{itemize}
+	\item \textbf{Amministratori:} sono stati risolti i probelmi sorti nella face precedente riguardanti la Continuos Integration\glosp ciò ha portato ad una diminuzione del monte ore preventivato;
+	\item \textbf{Progettista:} si è reso necessario un monte ore maggiore per questo ruolo a causa della necessità di individuare i corretti design pattern\glosp da applicare, soprattuto per quanto riguarda il back-end\glosp. Modifica che ci è stata suggerita a seguito della Product Baseline\glo; 
+	\item \textbf{Verificatore:} nonostante la variazione del monte ore da programmatore le ore preventivate sono risultate sufficienti;
+	\item \textbf{Programmatore:} al contrario di quanto preventivato il totale delle ore di programmazione ha subito un leggero aumento, a causa della difficoltà di integrare alcune parti riguardanti la Gamification\glo, e di alcune modifiche richieste dalla proponente.
+\end{itemize}
+
+\subsubsection{Preventivo a finire}
+Il bilancio economico è negativo, il costo è di \EUR{475,00}. Oltre a questo scostamento dal preventivo iniziale, nella fase seguente, si terrà conto anche del monte ore richiesto in aggiunta. Si prevede di recuperare e il debito grazie alla rivisitazione della progettazione effettuata che ci consentirà di risparmiare ore nella fase di testing e codifica in generale che attualmente si trova ad uno stato avanzato. 
