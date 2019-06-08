@@ -587,9 +587,13 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 		TU4 & Viene verificato che \texttt{show(fragment)} disponga correttamente il fragment ricevuto come parametro. & I & S
 		\tabularnewline	
 		TU5 & Viene verificato che \texttt{extractCredentials()} ritorni correttamente i risultati estratti dalle \texttt{EditText}. & I & S\tabularnewline	
-		TU6 & Viene verificato che \texttt{onRegistrationFail(error)} imposti correttamente il \texttt{AlertDialog}. & I & S
+		TU6 & Viene verificato che \texttt{onRegistrationFail(error)} imposti correttamente l'\texttt{AlertDialog}. & I & S
 		\tabularnewline	
-		TU7 & Viene verificato che \texttt{onRegistrationSubmitted(credentials)}, in seguito alla validazioni delle credenziali e inserimento dei dati in data base, . & I & S
+		TU7.1 & Viene verificato che \texttt{onRegistrationSubmitted(credentials)}, in seguito alla validazioni delle credenziali e inserimento dei dati in database, richiami \texttt{onRegistrationSuccess()}. & I & S
+		\tabularnewline	
+		TU7.2 & Viene verificato che \texttt{onRegistrationSubmitted(credentials)}, in caso di validazione fallita, richiamo \texttt{onRegistrationFail()} . & I & S
+		\tabularnewline	
+		TU7.3 & Viene verificato che \texttt{onRegistrationSubmitted(credentials)}, in caso di caricamento fallito nel database, istanzi il relativo logging error. & I & S
 		\tabularnewline	
 		TU8 & Viene verificato che \texttt{onRegistrationSuccess()} carichi correttamente la \texttt{AdditionalInformationActivity}. & I & S
 		\tabularnewline	
@@ -599,7 +603,7 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 				\tabularnewline	
 		TU11 & Viene verificato che \texttt{addUserInformation(user)} imposti correttamente il messaggio d'errore quando la validazione dell'\texttt{user} fallisce. & I & S
 		\tabularnewline	
-		TU12 & Viene verificato che \texttt{addUserInformation(user)} in seguito alla validazione dell'\texttt{user} inserisca l'utente in data base. & I & S
+		TU12 & Viene verificato che \texttt{addUserInformation(user)} in seguito alla validazione dell'\texttt{user} inserisca l'utente in database. & I & S
 		\tabularnewline	
 		TU13 & Viene verificato che \texttt{onAuthenticationSuccess()} carichi correttamente la \texttt{MainActivity}. & I & S
 		\tabularnewline	
@@ -657,9 +661,9 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 		\tabularnewline	
 		TU41 & Viene verificato che \texttt{onPicturesSubmitted(frontPicturePath,backPicturePath,listener)} trasmetta correttamente i percorsi al listner nel caso in cui essi siano validi. & I & S
 		\tabularnewline	
-		TU42 & Viene verificato che \texttt{saveFront()} carichi correttamente la foto frontale della patente nel data base. & I & S
+		TU42 & Viene verificato che \texttt{saveFront()} carichi correttamente la foto frontale della patente nel database. & I & S
 		\tabularnewline	
-		TU43 & Viene verificato che \texttt{saveBack()} carichi correttamente la foto posteriore della patente nel data base. & I & S
+		TU43 & Viene verificato che \texttt{saveBack()} carichi correttamente la foto posteriore della patente nel database. & I & S
 		\tabularnewline	
 		TU44 & Viene verificato che \texttt{showLicenseDatesRegistration()} carichi correttamente il fragment per l'inserimento delle date della patente. & I & S
 		\tabularnewline	
@@ -679,17 +683,17 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 		\tabularnewline	
 		TU52 & Viene verificato che \texttt{onProfileLoaded(profile)} istanzi correttamente gli oggetti \texttt{user} e \texttt{license}. & I & S
 		\tabularnewline	
-		TU53 & Viene verificato che \texttt{loadProfile()} scarichi correttamente i dati dell'utente dal data base. & I & S
+		TU53 & Viene verificato che \texttt{loadProfile()} scarichi correttamente i dati dell'utente dal database. & I & S
 		\tabularnewline	
-		TU54 & Viene verificato che \texttt{updateNameSurname()} aggiorni correttamente il nome dell'utente in data base. & I & S
+		TU54 & Viene verificato che \texttt{updateNameSurname()} aggiorni correttamente il nome dell'utente in database. & I & S
 		\tabularnewline	
-		TU55 & Viene verificato che \texttt{updatePhoneNumber()} aggiorni correttamente il numero di telefono dell'utente in data base. & I & S
+		TU55 & Viene verificato che \texttt{updatePhoneNumber()} aggiorni correttamente il numero di telefono dell'utente in database. & I & S
 		\tabularnewline	
-		TU56 & Viene verificato che \texttt{updateEmail()} aggiorni correttamente l'email dell'utente in data base. & I & S
+		TU56 & Viene verificato che \texttt{updateEmail()} aggiorni correttamente l'email dell'utente in database. & I & S
 		\tabularnewline	
-		TU57 & Viene verificato che \texttt{updateBirthDate()} aggiorni correttamente la data di nascita in data base. & I & S
+		TU57 & Viene verificato che \texttt{updateBirthDate()} aggiorni correttamente la data di nascita in database. & I & S
 		\tabularnewline	
-		TU58 & Viene verificato che \texttt{updateAddress()} aggiorni correttamente l'indirizzo in data base. & I & S
+		TU58 & Viene verificato che \texttt{updateAddress()} aggiorni correttamente l'indirizzo in database. & I & S
 		\tabularnewline	
 		TU59 & Viene verificato che \texttt{intToHour(interval)} converta correttamente e ritorni la stringa indicante l'ora ricevuta come parametro. & I & S
 		\tabularnewline	
@@ -701,9 +705,9 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 		\tabularnewline	
 		TU63 & Viene verificato che \texttt{showBooking()} carichi correttamente la \texttt{ShowReservationActivity}. & I & S
 		\tabularnewline	
-		TU64 & Viene verificato che \texttt{loadPersonalReservations()} scarichi correttamente le prenotazioni richieste dall'utente dal data base. & I & S
+		TU64 & Viene verificato che \texttt{loadPersonalReservations()} scarichi correttamente le prenotazioni richieste dall'utente dal database. & I & S
 		\tabularnewline	
-		TU65 & Viene verificato che \texttt{loadOwnerReservations()} scrichi correttamente le prenotazioni ricevute dal data base. & I & S
+		TU65 & Viene verificato che \texttt{loadOwnerReservations()} scrichi correttamente le prenotazioni ricevute dal database. & I & S
 		\tabularnewline	
 		TU66 & Viene verificato che \texttt{SelectedVehicleActivity.initView()} inserisca nella \texttt{View} i dati del veicolo selezionato correttamente . & I & S
 		\tabularnewline	
@@ -711,11 +715,11 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 		\tabularnewline	
 		TU68 & Viene verificato che \texttt{onReservationInserted()} comunichi il messaggio di prenotazione effettuata all'utente e successivamente e che imposti poi la \texttt{MainActivity} correttamente. & I & S
 		\tabularnewline	
-		TU69 & Viene verificato che \texttt{onBookingConfirmed(reservation, vehicleID, newAvailability)} carichi correttamente i dati della prenotazione del data base. & I & S
+		TU69 & Viene verificato che \texttt{onBookingConfirmed(reservation, vehicleID, newAvailability)} carichi correttamente i dati della prenotazione del database. & I & S
 		\tabularnewline	
 		TU70 & Viene verificato che \texttt{loadRecycler()} carichi correttamente i veicoli disponibili nella \texttt{RecyclerView}. & I & S \tabularnewline	
 		
-		TU71 & Viene verificato che \texttt{loadVehicles()} carichi correttamente dal data base i veicoli diponibili, in base alla posizione dell'utente. & I & S
+		TU71 & Viene verificato che \texttt{AvailableVehicleFragment.loadVehicles()} carichi correttamente dal database i veicoli disponibili, in base alla posizione dell'utente. & I & S
 		\tabularnewline	
 		TU72.1 & Viene verificato che \texttt{loadUserLocation()} carichi correttamente i veicoli dell'utente in base alla sua posizione, quando possiede già il permesso per ottenere la posizione dell'utente. & I & S
 		\tabularnewline	
@@ -733,9 +737,9 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 		\tabularnewline	
 		TU77.2 & Viene verificato che \texttt{checkUserAuthentication()} richiami correttamente showLoginView() se l'utente non è già autenticato. & I & S
 		\tabularnewline	
-		TU78 & Viene verificato che \texttt{saveCar()} estragga correttamente i dati del veicolo dalla \texttt{View} e richiamo la funziona \texttt{uploadVehicle()} per il caricamento in data base. & I & S
+		TU78 & Viene verificato che \texttt{saveCar()} estragga correttamente i dati del veicolo dalla \texttt{View} e richiamo la funziona \texttt{uploadVehicle()} per il caricamento in database. & I & S
 		\tabularnewline	
-		TU79 & Viene verificato che \texttt{uploadVehicle()} carichi correttamente i dati del veicolo in data base. & I & S
+		TU79 & Viene verificato che \texttt{uploadVehicle()} carichi correttamente i dati del veicolo in database. & I & S
 		\tabularnewline	
 		TU80 & Viene verificato che \texttt{onVehicleUploaded()} imposti correttamente la \texttt{MainActivity}. & I & S
 		\tabularnewline	
@@ -759,9 +763,48 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 		\tabularnewline	
 		TU87.3 & Viene verificato che \texttt{onAvailabilityUpdated()} rimanga nell'activity corrrente quando l'utente comunica di voler inserire un'altra disponibilità. & I & S
 		\tabularnewline	
-		TU88 & Viene verificato che \texttt{•}. & I & S
+		TU88 & Viene verificato che \texttt{addFixedAvailability(vehicle, date, startHour, endHour)} aggiunga correttamente in database la disponibilità secondo i parametri ricevuti. & I & S
 		\tabularnewline	
-		TU89 & Viene verificato che \texttt{•}. & I & S
+		TU89 & Viene verificato che \texttt{addRepeatedAvailability(vehicle,startHour,endHour,week,repeatFor)} inserisca correttamente in database la disponibilità secondo i parametri ricevuti. & I & S
+		\tabularnewline	
+		TU90 & Viene verificato che \texttt{setDayAvailability(dayAvailability, startHour, endHour)} modifichi il range di ore disponibili di \texttt{dayAvailability} correttamente. & I & S
+		\tabularnewline	
+		TU91 & Viene verificato che \texttt{showCheckBoxDialog()} istanzi correttamente l'\texttt{AlertDialog} contente i giorni della settimana da seleziore. & I & S
+		\tabularnewline	
+		TU92 & Viene verificato che \texttt{selectedDays()} istanzi correttamente l'array che tiene traccia dei giorni della settimana selezionati per la disponibilità. & I & S
+		\tabularnewline	
+		TU93 & Viene verificato che \texttt{askRemoveConfirmation()} istanzi correttamente l'\texttt{AlertiDialog} di conferma della rimozione veicolo. & I & S
+		\tabularnewline	
+		TU94 & Viene verificato che \texttt{showAddAvailability()} istanzi correttamente la \texttt{AddAvailabilityActivity}. & I & S
+		\tabularnewline	
+		TU95 & Viene verificato che \texttt{onVehicleRemoved()} istanzi correttamente la \texttt{MainActivity}. & I & S
+		\tabularnewline	
+		TU96 & Viene verificato che \texttt{removeVehicle(key)} rimuova correttamente dal database il veicolo selezionato. & I & S
+		\tabularnewline	
+		TU97 & Viene verificato che \texttt{VehicleListPresenter.loadVehicles()} carichi correttamente dal database i veicoli di proprietà dell'utente. & I & S
+		\tabularnewline	
+		TU98 & Viene verificato che \texttt{verifyTime()} estragga il tempo rimanente per il prossimo premio correttamente dal database. & I & S
+		\tabularnewline	
+		TU99 & Viene verificato che \texttt{countDown()} segnali il tempo rimanente fino alla prossima mezza notte correttamente. & I & S
+		\tabularnewline	
+		TU100 & Viene verificato che \texttt{saveReward()} carichi correttamente in database il premio ritirato. & I & S
+		\tabularnewline	
+		TU101.1 & Viene verificato che \texttt{ritira()} permetta il ritiro del premio solo una volta al giorno. & I & S
+		\tabularnewline	
+		TU101.2 & Viene verificato che \texttt{ritira()} non permetta il ritiro del premio quando il \texttt{countDown} è attivo. & I & S
+		\tabularnewline	
+		TU101.3 & Viene verificato che \texttt{ritira()} istanzi correttamente l'\texttt{AlertDialog} di illustrazione dettaglio premio quando è disponibile per il ritiro. & I & S
+		\tabularnewline
+		
+		TU102 & Viene verificato che \texttt{millisToString()} converta il tempo di \texttt{countDown} rimanente nella forma ore:minuti:secondi. & I & S
+		\tabularnewline	
+		TU103 & Viene verificato che \texttt{checkStatus()} renda disponibile il ritiro del premio solo quando lo stato del premio è \texttt{Available}. & I & S
+		\tabularnewline	
+		TU104 & Viene verificato che \texttt{showPopUp()} istanzi correttamente la \texttt{PopupWindow} per il ritiro del premio. & I & S
+		\tabularnewline	
+		TU105 & Viene verificato che \texttt{givePrize()} consegni il premio all'utente, marcandolo come \texttt{Withdrawn} in database. & I & S
+		\tabularnewline	
+		TU106 & Viene verificato che \texttt{loadMilestoneList()} carichi correttamente dal database i premi scelti per la Milestone Unlock. & I & S
 		
 		
 		\end{longtable}
