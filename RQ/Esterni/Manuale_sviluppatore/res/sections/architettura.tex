@@ -20,12 +20,10 @@ Il model è dotato di tre servizi principali, successivamente segmentati in macr
 	\item Storage
 \end{itemize}
 \subsubsection{View}
-Rappresenta l’interfaccia utente. Ogni View\glosp disegna sul dispositivo una schermata che permette all’utente di interagire con l’applicazione.
+Rappresenta l’interfaccia utente. Ogni View\glosp disegna sul dispositivo una schermata che permette all'utente di interagire con l’applicazione.
 \subsubsection{Presenter}
-È il mediatore tra Model\glosp e View\glosp ed elabora i dati del Model\glosp in modo che possano essere visualizzati nella View\glosp e risponde alle richieste dell'utente nella
-View\glosp interagendo con il Model. Il Presenter\glosp quindi vuole tenere separate la parte grafica dell'applicazione e la logica di business.
-
-Ogni Activity\glosp quindi sarà composta da una View\glosp e un Presenter\glosp che saranno legati da un contratto che ne definisce le rispettive interfacce.
+È il mediatore tra Model\glosp e View\glosp ed elabora i dati del Model in modo che possano essere visualizzati nella View e risponde alle richieste dell'utente nella View interagendo con il Model. Il Presenter\glosp quindi vuole tenere separate la parte grafica dell'applicazione e la logica di business.\newline
+Ogni activity\glosp quindi sarà composta da una View e un Presenter che saranno legati da un contratto che ne definisce le rispettive interfacce.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]
@@ -43,9 +41,9 @@ Ogni Activity\glosp quindi sarà composta da una View\glosp e un Presenter\glosp
 	\label{Directory Tree}
 \end{figure}
 \begin{itemize}
-	\item \textbf{extension} contiene classi e funzioni di utilità come la conversione di una data in millisecondi ad una data in formato ddMMyyy;
-	\item \textbf{model} contiene i package\glo, classi e interfacce che si occupano della gestione di Firebase\glo;
-	\item \textbf{ui} contiene la user interface suddividendola in macro-package.
+	\item \textbf{extension}: contiene classi e funzioni di utilità come la conversione di una data in millisecondi ad una data in formato ddMMyyy;
+	\item \textbf{model}: contiene i package\glo, classi e interfacce che si occupano della gestione di Firebase\glo;
+	\item \textbf{ui}: contiene la user interface suddividendola in macro-package.
 \end{itemize}
 \begin{figure}[H]
 	\centering
@@ -54,4 +52,4 @@ Ogni Activity\glosp quindi sarà composta da una View\glosp e un Presenter\glosp
 	\caption{Authentication package}
 	\label{Authentication package}
 \end{figure}
-Ogni macro-package è infine suddiviso in package\glosp che rappresentano le singole funzionalità dell'applicazione, questi sono composti principalmente da View\glosp, Presenter\glosp e Contract\glosp. Alcuni package\glosp possono contenere fragment\glosp aggiuntivi.
+Ogni macro-package è infine suddiviso in package\glosp che rappresentano le singole funzionalità dell'applicazione, questi sono composti principalmente da View\glosp, Presenter\glosp e Contract\glo. Alcuni package possono contenere fragment\glosp aggiuntivi.
