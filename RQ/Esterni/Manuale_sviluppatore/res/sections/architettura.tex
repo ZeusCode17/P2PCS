@@ -12,12 +12,12 @@ P2PCS implementa il design pattern MVP\glosp seguendo le linee guida fornite da 
 \newline
 \subsubsection{Model}
 Contiene i dati che l’applicazione può elaborare e visualizzare. Mette inoltre a disposizione metodi per leggere e modificare tali dati.
-In questo progetto fornisce i metodi di lettura e scrittura su Firebase\glo.
+In questo progetto vengono forniti i metodi di lettura e scrittura su Firebase\glo.
 Il model è dotato di tre servizi principali, successivamente segmentati in macro-argomenti, che sono:
 \begin{itemize}
-	\item Authentication
-	\item Database
-	\item Storage
+	\item Authentication;
+	\item Database;
+	\item Storage.
 \end{itemize}
 \subsubsection{View}
 Rappresenta l’interfaccia utente. Ogni View\glosp disegna sul dispositivo una schermata che permette all'utente di interagire con l’applicazione.
@@ -41,7 +41,7 @@ Ogni activity\glosp quindi sarà composta da una View e un Presenter che saranno
 	\label{Directory Tree}
 \end{figure}
 \begin{itemize}
-	\item \textbf{extension}: contiene classi e funzioni di utilità come la conversione di una data in millisecondi ad una data in formato ddMMyyy;
+	\item \textbf{extension}: contiene classi e funzioni di utilità come la conversione di una data in millisecondi ad una data in formato ddMMyyyy;
 	\item \textbf{model}: contiene i package\glo, classi e interfacce che si occupano della gestione di Firebase\glo;
 	\item \textbf{ui}: contiene la user interface suddividendola in macro-package.
 \end{itemize}

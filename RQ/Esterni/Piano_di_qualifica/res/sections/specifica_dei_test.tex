@@ -22,8 +22,8 @@ dove:
 	\renewcommand{\arraystretch}{1.5}
 	\rowcolors{2}{pari}{dispari}
 	
-	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.12\textwidth} >{\centering}p{0.650\textwidth}
-			>{\centering}p{0.10\textwidth}}% >{\centering}p{0.14\textwidth}}
+	\begin{longtable}{ >{\centering}p{0.08\textwidth} >{\centering}p{0.12\textwidth} >{\centering}p{0.70\textwidth}
+			}% >{\centering}p{0.14\textwidth}}
 			
 		%\hline
 		\caption{Riepilogo test di accettazione}\\	
@@ -31,7 +31,6 @@ dove:
 		\textbf{\color{white}Test} 
 		& \textbf{\color{white}Requisito} 
 		& \textbf{\color{white}Descrizione} 
-		& \centering\textbf{\color{white}Esito}
 	%	& \textbf{\color{white}Fonti} 
 		\tabularnewline %\hline 
 		\endfirsthead	
@@ -41,7 +40,6 @@ dove:
 		\textbf{\color{white}Test} 
 		& \textbf{\color{white}Requisito} 
 		& \textbf{\color{white}Descrizione} 
-		& \centering\textbf{\color{white}Esito}
 		%	& \textbf{\color{white}Fonti} 
 		\tabularnewline %\hline 
 		\endhead	
@@ -53,46 +51,46 @@ dove:
 			\item procedere con l'invio dei dati inseriti;
 			\item attendere la conferma di successo dell'operazione e relativo avviso di richiesta di conferma dell'account tramite email;
 			\item verificare che in seguito alla registrazione sia presentata la guida introduttiva.
-		\end{itemize}	&	NI	\tabularnewline
+		\end{itemize}		\tabularnewline
 		TA2	& RFD1 &	L'utente deve poter visualizzare la guida introduttiva. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare che sia disponibile la guida introduttiva;
 		 	\item verificare che sia disponibile l'opzione "salta la guida";
 		 	\item verificare che in seguito alla guida sia presentato il servizio di login. 
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA3	& RFO3 & L'utente registrato deve poter effettuare il login. All'utente registrato viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di login;
 		 	\item inserire l'email e password;
 		 	\item confermare i dati ed essere autenticato;
 		 	\item verificare che dopo l'autenticazione l'utente venga rimandato all'activity\glosp \textit{Home} dell'applicazione.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA3.1 & RF02.7	& L'utente deve visualizzare un messaggio d'errore quando non compila il campo dati email e password. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di login;
 		 	\item non compilare il campo email e password e confermare/inviare i dati;
 		 	\item verificare che sia comparso il messaggio d'errore.
-		 \end{itemize}  &	NI	\tabularnewline
+		 \end{itemize} 	\tabularnewline
 		 TA3.2 & RF03.3 &	L'utente deve visualizzare un messaggio d'errore quando la combinazione email-password è scorretta. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di login;
 		 	\item inserire una combinazione email-password scorretta e confermare/inviare i dati;
 		 	\item verificare che sia comparso il messaggio d'errore.
-		 \end{itemize}  &	NI	\tabularnewline
+		 \end{itemize}  I	\tabularnewline
 		 TA4 & RFO3.4	&	L'utente registrato deve poter recuperare la propria password nel caso in cui ne abbia bisogno. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item selezionare il procedimento di recupero password dalla schermata di login;
 		 	\item inserire l'email con cui è registrato nel sistema;
 		 	\item verificare che il sistema abbia inviato una nuova password all'indirizzo email specificato;
 		 	\item verificare di poter accedere all'account con la nuova password.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA5	& RFO4 &	L'utente autenticato deve poter effettuare il logout. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item richiedere il logout con l'apposito pulsante;
 		 	\item confermare di voler uscire dall'applicazione;
 		 	\item attendere la conferma di logout;
 		 	\item verificare di essere rimandato alla pagina di login.
-		 \end{itemize}  &	NI	\tabularnewline
+		 \end{itemize} 	\tabularnewline
 	 	 TA6	& RFO5 & L'utente autenticato deve poter capire cosa vuole fare all'interno dell'applicazione. Verrà mandato, dopo aver effettuato l'accesso, alla \textit{Home}. 
 	 	 All'utente viene chiesto di:
 	 	 \begin{itemize}
@@ -101,7 +99,7 @@ dove:
 	 	 	\item verificare che siano disponibili le due sezioni: Viaggia e Prenotazioni;
 	 	 	\item verificare che nella sezione "Viaggia" siano presenti i bottoni per la ricerca di una veicolo da prenotare e per la gestione dei propri veicoli;
 	 	 	\item verificare che nella sezione "Prenotazioni" sia presente una lista di tutte le prenotazioni attive in quel momento dell'utente. 
-	 	 \end{itemize}	&	NI	\tabularnewline
+	 	 \end{itemize}		\tabularnewline
 		 TA6.1	& RFO5.1 & L'utente autenticato deve poter gestire e visualizzare i propri veicoli. 
 		 All'utente viene chiesto di:
 		 \begin{itemize}
@@ -109,14 +107,14 @@ dove:
 		 	\item verificare la comparsa della lista dei propri veicoli;
 		 	\item per ogni veicolo deve verificare che ci siano indicate marca, modello, anno d'immatricolazione e foto del veicolo;
 		 	\item verificare che siano abilitate le opzione di selezione veicolo e aggiunta di un nuovo veicolo. 
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA6.2 & RFO5.1.1 &	L'utente autenticato deve poter inserire un nuovo veicolo. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item premere sul pulsante di aggiunta veicolo dal fragment\glosp di gestione veicoli;
 		 	\item compilare i campi dati richiesti (caricamento foto, specificare la marca, modello, anno d'immatricolazione, posizione e costo orario) e confermare l'inserimento del veicolo;
 		 	\item verificare che venga rimandato nel fragment di gestione veicoli;
 		 	\item verificare che il mezzo venga inserito nella schermata di gestione veicoli.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}	\tabularnewline
 		 TA6.2.1 & RFO5.1.2 \\ RFO5.1.2.1 \\ RFO5.1.2.2 \\ RFO5.1.2.3 &	L'utente autenticato deve poter visualizzare i dettagli del veicolo e che siano disponibili i bottoni per visualizzare le disponibilità, le statistiche e la rimozione del veicolo. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item selezionare un veicolo dal proprio parco macchine;
@@ -142,7 +140,7 @@ dove:
 		 	\begin{itemize}
 		 		\item verificare che il veicolo precedentemente selezionato sia stato rimosso dalla schermata di visualizzazione veicoli.
 		 	\end{itemize}
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA6.3 & RFO5.2 \\ RFO5.2.1  & L'utente autenticato deve poter visualizzare la lista di tutte le sue prenotazioni attive.
 		 Per ogni prenotazione attiva presente nella lista l'utente deve poter visualizzare i dettagli riassuntivi (marca, modello, stato della prenotazione, data, fascia oraria e foto del veicolo) ed eseguire operazioni di gestione su di esse (visualizzazione dettaglio). All'utente viene chiesto di:
 		 \begin{itemize}
@@ -150,7 +148,7 @@ dove:
 		 	\item verificare che per ogni prenotazione presentata siano visibili i dati riassuntivi;
 		 	\item selezionare una prenotazione;
 		 	\item verificare che per la prenotazione selezionata siano disponibili i dettagli.
-		 \end{itemize} & NI	\tabularnewline
+		 \end{itemize}	\tabularnewline
 		 TA6.3.1 & RFO5.2.2 & L'utente proprietario del veicolo può confermare o annullare una richiesta di prenotazione. All'utente è richiesto di:
 		 \begin{itemize}
 		 	\item accedere alla schermata di visualizzazione delle prenotazioni attive;
@@ -159,7 +157,7 @@ dove:
 		 	\item verificare che nei dettagli della prenotazione sia presente il pulsante di conferma o annulla;
 		 	\item confermare o annullare la prenotazione comporterà poi il cambio di stato;
 		 	\item verificare che l'utente si ritrovi nella schermata di visualizzazione delle prenotazioni attive.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 	 	 TA6.3.2 & RFO5.2.3 & L'utente proprietario del veicolo può confermare l'avvenuta consegna delle chiavi del veicolo all'usufruente. All'utente è richiesto di:
 	 	 \begin{itemize}
 	 	 	\item accedere alla schermata di visualizzazione delle prenotazioni attive;
@@ -168,7 +166,7 @@ dove:
 	 	 	\item verificare che nei dettagli della prenotazione sia presente il pulsante di chiavi consegnate;
 	 	 	\item premere il pulsante qualora si abbia effettivamente consegnato le chiavi all'usufruente;
 	 	 	\item verificare che l'utente si ritrovi nella schermata di visualizzazione delle prenotazioni attive e che la prenotazione abbia come stato "in corso".
-	 	 \end{itemize}	&	NI	\tabularnewline
+	 	 \end{itemize}		\tabularnewline
  	 	 TA6.3.3 & RFO5.2.4 & L'utente proprietario del veicolo può chiudere la prenotazione nel momento in cui ha ricevuto il veicolo e le chiavi sbloccando così la possibilità di recensire l'utente usufruente. All'utente è richiesto di:
  	 	 \begin{itemize}
  	 	 	\item accedere alla schermata di visualizzazione delle prenotazioni attive;
@@ -177,7 +175,7 @@ dove:
  	 	 	\item verificare che nei dettagli della prenotazione sia presente il pulsante di termina prenotazione;
  	 	 	\item premere il pulsante qualora si abbia effettivamente avuto indietro le chiavi e il veicolo dall'usufruente;
  	 	 	\item verificare che l'utente si ritrovi nella schermata di visualizzazione delle prenotazioni attive e che la prenotazione non sia presente nella lista di prenotazioni attive.
- 	 	 \end{itemize}	&	NI	\tabularnewline
+ 	 	 \end{itemize}	\tabularnewline
 		 TA6.3.4 & RFO5.2.5 &	L'utente usufruente deve poter annullare una prenotazione in attesa di conferma da parte del proprietario. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla schermata di visualizzazione delle prenotazioni attive;
@@ -185,7 +183,7 @@ dove:
 		 	\item selezionare la prenotazione che si intende annullare;
 		 	\item premere l'opzione di cancellazione prenotazione;
 		 	\item verificare che la prenotazione precedentemente selezionata e cancellata sia stata rimossa dalla lista delle prenotazioni attive.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 	 	 TA6.3.5 & RFO5.2.6 & L'utente usufruente deve poter chiudere la prenotazione nel momento in cui riconsegni il veicolo e le chiavi sbloccando così la possibilità di recensire l'utente proprietario del veicolo. All'utente viene chiesto di:
 	 	 \begin{itemize}
 	 		\item accedere alla schermata di visualizzazione delle prenotazioni attive;
@@ -194,7 +192,7 @@ dove:
 	 		\item verificare che nei dettagli della prenotazione sia presente il pulsante di termina prenotazione;
 	 		\item premere il pulsante, che viene sbloccato solo dopo il termine del periodo di prenotazione, qualora si abbia effettivamente ridato le chiavi e il veicolo al proprietario del veicolo;
 	 		\item verificare che l'utente si ritrovi nella schermata di visualizzazione delle prenotazioni attive e che la prenotazione non sia presente nella lista di prenotazioni attive.
-	 	 \end{itemize}	&	NI	\tabularnewline 				
+	 	 \end{itemize}		\tabularnewline 				
 		 TA6.4	& RFO5.3 \\ RFD5.3.1 \\ RFD5.3.2 \\ RFD5.3.3 \\ RFD5.3.4 \\ RFO5.3.5 &	L'utente autenticato deve poter effettuare una ricerca specifica sui veicoli disponibili e poter proseguire con la prenotazione di uno di essi. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere al fragment\glosp della ricerca di un veicolo da prenotare;
@@ -214,18 +212,18 @@ dove:
 		 		\item procedere con la prenotazione del veicolo selezionato tramite apposito pulsante di "prenota";
 		 		\item verificare che la prenotazione effettuata sia stata registrata.
 		 	\end{itemize}
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA7 &	RFD6 & L'utente autenticato deve poter visualizzare una lista contente tutte le sue prenotazioni concluse. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla schermata di visualizzazione delle prenotazioni concluse;
 		 	\item verificare che la lista contenga tutte le sue prenotazioni concluse.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA8	& RFO7 & L'utente autenticato deve poter visualizzare, modificare e cancellare il proprio account con i relativi dati. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item selezionare l'opzione di visualizzazione dati profilo;
 		 	\item verificare che sia disponibile il servizio di modifica dati account;
 		 	\item verificare che sia disponibile il servizio di eliminazione account.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA8.1 & RFO7.2 & L'utente autenticato deve poter aggiornare i dati del proprio account. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla schermata di visualizzazione profilo;
@@ -238,7 +236,7 @@ dove:
 		 	\item verificare di poter inserire/modificare l'indirizzo di residenza;
 		 	\item verificare di poter modificare la password;
 		 	\item verificare di poter confermare/salvare i dati modificati.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA8.1.1	& RFO7.1 & L'utente autenticato deve poter aggiornare la patente di guida del proprio account. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare di poter inserire il numero della patente;
@@ -246,7 +244,7 @@ dove:
 		 	\item verificare di poter inserire la data di scadenza della patente;
 		 	\item verificare di poter inserire l'immagine fronte e retro della patente;
 		 	\item verificare che i dati inseriti siano stati aggiornati nella schermata di gestione del profilo.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA8.1.2	& RFO7.2.8 &	L'utente autenticato deve poter aggiornare la password del proprio account. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare che sia richiesto l'inserimento della password attuale;
@@ -254,74 +252,74 @@ dove:
 		 	\item verificare che non sia accettata una password uguale a quella attuale;
 		 	\item verificare che la password inserita rispetti i vincoli generali per la password;
 		 	\item verificare che dopo il completamento del procedimento di cambio password, essa sia aggiornata.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA8.2 & RFO7.3 	&	L'utente autenticato deve poter cancellare il proprio profilo e i relativi dati. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item di accedere alla schermata di visualizzazione profilo;
 		 	\item premere sul pulsante Elimina account;
 		 	\item verificare che dopo la conferma dell'eliminazione dell'account, non sia più possibile accedere all'account.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA9 & RFF8	&	L'utente autenticato che non ha ancora compilato tutti i dati della sezione profilo deve visualizzare la Progress Bar. All'utente autenticato che non ha compilato tutti i dati viene chiesto di:
 		 \begin{itemize}
 		 	\item aprire l'applicazione;
 		 	\item verificare che nella schermata di gestione profilo sia presente la Progress Bar;
 		 	\item inserire qualche dato nella sezione profilo e accertarsi che la Progress Bar sia aumentata del/dei livelli corrispondenti e abbia ricevuto i dovuti punti esperienza per il loro completamento.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA9.1	& RFF8.1 &	L'utente autenticato che compila tutti i dati della sezione profilo, completando così la Progress Bar, deve ricevere una ricompensa. All'utente autenticato che ha completato la Progress Bar viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare che l'applicazione abbia consegnato un premio per il completamento della Progress Bar.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA10	& RFF9 &	L'utente autenticato deve poter accedere alla pagina \textit{Gioca} dell'applicazione. All'utente e richiesto di:
 		 \begin{itemize}
 		 	\item verificare di accedere alla pagina;
 		 	\item verificare che all'interno della pagina sia presente il totale di punti esperienza fino ad ora ottenuti;
 		 	\item verificare la presenza dei bottoni per la mileston unlock, la lucky spin, i daily rewards e la leaderboard;
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA10.1	& RFF9.1 &	L'utente autenticato deve visualizzare la tabella Milestone Unlock\glo, che illustra i premi ottenibili dal raggiungimento di determinati livelli d'esperienza. All'utente autenticato viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare che il bottone presente nella pagina \textit{Gioca} sia disponibile ad essere premuto;
 		 	\item verificare che venga visualizzata la tabella Milestone Unlock.
-		 \end{itemize}	&	NI	\tabularnewline		 
+		 \end{itemize}		\tabularnewline		 
 		 TA10.1.1	& RFF9.1.1 \\ RFF9.1.2 &	L'utente autenticato che ha raggiunto un nuovo livello esperienza, superiore al 5, deve ricevere il rispettivo premio illustrato nella tabella Milestone Unlock\glo. All'utente autenticato che raggiunto un nuovo livello superiore al quinto viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare che l'applicazione abbia consegnato il relativo premio illustrato nella tabella Milestone Unlock.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA10.2 & RFF9.2 &	L'utente autenticato deve visualizzare la ruota della fortuna Lucky Spin\glo. All'utente autenticato viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare che il bottone presente nella pagina \textit{Gioca} sia disponibile ad essere premuto;
 		 	\item verificare che si possa visualizzare la Lucky Spin.
-		 \end{itemize}	&	NI	\tabularnewline		 
+		 \end{itemize}		\tabularnewline		 
 		 TA10.2.1	& RFF9.2.1 \\ RFF9.2.2 &	L'utente autenticato che ha appena concluso una prenotazione deve ricevere un tentativo per la Lucky Spin\glosp che può riprendere anche in un secondo momento. All'utente autenticato che ha concluso una prenotazione viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare di aver ricevuto un tentativo per la ruota della fortuna;
 		 	\item usare il tentativo girando la ruota;
 		 	\item verificare di aver ricevuto il premio promesso.
-		 \end{itemize}	&	NI	\tabularnewline	
+		 \end{itemize}		\tabularnewline	
 		 TA9.3	& RFF9.3 &	L'utente generico deve poter visualizzare la classifica degli utenti migliori. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare che il bottone presente nella pagina \textit{Gioca} sia disponibile ad essere premuto;
 		 	\item verificare che le classifiche siano visualizzate correttamente.
-		 \end{itemize}	&	NI	\tabularnewline	
+		 \end{itemize}		\tabularnewline	
 		 TA9.3.1	& RFF9.3.1 & Dopo un tempo prestabilito, i primi tre utente della classifica devono ricevere un premio. All'utente che si è classificato tra le prime tre posizioni, nella data prestabilita, viene chiesto di:
 		 \begin{itemize}
 		 	\item verificare di aver ricevuto il premio promesso.
-		 \end{itemize}	&	NI	\tabularnewline	
+		 \end{itemize}		\tabularnewline	
 	 	 TA9.4	& RFF9.4	& L'utente autenticato deve poter visualizzare la tabella Daily Rewards che illustra i premi giornalieri del mese corrente. All'utente viene chiesto di :
 	 	 \begin{itemize}
 	 	 	\item verificare che il bottone presente nella pagina \textit{Gioca} sia disponibile ad essere premuto;
 	 	 	\item verificare che si possa accedere e visualizzare la tabella dei Daily Rewards.
-	 	 \end{itemize}	&	NI	\tabularnewline	
+	 	 \end{itemize}		\tabularnewline	
 	 	 TA9.4.1	& RFF9.4.1 \\ RFF9.4.1.1 &	L'utente autenticato deve poter ritirare il premio del giorno corrente dalla tabella Daily rewards. \\All'utente viene chiesto di:
 	 	 \begin{itemize}
 	 	 	\item ritirare il premio del giorno dalla tabella dei premi giornalieri tramite l'apposito pulsante "Ritira premio";
 	 	 	\item verificare di non poter ritirare di nuovo il premio del giorno attuale;
 	 	 	\item verificare di non poter ritirare il premio dei giorni successivi o di quelli precedenti.
-	 	 \end{itemize}	&	NI	\tabularnewline
+	 	 \end{itemize}		\tabularnewline
 		 TA10	& RFF10 &	L'utente autenticato deve avere un codice personale visualizzabile nella schermata di gestione del profilo, da inviare ad amici che non sono ancora registrati al servizio offerto da \textit{GaiaGo}.  All'utente autenticato viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla sezione \textit{Gestione Profilo};
 		 	\item verificare che sia presente il suo codice personale.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA11	& RFF2.6 & 	L'utente che si registra inserendo un codice amico deve ricevere un premio dopo la registrazione. Tale premio deve essere corrisposto anche al proprietario del codice. All'utente che si è registrato inserendo un codice amico viene chiesto di:
 		 \begin{itemize}
 		 	\item visualizzare la schermata relativa alla registrazione;
@@ -329,7 +327,7 @@ dove:
 		 	\item confermare/inviare i dati della registrazione;
 		 	\item verificare di aver ricevuto i punti esperienza per la registrazione tramite codice amico;
 		 	\item verificare, chiedendo all'amico se ha ricevuto lo stesso premio in seguito alla sua registrazione.
-		 \end{itemize}	&	NI	\tabularnewline	
+		 \end{itemize}		\tabularnewline	
 	 	 TA12	& RFF11 &	L'utente autenticato deve poter accedere al Minigioco che consiste in un garage che dà la possibilità di effettuare modifiche ad un'auto. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla sezione Minigioco dal menu dell'applicazione;
@@ -337,7 +335,7 @@ dove:
 		 	\item verificare di poter entrare nella modalità di modifica auto;
 		 	\item apportare qualche modifica;
 		 	\item verificare che le modifiche siano state effettivamente installate.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA12.1	& RFF11.1\\ RFF11.1.1 \\ RFF11.1.2 \\ RFF11.1.3 \\ RFF11.1.4 \\ RFF11.1.5  \\RFF11.3  &	L'utente autenticato deve poter accedere al Minigioco del garage in cui potrà modificare le prestazioni dell'auto base. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla sezione Minigioco dal menu dell'applicazione ed entrare in modalità modifica prestazioni auto;
@@ -350,7 +348,7 @@ dove:
 		 			\item gomme.
 		 		\end{itemize}
 		 	\item confermare l'installazione della modifica.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}		\tabularnewline
 		 TA12.2	& RFF11.2\\ RFF11.2.1 \\ RFF11.2.2 \\ RFF11.2.3 \\ RFF11.2.4 \\ RFF11.2.5  \\ 	RFF11.2.6 \\ RFF11.2.7 \\RFF11.3 & L'utente autenticato deve poter accedere al Minigioco del garage in cui potrà modificare l'estetica dell'auto base. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla sezione Minigioco dal menu dell'applicazione ed entrare in modalità modifica estetica auto;
@@ -365,7 +363,7 @@ dove:
 		 			\item alettoni.
 		 		\end{itemize}
 		 	\item confermare l'installazione della modifica.
-		 \end{itemize}	&	NI	\tabularnewline
+		 \end{itemize}	\tabularnewline
 \end{longtable}
 \newpage
 \subsection{Test di sistema}
@@ -380,8 +378,8 @@ dove:
 	\renewcommand{\arraystretch}{1.5}
 	\rowcolors{2}{pari}{dispari}
 	
-	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.650\textwidth}
-			>{\centering}p{0.10\textwidth}}% >{\centering}p{0.14\textwidth}}
+	\begin{longtable}{ >{\centering}p{0.08\textwidth} >{\centering}p{0.12\textwidth} >{\centering}p{0.650\textwidth}
+			 >{\centering}p{0.07\textwidth}} %
 			
 		%\hline
 		\caption{Riepilogo test di sistema}\\	
@@ -389,8 +387,7 @@ dove:
 		\textbf{\color{white}Test} 
 		& \textbf{\color{white}Requisito} 
 		& \textbf{\color{white}Descrizione} 
-		& \centering\textbf{\color{white}Esito}
-	%	& \textbf{\color{white}Fonti} 
+	& \textbf{\color{white}Stato} 
 		\tabularnewline %\hline 
 		\endfirsthead	
 		
@@ -399,150 +396,93 @@ dove:
 		\textbf{\color{white}Test} 
 		& \textbf{\color{white}Requisito} 
 		& \textbf{\color{white}Descrizione} 
-		& \centering\textbf{\color{white}Esito}
-		%	& \textbf{\color{white}Fonti} 
+			& \textbf{\color{white}Stato} 
 		\tabularnewline %\hline 
 		\endhead	
 		
-		TS1	& RFO2 & Verificare che il sistema permetta all'utente di effettuare la registrazione all'applicazione qualora non lo fosse. &	NI	\tabularnewline
+		TS1	& RFO2 & Verificare che il sistema permetta all'utente di effettuare la registrazione all'applicazione qualora non lo fosse. & N.I.	\tabularnewline
 		
-		 TS2	& RFD1 & Verificare che in seguito alla registrazione dell'utente, il sistema renda disponibile la guida introduttiva.	&	NI	\tabularnewline
+		 TS2	& RFD1 & Verificare che in seguito alla registrazione dell'utente, il sistema renda disponibile la guida introduttiva.		& N.I.	\tabularnewline
 		 
-		 TS3	& RFO3 & Verificare che il sistema renda disponibile all'utente la possibilità di effettuare il login e che in seguito gli si presenti la schermata \textit{Home}. &	NI	\tabularnewline
+		 TS3	& RFO3 & Verificare che il sistema renda disponibile all'utente la possibilità di effettuare il login e che in seguito gli si presenti la schermata \textit{Home}.	& N.I.	\tabularnewline
 		 
-		 TS3.1 & RF02.7 & Verificare che il sistema faccia apparire un messaggio d'errore nel caso in cui l'utente non compili il campo email e password. &	NI	\tabularnewline
+		 TS3.1 & RF02.7 & Verificare che il sistema faccia apparire un messaggio d'errore nel caso in cui l'utente non compili il campo email e password.	& N.I.	\tabularnewline
 		 
-		 TS3.2 & RF03.3 &	Verificare che il sistema faccia apparire un messaggio d'errore nel caso in cui l'utente inserisca una combinazione email-password errata. &	NI	\tabularnewline
+		 TS3.2 & RF03.3 &	Verificare che il sistema faccia apparire un messaggio d'errore nel caso in cui l'utente inserisca una combinazione email-password errata. & N.I.		\tabularnewline
 		 
-		 TS4 & RFO3.4	& Verificare che il sistema permetta all'utente registrato di recuperare la propria password dalla schermata di login.	&	NI	\tabularnewline
+		 TS4 & RFO3.4	& Verificare che il sistema permetta all'utente registrato di recuperare la propria password dalla schermata di login.		& N.I.	\tabularnewline
 		 
-		 TS5	& RFO4 & Verificare che il sistema permetta all'utente autenticato di effettuare il logout. &	 NI \tabularnewline
+		 TS5	& RFO4 & Verificare che il sistema permetta all'utente autenticato di effettuare il logout.& N.I.	 \tabularnewline
 		 
-		 TS6	& RFO5 & Verificare che il sistema permetta all'utente appena autenticato di visualizzare la \textit{Home} dell'applicazione. &	NI	\tabularnewline
+		 TS6	& RFO5 & Verificare che il sistema permetta all'utente appena autenticato di visualizzare la \textit{Home} dell'applicazione. & N.I.		\tabularnewline
 		 
-		 TS6.1	& RFO5.1 & Verificare che il sistema permetta all'utente autenticato di poter gestire e visualizzare i propri veicoli oltre che a selezionarli o aggiungerli. 	&	NI	\tabularnewline 
+		 TS6.1	& RFO5.1 & Verificare che il sistema permetta all'utente autenticato di poter gestire e visualizzare i propri veicoli oltre che a selezionarli o aggiungerli. 	& N.I.		\tabularnewline 
 		 
-		 TS6.2 & RFO5.1.1 &	Verificare che il sistema permetta all'utente autenticato di poter inserire un nuovo veicolo. 	&	NI	\tabularnewline
+		 TS6.2 & RFO5.1.1 &	Verificare che il sistema permetta all'utente autenticato di poter inserire un nuovo veicolo. 		& N.I.	\tabularnewline
 		
-		 TS6.2.1 & RFO5.1.2 \\ RFO5.1.2.1 \\ RFO5.1.2.2 \\ RFO5.1.2.3 &	Verificare che il sistema permetta all'utente autenticato di poter visualizzare i dettagli del veicolo e che siano disponibili i bottoni per visualizzare le disponibilità, le statistiche e la rimozione del veicolo . 	&	NI	\tabularnewline
+		 TS6.2.1 & RFO5.1.2 \\ RFO5.1.2.1 \\ RFO5.1.2.2 \\ RFO5.1.2.3 &	Verificare che il sistema permetta all'utente autenticato di poter visualizzare i dettagli del veicolo e che siano disponibili i bottoni per visualizzare le disponibilità, le statistiche e la rimozione del veicolo . & N.I.		\tabularnewline
 		 
 		 TS6.3 & RFO5.2 \\ RFO5.2.1  & Verificare che il sistema permetta all'utente autenticato di poter visualizzare la lista di tutte le sue prenotazioni attive.
-		 Per ogni prenotazione attiva presente nella lista l'utente deve poter visualizzare i dettagli riassuntivi (marca, modello, stato della prenotazione, data, fascia oraria e foto del veicolo) ed eseguire operazioni di gestione su di esse (visualizzazione dettaglio). 	&	NI	\tabularnewline
+		 Per ogni prenotazione attiva presente nella lista l'utente deve poter visualizzare i dettagli riassuntivi (marca, modello, stato della prenotazione, data, fascia oraria e foto del veicolo) ed eseguire operazioni di gestione su di esse (visualizzazione dettaglio). 	& N.I.		\tabularnewline
 		 
-		 TS6.3.1 & RFO5.2.2 & Verificare che il sistema permetta all'utente proprietario del veicolo di confermare o annullare una richiesta di prenotazione. 	&	NI	\tabularnewline
+		 TS6.3.1 & RFO5.2.2 & Verificare che il sistema permetta all'utente proprietario del veicolo di confermare o annullare una richiesta di prenotazione. 		& N.I.	\tabularnewline
 		 
-		 TS6.3.2 & RFO5.2.3 & Verificare che il sistema permetta all'utente proprietario del veicolo di confermare l'avvenuta consegna delle chiavi del veicolo all'usufruente. 	&	NI	\tabularnewline
+		 TS6.3.2 & RFO5.2.3 & Verificare che il sistema permetta all'utente proprietario del veicolo di confermare l'avvenuta consegna delle chiavi del veicolo all'usufruente. & N.I.		\tabularnewline
 		 
-		 TS6.3.3 & RFO5.2.4 & Verificare che il sistema permetta all'utente proprietario del veicolo di chiudere la prenotazione nel momento in cui ha ricevuto il veicolo e le chiavi sbloccando così la possibilità di recensire l'utente usufruente. 	&	NI	\tabularnewline
+		 TS6.3.3 & RFO5.2.4 & Verificare che il sistema permetta all'utente proprietario del veicolo di chiudere la prenotazione nel momento in cui ha ricevuto il veicolo e le chiavi sbloccando così la possibilità di recensire l'utente usufruente. & N.I.\tabularnewline
 		 
-		 TS6.3.4 & RFO5.2.5 &	Verificare che il sistema permetta all'utente usufruente di poter annullare una prenotazione in attesa di conferma da parte del proprietario. 	&	NI	\tabularnewline
+		 TS6.3.4 & RFO5.2.5 &	Verificare che il sistema permetta all'utente usufruente di poter annullare una prenotazione in attesa di conferma da parte del proprietario. 	& N.I.		\tabularnewline
 		 
-		 TS6.3.5 & RFO5.2.6 & Verificare che il sistema permetta all'utente usufruente di poter chiudere la prenotazione nel momento in cui riconsegni il veicolo e le chiavi sbloccando così la possibilità di recensire l'utente proprietario del veicolo. 	&	NI	\tabularnewline
+		 TS6.3.5 & RFO5.2.6 & Verificare che il sistema permetta all'utente usufruente di poter chiudere la prenotazione nel momento in cui riconsegni il veicolo e le chiavi sbloccando così la possibilità di recensire l'utente proprietario del veicolo. & N.I.	\tabularnewline
 		  				
-		 TS6.4	& RFO5.3 \\ RFD5.3.1 \\ RFD5.3.2 \\ RFD5.3.3 \\ RFD5.3.4 \\ RFO5.3.5 &	Verificare che il sistema permetta all'utente autenticato di poter effettuare una ricerca specifica sui veicoli disponibili, applicando dei filtri, e poter proseguire con la prenotazione di uno di essi. 	&	NI	\tabularnewline
+		 TS6.4	& RFO5.3 \\ RFD5.3.1 \\ RFD5.3.2 \\ RFD5.3.3 \\ RFD5.3.4 \\ RFO5.3.5 &	Verificare che il sistema permetta all'utente autenticato di poter effettuare una ricerca specifica sui veicoli disponibili, applicando dei filtri, e poter proseguire con la prenotazione di uno di essi. 	& N.I.		\tabularnewline
 		  
-		 TS7 &	RFD6 &  Verificare che il sistema permetta all'utente autenticato di poter visualizzare una lista contente tutte le sue prenotazioni concluse. 	&	NI	\tabularnewline
+		 TS7 &	RFD6 &  Verificare che il sistema permetta all'utente autenticato di poter visualizzare una lista contente tutte le sue prenotazioni concluse. & N.I.		\tabularnewline
 		 
-		TS8	& RFO7 & Verificare che il sistema permetta all'utente autenticato di poter visualizzare, modificare e cancellare il proprio account con i relativi dati. 	&	NI	\tabularnewline
+		TS8	& RFO7 & Verificare che il sistema permetta all'utente autenticato di poter visualizzare, modificare e cancellare il proprio account con i relativi dati. 	& N.I.		\tabularnewline
 		 
-		TS8.1 & RFO7.2 & Verificare che il sistema permetta all'utente autenticato di poter aggiornare i dati del proprio account. 	&	NI	\tabularnewline
+		TS8.1 & RFO7.2 & Verificare che il sistema permetta all'utente autenticato di poter aggiornare i dati del proprio account. 		& N.I.	\tabularnewline
 		 
-		 TS8.1.1	& RFO7.1 & Verificare che il sistema permetta all'utente autenticato di poter aggiornare la patente di guida del proprio account. 	&	NI	\tabularnewline
+		 TS8.1.1	& RFO7.1 & Verificare che il sistema permetta all'utente autenticato di poter aggiornare la patente di guida del proprio account. 	& N.I.		\tabularnewline
 		 
-		TS8.1.2	& RFO7.2.8 &	Verificare che il sistema permetta all'utente autenticato di poter aggiornare la password del proprio account. 	&	NI	\tabularnewline 
+		TS8.1.2	& RFO7.2.8 &	Verificare che il sistema permetta all'utente autenticato di poter aggiornare la password del proprio account. 	& N.I.	\tabularnewline 
 		
-		TS8.2 & RFO7.3 	&	Verificare che il sistema permetta all'utente autenticato di poter cancellare il proprio profilo e i relativi dati. 	&	NI	\tabularnewline
+		TS8.2 & RFO7.3 	&	Verificare che il sistema permetta all'utente autenticato di poter cancellare il proprio profilo e i relativi dati.& N.I.	 \tabularnewline
 		
-		 TS9 & RFF8	&	Verificare che il sistema permetta all'utente autenticato, che non ha ancora compilato tutti i dati della sezione profilo, di visualizzare la Progress Bar. 	&	NI	\tabularnewline
+		 TS9 & RFF8	&	Verificare che il sistema permetta all'utente autenticato, che non ha ancora compilato tutti i dati della sezione profilo, di visualizzare la Progress Bar. 	& N.I.		\tabularnewline
 		 
-		 TS9.1	& RFF8.1 & Verificare che il sistema permetta all'utente autenticato, che compila tutti i dati della sezione profilo completando così la Progress Bar, di ricevere una ricompensa. 	&	NI	\tabularnewline
+		 TS9.1	& RFF8.1 & Verificare che il sistema permetta all'utente autenticato, che compila tutti i dati della sezione profilo completando così la Progress Bar, di ricevere una ricompensa. & N.I.		\tabularnewline
 		 
-		 TS10	& RFF9 &	Verificare che il sistema permetta all'utente autenticato di poter accedere alla pagina \textit{Gioca} dell'applicazione. 	&	NI	\tabularnewline
+		 TS10	& RFF9 &	Verificare che il sistema permetta all'utente autenticato di poter accedere alla pagina \textit{Gioca} dell'applicazione. 	& N.I.		\tabularnewline
 		 
-		 TS10.1	& RFF9.1 &	Verificare che il sistema permetta all'utente autenticato di visualizzare la tabella Milestone Unlock\glo, che illustra i premi ottenibili dal raggiungimento di determinati livelli d'esperienza. 	&	NI	\tabularnewline	
+		 TS10.1	& RFF9.1 &	Verificare che il sistema permetta all'utente autenticato di visualizzare la tabella Milestone Unlock\glo, che illustra i premi ottenibili dal raggiungimento di determinati livelli d'esperienza. & N.I.		\tabularnewline	
 		 	 
-		 TS10.1.1	& RFF9.1.1 \\ RFF9.1.2 &	Verificare che il sistema permetta all'utente autenticato, che ha raggiunto un nuovo livello esperienza superiore al 5, di ricevere il rispettivo premio illustrato nella tabella Milestone Unlock\glo. 	&	NI	\tabularnewline
+		 TS10.1.1	& RFF9.1.1 \\ RFF9.1.2 &	Verificare che il sistema permetta all'utente autenticato, che ha raggiunto un nuovo livello esperienza superiore al 5, di ricevere il rispettivo premio illustrato nella tabella Milestone Unlock\glo. & N.I.		\tabularnewline
 		 
-		 TS10.2 & RFF9.2 &	Verificare che il sistema permetta all'utente autenticato di visualizzare la ruota della fortuna Lucky Spin\glo. 	&	NI	\tabularnewline		
+		 TS10.2 & RFF9.2 &	Verificare che il sistema permetta all'utente autenticato di visualizzare la ruota della fortuna Lucky Spin\glo. 	& N.I.		\tabularnewline		
 		  
-		 TS10.2.1	& RFF9.2.1 &	Verificare che il sistema permetta all'utente autenticato, che ha appena concluso una prenotazione, di ricevere un tentativo per la Lucky Spin\glo. 	&	NI	\tabularnewline	
+		 TS10.2.1	& RFF9.2.1 &	Verificare che il sistema permetta all'utente autenticato, che ha appena concluso una prenotazione, di ricevere un tentativo per la Lucky Spin\glo. 	& N.I.		\tabularnewline	
 		 
-		  TS10.3	& RFF9.3 &	Verificare che il sistema permetta all'utente generico di poter visualizzare la classifica degli utenti migliori. 	&	NI	\tabularnewline	
+		  TS10.3	& RFF9.3 &	Verificare che il sistema permetta all'utente generico di poter visualizzare la classifica degli utenti migliori. 	& N.I.		\tabularnewline	
 		  
-		 TS10.3.1	& RFF9.3.1 & Verificare che, dopo un tempo prestabilito, il sistema permetta ai primi tre utenti della classifica di ricevere un premio.	&	NI	\tabularnewline
+		 TS10.3.1	& RFF9.3.1 & Verificare che, dopo un tempo prestabilito, il sistema permetta ai primi tre utenti della classifica di ricevere un premio.	& N.I.		\tabularnewline
 		 
-		 TS10.4	& RFF9.4	& Verificare che il sistema permetta all'utente autenticato la visualizzazione della tabella Daily Rewards che illustra i premi giornalieri del mese corrente. 	&	NI	\tabularnewline	
+		 TS10.4	& RFF9.4	& Verificare che il sistema permetta all'utente autenticato la visualizzazione della tabella Daily Rewards che illustra i premi giornalieri del mese corrente. 	& N.I.		\tabularnewline	
 		 
-		 TS10.4.1	& RFF9.4.1 &	Verificare che il sistema permetta all'utente autenticato all'utente autenticato di poter ritirare il premio del giorno corrente dalla tabella Daily rewards. 	&	NI	\tabularnewline	
+		 TS10.4.1	& RFF9.4.1 &	Verificare che il sistema permetta all'utente autenticato all'utente autenticato di poter ritirare il premio del giorno corrente dalla tabella Daily rewards. & N.I.		\tabularnewline	
 		 
-		 TS11	& RFF10 &	Verificare che il sistema renda disponibile all'utente autenticato un codice personale visualizzabile nella schermata di gestione del profilo, da inviare ad amici che non sono ancora registrati al servizio offerto da \textit{GaiaGo}.  	&	NI	\tabularnewline
+		 TS11	& RFF10 &	Verificare che il sistema renda disponibile all'utente autenticato un codice personale visualizzabile nella schermata di gestione del profilo, da inviare ad amici che non sono ancora registrati al servizio offerto da \textit{GaiaGo}.  	& N.I.	\tabularnewline
 		 
-		 TS12	& RFF2.6 & In seguito ad una registrazione con l'inserimento di un codice amico, verificare che il sistema abbia corrisposto ad entrambi gli utenti i punti esperienza spettanti. 	&	NI	\tabularnewline	
+		 TS12	& RFF2.6 & In seguito ad una registrazione con l'inserimento di un codice amico, verificare che il sistema abbia corrisposto ad entrambi gli utenti i punti esperienza spettanti. 	& N.I.		\tabularnewline	
 
-	 TS13	& RFF11 &	Verificare che il sistema permetta agli utenti autenticati di poter accedere al Minigioco che consiste in un garage che dà la possibilità di effettuare modifiche ad un'auto. &	NI	\tabularnewline
+	 TS13	& RFF11 &	Verificare che il sistema permetta agli utenti autenticati di poter accedere al Minigioco che consiste in un garage che dà la possibilità di effettuare modifiche ad un'auto. 	& N.I.	\tabularnewline
 	 
-	TS13.1	& RFF11.1\\ RFF11.1.1 \\ RFF11.1.2 \\ RFF11.1.3 \\ RFF11.1.4 \\ RFF11.1.5  \\RFF11.3  &	Verificare che il sistema permetta all'utente autenticato all'utente autenticato di poter accedere al Minigioco del garage in cui potrà modificare le prestazioni dell'auto base. 	&	NI	\tabularnewline
+	TS13.1	& RFF11.1\\ RFF11.1.1 \\ RFF11.1.2 \\ RFF11.1.3 \\ RFF11.1.4 \\ RFF11.1.5  \\RFF11.3  &	Verificare che il sistema permetta all'utente autenticato all'utente autenticato di poter accedere al Minigioco del garage in cui potrà modificare le prestazioni dell'auto base. 	& N.I.		\tabularnewline
 	
-		TS13.2	& RFF11.2\\ RFF11.2.1 \\ RFF11.2.2 \\ RFF11.2.3 \\ RFF11.2.4 \\ RFF11.2.5  \\ RFF11.2.6 \\ RFF11.2.7 \\RFF11.3 & Verificare che il sistema permetta all'utente autenticato all'utente autenticato di poter accedere al Minigioco del garage in cui potrà modificare l'estetica dell'auto base. 	&	NI	\tabularnewline
+		TS13.2	& RFF11.2\\ RFF11.2.1 \\ RFF11.2.2 \\ RFF11.2.3 \\ RFF11.2.4 \\ RFF11.2.5  \\ RFF11.2.6 \\ RFF11.2.7 \\RFF11.3 & Verificare che il sistema permetta all'utente autenticato all'utente autenticato di poter accedere al Minigioco del garage in cui potrà modificare l'estetica dell'auto base. 	& N.I.		\tabularnewline
 \end{longtable}
-\newpage
-\subsection{Test di integrazione}
-I test di integrazione sono usati per verificare il corretto funzionamento tra le varie unità dell'architettura. Tali test verranno indicati nel seguente modo:\\
-	\centerline{\textbf{TI[Codice]}}
-dove:
-\begin{itemize}
-	\item \textbf{Codice}: rappresenta il codice identificativo crescente del test.
-\end{itemize}
-Nella seguente tabella sono rappresentati i test di integrazione:
-\renewcommand{\arraystretch}{1.5}
-	\rowcolors{2}{pari}{dispari}
 
-\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.650\textwidth} >{\centering}p{0.10\textwidth}
-			>{\centering}p{0.10\textwidth}}% >{\centering}p{0.14\textwidth}}
-			
-		%\hline
-		\caption{Riepilogo test di integrazione}\\	
-		\rowcolorhead
-		\textbf{\color{white}Test}  
-		& \textbf{\color{white}Descrizione} 
-		& \textbf{\color{white}Stato}
-		& \centering\textbf{\color{white}Esito}
-	%	& \textbf{\color{white}Fonti} 
-		\tabularnewline %\hline 
-		\endfirsthead	
-		
-		\rowcolor{white}\caption[]{(continua)}\\	
-		\rowcolorhead
-		\textbf{\color{white}Test} 
-		& \textbf{\color{white}Descrizione}
-		& \textbf{\color{white}Stato} 
-		& \centering\textbf{\color{white}Esito}
-		%	& \textbf{\color{white}Fonti} 
-		\tabularnewline %\hline 
-		\endhead	
-TI1&Verificare che l'utente possa registrarsi all'interno del sistema, ricevendo un messaggio di conferma se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I & S \tabularnewline
-
-TI2&Verificare che l'utente già registrato possa effettuare il login, mostrando un messaggio di successo se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I & S \tabularnewline
-
-TI3&Verificare che l'utente possa inserire informazioni aggiuntive all'interno del profilo. & I & S \tabularnewline 
-
-TI4&Verificare che l'utente dopo aver effettuato la registrazione visualizzi correttamente l'activity introduttiva. & I & S \tabularnewline
-
-TI5&Verificare che l'utente possa inserire la patente, mostrando un messaggio di successo se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I & S \tabularnewline
-
-TI6&Verificare che l'utente che ha effettuato l'accesso possa visualizzare i propri veicoli. & I & S \tabularnewline
-
-TI7&Verificare che l'utente che ha effettuato l'accesso possa gestire la disponibilità dei proprio veicoli. & I & S \tabularnewline
-
-
-TI8&Verificare che l'utente che ha effettuato l'accesso possa ricercare un veicolo adatto alle sue esigenze. & I & S \tabularnewline
-
-TI9&Verificare che l'utente che ha effettuato l'accesso possa visualizzare le prenotazioni che lo riguardano. & I & S \tabularnewline
-
-TI9&Verificare che l'utente che ha effettuato l'accesso possa gestire le prenotazioni che devono ancora avvenire. & I & S \tabularnewline
-
-\end{longtable}		
-		
+\newpage		
 \subsection{Test di unità}
 I test di unità hanno l'obiettivo di verificare il corretto funzionamento della parte più piccola autonoma del lavoro realizzato. Tali test verranno indicati nel seguente modo:\\
 	\centerline{\textbf{TU[Codice]}}
@@ -557,15 +497,14 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 	\rowcolors{2}{pari}{dispari}
 	
 	\begin{longtable}{ >{\centering}p{0.10\textwidth}  >{\centering}p{0.650\textwidth} >{\centering}p{0.10\textwidth}
-			>{\centering}p{0.10\textwidth}}% >{\centering}p{0.14\textwidth}}
+			}% >{\centering}p{0.14\textwidth}}
 			
 		%\hline
-		\caption{Riepilogo test di accettazione}\\	
+		\caption{Riepilogo test di unità}\\	
 		\rowcolorhead
 		\centering\textbf{\color{white}Test} 
 		& \centering\textbf{\color{white}Descrizione} 
 		& \centering\textbf{\color{white}Stato}
-		& \centering\textbf{\color{white}Esito}
 	%	& \textbf{\color{white}Fonti} 
 		\tabularnewline %\hline 
 		\endfirsthead	
@@ -575,236 +514,302 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 		\centering\textbf{\color{white}Test} 
 		& \centering\textbf{\color{white}Descrizione} 
 		& \centering\textbf{\color{white}Stato}
-		& \centering\textbf{\color{white}Esito}
 		%	& \textbf{\color{white}Fonti} 
 		\tabularnewline %\hline 
 		\endhead	
 		
-		TU1 & Viene verificato che \texttt{setMinutePicker()} imposti i valori corretti nell'oggetto \texttt{NumberPicker}. & I & S  \tabularnewline		
-		TU2 & Viene verificato che \texttt{getMinute()} estragga e ritorni il valore corrispondente ai minuti dal \texttt{TimePicker}. & I & S \tabularnewline	
-		TU3 & Viene verificato che \texttt{authenticateUser()} restituisca l'esito corretto dell'autenticazione. & I & S
+		TU1 & Viene verificato che \texttt{setMinutePicker()} imposti i valori corretti nell'oggetto \texttt{NumberPicker}. & I  \tabularnewline		
+		TU2 & Viene verificato che \texttt{getMinute()} estragga e ritorni il valore corrispondente ai minuti dal \texttt{TimePicker}. & I \tabularnewline	
+		TU3 & Viene verificato che \texttt{authenticateUser()} restituisca l'esito corretto dell'autenticazione. & I 
 		\tabularnewline	
-		TU4 & Viene verificato che \texttt{show(fragment)} disponga correttamente il fragment ricevuto come parametro. & I & S
+		TU4 & Viene verificato che \texttt{show(fragment)} disponga correttamente il fragment ricevuto come parametro. & I 
 		\tabularnewline	
-		TU5 & Viene verificato che \texttt{extractCredentials()} ritorni correttamente i risultati estratti dalle \texttt{EditText}. & I & S\tabularnewline	
-		TU6 & Viene verificato che \texttt{onRegistrationFail(error)} imposti correttamente l'\texttt{AlertDialog}. & I & S
+		TU5 & Viene verificato che \texttt{extractCredentials()} ritorni correttamente i risultati estratti dalle \texttt{EditText}. & I \tabularnewline	
+		TU6 & Viene verificato che \texttt{onRegistrationFail(error)} imposti correttamente l'\texttt{AlertDialog}. & I
 		\tabularnewline	
-		TU7.1 & Viene verificato che \texttt{onRegistrationSubmitted(credentials)}, in seguito alla validazioni delle credenziali e inserimento dei dati in database, richiami \texttt{onRegistrationSuccess()}. & I & S
+		TU7.1 & Viene verificato che \texttt{onRegistrationSubmitted(credentials)}, in seguito alla validazioni delle credenziali e inserimento dei dati in database, richiami \texttt{onRegistrationSuccess()}. & I 
 		\tabularnewline	
-		TU7.2 & Viene verificato che \texttt{onRegistrationSubmitted(credentials)}, in caso di validazione fallita, richiamo \texttt{onRegistrationFail()} . & I & S
+		TU7.2 & Viene verificato che \texttt{onRegistrationSubmitted(credentials)}, in caso di validazione fallita, richiamo \texttt{onRegistrationFail()} . & I 
 		\tabularnewline	
-		TU7.3 & Viene verificato che \texttt{onRegistrationSubmitted(credentials)}, in caso di caricamento fallito nel database, istanzi il relativo logging error. & I & S
+		TU7.3 & Viene verificaccettazioneato che \texttt{onRegistrationSubmitted(credentials)}, in caso di caricamento fallito nel database, istanzi il relativo logging error. & I 
 		\tabularnewline	
-		TU8 & Viene verificato che \texttt{onRegistrationSuccess()} carichi correttamente la \texttt{AdditionalInformationActivity}. & I & S
+		TU8 & Viene verificato che \texttt{onRegistrationSuccess()} carichi correttamente la \texttt{AdditionalInformationActivity}. & I 
 		\tabularnewline	
-		TU9 & Viene verificato che \texttt{extractUserInformation()} istanzi e ritorni correttamente l'oggetto \texttt{User}, con i dati estratti dalle \texttt{EditText}. & I & S
+		TU9 & Viene verificato che \texttt{extractUserInformation()} istanzi e ritorni correttamente l'oggetto \texttt{User}, con i dati estratti dalle \texttt{EditText}. & I 
 		\tabularnewline	
-		TU10 & Viene verificato che \texttt{onUserInformationSaved()} carichi correttamente la \texttt{MainActivity}. & I & S
+		TU10 & Viene verificato che \texttt{onUserInformationSaved()} carichi correttamente la \texttt{MainActivity}. & I 
 				\tabularnewline	
-		TU11 & Viene verificato che \texttt{addUserInformation(user)} imposti correttamente il messaggio d'errore quando la validazione dell'\texttt{user} fallisce. & I & S
+		TU11 & Viene verificato che \texttt{addUserInformation(user)} imposti correttamente il messaggio d'errore quando la validazione dell'\texttt{user} fallisce. & I 
 		\tabularnewline	
-		TU12 & Viene verificato che \texttt{addUserInformation(user)} in seguito alla validazione dell'\texttt{user} inserisca l'utente in database. & I & S
+		TU12 & Viene verificato che \texttt{addUserInformation(user)} in seguito alla validazione dell'\texttt{user} inserisca l'utente in database. & I
 		\tabularnewline	
-		TU13 & Viene verificato che \texttt{onAuthenticationSuccess()} carichi correttamente la \texttt{MainActivity}. & I & S
+		TU13 & Viene verificato che \texttt{onAuthenticationSuccess()} carichi correttamente la \texttt{MainActivity}. & I 
 		\tabularnewline	
-		TU14 & Viene verificato che \texttt{onAuthenticationError()} imposti correttamente l'\texttt{AlertDialog}. & I & S
+		TU14 & Viene verificato che \texttt{onAuthenticationError()} imposti correttamente l'\texttt{AlertDialog}. & I 
 		\tabularnewline	
-		TU15 & Viene verificato che \texttt{login()} in seguito all'autenticazione dell'utente imposti correttamente il messaggio di successo o errore. & I & S
+		TU15 & Viene verificato che \texttt{login()} in seguito all'autenticazione dell'utente imposti correttamente il messaggio di successo o errore. & I
 		\tabularnewline	
-		TU16 & Viene verificato che \texttt{validate(credentials)} estragga correttamente la password e lanci il messaggio d'errore quando la password è vuota. & I & S
+		TU16 & Viene verificato che \texttt{validate(credentials)} estragga correttamente la password e lanci il messaggio d'errore quando la password è vuota. & I 
 		\tabularnewline	
-		TU17 & Viene verificato che \texttt{EmailValidator.isValid()} effettui correttamente il match con il pattern di convalida definito. & I & S
+		TU17 & Viene verificato che \texttt{EmailValidator.isValid()} effettui correttamente il match con il pattern di convalida definito. & I 
 		\tabularnewline	
-		TU18 & Viene verificato che \texttt{EmailValidator.validate(user)} ritorni la corretta stringa d'errore quando l'email inserita non è corretta. & I & S
+		TU18 & Viene verificato che \texttt{EmailValidator.validate(user)} ritorni la corretta stringa d'errore quando l'email inserita non è corretta. & I 
 		\tabularnewline	
-		TU19 & Viene verificato che \texttt{NameValidator.validate(user)} segnali errore quando il nome utente è vuoto. & I & S
+		TU19 & Viene verificato che \texttt{NameValidator.validate(user)} segnali errore quando il nome utente è vuoto. & I 
 		\tabularnewline	
-		TU20 & Viene verificato che \texttt{PasswordValidator.isValid()} effettui correttamente il match con il pattern di convalida definito. & I & S
+		TU20 & Viene verificato che \texttt{PasswordValidator.isValid()} effettui correttamente il match con il pattern di convalida definito. & I 
 		\tabularnewline	
-		TU21 & Viene verificato che \texttt{PasswordValidator.validate(user)} ritorni la corretta stringa d'errore quando la password inserita non è corretta. & I & S
+		TU21 & Viene verificato che \texttt{PasswordValidator.validate(user)} ritorni la corretta stringa d'errore quando la password inserita non è corretta. & I 
 		\tabularnewline	
-		TU22 & Viene verificato che \texttt{SurnameValidator.validate()} segnali errore quando il cognome dell'utente è vuoto. & I & S
+		TU22 & Viene verificato che \texttt{SurnameValidator.validate()} segnali errore quando il cognome dell'utente è vuoto. & I 
 		\tabularnewline	
-		TU23 & Viene verificato che \texttt{UsernameValidator.validate()} segnali errore quando il username è vuoto. & I & S
+		TU23 & Viene verificato che \texttt{UsernameValidator.validate()} segnali errore quando il username è vuoto. & I 
 		\tabularnewline	
-		TU24 & Viene verificato che \texttt{calendarFromDatePicker()} istanzi e ritorni correttamente l'oggetto \texttt{Calendar} con i dati estratti dal \texttt{DatePicker} . & I & S
+		TU24 & Viene verificato che \texttt{calendarFromDatePicker()} istanzi e ritorni correttamente l'oggetto \texttt{Calendar} con i dati estratti dal \texttt{DatePicker} . & I 
 		\tabularnewline	
-		TU25 & Viene verificato che \texttt{showEmptyLicenseDateExpirationDialog()} imposti correttamente il \texttt{Dialog} per la segnalazione della data di scadenza della patente non inserita. & I & S
+		TU25 & Viene verificato che \texttt{showEmptyLicenseDateExpirationDialog()} imposti correttamente il \texttt{Dialog} per la segnalazione della data di scadenza della patente non inserita. & I 
 		\tabularnewline	
-		TU26 & Viene verificato che \texttt{showEmptyLicenseReleaseDateDialog()} imposti correttamente il \texttt{Dialog} per la segnalazione della data di rilascio della patente vuota. & I & S
+		TU26 & Viene verificato che \texttt{showEmptyLicenseReleaseDateDialog()} imposti correttamente il \texttt{Dialog} per la segnalazione della data di rilascio della patente vuota. & I 
 		\tabularnewline	
-		TU27 & Viene verificato che \texttt{displayedDateFrom(date)} converta correttamente la data ricevuta come parametro in stringa nel formato DD/MM/AAAA. & I & S
+		TU27 & Viene verificato che \texttt{displayedDateFrom(date)} converta correttamente la data ricevuta come parametro in stringa nel formato DD/MM/AAAA. & I 
 		\tabularnewline	
-		TU28 & Viene verificato che \texttt{showDialogWith(info)} imposti correttamente il \texttt{Dialog} con le informazioni di esempio della patente. & I & S
+		TU28 & Viene verificato che \texttt{showDialogWith(info)} imposti correttamente il \texttt{Dialog} con le informazioni di esempio della patente. & I
 		\tabularnewline	
-		TU30 & Viene verificato che \texttt{onDatesSubmitted(releaseDate,expirationDate)} segnali i dovuti messaggi d'errore quando le date ricevute come parametro sono vuote. & I & S
+		TU30 & Viene verificato che \texttt{onDatesSubmitted(releaseDate,expirationDate)} segnali i dovuti messaggi d'errore quando le date ricevute come parametro sono vuote. & I
 		\tabularnewline	
-		TU31 & Viene verificato che \texttt{onDatesSubmitted(releaseDate,expirationDate)} converta correttamente le date da tipo \texttt{String} a \texttt{Long}. & I & S
+		TU31 & Viene verificato che \texttt{onDatesSubmitted(releaseDate,expirationDate)} converta correttamente le date da tipo \texttt{String} a \texttt{Long}. & I 
 		\tabularnewline	
-		TU32 & Viene verificato che \texttt{showEmptyLicenseNumberDialog()} imposti correttamente il \texttt{Dialog} di segnalazione numero patente vuoto. & I & S
+		TU32 & Viene verificato che \texttt{showEmptyLicenseNumberDialog()} imposti correttamente il \texttt{Dialog} di segnalazione numero patente vuoto. & I 
 		\tabularnewline	
-		TU33 & Viene verificato che \texttt{showUncheckedLicenseCategoryHeldDialog()} imposti correttamente il \texttt{Dialog} che segnala la mancata conferma di possesso della patente di guida B. & I & S
+		TU33 & Viene verificato che \texttt{showUncheckedLicenseCategoryHeldDialog()} imposti correttamente il \texttt{Dialog} che segnala la mancata conferma di possesso della patente di guida B. & I 
 		\tabularnewline	
-		TU34 & Viene verificato che \texttt{onLicenseNumberSubmitted()} segnali correttamente i messaggi d'errore per il mancato inserimento del numero della patente e conferma della categoria B. & I & S
+		TU34 & Viene verificato che \texttt{onLicenseNumberSubmitted()} segnali correttamente i messaggi d'errore per il mancato inserimento del numero della patente e conferma della categoria B. & I 
 		\tabularnewline	
-		TU35 & Viene verificato che \texttt{onUploadError()} imposti correttamente il \texttt{AlertDialog} per il mancato caricamento delle foto della patente. & I & S
+		TU35 & Viene verificato che \texttt{onUploadError()} imposti correttamente il \texttt{AlertDialog} per il mancato caricamento delle foto della patente. & I 
 		\tabularnewline	
-		TU36 & Viene verificato che \texttt{showNoneLicenseBackSidePictureDialog()} imposti correttamente il \texttt{Dialog} che segnala l'assenza della foto posteriore della patente. & I & S
+		TU36 & Viene verificato che \texttt{showNoneLicenseBackSidePictureDialog()} imposti correttamente il \texttt{Dialog} che segnala l'assenza della foto posteriore della patente. & I 
 		\tabularnewline	
-		TU37 & Viene verificato che \texttt{showNoneLicenseFrontSidePictureDialog()} imposti correttamente il \texttt{Dialog} che segnala l'assenza della foto frontale della patente. & I & S
+		TU37 & Viene verificato che \texttt{showNoneLicenseFrontSidePictureDialog()} imposti correttamente il \texttt{Dialog} che segnala l'assenza della foto frontale della patente. & I 
 		\tabularnewline	
-		TU38 & Viene verificato che \texttt{createImageFile()} istanzi correttamente i file relativi alle immagini della patente. & I & S \tabularnewline	
+		TU38 & Viene verificato che \texttt{createImageFile()} istanzi correttamente i file relativi alle immagini della patente. & I  \tabularnewline	
 		
-		TU39 & Viene verificato che \texttt{dispatchTakePictureIntent()} estragga correttamente le immagini della patente e che segnali l'errore in caso di fallimento. & I & S
+		TU39 & Viene verificato che \texttt{dispatchTakePictureIntent()} estragga correttamente le immagini della patente e che segnali l'errore in caso di fallimento. & I 
 		\tabularnewline	
-		TU40 & Viene verificato che \texttt{onPicturesSubmitted(frontPicturePath,backPicturePath,listener)} segnali i rispettivi errori nel caso in cui \texttt{frontPicturePath} e \texttt{backPicturePath} siano vuoti. & I & S
+		TU40 & Viene verificato che \texttt{onPicturesSubmitted(frontPicturePath, backPicturePath, listener)} segnali i rispettivi errori nel caso in cui \texttt{frontPicturePath} e \texttt{backPicturePath} siano vuoti. & I 
 		\tabularnewline	
-		TU41 & Viene verificato che \texttt{onPicturesSubmitted(frontPicturePath,backPicturePath,listener)} trasmetta correttamente i percorsi al listner nel caso in cui essi siano validi. & I & S
+		TU41 & Viene verificato che \texttt{onPicturesSubmitted(frontPicturePath, backPicturePath, listener)} trasmetta correttamente i percorsi al listner nel caso in cui essi siano validi. & I 
 		\tabularnewline	
-		TU42 & Viene verificato che \texttt{saveFront()} carichi correttamente la foto frontale della patente nel database. & I & S
+		TU42 & Viene verificato che \texttt{saveFront()} carichi correttamente la foto frontale della patente nel database. & I 
 		\tabularnewline	
-		TU43 & Viene verificato che \texttt{saveBack()} carichi correttamente la foto posteriore della patente nel database. & I & S
+		TU43 & Viene verificato che \texttt{saveBack()} carichi correttamente la foto posteriore della patente nel database. & I 
 		\tabularnewline	
-		TU44 & Viene verificato che \texttt{showLicenseDatesRegistration()} carichi correttamente il fragment per l'inserimento delle date della patente. & I & S
+		TU44 & Viene verificato che \texttt{showLicenseDatesRegistration()} carichi correttamente il fragment per l'inserimento delle date della patente. & I 
 		\tabularnewline	
-		TU45 & Viene verificato che \texttt{showLicensePicturesRegistration()} carichi correttamente il fragment per l'inserimento delle foto della patente. & I & S
+		TU45 & Viene verificato che \texttt{showLicensePicturesRegistration()} carichi correttamente il fragment per l'inserimento delle foto della patente. & I
 		\tabularnewline	
-		TU46 & Viene verificato che \texttt{showInitialFragment()} carichi correttamente il fragment iniziale per l'inserimento dei dati della patente. & I & S
+		TU46 & Viene verificato che \texttt{showInitialFragment()} carichi correttamente il fragment iniziale per l'inserimento dei dati della patente. & I 
 		\tabularnewline	
-		TU47 & Viene verificato che \texttt{onVehiclesSearch(reservation,distance)} carichi correttamente \texttt{AvailableVehiclesFragment}. & I & S
+		TU47 & Viene verificato che \texttt{onVehiclesSearch(reservation,distance)} carichi correttamente \texttt{AvailableVehiclesFragment}. & I 
 		\tabularnewline	
-		TU48 & Viene verificato che \texttt{askLogOutConfirmation()} carichi correttamente il \texttt{AlertDialog}. & I & S
+		TU48 & Viene verificato che \texttt{askLogOutConfirmation()} carichi correttamente il \texttt{AlertDialog}. & I 
 		\tabularnewline	
-		TU49 & Viene verificato che \texttt{showLoginView()} carichi correttamente la \texttt{LoginActivity} . & I & S
+		TU49 & Viene verificato che \texttt{showLoginView()} carichi correttamente la \texttt{LoginActivity} . & I 
 		\tabularnewline	
-		TU50 & Viene verificato che \texttt{showDialog(dialogFragment)} imposti correttamente il fragment ricevuto come parametro. & I & S
+		TU50 & Viene verificato che \texttt{showDialog(dialogFragment)} imposti correttamente il fragment ricevuto come parametro. & I 
 		\tabularnewline	
-		TU51 & Viene verificato che \texttt{showProfile(user)} imposti correttamente le \texttt{TextView} con i dati dell'utente. & I & S
+		TU51 & Viene verificato che \texttt{showProfile(user)} imposti correttamente le \texttt{TextView} con i dati dell'utente. & I 
 		\tabularnewline	
-		TU52 & Viene verificato che \texttt{onProfileLoaded(profile)} istanzi correttamente gli oggetti \texttt{user} e \texttt{license}. & I & S
+		TU52 & Viene verificato che \texttt{onProfileLoaded(profile)} istanzi correttamente gli oggetti \texttt{user} e \texttt{license}. & I 
 		\tabularnewline	
-		TU53 & Viene verificato che \texttt{loadProfile()} scarichi correttamente i dati dell'utente dal database. & I & S
+		TU53 & Viene verificato che \texttt{loadProfile()} scarichi correttamente i dati dell'utente dal database. & I 
 		\tabularnewline	
-		TU54 & Viene verificato che \texttt{updateNameSurname()} aggiorni correttamente il nome dell'utente in database. & I & S
+		TU54 & Viene verificato che \texttt{updateNameSurname()} aggiorni correttamente il nome dell'utente in database. & I 
 		\tabularnewline	
-		TU55 & Viene verificato che \texttt{updatePhoneNumber()} aggiorni correttamente il numero di telefono dell'utente in database. & I & S
+		TU55 & Viene verificato che \texttt{updatePhoneNumber()} aggiorni correttamente il numero di telefono dell'utente in database. & I 
 		\tabularnewline	
-		TU56 & Viene verificato che \texttt{updateEmail()} aggiorni correttamente l'email dell'utente in database. & I & S
+		TU56 & Viene verificato che \texttt{updateEmail()} aggiorni correttamente l'email dell'utente in database. & I 
 		\tabularnewline	
-		TU57 & Viene verificato che \texttt{updateBirthDate()} aggiorni correttamente la data di nascita in database. & I & S
+		TU57 & Viene verificato che \texttt{updateBirthDate()} aggiorni correttamente la data di nascita in database. & I 
 		\tabularnewline	
-		TU58 & Viene verificato che \texttt{updateAddress()} aggiorni correttamente l'indirizzo in database. & I & S
+		TU58 & Viene verificato che \texttt{updateAddress()} aggiorni correttamente l'indirizzo in database. & I 
 		\tabularnewline	
-		TU59 & Viene verificato che \texttt{intToHour(interval)} converta correttamente e ritorni la stringa indicante l'ora ricevuta come parametro. & I & S
+		TU59 & Viene verificato che \texttt{intToHour(interval)} converta correttamente e ritorni la stringa indicante l'ora ricevuta come parametro. & I 
 		\tabularnewline	
-		TU60 & Viene verificato che \texttt{onStart()} carichi correttamente le prenotazioni attive dell'utente. & I & S
+		TU60 & Viene verificato che \texttt{onStart()} carichi correttamente le prenotazioni attive dell'utente. & I
 		\tabularnewline	
-		TU61 & Viene verificato che \texttt{initRecycler()} carichi correttamente nella \texttt{RrecyclerView} le prenotazioni dell'utente. & I & S
+		TU61 & Viene verificato che \texttt{initRecycler()} carichi correttamente nella \texttt{RrecyclerView} le prenotazioni dell'utente. & I 
 		\tabularnewline	
-		TU62 & Viene verificato che \texttt{showBookingConfirmation()} carichi correttamente la \texttt{ConfirmReservationActivity}. & I & S
+		TU62 & Viene verificato che \texttt{showBookingConfirmation()} carichi correttamente la \texttt{ConfirmReservationActivity}. & I 
 		\tabularnewline	
-		TU63 & Viene verificato che \texttt{showBooking()} carichi correttamente la \texttt{ShowReservationActivity}. & I & S
+		TU63 & Viene verificato che \texttt{showBooking()} carichi correttamente la \texttt{ShowReservationActivity}. & I 
 		\tabularnewline	
-		TU64 & Viene verificato che \texttt{loadPersonalReservations()} scarichi correttamente le prenotazioni richieste dall'utente dal database. & I & S
+		TU64 & Viene verificato che \texttt{loadPersonalReservations()} scarichi correttamente le prenotazioni richieste dall'utente dal database. & I  
 		\tabularnewline	
-		TU65 & Viene verificato che \texttt{loadOwnerReservations()} scrichi correttamente le prenotazioni ricevute dal database. & I & S
+		TU65 & Viene verificato che \texttt{loadOwnerReservations()} scarichi correttamente le prenotazioni ricevute dal database. & I 
 		\tabularnewline	
-		TU66 & Viene verificato che \texttt{SelectedVehicleActivity.initView()} inserisca nella \texttt{View} i dati del veicolo selezionato correttamente . & I & S
+		TU66 & Viene verificato che \texttt{SelectedVehicleActivity.initView()} inserisca nella \texttt{View} i dati del veicolo selezionato correttamente . & I
 		\tabularnewline	
-		TU67 & Viene verificato che \texttt{bookVehicle(dayAvailability,startHour,endHour)} aggiorni correttamente la disponibilità del veicolo selezionato secondo i parametri ricevuti. & I & S
+		TU67 & Viene verificato che \texttt{bookVehicle(dayAvailability,startHour,endHour)} aggiorni correttamente la disponibilità del veicolo selezionato secondo i parametri ricevuti. & I 
 		\tabularnewline	
-		TU68 & Viene verificato che \texttt{onReservationInserted()} comunichi il messaggio di prenotazione effettuata all'utente e successivamente e che imposti poi la \texttt{MainActivity} correttamente. & I & S
+		TU68 & Viene verificato che \texttt{onReservationInserted()} comunichi il messaggio di prenotazione effettuata all'utente e che successivamente imposti la \texttt{MainActivity} correttamente. & I 
 		\tabularnewline	
-		TU69 & Viene verificato che \texttt{onBookingConfirmed(reservation, vehicleID, newAvailability)} carichi correttamente i dati della prenotazione del database. & I & S
+		TU69 & Viene verificato che \texttt{onBookingConfirmed(reservation, vehicleID, newAvailability)} carichi correttamente i dati della prenotazione del database. & I
 		\tabularnewline	
-		TU70 & Viene verificato che \texttt{loadRecycler()} carichi correttamente i veicoli disponibili nella \texttt{RecyclerView}. & I & S \tabularnewline	
+		TU70 & Viene verificato che \texttt{loadRecycler()} carichi correttamente i veicoli disponibili nella \texttt{RecyclerView}. & I \tabularnewline	
 		
-		TU71 & Viene verificato che \texttt{AvailableVehicleFragment.loadVehicles()} carichi correttamente dal database i veicoli disponibili, in base alla posizione dell'utente. & I & S
+		TU71 & Viene verificato che \texttt{AvailableVehicleFragment.loadVehicles()} carichi correttamente dal database i veicoli disponibili, in base alla posizione dell'utente. & I 
 		\tabularnewline	
-		TU72.1 & Viene verificato che \texttt{loadUserLocation()} carichi correttamente i veicoli dell'utente in base alla sua posizione, quando possiede già il permesso per ottenere la posizione dell'utente. & I & S
+		TU72.1 & Viene verificato che \texttt{loadUserLocation()} carichi correttamente i veicoli dell'utente in base alla sua posizione, quando possiede già il permesso per ottenere la posizione dell'utente. & I 
 		\tabularnewline	
-		TU72.2 & Viene verificato che \texttt{loadUserLocation()}, quando non possiede il permesso per controllare la posizione dell'utente, chiede il permesso per la posizione all'utente. & I & S
+		TU72.2 & Viene verificato che \texttt{loadUserLocation()}, quando non possiede il permesso per controllare la posizione dell'utente, chiede il permesso per la posizione all'utente. & I 
 		\tabularnewline	
-		TU73 & Viene verificato che \texttt{getLocationPermission()} istanzi correttamente l'\texttt{Activity} di richiesta del premesso per la posizione del dispositivo all'utente. & I & S
+		TU73 & Viene verificato che \texttt{getLocationPermission()} istanzi correttamente l'\texttt{Activity} di richiesta del premesso per la posizione del dispositivo all'utente. & I 
 		\tabularnewline	
-		TU74 & Viene verificato che \texttt{onRequestPermissionsResult()} carichi correttamente i veicoli in base alla posizione dell'utente. & I & S
+		TU74 & Viene verificato che \texttt{onRequestPermissionsResult()} carichi correttamente i veicoli in base alla posizione dell'utente. & I 
 		\tabularnewline	
-		TU75 & Viene verificato che \texttt{AvailableVehiclesPresenter}. & I & S
+		TU75 & Viene verificato che \texttt{AvailableVehiclesPresenter.loadVehicles()} carichi correttamente il veicolo dal database. & I 
 		\tabularnewline	
-		TU76 & Viene verificato che \texttt{searchVehicles()} estragga correttamente dalle \texttt{EditText} i parametri di ricerca del veicolo e richiami poi la funzione di caricamento dei veicoli disponibili dal database per tali parametri. & I & S
+		TU76 & Viene verificato che \texttt{searchVehicles()} estragga correttamente dalle \texttt{EditText} i parametri di ricerca del veicolo e richiami poi la funzione di caricamento dei veicoli disponibili dal database per tali parametri. & I 
 		\tabularnewline	
-		TU77.1 & Viene verificato che \texttt{checkUserAuthentication()} richiami correttamente showMainView() se l'utente è già autenticato. & I & S
+		TU77.1 & Viene verificato che \texttt{checkUserAuthentication()} richiami correttamente showMainView() se l'utente è già autenticato. & I 
 		\tabularnewline	
-		TU77.2 & Viene verificato che \texttt{checkUserAuthentication()} richiami correttamente showLoginView() se l'utente non è già autenticato. & I & S
+		TU77.2 & Viene verificato che \texttt{checkUserAuthentication()} richiami correttamente showLoginView() se l'utente non è già autenticato. & I 
 		\tabularnewline	
-		TU78 & Viene verificato che \texttt{saveCar()} estragga correttamente i dati del veicolo dalla \texttt{View} e richiamo la funziona \texttt{uploadVehicle()} per il caricamento in database. & I & S
+		TU78 & Viene verificato che \texttt{saveCar()} estragga correttamente i dati del veicolo dalla \texttt{View} e richiami la funziona \texttt{uploadVehicle()} per il caricamento in database. & I 
 		\tabularnewline	
-		TU79 & Viene verificato che \texttt{uploadVehicle()} carichi correttamente i dati del veicolo in database. & I & S
+		TU79 & Viene verificato che \texttt{uploadVehicle()} carichi correttamente i dati del veicolo in database. & I 
 		\tabularnewline	
-		TU80 & Viene verificato che \texttt{onVehicleUploaded()} imposti correttamente la \texttt{MainActivity}. & I & S
+		TU80 & Viene verificato che \texttt{onVehicleUploaded()} imposti correttamente la \texttt{MainActivity}. & I 
 		\tabularnewline	
-		TU81.1 & Viene verificato che \texttt{initRegisterButton()} imposti correttamente il messaggio d'errore quando le foto del nuovo veicolo non sono state inserite oppure quando non sono ancora state caricate in database. & I & S
+		TU81.1 & Viene verificato che \texttt{initRegisterButton()} imposti correttamente il messaggio d'errore quando le foto del nuovo veicolo non sono state inserite oppure quando non sono ancora state caricate in database. & I
 		\tabularnewline	
-		TU81.2 & Viene verificato che \texttt{initRegisterButton()} invochi correttamente \texttt{saveCar()} quando le immagini del nuovo veicolo sono sono state inserite e caricate nel database. & I & S
+		TU81.2 & Viene verificato che \texttt{initRegisterButton()} invochi correttamente \texttt{saveCar()} quando le immagini del nuovo veicolo sono sono state inserite e caricate nel database. & I 
 		\tabularnewline	
-		TU82 & Viene verificato che \texttt{initFabImagePicker()} istanzi correttamente l'\texttt{Activity} di scelta dell'immagine da caricare al click del bottone. & I & S
+		TU82 & Viene verificato che \texttt{initFabImagePicker()} istanzi correttamente l'\texttt{Activity} di scelta dell'immagine da caricare al click del bottone. & I 
 		\tabularnewline	
-		TU83 & Viene verificato che \texttt{initBrandEditText()} istanzi correttamente il fragment per la scelta della marca del veicolo da inserire. & I & S
+		TU83 & Viene verificato che \texttt{initBrandEditText()} istanzi correttamente il fragment per la scelta della marca del veicolo da inserire. & I 
 		\tabularnewline	
-		TU84 & Viene verificato che \texttt{initModelEditText()} istanzi correttamente il fragment per la scelta del modello del veicolo da inserire. & I & S
+		TU84 & Viene verificato che \texttt{initModelEditText()} istanzi correttamente il fragment per la scelta del modello del veicolo da inserire. & I 
 		\tabularnewline	
-		TU85 & Viene verificato che \texttt{initPlaceAutocomplete()} istanzi correttamente l'auto-completamento della via da inserire. & I & S
+		TU85 & Viene verificato che \texttt{initPlaceAutocomplete()} istanzi correttamente l'auto-completamento della via da inserire. & I
 		\tabularnewline	
-		TU86 & Viene verificato che \texttt{fetchPlace()} fornisca i suggerimenti di auto-completamento correttamente. & I & S
+		TU86 & Viene verificato che \texttt{fetchPlace()} fornisca i suggerimenti di auto-completamento correttamente. & I 
 		\tabularnewline	
-		TU87.1 & Viene verificato che \texttt{onAvailabilityUpdated()} instanzi correttamente la \texttt{AlerdDialog} che richieda all'utente se vuole inserire un'altra disponibilità. & I & S
+		TU87.1 & Viene verificato che \texttt{onAvailabilityUpdated()} instanzi correttamente la \texttt{AlerdDialog} che richieda all'utente se vuole inserire un'altra disponibilità. & I 
 		\tabularnewline	
-		TU87.2 & Viene verificato che \texttt{onAvailabilityUpdated()} instanzi correttamente la \texttt{MainActivity} quando l'utente sceglie di non inserire altre disponibilità. & I & S
+		TU87.2 & Viene verificato che \texttt{onAvailabilityUpdated()} instanzi correttamente la \texttt{MainActivity} quando l'utente sceglie di non inserire altre disponibilità. & I
 		\tabularnewline	
-		TU87.3 & Viene verificato che \texttt{onAvailabilityUpdated()} rimanga nell'activity corrrente quando l'utente comunica di voler inserire un'altra disponibilità. & I & S
+		TU87.3 & Viene verificato che \texttt{onAvailabilityUpdated()} rimanga nell'activity corrente quando l'utente comunica di voler inserire un'altra disponibilità. & I
 		\tabularnewline	
-		TU88 & Viene verificato che \texttt{addFixedAvailability(vehicle, date, startHour, endHour)} aggiunga correttamente in database la disponibilità secondo i parametri ricevuti. & I & S
+		TU88 & Viene verificato che \texttt{addFixedAvailability(vehicle, date, startHour, endHour)} aggiunga correttamente in database la disponibilità secondo i parametri ricevuti. & I 
 		\tabularnewline	
-		TU89 & Viene verificato che \texttt{addRepeatedAvailability(vehicle,startHour,endHour,week,repeatFor)} inserisca correttamente in database la disponibilità secondo i parametri ricevuti. & I & S
+		TU89 & Viene verificato che \texttt{addRepeatedAvailability(vehicle, startHour, endHour, week, repeatFor)} inserisca correttamente in database la disponibilità secondo i parametri ricevuti. & I 
 		\tabularnewline	
-		TU90 & Viene verificato che \texttt{setDayAvailability(dayAvailability, startHour, endHour)} modifichi il range di ore disponibili di \texttt{dayAvailability} correttamente. & I & S
+		TU90 & Viene verificato che \texttt{setDayAvailability(dayAvailability, startHour, endHour)} modifichi il range di ore disponibili di \texttt{dayAvailability} correttamente. & I 
 		\tabularnewline	
-		TU91 & Viene verificato che \texttt{showCheckBoxDialog()} istanzi correttamente l'\texttt{AlertDialog} contente i giorni della settimana da seleziore. & I & S
+		TU91 & Viene verificato che \texttt{showCheckBoxDialog()} istanzi correttamente l'\texttt{AlertDialog} contenente i giorni della settimana da selezionare. & I 
 		\tabularnewline	
-		TU92 & Viene verificato che \texttt{selectedDays()} istanzi correttamente l'array che tiene traccia dei giorni della settimana selezionati per la disponibilità. & I & S
+		TU92 & Viene verificato che \texttt{selectedDays()} istanzi correttamente l'array che tiene traccia dei giorni della settimana selezionati per la disponibilità. & I 
 		\tabularnewline	
-		TU93 & Viene verificato che \texttt{askRemoveConfirmation()} istanzi correttamente l'\texttt{AlertiDialog} di conferma della rimozione veicolo. & I & S
+		TU93 & Viene verificato che \texttt{askRemoveConfirmation()} istanzi correttamente l'\texttt{AlertiDialog} di conferma della rimozione veicolo. & I
 		\tabularnewline	
-		TU94 & Viene verificato che \texttt{showAddAvailability()} istanzi correttamente la \texttt{AddAvailabilityActivity}. & I & S
+		TU94 & Viene verificato che \texttt{showAddAvailability()} istanzi correttamente la \texttt{AddAvailabilityActivity}. & I 
 		\tabularnewline	
-		TU95 & Viene verificato che \texttt{onVehicleRemoved()} istanzi correttamente la \texttt{MainActivity}. & I & S
+		TU95 & Viene verificato che \texttt{onVehicleRemoved()} istanzi correttamente la \texttt{MainActivity}. & I 
 		\tabularnewline	
-		TU96 & Viene verificato che \texttt{removeVehicle(key)} rimuova correttamente dal database il veicolo selezionato. & I & S
+		TU96 & Viene verificato che \texttt{removeVehicle(key)} rimuova correttamente dal database il veicolo selezionato. & I 
 		\tabularnewline	
-		TU97 & Viene verificato che \texttt{VehicleListPresenter.loadVehicles()} carichi correttamente dal database i veicoli di proprietà dell'utente. & I & S
+		TU97 & Viene verificato che \texttt{VehicleListPresenter.loadVehicles()} carichi correttamente dal database i veicoli di proprietà dell'utente. & I
 		\tabularnewline	
-		TU98 & Viene verificato che \texttt{verifyTime()} estragga il tempo rimanente per il prossimo premio correttamente dal database. & I & S
+		TU98 & Viene verificato che \texttt{verifyTime()} estragga il tempo rimanente per il prossimo premio correttamente dal database. & I 
 		\tabularnewline	
-		TU99 & Viene verificato che \texttt{countDown()} segnali il tempo rimanente fino alla prossima mezza notte correttamente. & I & S
+		TU99 & Viene verificato che \texttt{countDown()} segnali il tempo rimanente fino alla prossima mezza notte correttamente. & I 
 		\tabularnewline	
-		TU100 & Viene verificato che \texttt{saveReward()} carichi correttamente in database il premio ritirato. & I & S
+		TU100 & Viene verificato che \texttt{saveReward()} carichi correttamente in database il premio ritirato. & I 
 		\tabularnewline	
-		TU101.1 & Viene verificato che \texttt{ritira()} permetta il ritiro del premio solo una volta al giorno. & I & S
+		TU101.1 & Viene verificato che \texttt{ritira()} permetta il ritiro del premio solo una volta al giorno. & I 
 		\tabularnewline	
-		TU101.2 & Viene verificato che \texttt{ritira()} non permetta il ritiro del premio quando il \texttt{countDown} è attivo. & I & S
+		TU101.2 & Viene verificato che \texttt{ritira()} non permetta il ritiro del premio quando il \texttt{countDown} è attivo. & I 
 		\tabularnewline	
-		TU101.3 & Viene verificato che \texttt{ritira()} istanzi correttamente l'\texttt{AlertDialog} di illustrazione dettaglio premio quando è disponibile per il ritiro. & I & S
-		\tabularnewline
+		TU101.3 & Viene verificato che \texttt{ritira()} istanzi correttamente l'\texttt{AlertDialog} di illustrazione dettaglio premio quando è disponibile per il ritiro. & I 
 		
-		TU102 & Viene verificato che \texttt{millisToString()} converta il tempo di \texttt{countDown} rimanente nella forma ore:minuti:secondi. & I & S
+				\tabularnewline
+		
+		TU102 & Viene verificato che \texttt{millisToString()} converta il tempo di \texttt{countDown} rimanente nella forma ore:minuti:secondi. & I 
 		\tabularnewline	
-		TU103 & Viene verificato che \texttt{checkStatus()} renda disponibile il ritiro del premio solo quando lo stato del premio è \texttt{Available}. & I & S
+		TU103 & Viene verificato che \texttt{checkStatus()} renda disponibile il ritiro del premio solo quando lo stato del premio è \texttt{Available}. & I
 		\tabularnewline	
-		TU104 & Viene verificato che \texttt{showPopUp()} istanzi correttamente la \texttt{PopupWindow} per il ritiro del premio. & I & S
+		TU104 & Viene verificato che \texttt{showPopUp()} istanzi correttamente la \texttt{PopupWindow} per il ritiro del premio. & I 
 		\tabularnewline	
-		TU105 & Viene verificato che \texttt{givePrize()} consegni il premio all'utente, marcandolo come \texttt{Withdrawn} in database. & I & S
+		TU105 & Viene verificato che \texttt{givePrize()} consegni il premio all'utente, marcandolo come \texttt{Withdrawn} in database. & I 
 		\tabularnewline	
-		TU106 & Viene verificato che \texttt{loadMilestoneList()} carichi correttamente dal database i premi scelti per la Milestone Unlock. & I & S
+		TU106 & Viene verificato che \texttt{loadMilestoneList()} carichi correttamente dal database i premi scelti per la Milestone Unlock. & I 
 		
 		
 		\end{longtable}
+		
+		
+		\newpage
+\subsection{Test di integrazione}
+I test di integrazione sono usati per verificare il corretto funzionamento tra le varie unità dell'architettura. Tali test verranno indicati nel seguente modo:\\
+	\centerline{\textbf{TI[Codice]}}
+dove:
+\begin{itemize}
+	\item \textbf{Codice}: rappresenta il codice identificativo crescente del test.
+\end{itemize}
+Nella seguente tabella sono rappresentati i test di integrazione:
+\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
+
+\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.650\textwidth} >{\centering}p{0.10\textwidth}
+			}% >{\centering}p{0.14\textwidth}}
+			
+		%\hline
+		\caption{Riepilogo test di integrazione}\\	
+		\rowcolorhead
+		\textbf{\color{white}Test}  
+		& \textbf{\color{white}Descrizione} 
+		& \textbf{\color{white}Stato}
+	%	& \textbf{\color{white}Fonti} 
+		\tabularnewline %\hline 
+		\endfirsthead	
+		
+		\rowcolor{white}\caption[]{(continua)}\\	
+		\rowcolorhead
+		\textbf{\color{white}Test} 
+		& \textbf{\color{white}Descrizione}
+		& \textbf{\color{white}Stato} 
+		%	& \textbf{\color{white}Fonti} 
+		\tabularnewline %\hline 
+		\endhead	
+TI1&Viene verificato che l'utente possa registrarsi all'interno del sistema, ricevendo un messaggio di conferma se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I  \tabularnewline
+
+TI2&Viene verificato che l'utente già registrato possa effettuare il login, mostrando un messaggio di successo se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I  \tabularnewline
+
+TI3&Viene verificato che l'utente possa inserire informazioni aggiuntive all'interno del profilo. & I  \tabularnewline 
+
+TI4&Viene verificato che l'utente dopo aver effettuato la registrazione visualizzi correttamente l'activity introduttiva. & I  \tabularnewline
+
+TI5&Viene verificato che l'utente possa inserire la patente, mostrando un messaggio di successo se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I  \tabularnewline
+
+TI6&Viene verificato che l'utente che ha effettuato l'accesso possa visualizzare i propri veicoli. & I  \tabularnewline
+
+TI7&Viene verificato che l'utente che ha effettuato l'accesso possa gestire la disponibilità dei proprio veicoli. & I \tabularnewline
+
+
+TI8&Viene verificato che l'utente che ha effettuato l'accesso possa ricercare un veicolo adatto alle sue esigenze. & I \tabularnewline
+
+TI9&Viene verificato che l'utente che ha effettuato l'accesso possa visualizzare le prenotazioni che lo riguardano. & I  \tabularnewline
+
+TI10&Viene verificato che l'utente che ha effettuato l'accesso possa gestire le prenotazioni che devono ancora avvenire. & I  \tabularnewline
+
+TI10.1&Viene verificato che l'utente l'utente possa ritirare il premio dal Daily Rewards. & I  \tabularnewline
+
+TI10.2&Viene verificato che l'utente posso ritirare il premio dal Daily Rewards soltanto una volta al giorno. & I  \tabularnewline
+
+TI11&Viene verificato che l'utente possa visualizzare la Leaderboard. & I  \tabularnewline
+
+TI12.1&Viene verificato che l'utente possa ritirare i premi dalla Milestone Unlock quando ha raggiunto il livello necessario. & I  \tabularnewline
+TI12.2 &Viene verificato che l'utente non possa ritirare i premi della Milestone Unlock più di una volta. & I  \tabularnewline
+
+\end{longtable}		
