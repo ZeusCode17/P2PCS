@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+
+\input{../../../latex/package.tex}
+\input{config/config.tex}
+\makeindex
+
+\usepackage{hyperref}	%queste due linee le ho aggiunte altrimenti non funzionano i link
+
+
+\begin{document}
+	\input{res/sections/frontispiece.tex}
+	\pagebreak	
+	
+	\input{res/sections/changelog.tex}
+
+	\pagebreak
+	
+	\tableofcontents
+	
+	\pagebreak
+	
+	\listoffigures
+	
+	\pagebreak
+	
+	\pagebreak
+	
+	\input{res/sections/introduzione.tex}
+	\pagebreak
+	
+	\input{res/sections/processi_primari.tex}
+	\pagebreak
+	
+	\input{res/sections/processi_di_supporto.tex}
+	\pagebreak
+	
+	\input{res/sections/processi_organizzativi.tex}
+	\pagebreak
+	
+\appendix
+\pagebreak
+%\input{res/sections/standard_qualita.tex}	%tutte le \section da questo documento in poi saranno numerate con numeri
+
+
+\pagebreak
+\input{res/sections/liste_controllo.tex}
+	
+\end{document}
