@@ -1,9 +1,9 @@
 \begin{figure}[h]
 	\includegraphics[width=12cm]{res/images/UC12Prenotazioni.png}
 	\centering
-	\caption{UC12 - Gestione prenotazioni}
+	\caption{UC11 - Gestione prenotazioni}
 \end{figure}
-\subsubsection{UC12 - Gestione prenotazioni}
+\subsubsection{UC11 - Gestione prenotazioni}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Attori Secondari}:
@@ -20,25 +20,25 @@
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente autenticato effettua operazioni di gestione di una prenotazione. Esse comprendono:
 	\begin{itemize}
-		\item visualizzazione dettagli prenotazione [UC12.1].
+		\item visualizzazione dettagli prenotazione [UC11.1].
 	\end{itemize}
 	\item \textbf{Scenario alternativo}: Se l'utente autenticato è il proprietario del veicolo, inoltre può:
 	\begin{itemize}
-		\item confermare o annullare le prenotazioni ricevute [UC12.2];
-		\item confermare la consegna delle chiavi [UC12.3]
-		\item confermare la riconsegna del veicolo [UC12.4];
-		\item recensire l'usufruente [UC12.7].
+		\item confermare o annullare le prenotazioni ricevute [UC11.2];
+		\item confermare la consegna delle chiavi [UC11.3]
+		\item confermare la riconsegna del veicolo [UC11.4];
+		\item recensire l'usufruente [UC11.7].
 	\end{itemize}
 	Se l'utente autenticato è l'usufruente del veicolo, inoltre potrà:
 	\begin{itemize}
-		\item annullare la prenotazione [UC12.5];
-		\item richiedere la conferma della riconsegna del veicolo [UC12.6];
-		\item recensire il proprietario [UC12.7].
+		\item annullare la prenotazione [UC11.5];
+		\item richiedere la conferma della riconsegna del veicolo [UC11.6];
+		\item recensire il proprietario [UC11.7].
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema carica correttamente la lista delle prenotazioni effettuate attualmente attive;
 	\item \textbf{Postcondizione}: l'utente ha visualizzato le sue prenotazioni correnti ed è riuscito ad effettuare eventuali modifiche.
 \end{itemize} 
- \subsubsection{UC12.1 - Visualizzazione dettagli prenotazione}
+ \subsubsection{UC11.1 - Visualizzazione dettagli prenotazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'utente visualizza i dettagli della prenotazione scelta dalla maschera di presentazione delle prenotazioni, ciò gli permette di visualizzare:
@@ -55,7 +55,7 @@
 	\item \textbf{Precondizione}: l'utente ha scelto una prenotazione;
 	\item \textbf{Postcondizione}: l'utente ha visualizzato correttamente i dettagli della prenotazione.
 \end{itemize}
-\subsubsection{UC12.2 - Conferma o annulla prenotazione}
+\subsubsection{UC11.2 - Conferma o annulla prenotazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: proprietario del veicolo;
 	\item \textbf{Descrizione}: il proprietario del veicolo conferma o annulla la richiesta di prenotazione ricevuta;
@@ -64,7 +64,7 @@
 	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende confermare o annullare;
 	\item \textbf{Postcondizione}: l'utente ha confermato o annullato correttamente la richiesta di prenotazione ricevuta.
 \end{itemize}
-\subsubsection{UC12.3 - Conferma consegna chiavi}
+\subsubsection{UC11.3 - Conferma consegna chiavi}
 \begin{itemize}
 	\item \textbf{Attori Primari}: proprietario del veicolo;
 	\item \textbf{Descrizione}: il proprietario del veicolo conferma, tramite l'apposito pulsante, che le chiavi sono state consegnate all'usufruente del veicolo;
@@ -72,15 +72,15 @@
 	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione e intende confermare la consegna delle chiavi del veicolo;
 	\item \textbf{Postcondizione}: l'utente ha confermato la consegna delle chiavi del veicolo all'usufruente.
 \end{itemize}
-\subsubsection{UC12.4 - Chiudi prenotazione}
+\subsubsection{UC11.4 - Chiudi prenotazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: proprietario del veicolo;
 	\item \textbf{Descrizione}: il proprietario del veicolo conferma la riconsegna del mezzo e delle chiavi e chiude definitivamente la prenotazione;
-	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Alla riconsegna del veicolo e delle chiavi, attraverso l'apposito pulsante l'utente confermerà la chiusura della prenotazione in modo definitivo. Comparirà un pop-up che permetterà di lasciare una recensione all'altro utente [UC12.7];
+	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Alla riconsegna del veicolo e delle chiavi, attraverso l'apposito pulsante l'utente confermerà la chiusura della prenotazione in modo definitivo. Comparirà un pop-up che permetterà di lasciare una recensione all'altro utente [UC11.7];
 	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende concludere;
 	\item \textbf{Postcondizione}: l'utente ha concluso correttamente la prenotazione selezionata.
 \end{itemize}
-\subsubsection{UC12.5 - Annulla prenotazione}
+\subsubsection{UC11.5 - Annulla prenotazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: usufruente del veicolo;
 	\item \textbf{Descrizione}: l'utente usufruente potrà annullare la prenotazione selezionata qualora sia in attesa di conferma da parte del proprietario del veicolo;
@@ -88,15 +88,15 @@
 	\item \textbf{Precondizione}: l'utente ha premuto il pulsante per la cancellazione delle prenotazione precedentemente selezionata;
 	\item \textbf{Postcondizione}: l'utente ha annullato correttamente la prenotazione selezionata.
 \end{itemize}
-\subsubsection{UC12.6 - Riconsegna del veicolo}
+\subsubsection{UC11.6 - Riconsegna del veicolo}
 \begin{itemize}
 	\item \textbf{Attori Primari}: usufruente del veicolo;
 	\item \textbf{Descrizione}: l'utente, passato il tempo in cui ha prenotato il veicolo può chiudere la prenotazione e riconsegnare il mezzo al proprietario;
-	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Dopo aver riconsegnato il veicolo e le chiavi, attraverso l'apposito pulsante l'utente chiederà la chiusura della prenotazione (la prenotazione verrà definitivamente chiusa quando anche il proprietario del veicolo confermerà la riconsegna delle chiavi e del mezzo [UC12.4]). Comparirà un pop-up che permetterà di lasciare una recensione all'altro utente [UC12.7];
+	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina di visualizzazione dei dettagli della prenotazione precedentemente selezionata. Dopo aver riconsegnato il veicolo e le chiavi, attraverso l'apposito pulsante l'utente chiederà la chiusura della prenotazione (la prenotazione verrà definitivamente chiusa quando anche il proprietario del veicolo confermerà la riconsegna delle chiavi e del mezzo [UC11.4]). Comparirà un pop-up che permetterà di lasciare una recensione all'altro utente [UC11.7];
 	\item \textbf{Precondizione}: l'utente visualizza correttamente la prenotazione che intende concludere;
 	\item \textbf{Postcondizione}: l'utente ha richiesto correttamente la chiusura della prenotazione selezionata.
 \end{itemize}
-\subsubsection{UC12.7 - Recensione}
+\subsubsection{UC11.7 - Recensione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente autenticato;
 	\item \textbf{Descrizione}: l'utente recensisce l'altro utente coinvolto nella prenotazione;
