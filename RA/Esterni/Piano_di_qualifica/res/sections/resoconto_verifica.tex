@@ -33,6 +33,9 @@
 	Durante l'attività di test, sono emersi dei problemi di integrazione delle componenti che sono stati prontamente risolti dai \textit{Programmatori}. \\
 	Per la misurazioni delle metriche sulla semplicità delle funzioni e l'intuizione richiesta all'utente nel comprenderle a prima vista, è  stato tenuto in conto anche il parere della proponente. 
 	\newpage
+	\subsubsection{Revisione di accettazione}
+	Nel periodo precedente alla consegna della revisione di accettazione sono stati verificati i documenti, processi e qualità del prodotto. \\
+	L'attività di verifica svolta dai \textit{Verificatori} è avvenuta come determinato dal \textit{Piano di Progetto v4.0.0}, seguendo le indicazioni delle \textit{Norme di Progetto v4.0.0} e misurando le metriche indicate in §2 e §3. Successivamente sono state effettuate le misurazioni delle metriche relative ai documenti. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Dettaglio dell'esito delle revisioni e relative modifiche}
@@ -98,8 +101,41 @@
 			\end{itemize}
 	\end{itemize}
 	
-	
-	
+	\subsubsection{Revisione di qualifica}
+	Si riscontrano alcuni problemi, in particolare nel documento \textit{Norme di Progetto} e \textit{Analisi dei Requisiti}.\\
+	Di seguito vengono descritte brevemente le modifiche apportate in base alle segnalazioni ricevute:
+	\begin{itemize}
+		\item \textbf{Norme di Progetto}: 
+			\begin{itemize}
+				\item è stata completata l'unificazione della struttura descrittiva, che nella fase precedente alla Revisione di Qualifica non era stata completata a causa del poco tempo a disposizione;
+				\item gli \textit{Amministratori} si sono impegnati a migliorare la normazione delle attività di processo adottate.
+			\end{itemize}
+		\item \textbf{Analisi dei Requisiti}:
+			\begin{itemize}
+				\item corretti i casi d'uso secondo le segnalazioni ricevute;
+				\item rivisti e corretti i diagrammi UML;
+			\end{itemize}
+		\item \textbf{Manuale Utente}:
+			\begin{itemize}
+				\item corretto il titolo in inglese e l'informazione mancante riguardo al recupero del 
+				APK;
+				\item espanso §3.1 con la descrizione delle funzionalità offerte;
+			\end{itemize}
+		\item \textbf{Manuale Sviluppatore}:
+			\begin{itemize}
+				\item TODO
+			\end{itemize}
+		\item \textbf{Piano di Progetto}:
+			\begin{itemize}
+				\item TODO
+			\end{itemize}
+		\item \textbf{Piano di Qualifica}:
+			\begin{itemize}
+				\item i codici utilizzati per l'avanzamento dello stato che erano stati definiti in §4, ora sono stati spostati e ripetuti per ogni sotto-capitolo;
+				\item corretta l'errata sequenza di specifica dei test;
+				\item migliorata la forma espositiva del resoconto delle attività di verifica;
+			\end{itemize}
+	\end{itemize}
 	\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -840,6 +876,243 @@ Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione d
 		
 	\end{longtable}
 	\newpage
+	
+	\subsubsection{Revisione di accettazione}
+	\paragraph{Qualità di processo}
+		Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione di qualità di processi, seguiti dalla tabella degli indici di Gulpease e degli indici di Gunning Fog che riporta gli esiti di tutti i documenti prodotti finora. \\
+\textbf{Legenda}:
+\begin{itemize}
+	\item \textbf{N.C.} - Non Calcolabile;
+	\item \textbf{S} - Superato;
+	\item \textbf{N.S.} - Non Superato;
+	\item \textbf{\%} - Percentuale;
+	\item \textbf{V} - Valore numerico;
+	\item \textbf{\euro{}} - Euro.
+\end{itemize}
+	\rowcolors{2}{pari}{dispari}	
+	\begin{longtable}{ >{\centering}p{0.25\textwidth} >{\centering}p{0.10\textwidth}
+			 >{\centering}p{0.10\textwidth} >{\centering}p{0.07\textwidth} >{\centering}p{0.31\textwidth}}
+		\caption{ Valutazione della qualità di processo - RQ} \\
+		%\hline
+		\rowcolorhead
+		
+		\centering\textbf{\color{white}Nome metrica} 
+		& \centering\textbf{\color{white}Unità di misura} 
+		& \centering\textbf{\color{white}Valore} 
+		& \centering\textbf{\color{white}Esito}
+		& \centering\textbf{\color{white}Accettazione}
+		\tabularnewline %\hline 
+		\endfirsthead
+		
+		\rowcolor{white}\caption[]{(continua)}\\	
+		\rowcolorhead
+		\centering\textbf{\color{white}Nome metrica} 
+		& \centering\textbf{\color{white}Unità di misura} 
+		& \centering\textbf{\color{white}Valore} 
+		& \centering\textbf{\color{white}Esito}
+		& \centering\textbf{\color{white}Accettazione}
+		\tabularnewline %\hline 
+		\endhead
+		
+		Requisiti obbligatori soddisfatti & \% & 100 & S & 100
+		\tabularnewline 
+		
+		Coupling Between Object classes & V & X & S & $0 \leq CBO \leq 6$
+		\tabularnewline
+		
+		Planned Value & \euro{} & x & S & $ \geq 0$
+		\tabularnewline
+		
+		Actual Cost & \euro{} & x & N.S. & $0 \leq AC \leq x $
+		\tabularnewline
+		
+		Earned Value & \euro{} & x & S & $ \geq 0$
+		\tabularnewline
+		
+		Budget at Completion & \euro{} &x & S & $x \leq BAC \leq x $
+		\tabularnewline
+		
+		Cost Variance & \euro{} & x & N.S. & $ \geq 0$
+		\tabularnewline
+		
+		Schedule Variance & \euro{} & x & S & $ \geq 0$
+		\tabularnewline
+		
+		Code Coverage & \% & x& N.S. & $ \geq 75\%$
+		\tabularnewline
+		
+		Indice Gunning fog (media) & V & x & S & $ \leq 16$
+		\tabularnewline
+		
+		Indice di Gulpease (media) & V & x & S & $40 < I_G < 100$
+		\tabularnewline
+		
+		Correttezza ortografica & V & 0 & S & 0
+		\tabularnewline
+		
+		Percentuale di metriche soddisfatte & \% & x & S &$ \geq 60$
+		\tabularnewline
+		
+	\end{longtable}
+	
+	\rowcolors{2}{pari}{dispari}
+	\begin{longtable}{ >{\centering}p{0.40\textwidth} >{\centering}p{0.25\textwidth}
+			 >{\centering}p{0.2075\textwidth} }
+		\caption{ Verifiche automatizzate indice di Gulpease - RQ} \\
+		%\hline
+		\rowcolorhead
+		\centering\textbf{\color{white}Documento} 
+		& \centering\textbf{\color{white}Indice Gulpease} 
+		& \centering\textbf{\color{white}Esito}
+		\tabularnewline %\hline 
+		\endfirsthead
+		
+		\rowcolor{white}\caption[]{(continua)}\\	
+		\rowcolorhead
+		\centering\textbf{\color{white}Documento} 
+		& \centering\textbf{\color{white}Indice Gulpease} 
+		& \centering\textbf{\color{white}Esito}
+		\tabularnewline %\hline 
+		\endhead
+			
+		\textit{Analisi dei Requisiti v3.0.0} & x & Superato
+		
+		\tabularnewline 
+		\textit{Glossario v3.0.0} & x & Superato
+				
+		\tabularnewline 
+		\textit{Norme di Progetto v3.0.0} & x  & Superato
+		
+		\tabularnewline 
+		\textit{Piano di Progetto v3.0.0} & x & Superato
+		
+		\tabularnewline 
+		\textit{Piano di Qualifica v3.0.0} & x & Superato	
+		
+		\tabularnewline 
+		\textit{Manuale sviluppatore} & x & Superato	
+		
+		\tabularnewline 
+		\textit{Manuale utente} & x & Superato	
+		
+		
+	\end{longtable}
+	
+	
+	
+	
+	\rowcolors{2}{pari}{dispari}
+	\begin{longtable}{ >{\centering}p{0.40\textwidth} >{\centering}p{0.25\textwidth}
+			 >{\centering}p{0.2075\textwidth}}
+		\caption{  Verifiche automatizzate indice di Gunning Fog - RQ} \\
+		%\hline
+		\rowcolorhead
+		\centering\textbf{\color{white}Documento} 
+		& \centering\textbf{\color{white}Indice Gunning Fog} 
+		& \centering\textbf{\color{white}Esito}
+		\tabularnewline %\hline 
+		\endfirsthead
+		
+		
+		\rowcolor{white}\caption[]{(continua)}\\	
+		\rowcolorhead
+		\centering\textbf{\color{white}Documento} 
+		& \centering\textbf{\color{white}Indice Gunning Fog} 
+		& \centering\textbf{\color{white}Esito}
+		\tabularnewline %\hline 
+		\endhead
+			
+		\textit{Analisi dei Requisiti v3.0.0} & x & Superato
+		
+		\tabularnewline 
+		\textit{Glossario v3.0.0} & x & Superato
+				
+		\tabularnewline 
+		\textit{Norme di Progetto v3.0.0} & x  & Superato
+		
+		\tabularnewline 
+		\textit{Piano di Progetto v3.0.0} & x & Superato
+		
+		\tabularnewline 
+		\textit{Piano di Qualifica v3.0.0} & x & Superato	
+				
+		\tabularnewline 
+		\textit{Manuale sviluppatore} & x & Superato	
+		
+		\tabularnewline 
+		\textit{Manuale utente} & x & Superato	
+		
+		
+	\end{longtable}
+
+	
+	
+		\paragraph{Qualità di prodotto}
+		Di seguito viene riportata la misurazione delle metriche descritte in §3, derivanti dalla gestione di qualità di prodotto.
+		\rowcolors{2}{pari}{dispari}	
+	\begin{longtable}{ >{\centering}p{0.25\textwidth} >{\centering}p{0.10\textwidth}
+			 >{\centering}p{0.10\textwidth} >{\centering}p{0.07\textwidth} >{\centering}p{0.31\textwidth}}
+		\caption{  Valutazione della qualità di processo - RQ} \\
+		%\hline
+		\rowcolorhead
+		
+		\centering\textbf{\color{white}Nome metrica} 
+		& \centering\textbf{\color{white}Unità di misura} 
+		& \centering\textbf{\color{white}Valore} 
+		& \centering\textbf{\color{white}Esito}
+		& \centering\textbf{\color{white}Accettazione}
+		\tabularnewline %\hline 
+		\endfirsthead
+		
+		\rowcolor{white}\caption[]{(continua)}\\	
+		\rowcolorhead
+		\centering\textbf{\color{white}Nome metrica} 
+		& \centering\textbf{\color{white}Unità di misura} 
+		& \centering\textbf{\color{white}Valore} 
+		& \centering\textbf{\color{white}Esito}
+		& \centering\textbf{\color{white}Accettazione}
+		\tabularnewline %\hline 
+		\endhead
+		
+		Requisiti obbligatori soddisfatti & \% & x & S & 100
+		\tabularnewline 
+		
+		Densità dei guasti nei casi di test & \% & x & S & $ \leq 10$
+		\tabularnewline
+		
+		Risoluzione dei guasti & \% & x & S & 100
+		\tabularnewline
+		
+		Facilità di utilizzo & V & x & S & $0 \leq 15 $
+		\tabularnewline
+		
+		Facilità di apprendimento & V & x & S & $ \leq 5$
+		\tabularnewline
+		
+		Profondità della gerarchia & V & x & S & $ \leq 7 $
+		\tabularnewline
+		
+		Comprensione delle funzioni & \% & x & S & $ \geq 95$
+		\tabularnewline
+		
+		Facilità di comprensione & V & x & S & $ \geq 0.10$
+		\tabularnewline
+		
+		Semplicità delle funzioni & V & x & S & $\leq 6$
+		\tabularnewline
+		
+		Semplicità delle classi & V & x & S & $ \leq 15$
+		\tabularnewline
+		
+		SFIN: Structural Fan-in (media) & V & x & S & $ \geq 0 $
+		\tabularnewline
+		
+		SFOUT: Structural Fan-out (media) & V & x & S & $ \leq 6$
+		\tabularnewline
+		
+	\end{longtable}
+	\newpage
+	
 		\paragraph{Esiti dei test}
 	
 		Di seguito viene riportata la tabella indicante l'esito dei test effettuati. Ogni test è stato eseguito più volte nel periodo, in base alle esigenze. Viene riportato solo l'esito finale.

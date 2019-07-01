@@ -1,16 +1,7 @@
 \section{Specifica dei test}
 Per assicurare la qualità del software prodotto, il gruppo \textit{Zeus Code} adotta come modello di sviluppo del software il
 \textbf{Modello a V\glo}, il quale prevede lo sviluppo dei test in parallelo alle attività di analisi e progettazione. In questo modo i test permetteranno di verificare sia la correttezza delle parti di programma sviluppate, sia che tutti gli aspetti del progetto siano implementati e corretti. Segue quindi l'esito dei test per mezzo di tabelle che ne semplificheranno la consultazione e che potranno fornire una precisa indicazione degli output prodotti, specificando se il risultato ottenuto sia quello atteso, errato oppure non coerente a quanto fissato in precedenza. \\
-Per definire lo stato dei test, vengono utilizzate le seguenti sigle:
-\begin{itemize}
-	\item \textbf{I}: per indicare che il test è stato implementato;
-	\item \textbf{NI}: per indicare che il test non è stato implementato.
-\end{itemize}
-Inoltre per lo stato dei test si usano le seguenti abbreviazioni:
-\begin{itemize}
-	\item \textbf{S}: per indicare che il test ha soddisfatto la richiesta;
-	\item \textbf{NS}: per indicare che il test non ha soddisfatto la richiesta.
-\end{itemize}
+
 \subsection{Test di accettazione}
 I test di accettazione hanno lo scopo di dimostrare che il software sviluppato, eseguito durante il collaudo finale, soddisfi i requisiti presentati nel capitolato\glosp e concordati con il proponente. Tali test verranno indicati nel seguente modo: \\ \\
 	\centerline{\textbf{TA[Codice]}}
@@ -354,6 +345,16 @@ dove:
 \begin{itemize}
 	\item \textbf{Codice}: rappresenta il codice identificativo crescente del test.
 \end{itemize}
+Per definire lo stato dei test, vengono utilizzate le seguenti sigle:
+\begin{itemize}
+	\item \textbf{I}: per indicare che il test è stato implementato;
+	\item \textbf{NI}: per indicare che il test non è stato implementato.
+\end{itemize}
+Inoltre per lo stato dei test si usano le seguenti abbreviazioni:
+\begin{itemize}
+	\item \textbf{S}: per indicare che il test ha soddisfatto la richiesta;
+	\item \textbf{NS}: per indicare che il test non ha soddisfatto la richiesta.
+\end{itemize}
 	Nella seguente tabella vengono anche tracciati i requisiti a cui fanno riferimento. Tali requisiti sono indicati nel documento \textit{Analisi dei requisiti v3.0.0}, sezione §4.
 
 	\renewcommand{\arraystretch}{1.5}
@@ -429,6 +430,81 @@ dove:
 		 TS14.2	& RFF12.2	& Verificare che il sistema permetta all'utente autenticato di poter accedere al Minigioco del garage in cui potrà modificare l'estetica dell'auto base.	\tabularnewline
 \end{longtable}
 
+\newpage
+\subsection{Test di integrazione}
+I test di integrazione sono usati per verificare il corretto funzionamento tra le varie unità dell'architettura. Tali test verranno indicati nel seguente modo:\\
+	\centerline{\textbf{TI[Codice]}}
+dove:
+\begin{itemize}
+	\item \textbf{Codice}: rappresenta il codice identificativo crescente del test.
+\end{itemize}
+Per definire lo stato dei test, vengono utilizzate le seguenti sigle:
+\begin{itemize}
+	\item \textbf{I}: per indicare che il test è stato implementato;
+	\item \textbf{NI}: per indicare che il test non è stato implementato.
+\end{itemize}
+Inoltre per lo stato dei test si usano le seguenti abbreviazioni:
+\begin{itemize}
+	\item \textbf{S}: per indicare che il test ha soddisfatto la richiesta;
+	\item \textbf{NS}: per indicare che il test non ha soddisfatto la richiesta.
+\end{itemize}
+Nella seguente tabella sono rappresentati i test di integrazione:
+\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
+
+\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.650\textwidth} >{\centering}p{0.10\textwidth}
+			}% >{\centering}p{0.14\textwidth}}
+			
+		%\hline
+		\caption{Riepilogo test di integrazione}\\	
+		\rowcolorhead
+		\textbf{\color{white}Test}  
+		& \textbf{\color{white}Descrizione} 
+		& \textbf{\color{white}Stato}
+	%	& \textbf{\color{white}Fonti} 
+		\tabularnewline %\hline 
+		\endfirsthead	
+		
+		\rowcolor{white}\caption[]{(continua)}\\	
+		\rowcolorhead
+		\textbf{\color{white}Test} 
+		& \textbf{\color{white}Descrizione}
+		& \textbf{\color{white}Stato} 
+		%	& \textbf{\color{white}Fonti} 
+		\tabularnewline %\hline 
+		\endhead	
+TI1&Viene verificato che l'utente possa registrarsi all'interno del sistema, ricevendo un messaggio di conferma se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I  \tabularnewline
+
+TI2&Viene verificato che l'utente già registrato possa effettuare il login, mostrando un messaggio di successo se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I  \tabularnewline
+
+TI3&Viene verificato che l'utente possa inserire informazioni aggiuntive all'interno del profilo. & I  \tabularnewline 
+
+TI4&Viene verificato che l'utente dopo aver effettuato la registrazione visualizzi correttamente la guida introduttiva. & I  \tabularnewline
+
+TI5&Viene verificato che l'utente possa inserire la patente, mostrando un messaggio di successo se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I  \tabularnewline
+
+TI6&Viene verificato che l'utente che ha effettuato l'accesso possa visualizzare i propri veicoli. & I  \tabularnewline
+
+TI7&Viene verificato che l'utente che ha effettuato l'accesso possa gestire la disponibilità dei proprio veicoli. & I \tabularnewline
+
+
+TI8&Viene verificato che l'utente che ha effettuato l'accesso possa ricercare un veicolo adatto alle sue esigenze. & I \tabularnewline
+
+TI9&Viene verificato che l'utente che ha effettuato l'accesso possa visualizzare le prenotazioni che lo riguardano. & I  \tabularnewline
+
+TI10&Viene verificato che l'utente che ha effettuato l'accesso possa gestire le prenotazioni che devono ancora avvenire. & I  \tabularnewline
+
+TI10.1&Viene verificato che l'utente l'utente possa ritirare il premio dal Daily Rewards. & I  \tabularnewline
+
+TI10.2&Viene verificato che l'utente posso ritirare il premio dal Daily Rewards soltanto una volta al giorno. & I  \tabularnewline
+
+TI11&Viene verificato che l'utente possa visualizzare la Leaderboard. & I  \tabularnewline
+
+TI12.1&Viene verificato che l'utente possa ritirare i premi dalla Milestone Unlock quando ha raggiunto il livello necessario. & I  \tabularnewline
+TI12.2 &Viene verificato che l'utente non possa ritirare i premi della Milestone Unlock più di una volta. & I  \tabularnewline
+
+\end{longtable}		
+
 \newpage		
 \subsection{Test di unità}
 I test di unità hanno l'obiettivo di verificare il corretto funzionamento della parte più piccola autonoma del lavoro realizzato. Tali test verranno indicati nel seguente modo:\\
@@ -436,6 +512,17 @@ I test di unità hanno l'obiettivo di verificare il corretto funzionamento della
 dove:
 \begin{itemize}
 	\item \textbf{Codice}: rappresenta il codice identificativo crescente del test.
+\end{itemize}
+
+Per definire lo stato dei test, vengono utilizzate le seguenti sigle:
+\begin{itemize}
+	\item \textbf{I}: per indicare che il test è stato implementato;
+	\item \textbf{NI}: per indicare che il test non è stato implementato.
+\end{itemize}
+Inoltre per lo stato dei test si usano le seguenti abbreviazioni:
+\begin{itemize}
+	\item \textbf{S}: per indicare che il test ha soddisfatto la richiesta;
+	\item \textbf{NS}: per indicare che il test non ha soddisfatto la richiesta.
 \end{itemize}
 Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
 
@@ -696,67 +783,4 @@ Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla
 		\end{longtable}
 		
 		
-		\newpage
-\subsection{Test di integrazione}
-I test di integrazione sono usati per verificare il corretto funzionamento tra le varie unità dell'architettura. Tali test verranno indicati nel seguente modo:\\
-	\centerline{\textbf{TI[Codice]}}
-dove:
-\begin{itemize}
-	\item \textbf{Codice}: rappresenta il codice identificativo crescente del test.
-\end{itemize}
-Nella seguente tabella sono rappresentati i test di integrazione:
-\renewcommand{\arraystretch}{1.5}
-	\rowcolors{2}{pari}{dispari}
-
-\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.650\textwidth} >{\centering}p{0.10\textwidth}
-			}% >{\centering}p{0.14\textwidth}}
-			
-		%\hline
-		\caption{Riepilogo test di integrazione}\\	
-		\rowcolorhead
-		\textbf{\color{white}Test}  
-		& \textbf{\color{white}Descrizione} 
-		& \textbf{\color{white}Stato}
-	%	& \textbf{\color{white}Fonti} 
-		\tabularnewline %\hline 
-		\endfirsthead	
 		
-		\rowcolor{white}\caption[]{(continua)}\\	
-		\rowcolorhead
-		\textbf{\color{white}Test} 
-		& \textbf{\color{white}Descrizione}
-		& \textbf{\color{white}Stato} 
-		%	& \textbf{\color{white}Fonti} 
-		\tabularnewline %\hline 
-		\endhead	
-TI1&Viene verificato che l'utente possa registrarsi all'interno del sistema, ricevendo un messaggio di conferma se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I  \tabularnewline
-
-TI2&Viene verificato che l'utente già registrato possa effettuare il login, mostrando un messaggio di successo se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I  \tabularnewline
-
-TI3&Viene verificato che l'utente possa inserire informazioni aggiuntive all'interno del profilo. & I  \tabularnewline 
-
-TI4&Viene verificato che l'utente dopo aver effettuato la registrazione visualizzi correttamente la guida introduttiva. & I  \tabularnewline
-
-TI5&Viene verificato che l'utente possa inserire la patente, mostrando un messaggio di successo se l'operazione va a buon fine, altrimenti un messaggio di errore specifico per l'errore commesso. & I  \tabularnewline
-
-TI6&Viene verificato che l'utente che ha effettuato l'accesso possa visualizzare i propri veicoli. & I  \tabularnewline
-
-TI7&Viene verificato che l'utente che ha effettuato l'accesso possa gestire la disponibilità dei proprio veicoli. & I \tabularnewline
-
-
-TI8&Viene verificato che l'utente che ha effettuato l'accesso possa ricercare un veicolo adatto alle sue esigenze. & I \tabularnewline
-
-TI9&Viene verificato che l'utente che ha effettuato l'accesso possa visualizzare le prenotazioni che lo riguardano. & I  \tabularnewline
-
-TI10&Viene verificato che l'utente che ha effettuato l'accesso possa gestire le prenotazioni che devono ancora avvenire. & I  \tabularnewline
-
-TI10.1&Viene verificato che l'utente l'utente possa ritirare il premio dal Daily Rewards. & I  \tabularnewline
-
-TI10.2&Viene verificato che l'utente posso ritirare il premio dal Daily Rewards soltanto una volta al giorno. & I  \tabularnewline
-
-TI11&Viene verificato che l'utente possa visualizzare la Leaderboard. & I  \tabularnewline
-
-TI12.1&Viene verificato che l'utente possa ritirare i premi dalla Milestone Unlock quando ha raggiunto il livello necessario. & I  \tabularnewline
-TI12.2 &Viene verificato che l'utente non possa ritirare i premi della Milestone Unlock più di una volta. & I  \tabularnewline
-
-\end{longtable}		
