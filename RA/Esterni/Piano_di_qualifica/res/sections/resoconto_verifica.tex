@@ -876,6 +876,306 @@ Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione d
 		
 	\end{longtable}
 	\newpage
+		\paragraph{Esiti dei test - RQ}
+	
+	Di seguito viene riportata la tabella indicante l'esito dei test effettuati durante la fase di Revisione di Qualifica. Ogni test è stato eseguito più volte nel periodo, in base alle esigenze. Viene riportato solo l'esito finale.
+	
+	\subparagraph{Test di unità} {\color{white}.}
+	
+	\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
+	
+	\begin{longtable}{ >{\centering}p{0.10\textwidth}  >{\centering}p{0.50\textwidth} >{\centering}p{0.10\textwidth}
+			>{\centering}p{0.10\textwidth}}
+		
+		%\hline
+		\caption{   Esito test di unità - RQ}\\	
+		\rowcolorhead
+		\centering\textbf{\color{white}Test} 
+		& \centering\textbf{\color{white}Metodo} 
+		& \centering\textbf{\color{white}N. prove}
+		& \centering\textbf{\color{white}Esito finale}
+		
+		%	& \textbf{\color{white}Fonti} 
+		\tabularnewline %\hline 
+		\endfirsthead	
+		
+		\rowcolor{white}\caption[]{(continua)}\\	
+		\rowcolorhead
+		\centering\textbf{\color{white}Test} 
+		& \centering\textbf{\color{white}Metodo} 
+		& \centering\textbf{\color{white}N. prove}
+		& \centering\textbf{\color{white}Esito finale}
+		
+		%	& \textbf{\color{white}Fonti} 
+		\tabularnewline %\hline 
+		\endhead	
+		
+		TU1 & \texttt{setMinutePicker()}  & 3 & Superato \tabularnewline		
+		TU2 & \texttt{getMinute()}  & 3 & Superato \tabularnewline	
+		TU3 & \texttt{authenticateUser()}  & 3 & Superato \tabularnewline	
+		TU4 & \texttt{show(fragment)}  & 17 & Superato\tabularnewline	
+		TU5 & \texttt{extractCredentials()}  & 3 & Superato\tabularnewline	
+		TU6 & \texttt{onRegistrationFail(error)}  & 2& Superato\tabularnewline	
+		TU7.1 & \texttt{onRegistrationSubmitted(credentials)}  & 3 & Superato \tabularnewline	
+		TU7.2 & \texttt{onRegistrationSubmitted(credentials)}  & 3 & Superato\tabularnewline	
+		TU7.3 & \texttt{onRegistrationSubmitted(credentials)}  & 2 & Superato  \tabularnewline	
+		TU8 & \texttt{onRegistrationSuccess()} & 3 & Superato\tabularnewline	
+		TU9 & \texttt{extractUserInformation()} & 4 & Superato \tabularnewline	
+		TU10 & \texttt{onUserInformationSaved()} & 4  & Superato \tabularnewline	
+		TU11 & \texttt{addUserInformation(user)} &  4 & Superato \tabularnewline	
+		TU12 & \texttt{addUserInformation(user)} &  3 & Superato \tabularnewline	
+		TU13 & \texttt{onAuthenticationSuccess()} &  2  & Superato \tabularnewline	
+		TU14 & \texttt{onAuthenticationError()} &  2  & Superato \tabularnewline	
+		TU15 & \texttt{login()} &  5 & Superato \tabularnewline	
+		TU16 & \texttt{validate(credentials)} &  6  & Superato \tabularnewline	
+		TU17 &  \texttt{EmailValidator.isValid()} &  3  & Superato \tabularnewline	
+		TU18 & \texttt{EmailValidator.validate(user)} & 3 & Superato \tabularnewline	
+		TU19 & \texttt{NameValidator.validate(user)} & 2 & Superato \tabularnewline	
+		TU20 &  texttt{PasswordValidator.isValid()}   & 3 & Superato \tabularnewline	
+		TU21 &   \texttt{PasswordValidator.validate(user)}   & 4 & Superato\tabularnewline	
+		TU22 & \texttt{SurnameValidator.validate()} & 2 & Superato\tabularnewline	
+		TU23 & \texttt{UsernameValidator.validate()} & 2  & Superato\tabularnewline	
+		TU24 & \texttt{calendarFromDatePicker()} & 4 & Superato
+		\tabularnewline	
+		TU25 & \texttt{showEmptyLicenseDateExpirationDialog()} & 2 & Superato
+		\tabularnewline	
+		TU26 & \texttt{showEmptyLicenseReleaseDateDialog()}  & 2 & Superato
+		\tabularnewline	
+		TU27 & \texttt{displayedDateFrom(date)} & 2 & Superato
+		\tabularnewline	
+		TU28 & \texttt{showDialogWith(info)} & 6 & Superato
+		\tabularnewline	
+		TU30 & \texttt{onDatesSubmitted(releaseDate,expirationDate)}  & 2 & Superato
+		\tabularnewline	
+		TU31 & \texttt{onDatesSubmitted(releaseDate,expirationDate)} & 3 & Superato
+		\tabularnewline	
+		TU32 & \texttt{showEmptyLicenseNumberDialog()} & 2 & Superato
+		\tabularnewline	
+		TU33 & \texttt{showUncheckedLicenseCategoryHeldDialog()} & 2 & Superato
+		\tabularnewline	
+		TU34 &  \texttt{onLicenseNumberSubmitted()}  & 3 & Superato
+		\tabularnewline	
+		TU35 &  \texttt{onUploadError()}  & 3 & Superato
+		\tabularnewline	
+		TU36 & \texttt{showNoneLicenseBackSidePictureDialog()} & 2 & Superato
+		\tabularnewline	
+		TU37 & \texttt{showNoneLicenseFrontSidePictureDialog()}  & 2 & Superato
+		\tabularnewline	
+		TU38 & \texttt{createImageFile()} & 5 & Superato
+		\tabularnewline	
+		TU39 & \texttt{dispatchTakePictureIntent()} & 5 & Superato
+		\tabularnewline	
+		TU40 & \texttt{onPicturesSubmitted(frontPicturePath, backPicturePath, listener)} & 3 & Superato
+		\tabularnewline	
+		TU41 & \texttt{onPicturesSubmitted(frontPicturePath, backPicturePath, listener)} & 3 & Superato
+		\tabularnewline	
+		TU42 &\texttt{saveFront()} & 3 & Superato
+		\tabularnewline	
+		TU43 &\texttt{saveBack()} & 3 & Superato
+		\tabularnewline	
+		TU44 & \texttt{showLicenseDatesRegistration()} & 3 & Superato
+		\tabularnewline	
+		TU45 & \texttt{showLicensePicturesRegistration()} & 3  & Superato
+		\tabularnewline	
+		TU46 & \texttt{showInitialFragment()}  & 3 & Superato
+		\tabularnewline	
+		TU47 & \texttt{onVehiclesSearch(reservation,distance)} & 3 & Superato
+		\tabularnewline	
+		TU48 & \texttt{askLogOutConfirmation()} & 2 & Superato
+		\tabularnewline	
+		TU49 & \texttt{showLoginView()} & 4 & Superato
+		\tabularnewline	
+		TU50 & \texttt{showDialog(dialogFragment)} & 7 & Superato
+		\tabularnewline	
+		TU51 & \texttt{showProfile(user)} &4& Superato
+		\tabularnewline	
+		TU52 & \texttt{onProfileLoaded(profile)} & 4 & Superato
+		\tabularnewline	
+		TU53 & \texttt{loadProfile()}  &3 & Superato
+		\tabularnewline	
+		TU54 & \texttt{updateNameSurname()}  & 3 & Superato
+		\tabularnewline	
+		TU55 & \texttt{updatePhoneNumber()}  & 3 & Superato
+		\tabularnewline	
+		TU56 & \texttt{updateEmail()} & 3 & Superato
+		\tabularnewline	
+		TU57 & \texttt{updateBirthDate()}  & 3 & Superato
+		\tabularnewline	
+		TU58 & \texttt{updateAddress()}  & 3 & Superato
+		\tabularnewline	
+		TU59 &   \texttt{intToHour(interval)}  & 3 & Superato
+		\tabularnewline	
+		TU60 &   \texttt{onStart()} & 3& Superato
+		\tabularnewline	
+		TU61 & \texttt{initRecycler()}  & 4 & Superato
+		\tabularnewline	
+		TU62 &   \texttt{showBookingConfirmation()} &3& Superato
+		\tabularnewline	
+		TU63 &   \texttt{showBooking()} & 3 & Superato
+		\tabularnewline	
+		TU64 &   \texttt{loadPersonalReservations()}  & 4 & Superato
+		\tabularnewline	
+		TU65 &   \texttt{loadOwnerReservations()}& 4 & Superato
+		\tabularnewline	
+		TU66 &   \texttt{SelectedVehicleActivity.initView()} & 4& Superato
+		\tabularnewline	
+		TU67 &   \texttt{bookVehicle(dayAvailability,startHour,endHour)}  & 3 & Superato
+		\tabularnewline	
+		TU68 &   \texttt{onReservationInserted()}  & 4 & Superato
+		\tabularnewline	
+		TU69 &   \texttt{onBookingConfirmed(reservation, vehicleID, newAvailability)}  & 4& Superato
+		\tabularnewline	
+		TU70 &   \texttt{loadRecycler()} & 4 & Superato
+		\tabularnewline	
+		TU71 &   \texttt{AvailableVehicleFragment.loadVehicles()} & 7 & Superato
+		\tabularnewline	
+		TU72.1 &   \texttt{loadUserLocation()} & 7 & Superato
+		\tabularnewline	
+		TU72.2 &   \texttt{loadUserLocation()} & 3 & Superato
+		\tabularnewline	
+		TU73 &   \texttt{getLocationPermission()}  & 3 & Superato
+		\tabularnewline	
+		TU74 &   \texttt{onRequestPermissionsResult()}  & 6 & Superato
+		\tabularnewline	
+		TU75 &   \texttt{AvailableVehiclesPresenter.loadVehicles()} & 4 & Superato
+		\tabularnewline	
+		TU76 &   \texttt{searchVehicles()} & 3 & Superato
+		\tabularnewline	
+		TU77.1 &   \texttt{checkUserAuthentication()} & 3 & Superato
+		\tabularnewline	
+		TU77.2 &   \texttt{checkUserAuthentication()} & 3 & Superato
+		\tabularnewline	
+		TU78 &   \texttt{saveCar()}  & 6 & Superato
+		\tabularnewline	
+		TU79 &   \texttt{uploadVehicle()} & 5 & Superato
+		\tabularnewline	
+		TU80 &   \texttt{onVehicleUploaded()} & 3 & Superato
+		\tabularnewline	
+		TU81.1 &   \texttt{initRegisterButton()} & 3& Superato
+		\tabularnewline	
+		TU81.2 &   \texttt{initRegisterButton()} & 4 & Superato
+		\tabularnewline	
+		TU82 &   \texttt{initFabImagePicker()} & 3& Superato
+		\tabularnewline	
+		TU83 &   \texttt{initBrandEditText()} & 3 & Superato
+		\tabularnewline	
+		TU84 &   \texttt{initModelEditText()}  & 3 & Superato
+		\tabularnewline	
+		TU85 &   \texttt{initPlaceAutocomplete()} & 3& Superato
+		\tabularnewline	
+		TU86 &   \texttt{fetchPlace()} & 4 & Superato
+		\tabularnewline	
+		TU87.1 &   \texttt{onAvailabilityUpdated()} & 4 & Superato
+		\tabularnewline	
+		TU87.2 &   \texttt{onAvailabilityUpdated()} & 4& Superato
+		\tabularnewline	
+		TU87.3 &   \texttt{onAvailabilityUpdated()}  & 2& Superato
+		\tabularnewline	
+		TU88 &   \texttt{addFixedAvailability(vehicle, date, startHour, endHour)} & 4 & Superato
+		\tabularnewline	
+		TU89 &   \texttt{addRepeatedAvailability(vehicle, startHour, endHour, week, repeatFor)} & 5 & Superato
+		\tabularnewline	
+		TU90 &   \texttt{setDayAvailability(dayAvailability, startHour, endHour)} & 3 & Superato
+		\tabularnewline	
+		TU91 &   \texttt{showCheckBoxDialog()} & 3 & Superato
+		\tabularnewline	
+		TU92 &   \texttt{selectedDays()} & 3 & Superato
+		\tabularnewline	
+		TU93 &   \texttt{askRemoveConfirmation()} & 2& Superato
+		\tabularnewline	
+		TU94 &   \texttt{showAddAvailability()}  & 3 & Superato
+		\tabularnewline	
+		TU95 &   \texttt{onVehicleRemoved()} & 3& Superato
+		\tabularnewline	
+		TU96 &   \texttt{removeVehicle(key)} & 4 & Superato
+		\tabularnewline	
+		TU97 &   \texttt{VehicleListPresenter.loadVehicles()} & 3& Superato
+		\tabularnewline	
+		TU98 &   \texttt{verifyTime()} & 5 & Superato
+		\tabularnewline	
+		TU99 &   \texttt{countDown()} & 4 & Superato
+		\tabularnewline	
+		TU100 &   \texttt{saveReward()} & 5 & Superato
+		\tabularnewline	
+		TU101.1 &   \texttt{ritira()} & 4 & Superato
+		\tabularnewline	
+		TU101.2 &   \texttt{ritira()} & 5 & Superato
+		\tabularnewline	
+		TU101.3 &   \texttt{ritira()} & 4 & Superato
+		\tabularnewline
+		TU102 &   \texttt{millisToString()} & 3 & Superato
+		\tabularnewline	
+		TU103 &   \texttt{checkStatus()} & 3 & Superato
+		\tabularnewline	
+		TU104 &   \texttt{showPopUp()} & 4 & Superato
+		\tabularnewline	
+		TU105 &   \texttt{givePrize()} & 4 & Superato
+		\tabularnewline	
+		TU106 &   \texttt{loadMilestoneList()} & 6 & Superato
+		
+		
+	\end{longtable}
+	\newpage
+	\subparagraph{Test di integrazione} {\color{white}.}
+	\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
+	
+	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}
+		}% >{\centering}p{0.14\textwidth}}
+		
+		%\hline
+		\caption{   Esito test di integrazione - RQ}\\	
+		\rowcolorhead
+		\textbf{\color{white}Test}  
+		& \textbf{\color{white}N. prove} 
+		& \textbf{\color{white}Esito finale}
+		\tabularnewline 
+		\endfirsthead	
+		
+		\rowcolor{white}\caption[]{(continua)}\\	
+		\rowcolorhead
+		\textbf{\color{white}Test} 
+		& \textbf{\color{white}N. prove}
+		& \textbf{\color{white}Esito finale}  
+		\tabularnewline  
+		\endhead	
+		TI1& 5 & Superato  \tabularnewline
+		
+		TI2& 4 & Superato  \tabularnewline
+		
+		TI3& 4 & Superato  \tabularnewline 
+		
+		TI4& 5 & Superato  \tabularnewline
+		
+		TI5& 4 & Superato  \tabularnewline
+		
+		TI6& 4 & Superato  \tabularnewline
+		
+		TI7& 5 & Superato \tabularnewline
+		
+		TI8& 5 & Superato \tabularnewline
+		
+		TI9& 6 & Superato  \tabularnewline
+		
+		TI10& 5 & Superato  \tabularnewline
+		
+		TI10.1& 6 & Superato  \tabularnewline
+		
+		TI10.2& 4 & Superato  \tabularnewline
+		
+		TI11& 4 & Superato  \tabularnewline
+		
+		TI12.1& 5 & Superato  \tabularnewline
+		TI12.2 & 4 & Superato  \tabularnewline
+		
+	\end{longtable}		
+	
+	
+	\subparagraph{Test di sistema} 
+	
+	Questa sezione verrà sviluppata in seguito quando sarà richiesta la sua istanziazione.  Verranno qui presentati i test di sistema previsti per assicurare che il sistema rispetti le specifiche richieste nei requisiti (elencati all'interno dell'Analisi dei  requisiti)  e  per  garantire  il  buon  funzionamento  dell'applicativo  che  viene sviluppato.
+	\pagebreak
 	
 	\subsubsection{Revisione di accettazione}
 	\paragraph{Qualità di processo}
@@ -1124,307 +1424,7 @@ Di seguito vengono riportati gli esiti delle metriche derivanti dalla gestione d
 	\end{center}
 	\paragraph*{Valutazione} ciao ciao..
 	\pagebreak
-	
-		\paragraph{Esiti dei test - RQ}
-	
-		Di seguito viene riportata la tabella indicante l'esito dei test effettuati durante la fase di Revisione di Qualifica. Ogni test è stato eseguito più volte nel periodo, in base alle esigenze. Viene riportato solo l'esito finale.
-		
-		\subparagraph{Test di unità} {\color{white}.}
-		
-\renewcommand{\arraystretch}{1.5}
-	\rowcolors{2}{pari}{dispari}
-	
-	\begin{longtable}{ >{\centering}p{0.10\textwidth}  >{\centering}p{0.50\textwidth} >{\centering}p{0.10\textwidth}
-			>{\centering}p{0.10\textwidth}}
-			
-		%\hline
-		\caption{   Esito test di unità - RQ}\\	
-		\rowcolorhead
-		\centering\textbf{\color{white}Test} 
-		& \centering\textbf{\color{white}Metodo} 
-		& \centering\textbf{\color{white}N. prove}
-		& \centering\textbf{\color{white}Esito finale}
-		
-	%	& \textbf{\color{white}Fonti} 
-		\tabularnewline %\hline 
-		\endfirsthead	
-		
-		\rowcolor{white}\caption[]{(continua)}\\	
-		\rowcolorhead
-		\centering\textbf{\color{white}Test} 
-		& \centering\textbf{\color{white}Metodo} 
-		& \centering\textbf{\color{white}N. prove}
-		& \centering\textbf{\color{white}Esito finale}
-		
-		%	& \textbf{\color{white}Fonti} 
-		\tabularnewline %\hline 
-		\endhead	
-		
-		TU1 & \texttt{setMinutePicker()}  & 3 & Superato \tabularnewline		
-		TU2 & \texttt{getMinute()}  & 3 & Superato \tabularnewline	
-		TU3 & \texttt{authenticateUser()}  & 3 & Superato \tabularnewline	
-		TU4 & \texttt{show(fragment)}  & 17 & Superato\tabularnewline	
-		TU5 & \texttt{extractCredentials()}  & 3 & Superato\tabularnewline	
-		TU6 & \texttt{onRegistrationFail(error)}  & 2& Superato\tabularnewline	
-		TU7.1 & \texttt{onRegistrationSubmitted(credentials)}  & 3 & Superato \tabularnewline	
-		TU7.2 & \texttt{onRegistrationSubmitted(credentials)}  & 3 & Superato\tabularnewline	
-		TU7.3 & \texttt{onRegistrationSubmitted(credentials)}  & 2 & Superato  \tabularnewline	
-		TU8 & \texttt{onRegistrationSuccess()} & 3 & Superato\tabularnewline	
-		TU9 & \texttt{extractUserInformation()} & 4 & Superato \tabularnewline	
-		TU10 & \texttt{onUserInformationSaved()} & 4  & Superato \tabularnewline	
-		TU11 & \texttt{addUserInformation(user)} &  4 & Superato \tabularnewline	
-		TU12 & \texttt{addUserInformation(user)} &  3 & Superato \tabularnewline	
-		TU13 & \texttt{onAuthenticationSuccess()} &  2  & Superato \tabularnewline	
-		TU14 & \texttt{onAuthenticationError()} &  2  & Superato \tabularnewline	
-		TU15 & \texttt{login()} &  5 & Superato \tabularnewline	
-		TU16 & \texttt{validate(credentials)} &  6  & Superato \tabularnewline	
-		TU17 &  \texttt{EmailValidator.isValid()} &  3  & Superato \tabularnewline	
-		TU18 & \texttt{EmailValidator.validate(user)} & 3 & Superato \tabularnewline	
-		TU19 & \texttt{NameValidator.validate(user)} & 2 & Superato \tabularnewline	
-		TU20 &  texttt{PasswordValidator.isValid()}   & 3 & Superato \tabularnewline	
-		TU21 &   \texttt{PasswordValidator.validate(user)}   & 4 & Superato\tabularnewline	
-		TU22 & \texttt{SurnameValidator.validate()} & 2 & Superato\tabularnewline	
-		TU23 & \texttt{UsernameValidator.validate()} & 2  & Superato\tabularnewline	
-		TU24 & \texttt{calendarFromDatePicker()} & 4 & Superato
-		\tabularnewline	
-		TU25 & \texttt{showEmptyLicenseDateExpirationDialog()} & 2 & Superato
-		\tabularnewline	
-		TU26 & \texttt{showEmptyLicenseReleaseDateDialog()}  & 2 & Superato
-		\tabularnewline	
-		TU27 & \texttt{displayedDateFrom(date)} & 2 & Superato
-		\tabularnewline	
-		TU28 & \texttt{showDialogWith(info)} & 6 & Superato
-		\tabularnewline	
-		TU30 & \texttt{onDatesSubmitted(releaseDate,expirationDate)}  & 2 & Superato
-		\tabularnewline	
-		TU31 & \texttt{onDatesSubmitted(releaseDate,expirationDate)} & 3 & Superato
-		\tabularnewline	
-		TU32 & \texttt{showEmptyLicenseNumberDialog()} & 2 & Superato
-		\tabularnewline	
-		TU33 & \texttt{showUncheckedLicenseCategoryHeldDialog()} & 2 & Superato
-		\tabularnewline	
-		TU34 &  \texttt{onLicenseNumberSubmitted()}  & 3 & Superato
-		\tabularnewline	
-		TU35 &  \texttt{onUploadError()}  & 3 & Superato
-		\tabularnewline	
-		TU36 & \texttt{showNoneLicenseBackSidePictureDialog()} & 2 & Superato
-		\tabularnewline	
-		TU37 & \texttt{showNoneLicenseFrontSidePictureDialog()}  & 2 & Superato
-		\tabularnewline	
-		TU38 & \texttt{createImageFile()} & 5 & Superato
-		\tabularnewline	
-		TU39 & \texttt{dispatchTakePictureIntent()} & 5 & Superato
-		\tabularnewline	
-		TU40 & \texttt{onPicturesSubmitted(frontPicturePath, backPicturePath, listener)} & 3 & Superato
-		\tabularnewline	
-		TU41 & \texttt{onPicturesSubmitted(frontPicturePath, backPicturePath, listener)} & 3 & Superato
-		\tabularnewline	
-		TU42 &\texttt{saveFront()} & 3 & Superato
-		\tabularnewline	
-		TU43 &\texttt{saveBack()} & 3 & Superato
-		\tabularnewline	
-		TU44 & \texttt{showLicenseDatesRegistration()} & 3 & Superato
-		\tabularnewline	
-		TU45 & \texttt{showLicensePicturesRegistration()} & 3  & Superato
-		\tabularnewline	
-		TU46 & \texttt{showInitialFragment()}  & 3 & Superato
-		\tabularnewline	
-		TU47 & \texttt{onVehiclesSearch(reservation,distance)} & 3 & Superato
-		\tabularnewline	
-		TU48 & \texttt{askLogOutConfirmation()} & 2 & Superato
-		\tabularnewline	
-		TU49 & \texttt{showLoginView()} & 4 & Superato
-		\tabularnewline	
-		TU50 & \texttt{showDialog(dialogFragment)} & 7 & Superato
-		\tabularnewline	
-		TU51 & \texttt{showProfile(user)} &4& Superato
-		\tabularnewline	
-		TU52 & \texttt{onProfileLoaded(profile)} & 4 & Superato
-		\tabularnewline	
-		TU53 & \texttt{loadProfile()}  &3 & Superato
-		\tabularnewline	
-		TU54 & \texttt{updateNameSurname()}  & 3 & Superato
-		\tabularnewline	
-		TU55 & \texttt{updatePhoneNumber()}  & 3 & Superato
-		\tabularnewline	
-		TU56 & \texttt{updateEmail()} & 3 & Superato
-		\tabularnewline	
-		TU57 & \texttt{updateBirthDate()}  & 3 & Superato
-		\tabularnewline	
-		TU58 & \texttt{updateAddress()}  & 3 & Superato
-		\tabularnewline	
-		TU59 &   \texttt{intToHour(interval)}  & 3 & Superato
-		\tabularnewline	
-		TU60 &   \texttt{onStart()} & 3& Superato
-		\tabularnewline	
-		TU61 & \texttt{initRecycler()}  & 4 & Superato
-		\tabularnewline	
-		TU62 &   \texttt{showBookingConfirmation()} &3& Superato
-		\tabularnewline	
-		TU63 &   \texttt{showBooking()} & 3 & Superato
-		\tabularnewline	
-		TU64 &   \texttt{loadPersonalReservations()}  & 4 & Superato
-		\tabularnewline	
-		TU65 &   \texttt{loadOwnerReservations()}& 4 & Superato
-		\tabularnewline	
-		TU66 &   \texttt{SelectedVehicleActivity.initView()} & 4& Superato
-		\tabularnewline	
-		TU67 &   \texttt{bookVehicle(dayAvailability,startHour,endHour)}  & 3 & Superato
-		\tabularnewline	
-		TU68 &   \texttt{onReservationInserted()}  & 4 & Superato
-		\tabularnewline	
-		TU69 &   \texttt{onBookingConfirmed(reservation, vehicleID, newAvailability)}  & 4& Superato
-		\tabularnewline	
-		TU70 &   \texttt{loadRecycler()} & 4 & Superato
-		\tabularnewline	
-		TU71 &   \texttt{AvailableVehicleFragment.loadVehicles()} & 7 & Superato
-		\tabularnewline	
-		TU72.1 &   \texttt{loadUserLocation()} & 7 & Superato
-		\tabularnewline	
-		TU72.2 &   \texttt{loadUserLocation()} & 3 & Superato
-		\tabularnewline	
-		TU73 &   \texttt{getLocationPermission()}  & 3 & Superato
-		\tabularnewline	
-		TU74 &   \texttt{onRequestPermissionsResult()}  & 6 & Superato
-		\tabularnewline	
-		TU75 &   \texttt{AvailableVehiclesPresenter.loadVehicles()} & 4 & Superato
-		\tabularnewline	
-		TU76 &   \texttt{searchVehicles()} & 3 & Superato
-		\tabularnewline	
-		TU77.1 &   \texttt{checkUserAuthentication()} & 3 & Superato
-		\tabularnewline	
-		TU77.2 &   \texttt{checkUserAuthentication()} & 3 & Superato
-		\tabularnewline	
-		TU78 &   \texttt{saveCar()}  & 6 & Superato
-		\tabularnewline	
-		TU79 &   \texttt{uploadVehicle()} & 5 & Superato
-		\tabularnewline	
-		TU80 &   \texttt{onVehicleUploaded()} & 3 & Superato
-		\tabularnewline	
-		TU81.1 &   \texttt{initRegisterButton()} & 3& Superato
-		\tabularnewline	
-		TU81.2 &   \texttt{initRegisterButton()} & 4 & Superato
-		\tabularnewline	
-		TU82 &   \texttt{initFabImagePicker()} & 3& Superato
-		\tabularnewline	
-		TU83 &   \texttt{initBrandEditText()} & 3 & Superato
-		\tabularnewline	
-		TU84 &   \texttt{initModelEditText()}  & 3 & Superato
-		\tabularnewline	
-		TU85 &   \texttt{initPlaceAutocomplete()} & 3& Superato
-		\tabularnewline	
-		TU86 &   \texttt{fetchPlace()} & 4 & Superato
-		\tabularnewline	
-		TU87.1 &   \texttt{onAvailabilityUpdated()} & 4 & Superato
-		\tabularnewline	
-		TU87.2 &   \texttt{onAvailabilityUpdated()} & 4& Superato
-		\tabularnewline	
-		TU87.3 &   \texttt{onAvailabilityUpdated()}  & 2& Superato
-		\tabularnewline	
-		TU88 &   \texttt{addFixedAvailability(vehicle, date, startHour, endHour)} & 4 & Superato
-		\tabularnewline	
-		TU89 &   \texttt{addRepeatedAvailability(vehicle, startHour, endHour, week, repeatFor)} & 5 & Superato
-		\tabularnewline	
-		TU90 &   \texttt{setDayAvailability(dayAvailability, startHour, endHour)} & 3 & Superato
-		\tabularnewline	
-		TU91 &   \texttt{showCheckBoxDialog()} & 3 & Superato
-		\tabularnewline	
-		TU92 &   \texttt{selectedDays()} & 3 & Superato
-		\tabularnewline	
-		TU93 &   \texttt{askRemoveConfirmation()} & 2& Superato
-		\tabularnewline	
-		TU94 &   \texttt{showAddAvailability()}  & 3 & Superato
-		\tabularnewline	
-		TU95 &   \texttt{onVehicleRemoved()} & 3& Superato
-		\tabularnewline	
-		TU96 &   \texttt{removeVehicle(key)} & 4 & Superato
-		\tabularnewline	
-		TU97 &   \texttt{VehicleListPresenter.loadVehicles()} & 3& Superato
-		\tabularnewline	
-		TU98 &   \texttt{verifyTime()} & 5 & Superato
-		\tabularnewline	
-		TU99 &   \texttt{countDown()} & 4 & Superato
-		\tabularnewline	
-		TU100 &   \texttt{saveReward()} & 5 & Superato
-		\tabularnewline	
-		TU101.1 &   \texttt{ritira()} & 4 & Superato
-		\tabularnewline	
-		TU101.2 &   \texttt{ritira()} & 5 & Superato
-		\tabularnewline	
-		TU101.3 &   \texttt{ritira()} & 4 & Superato
-		\tabularnewline
-		TU102 &   \texttt{millisToString()} & 3 & Superato
-		\tabularnewline	
-		TU103 &   \texttt{checkStatus()} & 3 & Superato
-		\tabularnewline	
-		TU104 &   \texttt{showPopUp()} & 4 & Superato
-		\tabularnewline	
-		TU105 &   \texttt{givePrize()} & 4 & Superato
-		\tabularnewline	
-		TU106 &   \texttt{loadMilestoneList()} & 6 & Superato
-		
-		
-		\end{longtable}
-		\newpage
-		\subparagraph{Test di integrazione} {\color{white}.}
-\renewcommand{\arraystretch}{1.5}
-	\rowcolors{2}{pari}{dispari}
 
-\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}
-			}% >{\centering}p{0.14\textwidth}}
-			
-		%\hline
-		\caption{   Esito test di integrazione - RQ}\\	
-		\rowcolorhead
-		\textbf{\color{white}Test}  
-		& \textbf{\color{white}N. prove} 
-		& \textbf{\color{white}Esito finale}
-		\tabularnewline 
-		\endfirsthead	
-		
-		\rowcolor{white}\caption[]{(continua)}\\	
-		\rowcolorhead
-		\textbf{\color{white}Test} 
-		& \textbf{\color{white}N. prove}
-		& \textbf{\color{white}Esito finale}  
-		\tabularnewline  
-		\endhead	
-TI1& 5 & Superato  \tabularnewline
-
-TI2& 4 & Superato  \tabularnewline
-
-TI3& 4 & Superato  \tabularnewline 
-
-TI4& 5 & Superato  \tabularnewline
-
-TI5& 4 & Superato  \tabularnewline
-
-TI6& 4 & Superato  \tabularnewline
-
-TI7& 5 & Superato \tabularnewline
-
-TI8& 5 & Superato \tabularnewline
-
-TI9& 6 & Superato  \tabularnewline
-
-TI10& 5 & Superato  \tabularnewline
-
-TI10.1& 6 & Superato  \tabularnewline
-
-TI10.2& 4 & Superato  \tabularnewline
-
-TI11& 4 & Superato  \tabularnewline
-
-TI12.1& 5 & Superato  \tabularnewline
-TI12.2 & 4 & Superato  \tabularnewline
-
-\end{longtable}		
-
-
-\subparagraph{Test di sistema} 
-
-Questa sezione verrà sviluppata in seguito quando sarà richiesta la sua istanziazione.  Verranno qui presentati i test di sistema previsti per assicurare che il sistema rispetti le specifiche richieste nei requisiti (elencati all'interno dell'Analisi dei  requisiti)  e  per  garantire  il  buon  funzionamento  dell'applicativo  che  viene sviluppato.
-\pagebreak
 \paragraph{Esiti dei test - RA}
 
 Di seguito viene riportata la tabella indicante l'esito dei test effettuati durante la fase di Revisione di Accettazione. Ogni test è stato eseguito più volte nel periodo, in base alle esigenze. Viene riportato solo l'esito finale.
